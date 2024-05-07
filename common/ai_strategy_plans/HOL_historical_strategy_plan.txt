@@ -1,0 +1,88 @@
+HOL_historical_plan = {
+	name = "Netherlands historical plan"
+	desc = "Historical behavior for Netherlands - HOO2 modified"
+
+	enable = {
+		original_tag = HOL
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = HOL_ai_behavior 
+					option = DEFAULT
+				}
+			}
+			has_country_flag = HOL_AI_RANDOM_DEMOCRATIC_HISTORICAL
+			has_game_rule = {
+				rule = HOL_ai_behavior 
+				option = DEMOCRATIC_HISTORICAL
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		HOL_liberation
+		HOL_continue_the_war_in_batavia
+
+		HOL_abandon_the_gold_standard
+		HOL_continue_the_public_works
+		HOL_finish_the_noordoostpolder
+		HOL_the_maastunnel
+		HOL_expand_the_artillerieinrichtingen
+
+		HOL_overturn_military_budget_cuts
+		HOL_prepare_the_inundation_lines
+		HOL_germany_is_the_greater_threat
+		HOL_fortress_holland
+		HOL_modernize_the_grebbeline
+		HOL_war_on_pacifism
+
+		HOL_obtain_foreign_colonial_investments
+		HOL_the_western_possessions
+		HOL_expand_curacao_oil_refineries
+		HOL_open_second_paranam_bauxite_mine
+		HOL_the_crown_jewel_colony
+		HOL_java
+		HOL_sumatra
+		HOL_borneo_and_the_grote_oost
+
+		HOL_the_zuiderzee_works
+
+		HOL_antilles_defenses
+		HOL_reinforce_java
+
+		HOL_the_foundations_of_defense
+		HOL_the_east_indies_war_machine
+		HOL_colonial_shipbuilding
+		HOL_prepare_for_our_return
+
+		#HOL_the_zuiderzee_works
+		HOL_develop_the_randstad
+		HOL_expand_the_ijmuiden_steel_mill
+		HOL_fokker
+
+		HOL_domestic_innovation
+		HOL_make_use_of_our_riches
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

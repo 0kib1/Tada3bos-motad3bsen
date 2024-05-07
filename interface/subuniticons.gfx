@@ -1,0 +1,609 @@
+spriteTypes = {	
+
+	##################################
+	### Large images for Groups ###
+	spriteType = { name = "GFX_unit_super_heavy_sp_anti_air_brigade_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_super_heavy_armor_antiair_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_super_heavy_sp_anti_air_company_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_super_heavy_armor_antiair_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_sp_anti_air_brigade_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_heavy_armor_antiair_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_sp_anti_air_company_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_heavy_armor_antiair_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_railway_gun_icon_medium"								texturefile = "gfx/interface/counters/divisions_large/unit_railway_gun_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_railway_gun_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_railway_gun_icon.dds" noOfFrames = 2 }
+
+	spriteType = { name = "GFX_group_infantry_icon"								textureFile = "gfx/interface/counters/divisions_large/unit_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_group_mobile_icon"								textureFile = "gfx/interface/counters/divisions_large/unit_motorized_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_group_armor_icon"								textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_group_special_infantry_icon"                     textureFile = "gfx/interface/counters/divisions_large/unit_special_forces_icon.dds" noOfFrames = 2 }
+    spriteType = { name = "GFX_group_semi_mobile_icon"                    		textureFile = "gfx/interface/counters/divisions_large/unit_truck_infantry_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_militia_icon_medium" 									textureFile = "gfx/interface/counters/divisions_large/unit_militia_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_amphibious_armor_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_amphibious_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_amphibious_mechanized_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_amphibious_mechanized_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_super_heavy_armor_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_super_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_modern_sp_artillery_brigade_icon_medium" 			textureFile = "gfx/interface/counters/divisions_large/unit_modern_armor_artillery_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_super_heavy_tank_destroyer_brigade_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_super_heavy_armor_at_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_super_heavy_sp_anti_air_brigade_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_super_heavy_armor_antiair_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_super_heavy_sp_artillery_brigade_icon_medium"		textureFile = "gfx/interface/counters/divisions_large/unit_super_heavy_armor_artillery_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_sp_artillery_brigade_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_heavy_armor_artillery_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_medium_sp_artillery_brigade_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_artillery_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_sp_artillery_brigade_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_light_tank_artillery_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_modern_tank_destroyer_brigade_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_modern_armor_at_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_tank_destroyer_brigade_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_heavy_armor_at_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_medium_tank_destroyer_brigade_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_at_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_tank_destroyer_brigade_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_light_tank_at_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_modern_sp_anti_air_brigade_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_modern_armor_antiair_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_medium_sp_anti_air_brigade_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_antiair_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_medium_sp_anti_air_company_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_antiair_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_sp_anti_air_brigade_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_light_tank_antiair_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_light_sp_anti_air_company_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_light_tank_antiair_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_modern_armor_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_modern_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_marine_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_marine_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_mountaineers_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_mountain_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_motorized_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_motorized_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_armor_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_anti_air_company_icon_medium" 								textureFile = "gfx/interface/counters/divisions_large/support_unit_anti_air_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_anti_air_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_anti_air_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_cavalry_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_cavalry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_infantry_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_truck_infantry_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_truck_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_mechanized_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_mechanized_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_medium_armor_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_armor_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_light_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_armor_recon_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_light_tank_recon_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_light_armor_para_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_light_tank_para_icon.dds" noOfFrames = 2 }		
+	spriteType = { name = "GFX_unit_artillery_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/support_unit_art_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_artillery_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_art_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_rocket_artillery_brigade_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_rocket_art_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_rocket_artillery_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/support_unit_rocket_art_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_anti_tank_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/support_unit_at_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_anti_tank_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_at_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_recon_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_recon_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_mot_recon_icon_medium"									texturefile = "gfx/interface/counters/divisions_large/support_unit_motorized_recon_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_engineer_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_engineer_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_mobile_engineer_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_engineer_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_paratrooper_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_paratroop_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_motorized_rocket_brigade_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_motorized_rocket_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_field_hospital_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/support_unit_field_hospital_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_military_police_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/support_unit_military_police_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_signal_company_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/support_unit_signal_company_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_maintenance_company_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/support_unit_maintenance_company_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_construction_engineer_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/MPU.Garrison.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_salvage_company_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/support_unit_salvage_company_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_logistics_company_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/support_unit_logistics_company_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_bicycle_battalion_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_bicycle_infantry_icon.dds" noOfFrames = 2 }	
+    spriteType = { name = "GFX_unit_anti_air_mot_icon_medium"	            textureFile = "gfx/interface/counters/divisions_large/unit_mot_anti_air_icon.dds"	 noOfFrames = 2	}        
+	spriteType = { name = "GFX_unit_artillery_brigade_mot_icon_medium"	        textureFile = "gfx/interface/counters/divisions_large/unit_mot_art_icon.dds"	noOfFrames = 2	}                      
+	spriteType = { name = "GFX_unit_anti_tank_brigade_mot_icon_medium"	        textureFile = "gfx/interface/counters/divisions_large/unit_mot_at_icon.dds" noOfFrames = 2	}                               
+    spriteType = { name = "GFX_unit_anti_tank_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/support_unit_at_icon.dds" noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_artillery_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/support_unit_art_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_anti_air_heavy_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/MPU.heavy_aa_semimot.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_anti_air_heavy_mot_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/MPU.heavy_aa_mot.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_anti_air_heavy_support_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/MPU.heavy_aa_support.dds" noOfFrames = 2 }
+
+	spriteType = { name = "GFX_unit_volkssturm_infantry_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/MPU.small.volks.Infantry.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_infantry_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/MPU.small.light.Infantry.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_truck_light_infantry_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_truck_light_infantry.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_infantry_spain_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_garrison_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/MPU.Garrison.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_truck_garrison_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_truck_Garrison.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_artillery_heavy_mot_icon_medium"	        textureFile = "gfx/interface/counters/divisions_large/MPU.heavy.arty.mech.dds"	noOfFrames = 2	}                      
+	spriteType = { name = "GFX_unit_artillery_heavy_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/MPU.heavy.arty.motor.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_artillery_heavy_support_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/MPU.heavy.arty_support.dds" noOfFrames = 2 }    
+	spriteType = { name = "GFX_unit_artillery_siege_support_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/MPU.siege.arty_support.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_pack_artillery_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/MPU.pack.arty.dds" noOfFrames = 2 }
+ 	spriteType = { name = "GFX_unit_pack_artillery_brigade_mot_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/MPU.pack.arty.motor.dds" noOfFrames = 2 }   
+	spriteType = { name = "GFX_unit_pack_artillery_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/MPU.pack.arty_support.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_mountain_gun_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_mountain_gun.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_mountain_artillery_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/mountain_howizer_icon.dds" noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_field_gun_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_field_gun_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_field_gun_brigade_mot_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_field_gun_mot_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_field_gun_support_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/support_unit_field_gun_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_DIV_HQ_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/MPU.000.small.Hq.NoEchelon.dds" noOfFrames = 2 }	
+    spriteType = { name = "GFX_unit_logistics_company_mot_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/support_unit_logistics_company_mot_icon.dds" noOfFrames = 2 }	
+    spriteType = { name = "GFX_unit_logistics_company_mech_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/support_unit_logistics_company_mech_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_armored_car_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/MPU.armoured.car.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_recon_ac_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/MPU.armoured.recon.dds" noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_light_assault_gun_company_icon_medium" 			textureFile = "gfx/interface/counters/divisions_large/unit_light_assault_gun_icon_support.dds" noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_light_assault_gun_brigade_icon_medium" 			textureFile = "gfx/interface/counters/divisions_large/unit_light_assault_gun_icon.dds" noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_medium_assault_gun_brigade_icon_medium" 			textureFile = "gfx/interface/counters/divisions_large/MPU.medium.assault.gun.dds" noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_medium_assault_gun_company_icon_medium" 			textureFile = "gfx/interface/counters/divisions_large/MPU.medium.assault.gun.company.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_heavy_assaut_gun_brigade_icon_medium" 			textureFile = "gfx/interface/counters/divisions_large/MPU.heavy.assault.gun.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_assaut_gun_company_icon_medium" 			textureFile = "gfx/interface/counters/divisions_large/MPU.heavy.assault.gun.company.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_super_heavy_assault_gun_brigade_icon_medium" 			textureFile = "gfx/interface/counters/divisions_large/unit_super_heavy_assault_gun_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_super_heavy_assault_gun_company_icon_medium" 			textureFile = "gfx/interface/counters/divisions_large/unit_super_heavy_assault_gun_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_commando_unit_icon_medium"	        textureFile = "gfx/interface/counters/divisions_large/MPU.commandos.dds"noOfFrames = 2	}
+	spriteType = { name = "GFX_unit_fake_intel_unit_icon_medium"							texturefile = "gfx/interface/counters/divisions_large/unit_fake_intel_unit_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_light_flame_tank_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_light_flamethrower_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_medium_flame_tank_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_medium_flamethrower_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_flame_tank_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_heavy_flamethrower_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_super_heavy_flame_tank_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_super_heavy_flamer_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_amphibious_super_heavy_armor_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_super_amphibious_tank_icon.dds" noOfFrames = 2 }
+	####################################################
+	### Small images for DIVISIONS (On-map-counters) ###
+	spriteType = { name = "GFX_unit_truck_infantry_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/unit_truck_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_modern_armor_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_modern_armor_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_super_heavy_armor_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_heavy_armor_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_marine_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_marine_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_mountaineers_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mountain_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_motorized_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_motorized_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_heavy_armor_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_anti_air_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_anti_air_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_anti_air_brigade_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_anti_air_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_mot_anti_air_brigade_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mot_anti_air_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_anti_air_heavy_mot_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/heavy_aa_small_mot.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_anti_air_heavy_icon_medium_white"					    textureFile = "gfx/interface/counters/divisions_small/heavy_aa_small.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_anti_air_heavy_support_icon_medium_white"					    textureFile = "gfx/interface/counters/divisions_small/heavy_aa_small.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_cavalry_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cavalry_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_camelry_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_camelry_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_infantry_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_mechanized_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mechanized_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_medium_tank_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_medium_armor_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_light_tank_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_light_armor_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_artillery_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_art_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_artillery_brigade_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_art_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_mot_artillery_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mot_art_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_field_gun_support_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/field_gun_small.dds" noOfFrames = 2}	
+	spriteType = { name = "GFX_unit_field_gun_brigade_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/field_gun_small.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_field_gun_brigade_mot_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/field_gun_small_mot.dds" noOfFrames = 2}	
+	spriteType = { name = "GFX_unit_art_icon_medium_white"									textureFile = "gfx/interface/counters/divisions_small/onmap_unit_art_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_rocket_artillery_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_rocket_artillery_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_mot_rocket_artillery_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mot_rocket_artillery_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_rocket_artillery_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_rocket_artillery_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_at_icon_medium_white"									textureFile = "gfx/interface/counters/divisions_small/onmap_unit_at_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_anti_tank_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_at_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_anti_tank_brigade_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_at_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_mot_anti_tank_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mot_at_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_recon_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_recon_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_engineer_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_engineer_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_paratrooper_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_paratroop_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_motorized_rocket_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_motorized_rocket_brigade_icon.dds" noOfFrames = 2}	
+	spriteType = { name = "GFX_unit_no_intel_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_no_intel_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_bicycle_battalion_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_bicycle_infantry_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_amphibious_armor_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_amphibious_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_amphibious_mechanized_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_amphibious_mechanized_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_armored_car_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_armored_car_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_fake_intel_unit_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_fake_intel_unit_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_militia_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_militia_icon.dds" noOfFrames = 2}	
+	spriteType = { name = "GFX_unit_modern_sp_artillery_brigade_icon_medium_white" 			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_modern_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_super_heavy_sp_artillery_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_sp_artillery_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_medium_sp_artillery_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_sp_artillery_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_modern_tank_destroyer_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_modern_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_super_heavy_tank_destroyer_brigade_icon_medium_white"	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_tank_destroyer_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_medium_tank_destroyer_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_tank_destroyer_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_modern_sp_anti_air_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_modern_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_super_heavy_sp_anti_air_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_sp_anti_air_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_sp_anti_air_company_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2 }
+	#spriteType = { name = "GFX_unit_medium_sp_anti_air_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_sp_anti_air_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_tank_icon.dds" noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_light_assault_gun_brigade_icon_medium_white" 			textureFile = "gfx/interface/counters/divisions_small/unit_light_assault_gun_small.dds" noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_super_heavy_assault_gun_brigade_icon_medium_white" 	    textureFile = "gfx/interface/counters/divisions_small/unit_super_heavy_assault_gun_icon_small.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_super_heavy_assault_gun_company_icon_medium_white" 		textureFile = "gfx/interface/counters/divisions_small/unit_super_heavy_assault_gun_icon_small.dds" noOfFrames = 2 }	
+	
+	spriteType = { name = "GFX_unit_ss_infantry_icon_medium_white"									textureFile = "gfx/interface/counters/divisions_small/unit_ss_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_ss_motorized_icon_medium_white"									textureFile = "gfx/interface/counters/divisions_small/unit_ss_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_ss_mechanized_icon_medium_white"									textureFile = "gfx/interface/counters/divisions_small/unit_ss_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_ss_panzer_iii_icon_medium_white"									textureFile = "gfx/interface/counters/divisions_small/unit_ss_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_ss_panzer_vi_icon_medium_white"									textureFile = "gfx/interface/counters/divisions_small/unit_ss_icon.dds" noOfFrames = 2 }
+
+	spriteType = { name = "GFX_unit_guards_mech_icon_medium_white"									textureFile = "gfx/interface/counters/divisions_small/unit_guards_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_guards_medium_icon_medium_white"									textureFile = "gfx/interface/counters/divisions_small/unit_guards_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_guards_heavy_icon_medium_white"									textureFile = "gfx/interface/counters/divisions_small/unit_guards_icon.dds" noOfFrames = 2 }		
+	
+	
+	spriteType = { name = "GFX_unit_volkssturm_infantry_icon_medium_white"									textureFile = "gfx/interface/counters/divisions_small/MPU.small.volks.Infantry.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_infantry_icon_medium_white"									textureFile = "gfx/interface/counters/divisions_small/MPU.small.light.Infantry.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_truck_infantry_icon_small"									textureFile = "gfx/texticons/unit_truck_infantry_small.dds" legacy_lazy_load = no noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_truck_light_infantry_icon_medium_white"									textureFile = "gfx/interface/counters/divisions_small/unit_truck_light_infantry.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_infantry_spain_icon_medium_white"									textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_garrison_icon_medium_white"									textureFile = "gfx/interface/counters/divisions_small/MPU.Garrison.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_truck_garrison_icon_medium_white"									textureFile = "gfx/interface/counters/divisions_small/unit_truck_Garrison.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_artillery_heavy_mot_icon_medium_white"	        textureFile = "gfx/interface/counters/divisions_small/MPU.heavy.arty.mech.dds"	noOfFrames = 2	}                      
+	spriteType = { name = "GFX_unit_artillery_heavy_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/MPU.heavy.arty.motor.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_artillery_heavy_support_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/MPU.heavy.arty_support.dds" noOfFrames = 2 }    
+	spriteType = { name = "GFX_unit_pack_artillery_brigade_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/MPU.pack.arty.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_pack_artillery_brigade_mot_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/MPU.pack.arty.motor.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_pack_artillery_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/MPU.pack.arty_support.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_DIV_HQ_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/MPU.000.small.Hq.NoEchelon.dds" noOfFrames = 2 }	
+    spriteType = { name = "GFX_unit_logistics_company_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/support_unit_logistics_company_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_logistics_company_mot_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/support_unit_logistics_company_mot_icon.dds" noOfFrames = 2 }	
+    spriteType = { name = "GFX_unit_logistics_company_mech_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/support_unit_logistics_company_mech_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_armored_car_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_armored_car_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_recon_ac_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/MPU.armoured.recon.dds" noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_light_assault_gun_brigade_icon_white" 			textureFile = "gfx/interface/counters/divisions_small/unit_light_assault_gun_small.dds" noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_medium_assault_gun_brigade_icon_medium_white" 			textureFile = "gfx/interface/counters/divisions_small/MPU.medium.assault.gun.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_assaut_gun_brigade_icon_medium_white" 			textureFile = "gfx/interface/counters/divisions_small/MPU.heavy.assault.gun.dds" noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_medium_assault_gun_company_icon_medium_white" 			textureFile = "gfx/interface/counters/divisions_small/MPU.medium.assault.gun.company.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_assaut_gun_company_icon_medium_white" 			textureFile = "gfx/interface/counters/divisions_small/MPU.heavy.assault.gun.company.dds" noOfFrames = 2 }    
+	spriteType = { name = "GFX_unit_commando_unit_icon_medium_white" 			textureFile = "gfx/interface/counters/divisions_small/MPU.commandos.dds" noOfFrames = 2 }
+
+	spriteType = { name = "GFX_unit_anti_air_mot_icon_medium_white"	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_anti_air_motorized_icon.dds"	            noOfFrames = 2	}
+	spriteType = { name = "GFX_unit_artillery_brigade_mot_icon_medium_white"	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_art_motorized_icon.dds"	                noOfFrames = 2	}
+	spriteType = { name = "GFX_unit_anti_tank_brigade_mot_icon_medium_white"	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_at_motorized_icon.dds"	                    noOfFrames = 2	}
+    
+    #text
+	spriteType = { name = "GFX_unit_anti_air_mot_icon_small"		    texturefile = "gfx/texticons/nato_unit_anti_air_motorized_icon_small.dds" legacy_lazy_load = no	noOfFrames = 2	}
+    spriteType = { name = "GFX_unit_artillery_brigade_mot_icon_small"		texturefile = "gfx/texticons/nato_unit_artillery_motorized_icon_small.dds"	legacy_lazy_load = no noOfFrames = 2	}
+    spriteType = { name = "GFX_unit_anti_tank_brigade_mot_icon_small"		texturefile = "gfx/texticons/nato_unit_anti_tank_motorized_icon_small.dds" legacy_lazy_load = no noOfFrames = 2	}
+    spriteType = { name = "GFX_unit_recon_ac_icon_small"							textureFile = "gfx/texticons/MPU.armoured.recon.dds" legacy_lazy_load = no noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_garrison_icon_small"									textureFile = "gfx/texticons/Garrison.dds" legacy_lazy_load = no noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_truck_garrison_icon_small"									textureFile = "gfx/texticons/unit_truck_Garrison_small.dds" legacy_lazy_load = no noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_artillery_heavy_icon_small"						textureFile = "gfx/texticons/MPU.heavy.arty.motor.dds" legacy_lazy_load = no noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_artillery_heavy_support_icon_small"						textureFile = "gfx/texticons/MPU.heavy.arty_support.dds" legacy_lazy_load = no noOfFrames = 2 }
+
+    spriteType = { name = "GFX_unit_artillery_siege_support_icon_small"						textureFile = "gfx/texticons/MPU.siege.arty_support.dds" legacy_lazy_load = no noOfFrames = 2 }        
+	spriteType = { name = "GFX_unit_commando_unit_icon_small" 			       textureFile = "gfx/texticons/MPU.commandos.dds" legacy_lazy_load = no noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_medium_assault_gun_brigade_icon_small" 			textureFile = "gfx/texticons/MPU.medium.assault.gun.dds" legacy_lazy_load = no noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_medium_assault_gun_company_icon_small" 			textureFile = "gfx/texticons/MPU.medium.assault.gun.company.dds" legacy_lazy_load = no noOfFrames = 2 }   
+	spriteType = { name = "GFX_unit_artillery_heavy_mot_icon_small"	        textureFile = "gfx/texticons/MPU.heavy.arty.mech.dds" legacy_lazy_load = no noOfFrames = 2	}                      
+	spriteType = { name = "GFX_unit_heavy_assaut_gun_brigade_icon_small" 			textureFile = "gfx/texticons/MPU.heavy.assault.gun.dds" legacy_lazy_load = no noOfFrames = 2 }
+ 	spriteType = { name = "GFX_unit_heavy_assaut_gun_company_icon_small" 			textureFile = "gfx/texticons/MPU.heavy.assault.gun.company.dds" legacy_lazy_load = no noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_pack_artillery_brigade_icon_small"						textureFile = "gfx/texticons/MPU.pack.arty.dds" legacy_lazy_load = no noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_pack_artillery_brigade_mot_icon_small"						textureFile = "gfx/texticons/MPU.pack.arty.motor.dds" legacy_lazy_load = no noOfFrames = 2 }   
+	spriteType = { name = "GFX_unit_pack_artillery_icon_small"						textureFile = "gfx/texticons/MPU.pack.arty_support.dds" legacy_lazy_load = no noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_logistics_company_mot_icon_small"						textureFile = "gfx/texticons/support_unit_logistics_company_mot_icon.dds" legacy_lazy_load = no noOfFrames = 2 }	
+    spriteType = { name = "GFX_unit_logistics_company_mech_icon_small"						textureFile = "gfx/texticons/support_unit_logistics_company_mech_icon.dds" legacy_lazy_load = no noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_volkssturm_infantry_icon_small"									textureFile = "gfx/texticons/unit_volks_infantry_small.dds" legacy_lazy_load = no noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_infantry_icon_small"									textureFile = "gfx/texticons/unit_light_infantry_small.dds" legacy_lazy_load = no noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_truck_light_infantry_icon_small"									textureFile = "gfx/texticons/unit_truck_light_infantry_small.dds" legacy_lazy_load = no noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_truck_infantry_icon_small"									textureFile = "gfx/texticons/unit_truck_infantry_small.dds" legacy_lazy_load = no noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_ss_infantry_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_ss_infantry_bice_icon.tga" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_ss_motorized_icon_medium"		 					textureFile = "gfx/interface/counters/divisions_large/unit_ss_motorized_bice_icon.tga" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_ss_mechanized_icon_medium"		 					textureFile = "gfx/interface/counters/divisions_large/unit_ss_mechanized_bice_icon.tga" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_ss_artillery_brigade_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_ss_art_icon.tga" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_ss_panzer_iii_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_ss_panzer_iii_bice_icon.tga" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_ss_panzer_vi_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_ss_panzer_vi_bice_icon.tga" noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_guards_medium_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_red_gaurd_t34_late_large_icon.tga" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_guards_heavy_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_red_gaurd_kv_1_large_icon.tga" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_guards_mech_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_red_gaurd_mechanzied_large_icon.tga" noOfFrames = 2 }
+	
+	
+	
+	spriteType = { name = "GFX_unit_infantry_spain_icon_small"									textureFile = "gfx/texticons/unit_infantry_icon_small.dds" legacy_lazy_load = no noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_DIV_HQ_icon_small"						textureFile = "gfx/texticons/MPU.000.small.Hq.NoEchelon.dds" legacy_lazy_load = no noOfFrames = 2 }	
+    spriteType = { name = "GFX_unit_anti_air_company_icon_small"            texturefile = "gfx/texticons/support_AA_small.dds" legacy_lazy_load = no	noOfFrames = 2}	
+    spriteType = { name = "GFX_unit_anti_air_icon_small"                  texturefile = "gfx/texticons/unit_anti_air_icon_small.dds" legacy_lazy_load = no noOfFrames = 2}
+	spriteType = { name = "GFX_unit_light_armor_recon_icon_small"						textureFile = "gfx/texticons/unit_light_armor_recon_icon_small.dds" legacy_lazy_load = no noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_light_armor_para_icon_small"						textureFile = "gfx/texticons/unit_light_armor_para_icon_small.dds" legacy_lazy_load = no noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_light_flame_tank_icon_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_flamethrower_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_medium_flame_tank_icon_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_flamethrower_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_heavy_flame_tank_icon_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_flamethrower_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_amphibious_super_heavy_armor_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/unit_super_heavy_amphi_icon_onmap.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_amphibious_light_armor_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_amphibious_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_amphibious_medium_armor_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_amphibious_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_amphibious_heavy_armor_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_amphibious_tank_icon.dds" noOfFrames = 2}
+	###########################################
+	### Large images for DIVISION TEMPLATES ###
+
+	spriteType = { name = "GFX_div_templ_0_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_000.dds" }
+	spriteType = { name = "GFX_div_templ_1_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_001.dds" }
+	spriteType = { name = "GFX_div_templ_2_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_002.dds" }
+	spriteType = { name = "GFX_div_templ_3_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_003.dds" }
+	spriteType = { name = "GFX_div_templ_4_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_004.dds" }
+	spriteType = { name = "GFX_div_templ_5_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_005.dds" }
+	spriteType = { name = "GFX_div_templ_6_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_006.dds" }
+	spriteType = { name = "GFX_div_templ_7_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_007.dds" }
+	spriteType = { name = "GFX_div_templ_8_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_008.dds" }
+	spriteType = { name = "GFX_div_templ_9_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_009.dds" }
+	spriteType = { name = "GFX_div_templ_10_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_010.dds" }
+	spriteType = { name = "GFX_div_templ_11_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_011.dds" }
+	spriteType = { name = "GFX_div_templ_12_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_012.dds" }
+	spriteType = { name = "GFX_div_templ_13_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_013.dds" }
+	spriteType = { name = "GFX_div_templ_14_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_014.dds" }
+	spriteType = { name = "GFX_div_templ_15_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_015.dds" }
+	spriteType = { name = "GFX_div_templ_16_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_016.dds" }
+	spriteType = { name = "GFX_div_templ_17_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_017.dds" }
+	spriteType = { name = "GFX_div_templ_18_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_018.dds" }
+	spriteType = { name = "GFX_div_templ_19_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_019.dds" }
+	spriteType = { name = "GFX_div_templ_20_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_020.dds" }
+	spriteType = { name = "GFX_div_templ_21_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_021.dds" }
+	spriteType = { name = "GFX_div_templ_22_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_022.dds" }
+	spriteType = { name = "GFX_div_templ_23_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_023.dds" }
+	spriteType = { name = "GFX_div_templ_24_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_024.dds" }
+	spriteType = { name = "GFX_div_templ_25_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_025.dds" }
+	spriteType = { name = "GFX_div_templ_26_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_026.dds" }
+	spriteType = { name = "GFX_div_templ_27_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_027.dds" }
+	spriteType = { name = "GFX_div_templ_28_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_028.dds" }
+	spriteType = { name = "GFX_div_templ_29_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_029.dds" }
+	spriteType = { name = "GFX_div_templ_30_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_030.dds" }
+	spriteType = { name = "GFX_div_templ_31_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_031.dds" }
+	spriteType = { name = "GFX_div_templ_32_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_032.dds" }
+	spriteType = { name = "GFX_div_templ_33_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_033.dds" }
+	spriteType = { name = "GFX_div_templ_34_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_034.dds" }
+	spriteType = { name = "GFX_div_templ_35_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_035.dds" }
+	spriteType = { name = "GFX_div_templ_36_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_036.dds" }
+	spriteType = { name = "GFX_div_templ_37_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_037.dds" }
+	spriteType = { name = "GFX_div_templ_38_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_038.dds" }
+	spriteType = { name = "GFX_div_templ_39_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_039.dds" }
+	spriteType = { name = "GFX_div_templ_40_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_040.dds" }	
+	spriteType = { name = "GFX_div_templ_41_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_041.dds" }	
+	spriteType = { name = "GFX_div_templ_42_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_042.dds" }	
+	spriteType = { name = "GFX_div_templ_43_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_043.dds" }	
+	spriteType = { name = "GFX_div_templ_44_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_044.dds" }	
+	spriteType = { name = "GFX_div_templ_45_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_045.dds" }	
+	spriteType = { name = "GFX_div_templ_46_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_046.dds" }	
+	spriteType = { name = "GFX_div_templ_47_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_047.dds" }	
+	spriteType = { name = "GFX_div_templ_48_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_048.dds" }	
+	spriteType = { name = "GFX_div_templ_49_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_049.dds" }	
+	spriteType = { name = "GFX_div_templ_50_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_050.dds" }	
+	spriteType = { name = "GFX_div_templ_51_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_051.dds" }	
+	spriteType = { name = "GFX_div_templ_52_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_052.dds" }	
+	spriteType = { name = "GFX_div_templ_53_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_053.dds" }	
+	spriteType = { name = "GFX_div_templ_54_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_054.dds" }	
+	spriteType = { name = "GFX_div_templ_55_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_055.dds" }	
+	spriteType = { name = "GFX_div_templ_56_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_056.dds" }	
+	spriteType = { name = "GFX_div_templ_57_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_057.dds" }	
+	spriteType = { name = "GFX_div_templ_58_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_058.dds" }	
+	spriteType = { name = "GFX_div_templ_59_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_059.dds" }	
+	spriteType = { name = "GFX_div_templ_60_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_060.dds" }	
+	spriteType = { name = "GFX_div_templ_61_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_061.dds" }	
+	spriteType = { name = "GFX_div_templ_62_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_062.dds" }	
+	spriteType = { name = "GFX_div_templ_63_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_063.dds" }	
+	spriteType = { name = "GFX_div_templ_64_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_064.dds" }	
+	spriteType = { name = "GFX_div_templ_65_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_65.dds" }
+	spriteType = { name = "GFX_div_templ_66_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_66.dds" }
+	spriteType = { name = "GFX_div_templ_67_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_67.dds" }
+	spriteType = { name = "GFX_div_templ_68_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_68.dds" }
+	spriteType = { name = "GFX_div_templ_69_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_69.dds" }
+	spriteType = { name = "GFX_div_templ_70_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_70.dds" }
+	spriteType = { name = "GFX_div_templ_71_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_71.dds" }
+	spriteType = { name = "GFX_div_templ_72_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_72.dds" }
+	spriteType = { name = "GFX_div_templ_73_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_73.dds" }
+	spriteType = { name = "GFX_div_templ_74_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_74.dds" }
+	spriteType = { name = "GFX_div_templ_75_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_75.dds" }
+	spriteType = { name = "GFX_div_templ_76_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_76.dds" }
+	spriteType = { name = "GFX_div_templ_77_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_77.dds" }
+	spriteType = { name = "GFX_div_templ_78_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_78.dds" }
+	spriteType = { name = "GFX_div_templ_79_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_79.dds" }
+	spriteType = { name = "GFX_div_templ_80_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_80.dds" }
+	spriteType = { name = "GFX_div_templ_81_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_81.dds" }
+	spriteType = { name = "GFX_div_templ_82_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_82.dds" }
+	spriteType = { name = "GFX_div_templ_83_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_83.dds" }
+	spriteType = { name = "GFX_div_templ_84_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_84.dds" }
+	spriteType = { name = "GFX_div_templ_85_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_85.dds" }
+	spriteType = { name = "GFX_div_templ_86_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_86.dds" }
+	spriteType = { name = "GFX_div_templ_87_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_87.dds" }
+	spriteType = { name = "GFX_div_templ_88_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_88.dds" }
+	spriteType = { name = "GFX_div_templ_89_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_89.dds" }
+	spriteType = { name = "GFX_div_templ_90_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_90.dds" }
+	spriteType = { name = "GFX_div_templ_91_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_91.dds" }
+	spriteType = { name = "GFX_div_templ_92_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_92.dds" }
+	spriteType = { name = "GFX_div_templ_93_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_93.dds" }
+	spriteType = { name = "GFX_div_templ_94_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_94.dds" }
+	spriteType = { name = "GFX_div_templ_95_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_95.dds" }
+	spriteType = { name = "GFX_div_templ_96_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_96.dds" }
+	spriteType = { name = "GFX_div_templ_97_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_97.dds" }
+	spriteType = { name = "GFX_div_templ_98_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_98.dds" }
+	spriteType = { name = "GFX_div_templ_99_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_99.dds" }
+	spriteType = { name = "GFX_div_templ_100_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_100.dds" }
+	spriteType = { name = "GFX_div_templ_101_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_101.dds" }
+	spriteType = { name = "GFX_div_templ_102_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_102.dds" }
+	spriteType = { name = "GFX_div_templ_103_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_103.dds" }
+	spriteType = { name = "GFX_div_templ_104_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_104.dds" }
+	spriteType = { name = "GFX_div_templ_105_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_105.dds" }
+	spriteType = { name = "GFX_div_templ_106_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_106.dds" }
+	spriteType = { name = "GFX_div_templ_107_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_107.dds" }
+	spriteType = { name = "GFX_div_templ_108_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_108.dds" }
+	spriteType = { name = "GFX_div_templ_109_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_109.dds" }
+	spriteType = { name = "GFX_div_templ_110_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_110.dds" }
+	spriteType = { name = "GFX_div_templ_111_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_111.dds" }
+	spriteType = { name = "GFX_div_templ_112_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_112.dds" }
+	spriteType = { name = "GFX_div_templ_113_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_113.dds" }
+	spriteType = { name = "GFX_div_templ_114_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_114.dds" }
+	spriteType = { name = "GFX_div_templ_115_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_115.dds" }
+	spriteType = { name = "GFX_div_templ_116_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_116.dds" }
+	spriteType = { name = "GFX_div_templ_117_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_117.dds" }
+	spriteType = { name = "GFX_div_templ_118_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_118.dds" }
+	spriteType = { name = "GFX_div_templ_119_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_119.dds" }
+	spriteType = { name = "GFX_div_templ_120_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_120.dds" }
+	spriteType = { name = "GFX_div_templ_121_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_121.dds" }
+	spriteType = { name = "GFX_div_templ_122_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_122.dds" }
+	spriteType = { name = "GFX_div_templ_123_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_123.dds" }
+	spriteType = { name = "GFX_div_templ_124_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_124.dds" }
+	spriteType = { name = "GFX_div_templ_125_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_125.dds" }
+	spriteType = { name = "GFX_div_templ_126_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_126.dds" }
+	spriteType = { name = "GFX_div_templ_127_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_127.dds" }
+	spriteType = { name = "GFX_div_templ_128_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_128.dds" }
+	spriteType = { name = "GFX_div_templ_129_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_129.dds" }
+	spriteType = { name = "GFX_div_templ_130_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_130.dds" }
+	spriteType = { name = "GFX_div_templ_131_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_131.dds" }
+	spriteType = { name = "GFX_div_templ_132_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_132.dds" }
+	spriteType = { name = "GFX_div_templ_133_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_133.dds" }
+	spriteType = { name = "GFX_div_templ_134_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_134.dds" }
+	spriteType = { name = "GFX_div_templ_135_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_135.dds" }
+	spriteType = { name = "GFX_div_templ_136_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_136.dds" }
+	spriteType = { name = "GFX_div_templ_137_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_137.dds" }
+
+	###########################################
+	### Small images for DIVISION TEMPLATES ###
+	
+	spriteType = { name = "GFX_div_templ_0_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_000.dds" }
+	spriteType = { name = "GFX_div_templ_1_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_001.dds" }
+	spriteType = { name = "GFX_div_templ_2_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_002.dds" }
+	spriteType = { name = "GFX_div_templ_3_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_003.dds" }
+	spriteType = { name = "GFX_div_templ_4_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_004.dds" }
+	spriteType = { name = "GFX_div_templ_5_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_005.dds" }
+	spriteType = { name = "GFX_div_templ_6_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_006.dds" }
+	spriteType = { name = "GFX_div_templ_7_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_007.dds" }
+	spriteType = { name = "GFX_div_templ_8_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_008.dds" }
+	spriteType = { name = "GFX_div_templ_9_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_009.dds" }
+	spriteType = { name = "GFX_div_templ_10_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_010.dds" }
+	spriteType = { name = "GFX_div_templ_11_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_011.dds" }
+	spriteType = { name = "GFX_div_templ_12_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_012.dds" }
+	spriteType = { name = "GFX_div_templ_13_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_013.dds" }
+	spriteType = { name = "GFX_div_templ_14_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_014.dds" }
+	spriteType = { name = "GFX_div_templ_15_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_015.dds" }
+	spriteType = { name = "GFX_div_templ_16_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_016.dds" }
+	spriteType = { name = "GFX_div_templ_17_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_017.dds" }
+	spriteType = { name = "GFX_div_templ_18_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_018.dds" }
+	spriteType = { name = "GFX_div_templ_19_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_019.dds" }
+	spriteType = { name = "GFX_div_templ_20_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_020.dds" }
+	spriteType = { name = "GFX_div_templ_21_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_021.dds" }
+	spriteType = { name = "GFX_div_templ_22_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_022.dds" }
+	spriteType = { name = "GFX_div_templ_23_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_023.dds" }
+	spriteType = { name = "GFX_div_templ_24_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_024.dds" }
+	spriteType = { name = "GFX_div_templ_25_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_025.dds" }
+	spriteType = { name = "GFX_div_templ_26_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_026.dds" }
+	spriteType = { name = "GFX_div_templ_27_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_027.dds" }
+	spriteType = { name = "GFX_div_templ_28_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_028.dds" }
+	spriteType = { name = "GFX_div_templ_29_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_029.dds" }
+	spriteType = { name = "GFX_div_templ_30_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_030.dds" }
+	spriteType = { name = "GFX_div_templ_31_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_031.dds" }
+	spriteType = { name = "GFX_div_templ_32_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_032.dds" }
+	spriteType = { name = "GFX_div_templ_33_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_033.dds" }
+	spriteType = { name = "GFX_div_templ_34_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_034.dds" }
+	spriteType = { name = "GFX_div_templ_35_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_035.dds" }
+	spriteType = { name = "GFX_div_templ_36_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_036.dds" }
+	spriteType = { name = "GFX_div_templ_37_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_037.dds" }
+	spriteType = { name = "GFX_div_templ_38_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_038.dds" }
+	spriteType = { name = "GFX_div_templ_39_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_039.dds" }
+	spriteType = { name = "GFX_div_templ_40_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_040.dds" }	
+	spriteType = { name = "GFX_div_templ_41_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_041.dds" }		
+	spriteType = { name = "GFX_div_templ_42_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_042.dds" }
+	spriteType = { name = "GFX_div_templ_43_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_043.dds" }
+    spriteType = { name = "GFX_div_templ_44_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_044.dds" }
+	spriteType = { name = "GFX_div_templ_45_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_045.dds" }
+	spriteType = { name = "GFX_div_templ_46_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_046.dds" }
+	spriteType = { name = "GFX_div_templ_47_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_047.dds" }
+	spriteType = { name = "GFX_div_templ_48_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_048.dds" }
+	spriteType = { name = "GFX_div_templ_49_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_049.dds" }
+	spriteType = { name = "GFX_div_templ_50_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_050.dds" }
+	spriteType = { name = "GFX_div_templ_51_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_051.dds" }
+	spriteType = { name = "GFX_div_templ_52_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_052.dds" }
+	spriteType = { name = "GFX_div_templ_53_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_053.dds" }
+	spriteType = { name = "GFX_div_templ_54_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_054.dds" }
+	spriteType = { name = "GFX_div_templ_55_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_055.dds" }
+	spriteType = { name = "GFX_div_templ_56_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_056.dds" }
+	spriteType = { name = "GFX_div_templ_57_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_057.dds" }
+	spriteType = { name = "GFX_div_templ_58_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_058.dds" }
+	spriteType = { name = "GFX_div_templ_59_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_059.dds" }
+	spriteType = { name = "GFX_div_templ_60_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_060.dds" }
+	spriteType = { name = "GFX_div_templ_61_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_061.dds" }
+	spriteType = { name = "GFX_div_templ_62_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_062.dds" }
+	spriteType = { name = "GFX_div_templ_63_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_063.dds" }
+	spriteType = { name = "GFX_div_templ_64_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_064.dds" }
+
+	###########################################
+	### Small images for DIVISION TEMPLATES ###
+	
+	spriteType = { name = "GFX_div_templ_44_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_044.dds" }	
+	spriteType = { name = "GFX_div_templ_45_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_045.dds" }	
+	spriteType = { name = "GFX_div_templ_46_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_046.dds" }	
+	spriteType = { name = "GFX_div_templ_47_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_047.dds" }	
+	spriteType = { name = "GFX_div_templ_48_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_048.dds" }	
+	spriteType = { name = "GFX_div_templ_49_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_049.dds" }	
+	spriteType = { name = "GFX_div_templ_50_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_050.dds" }	
+	spriteType = { name = "GFX_div_templ_51_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_051.dds" }	
+	spriteType = { name = "GFX_div_templ_52_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_052.dds" }	
+	spriteType = { name = "GFX_div_templ_53_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_053.dds" }	
+	spriteType = { name = "GFX_div_templ_54_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_054.dds" }	
+	spriteType = { name = "GFX_div_templ_55_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_055.dds" }	
+	spriteType = { name = "GFX_div_templ_56_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_056.dds" }	
+	spriteType = { name = "GFX_div_templ_57_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_057.dds" }	
+	spriteType = { name = "GFX_div_templ_58_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_058.dds" }	
+	spriteType = { name = "GFX_div_templ_59_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_059.dds" }	
+	spriteType = { name = "GFX_div_templ_60_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_060.dds" }	
+	spriteType = { name = "GFX_div_templ_61_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_061.dds" }	
+	spriteType = { name = "GFX_div_templ_62_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_062.dds" }	
+	spriteType = { name = "GFX_div_templ_63_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_063.dds" }	
+	spriteType = { name = "GFX_div_templ_64_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_064.dds" }
+	spriteType = { name = "GFX_div_templ_65_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_65.dds" }
+	spriteType = { name = "GFX_div_templ_66_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_66.dds" }
+	spriteType = { name = "GFX_div_templ_67_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_67.dds" }
+	spriteType = { name = "GFX_div_templ_68_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_68.dds" }
+	spriteType = { name = "GFX_div_templ_69_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_69.dds" }
+	spriteType = { name = "GFX_div_templ_70_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_70.dds" }
+	spriteType = { name = "GFX_div_templ_71_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_71.dds" }
+	spriteType = { name = "GFX_div_templ_72_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_72.dds" }
+	spriteType = { name = "GFX_div_templ_73_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_73.dds" }
+	spriteType = { name = "GFX_div_templ_74_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_74.dds" }
+	spriteType = { name = "GFX_div_templ_75_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_75.dds" }
+	spriteType = { name = "GFX_div_templ_76_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_76.dds" }
+	spriteType = { name = "GFX_div_templ_77_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_77.dds" }
+	spriteType = { name = "GFX_div_templ_78_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_78.dds" }
+	spriteType = { name = "GFX_div_templ_79_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_79.dds" }
+	spriteType = { name = "GFX_div_templ_80_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_80.dds" }
+	spriteType = { name = "GFX_div_templ_81_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_81.dds" }
+	spriteType = { name = "GFX_div_templ_82_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_82.dds" }
+	spriteType = { name = "GFX_div_templ_83_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_83.dds" }
+	spriteType = { name = "GFX_div_templ_84_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_84.dds" }
+	spriteType = { name = "GFX_div_templ_85_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_85.dds" }
+	spriteType = { name = "GFX_div_templ_86_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_86.dds" }
+	spriteType = { name = "GFX_div_templ_87_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_87.dds" }
+	spriteType = { name = "GFX_div_templ_88_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_88.dds" }
+	spriteType = { name = "GFX_div_templ_89_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_89.dds" }
+	spriteType = { name = "GFX_div_templ_90_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_90.dds" }
+	spriteType = { name = "GFX_div_templ_91_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_91.dds" }
+	spriteType = { name = "GFX_div_templ_92_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_92.dds" }
+	spriteType = { name = "GFX_div_templ_93_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_93.dds" }
+	spriteType = { name = "GFX_div_templ_94_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_94.dds" }
+	spriteType = { name = "GFX_div_templ_95_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_95.dds" }
+	spriteType = { name = "GFX_div_templ_96_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_96.dds" }
+	spriteType = { name = "GFX_div_templ_97_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_97.dds" }
+	spriteType = { name = "GFX_div_templ_98_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_98.dds" }
+	spriteType = { name = "GFX_div_templ_99_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_99.dds" }
+	spriteType = { name = "GFX_div_templ_100_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_100.dds" }
+	spriteType = { name = "GFX_div_templ_101_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_101.dds" }
+	spriteType = { name = "GFX_div_templ_102_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_102.dds" }
+	spriteType = { name = "GFX_div_templ_103_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_103.dds" }
+	spriteType = { name = "GFX_div_templ_104_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_104.dds" }
+	spriteType = { name = "GFX_div_templ_105_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_105.dds" }
+	spriteType = { name = "GFX_div_templ_106_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_106.dds" }
+	spriteType = { name = "GFX_div_templ_107_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_107.dds" }
+	spriteType = { name = "GFX_div_templ_108_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_108.dds" }
+	spriteType = { name = "GFX_div_templ_109_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_109.dds" }
+	spriteType = { name = "GFX_div_templ_110_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_110.dds" }
+	spriteType = { name = "GFX_div_templ_111_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_111.dds" }
+	spriteType = { name = "GFX_div_templ_112_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_112.dds" }
+	spriteType = { name = "GFX_div_templ_113_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_113.dds" }
+	spriteType = { name = "GFX_div_templ_114_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_114.dds" }
+	spriteType = { name = "GFX_div_templ_115_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_115.dds" }
+	spriteType = { name = "GFX_div_templ_116_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_116.dds" }
+	spriteType = { name = "GFX_div_templ_117_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_117.dds" }
+	spriteType = { name = "GFX_div_templ_118_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_118.dds" }
+	spriteType = { name = "GFX_div_templ_119_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_119.dds" }
+	spriteType = { name = "GFX_div_templ_120_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_120.dds" }
+	spriteType = { name = "GFX_div_templ_121_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_121.dds" }
+	spriteType = { name = "GFX_div_templ_122_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_122.dds" }
+	spriteType = { name = "GFX_div_templ_123_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_123.dds" }
+	spriteType = { name = "GFX_div_templ_124_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_124.dds" }
+	spriteType = { name = "GFX_div_templ_125_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_125.dds" }
+	spriteType = { name = "GFX_div_templ_126_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_126.dds" }
+	spriteType = { name = "GFX_div_templ_127_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_127.dds" }
+	spriteType = { name = "GFX_div_templ_128_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_128.dds" }
+	spriteType = { name = "GFX_div_templ_129_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_129.dds" }
+	spriteType = { name = "GFX_div_templ_130_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_130.dds" }
+	spriteType = { name = "GFX_div_templ_131_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_131.dds" }
+	spriteType = { name = "GFX_div_templ_132_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_132.dds" }
+	spriteType = { name = "GFX_div_templ_133_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_133.dds" }
+	spriteType = { name = "GFX_div_templ_134_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_134.dds" }
+	spriteType = { name = "GFX_div_templ_135_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_135.dds" }
+	spriteType = { name = "GFX_div_templ_136_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_136.dds" }
+	spriteType = { name = "GFX_div_templ_137_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_137.dds" }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	spriteType = { name = "GFX_unit_amphibious_light_armor_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_light_amphibious_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_amphibious_medium_armor_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_medium_amphibious_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_amphibious_heavy_armor_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_heavy_amphibious_tank_icon.dds" noOfFrames = 2 }
+}
+

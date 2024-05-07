@@ -1,0 +1,268 @@
+﻿capital = 328
+#player
+set_country_flag = JAP_puppet
+starting_train_buffer = 2
+set_stability = 0.25
+set_war_support = 0.5
+
+oob = "MAN_1936"
+add_dynamic_modifier = {
+	modifier = JAP_china_war_bonus
+}
+add_dynamic_modifier = {
+	modifier = MAN_industry_spirit_zaibatsus
+}
+add_dynamic_modifier = {
+	modifier = MAN_military
+}
+add_dynamic_modifier = {
+	modifier = MAN_monsters_in_uniform
+}
+
+set_variable = { JAP_factory_output_modifier = 0.3 }
+set_variable = { JAP_dockyard_output_modifier = 0.25 }
+set_variable = { MAN_military_industry_dm_consumer_goods_factor =0.22}
+set_variable = { MAN_military_industry_dm_production_speed_industrial_complex_factor =-0.10}
+set_variable = { MAN_military_industry_dm_production_speed_arms_factory_factor =-0.20}
+set_variable = { MAN_industry_spirit_population_factor_pog = 0.05}
+set_variable = { MAN_military_industry_dm_industrial_capacity_factory = -0.175}
+set_variable = { MAN_military_industry_dm_industrial_capacity_dockyard = -0.225}
+set_variable = { MAN_military_industry_dm_local_resources_factor = -0.1 }
+set_variable = { MAN_political_power_factor_var = -0.10 }
+set_variable = { MAN_military_industry_dm_factory_max_efficiency_factor =-0.04 }
+set_variable = { MAN_military_industry_dm_conversion_cost_civ_to_mil_factor =0.15 }
+set_variable = { MAN_kempeitai_var_research_speed_factor =-0.20 }
+
+set_variable = {MAN_army_attack_factor_var = -0.05 }
+set_variable = {MAN_army_defence_factor_var = -0.05 } 
+set_variable = {MAN_max_planning_var = -0.25 }
+set_variable = {MAN_max_dig_in_var = -1 }
+set_variable = {MAN_army_org_factor_var = -0.1 }
+set_variable = {MAN_army_speed_factor_var = 0 }
+set_variable = {MAN_army_morale_factor = -0.1 }
+set_variable = {MAN_re_max_command_power_mult = -0.1 }
+set_variable = {MAN_re_command_power_gain_mult = -0.20 }
+
+set_variable = {MAN_supply_node_range = -0.1 }
+set_variable = {MAN_supply_consumption_factor = -0.05 }
+
+set_variable = {MAN_re_promote_cost_factor = -0.2 }
+set_variable = {MAN_land_doctrine_cost_factor = 0.25 }
+
+
+set_variable = { MAN_sex_modifier =0.05 }
+
+
+if = {
+	limit = { has_dlc = "Waking the Tiger" }
+	set_country_flag = MAN_northern_bandits
+	set_country_flag = MAN_eastern_bandits
+	set_country_flag = MAN_western_bandits
+	add_ideas = MAN_banditry
+	add_ideas = MAN_kwantung_veto
+	add_ideas = MAN_Heavy_Industry
+	add_ideas = MAN_low_legitimacy_5
+}
+
+#set_power_balance = {
+#	id = MAN_centralization_balance
+#	set_default = yes  # whether or not to reset the power balance to the initial value, default = no
+#}
+
+### EO LEGITIMACY STUFF ###
+
+set_country_flag = JAP_no_grinding_flag
+set_research_slots = 3
+
+recruit_character = MAN_Tojo_Hideki
+recruit_character = MAN_naoki_hoshino
+recruit_character = MAN_nobusuke_kishi
+recruit_character = MAN_furumi_tadayuki
+recruit_character = MAN_masahiko_amakasu
+recruit_character = MAN_toichi_sasaki
+recruit_character = MAN_Hajime_Satomi
+recruit_character = MAN_Grigory_Semyonov
+recruit_character = MAN_Chu_Kudo
+recruit_character = MAN_zang_shiyi
+
+recruit_character = MAN_zhang_jinghui
+recruit_character = MAN_nalan_linge
+recruit_character = MAN_aisin_gioro_puyi
+recruit_character = MAN_zhang_haipeng
+recruit_character = MAN_aisin_gioro_xiqia
+recruit_character = MAN_yoshiko_kawashima
+recruit_character = MAN_suksaha_kangan
+recruit_character = MAN_guan_zhanshan
+recruit_character = MAN_juraj_mesko
+recruit_character = MAN_guan_xingde
+recruit_character = MAN_nakajima_kesago
+recruit_character = MAN_yin_zuoqian
+
+recruit_character = MAN_hesehn_tiemei
+recruit_character = MAN_kyoiji_tomonaga
+recruit_character = MAN_yonimitsu_kasahara
+recruit_character = MAN_hung_zhehuang
+recruit_character = MAN_xian_yuan
+
+
+set_technology = {
+	basic_train = 1
+	starting_industry = 1
+	################# infantry ###############
+	infantry_weapons = 1 
+	marines = 1 
+	fuel_silos = 1 
+	field_equipment = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_mountaineers = 1
+	tech_radio_1 = 1 
+	special_equipment = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	################## support ##################
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	transport = 1
+	
+	################## artillery ###############
+	artillery1 = 1 
+	artillery2 = 1
+	artillery3 = 1
+	field_gun = 1
+	field_gun2_1 = 1
+	field_gun2_2 = 1
+	gw_pack_artillery = 1
+	pack_artillery_m_1 = 1
+	pack_artillery1 = 1
+	heavy_artillery1 = 1
+	heavy_antiair = 1
+	heavy_antiair_1 = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+	siege_artillery1 = 1
+}
+	################ Armor ###########
+	if = {
+		limit = {
+			 has_dlc = "No Step Back" 
+		}
+		set_technology = {
+			jap_nsb_motorised_infantry = 1
+            jap_nsb_tech_armored_cars = 1
+			jap_nsb_tech_armored_cars2 = 1
+			jap_1934_light_tank_chassis = 1
+			jap_1936_light_tank_chassis = 1
+			jap_1934_medium_tank_chassis = 1
+			jap_1934_heavy_tank_chassis = 1
+			unlock_modules = 1
+			automatic_gun = 1
+			small_gun = 1
+			support_gun = 1
+			armour_sloping = 1
+			engine_tech_1 = 1
+			turret_basket = 1
+			early_cupola = 1
+			automatic_gun2 = 1
+			armor_tech_1 = 1
+
+		}
+	}
+
+
+	if = {
+		limit = {
+			not = { has_dlc = "No Step Back" }
+		}
+		set_technology = {
+		    jap_motorised_infantry = 1
+            jap_tech_armored_cars = 1
+		  	jap_light_tank_1934 = 1 
+	        jap_light_tank_1936 = 1
+	        jap_tech_armored_cars2 = 1 
+	        jap_basic_tank_engines = 1
+	        jap_rivetted_armour = 1
+
+		}
+		
+	}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "Type 94 Te-Ke"
+		type = light_tank_chassis_1934
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			armor_sloping_slot = unsloped_armor
+			engine_type_slot = tank_diesel_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 1
+		}
+		icon = "gfx/interface/technologies/land/jap/light_tank_0.tga"
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Type 95 Ha-Go"
+		type = light_tank_chassis_1936
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			armor_sloping_slot = unsloped_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 3
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "gfx/interface/technologies/land/jap/manchuhago.tga"
+	}
+	create_equipment_variant = {
+		name = "Type 89 I-Go"
+		type = medium_tank_chassis_1934
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_close_support_gun
+			turret_type_slot = tank_medium_two_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			armor_sloping_slot = unsloped_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = early_cupola
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "gfx/interface/technologies/land/jap/type_89.tga"
+	}
+
+}
+
+set_convoys = 34
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 60
+	communism = 10
+	democratic = 2
+	neutrality = 28
+}
+

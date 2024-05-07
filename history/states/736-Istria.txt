@@ -1,0 +1,27 @@
+state = {
+	id = 736
+	name = "STATE_736"
+	
+	state_category = city
+
+	history = {
+		victory_points = {
+			11735 1 
+		}
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+			infrastructure = 5
+			arms_factory = 4
+			
+
+		}
+
+	}
+
+	provinces = {
+		599 11595 11735 13355
+	}
+	manpower = 1063159
+	buildings_max_level_factor = 1.000
+}

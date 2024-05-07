@@ -1,0 +1,269 @@
+on_actions = {
+    on_startup = {
+        effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = script_china_war
+						option = DEFAULT
+					}
+				}
+				CHI = {
+					add_ideas = neutrality_idea
+					add_ideas = developing_country_chi
+					add_ideas = no_spies_idea
+                    remove_ideas = german_advisors
+                    remove_ideas = CHI_incompentent
+					remove_ideas = CHI_nine_power_treaty
+					remove_ideas = CHI_army_corruption_1
+					remove_ideas = CHI_ineffective_bureaucracy
+					remove_ideas = CHI_hyper_inflation_1
+					remove_ideas = CHI_unprofessional_army_1
+					remove_ideas = CHI_chinese_unity_1
+
+					delete_unit_template_and_units = { division_template = "Sanjiao Jun" }
+                    delete_unit_template_and_units = { division_template = "Sanjiao Brigade" }
+					delete_unit_template_and_units = { division_template = "Juntuán" }
+					delete_unit_template_and_units = { division_template = "Motorized Corps" }
+					delete_unit_template_and_units = { division_template = "Reorganized Division" }
+					delete_unit_template_and_units = { division_template = "Qibing Jun" }
+                    division_template = {
+						division_names_group = CHI_ARM_01
+						name = "200th Division"
+						priority = 2
+						is_locked = no
+    					division_cap = 0 
+		
+						regiments = {
+							motorized = { x = 0 y = 0 }
+							motorized = { x = 0 y = 1 }
+							motorized = { x = 0 y = 2 }
+
+							motorized = { x = 1 y = 0 }
+							motorized = { x = 1 y = 1 }
+							anti_air_mot  = { x = 1 y = 2 }
+							
+							light_armor = { x = 2 y = 0 }
+							light_armor = { x = 2 y = 1 }
+							light_armor = { x = 2 y = 2 }
+							light_armor = { x = 2 y = 3 }
+
+							light_armor = { x = 3 y = 0 }
+							light_armor = { x = 3 y = 1 }
+							light_armor = { x = 3 y = 2 }
+							light_armor = { x = 3 y = 3 }
+							
+							light_armor = { x = 4 y = 0 }
+							light_armor = { x = 4 y = 1 }
+						}
+		
+						support = {
+							DIV_HQ = { x = 0 y = 0 }
+							engineer = { x = 0 y = 1 }
+							military_police = { x = 0 y = 2 }
+							artillery = { x = 0 y = 3 }
+							mot_recon = { x = 1 y = 0 }
+							anti_air_company = { x = 1 y = 1 }
+							pack_artillery = { x = 1 y = 2 }
+							maintenance_company = { x = 1 y = 3 }
+							
+						}
+					}
+                    division_template = {
+						name = "Juntuan"
+						priority = 1
+                        is_locked = no
+    					division_cap = 0
+
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+							
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 1 y = 3 }
+								
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							infantry = { x = 2 y = 3 }
+							
+							anti_air = { x = 3 y = 0 }		
+							pack_artillery_brigade = { x = 3 y = 1 }
+							pack_artillery_brigade = { x = 3 y = 2 }
+							pack_artillery_brigade = { x = 3 y = 3 }
+
+							pack_artillery_brigade = { x = 4 y = 0 }		
+							pack_artillery_brigade = { x = 4 y = 1 }
+			
+							
+						}
+
+						support = {
+							DIV_HQ = { x = 0 y = 0 }
+							engineer = { x = 0 y = 1 }
+							anti_air_company = { x = 0 y = 2 }
+							pack_artillery = { x = 0 y = 3 }
+							military_police = { x = 1 y = 0 }
+							artillery = { x = 1 y = 1 }
+                            anti_tank = { x = 1 y = 2 }
+						
+						}
+					}
+
+					annex_country = { target = PRC transfer_troops = no } 
+                    add_offsite_building = {
+                        type = arms_factory 
+                        level = 20
+                    }
+				}
+				every_state = {
+					limit = {
+						is_owned_by = CHI 
+						arms_factory > 0						
+					}
+					remove_building = { type = arms_factory level = 20 }
+				}
+				every_state = {
+					limit = {
+						is_owned_by = CHI 
+						industrial_complex > 0						
+					}
+					remove_building = { type = industrial_complex level = 20 }
+				}
+                
+               
+			}
+      	
+        }
+    }
+    on_state_control_changed = { 
+        effect = { 
+            if = { #Chinese resistance in states Japan occupies  
+                limit = {
+                    FROM.FROM = { is_core_of = CHI }
+                }
+                if = { #If CHI is new controller, remove state modifier
+                    limit = {
+                        ROOT = { tag = CHI }
+                        FROM.FROM = { has_dynamic_modifier = { modifier = CHI_invaders_must_die } }
+                    }
+                    FROM.FROM = { remove_dynamic_modifier = { modifier = CHI_invaders_must_die } }
+                }
+            }
+        }
+        effect = {
+            if = { #If CHI lost a state they get buffed :muscle:# 
+                limit = {
+                    FROM = { tag = CHI }
+                    ROOT = { has_war_with = CHI }
+                    NOT = {
+                        FROM.FROM = {
+                            has_state_flag = CHI_riches_of_china_flag
+                        }
+                    }
+                }
+                CHI = {
+                   
+                    random_owned_controlled_state = {
+						prioritize = {
+                            605
+                        } 							
+                        create_unit = {
+                            division = "division_template = \"Juntuan\" start_experience_factor = 0.2 start_equipment_factor = 1"
+                            owner = CHI
+                            count = 4
+                        }
+					}
+                }
+                if = {
+                    limit = {
+                        NOT = {
+                            JAP = {
+                                has_war_with = USA
+                            }
+                        }
+                    }
+                    CHI_frontlines_up = yes
+                    CHI = {
+                        add_to_variable = { CHI_army_defence_factor_var = 0.03 }
+                        add_to_variable = { CHI_org_var = 0.01 }
+                    }
+                }
+              
+                
+                
+            }
+        }
+        effect = {
+            if = { #If CHI lost a state Japan gets factories
+                limit = {
+                    FROM = { tag = CHI }
+                    ROOT = { has_war_with = CHI }
+                    NOT = {
+                        FROM.FROM = {
+                            has_state_flag = CHI_riches_of_china_flag
+                        }
+                    }
+                }
+                FROM.FROM = { 
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant_build = yes 
+                    }
+                  
+                   
+                    set_state_flag = CHI_riches_of_china_flag
+                }
+                
+            }
+        }
+        effect = {
+            if = { 
+                limit = {
+                    FROM = { tag = CHI }
+                    ROOT = { 
+                        OR = {
+                            tag = JAP 
+                            tag = MAN
+                        }
+                    }
+                    has_global_flag = Sino_jap_war_started_flag
+                    SOV = {
+                     check_variable = { var = SOV_china_army_xp_gain_var value = -0.10 compare = greater_than }
+                    }
+                }
+
+                SOV = {
+                    add_to_variable = { SOV_china_army_xp_gain_var = -0.04 }
+                    add_to_variable = { SOV_china_pp_gain_var = -0.05 }
+                }
+                
+            }
+        }
+        effect = {
+            if = { 
+                limit = {
+                    FROM = { 
+                        OR = {
+                            tag = JAP 
+                            tag = MAN
+                        }
+                    }
+                    ROOT = { tag = CHI }
+                    SOV = {
+                        check_variable = { var = SOV_china_army_xp_gain_var value = 0.30 compare = less_than }
+                    }
+                }
+                SOV = {
+                    add_to_variable = { SOV_china_army_xp_gain_var = 0.04 }
+                    add_to_variable = { SOV_china_pp_gain_var = 0.05 }
+                }  
+            }
+        }
+    }
+}	

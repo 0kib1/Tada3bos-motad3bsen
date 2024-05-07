@@ -1,0 +1,2795 @@
+technologies = {
+	#Vertical position
+	
+	@1918 = 1
+	@1930 = 6
+	@1935 = 9
+	@1936 = 11
+	@1937 = 13
+	@1938 = 15
+	@1939 = 17
+	@1940 = 19
+	@1941 = 21
+	@1942 = 23
+	@1943 = 25
+	@1944 = 27
+
+
+	# Heavy AA									
+	heavy_antiair = {
+	
+		enable_subunits = {
+			anti_air_heavy
+			anti_air_heavy_support
+			anti_air_heavy_mot
+		}
+		enable_equipment_modules = { 
+			ship_anti_air_1
+		}
+
+		enable_equipments = {
+			heavy_anti_air_equipment_1
+		}
+
+		enable_building = {
+			building = anti_air_building
+			level = 5
+		}
+
+		path = {
+			leads_to_tech = heavy_antiair_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = interwar_antiair
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1936
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 25 y = @1918 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+						
+		categories = {
+			artillery
+		}
+
+	}
+
+#### semi auto breech
+	heavy_antiair_1 = {
+
+		path = {
+			leads_to_tech = heavy_antiair_2
+			research_cost_coeff = 1
+		}
+		category_heavy_anti_air = {
+	    	air_attack = 0.15
+	      	soft_attack = 0.2
+	    	ap_attack = 0.1
+	    	hard_attack = 0.05		
+		}	
+		show_effect_as_desc = yes		
+		research_cost = 0.9
+
+		start_year = 1930
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 27 y = @1930 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+		}
+	}							
+
+	heavy_antiair_2 = {
+		
+	  
+		enable_building = {
+			building = anti_air_building
+			level = 6
+		}
+
+		enable_equipments = {
+			heavy_anti_air_equipment_2
+		}
+
+		path = {
+			leads_to_tech = heavy_antiair_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = antiair4
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+
+		start_year = 1936
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 27 y = @1936 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+		}
+	}
+
+
+	heavy_antiair_5 = {
+		
+	
+	  
+		enable_building = {
+			building = anti_air_building
+			level = 8
+		}
+
+		enable_equipments = {
+			heavy_anti_air_equipment_3
+		}
+
+		
+		research_cost = 1
+
+		start_year = 1941
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 27 y = @1941 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+		}
+	}
+
+	gw_pack_artillery = {
+		enable_subunits = {
+			pack_artillery_brigade
+			pack_artillery_brigade_mot
+			pack_artillery
+		}
+		
+		enable_equipments = {
+			pack_artillery_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = pack_artillery1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = pack_artillery_m_1
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 1
+		folder = {
+			name = artillery_folder
+			position = { x = 11 y = @1918 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	pack_artillery1 = {
+
+		enable_equipments = {
+			pack_artillery_equipment_2
+		}
+
+		path = {
+			leads_to_tech = pack_artillery4
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = pack_artillery_mot
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1935
+		folder = {
+			name = artillery_folder
+			position = { x = 11 y = @1935 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		
+		
+		ai_will_do = {
+			factor = 4
+		}
+	}
+	pack_artillery_mot = {
+
+		on_research_complete = {
+			custom_effect_tooltip = infgunmot_tt
+		}
+		pack_artillery = {
+			need = {
+				motorized_equipment = 20
+				horse_equipment = -20
+			}
+			fuel_capacity = 50
+			defense = 0.2
+			breakthrough = 0.2
+			soft_attack = 0.2
+		}
+		
+		
+		pack_artillery_brigade_mot = {
+			need = {
+				motorized_equipment = 10
+			}
+			breakthrough = 0.4
+			defense = 0.25
+		}
+		on_research_complete = {
+			custom_effect_tooltip = packmot_tt
+		}
+		
+		research_cost = 1
+		start_year = 1937
+		folder = {
+			name = artillery_folder
+			position = { x = 12 y = @1937 }
+		}
+		
+		ai_will_do = {
+			factor = 10	
+			modifier = {
+				factor = -100 
+				tag = CHI 
+			}		
+		}
+		
+		categories = {
+			artillery
+		}
+	}
+
+	pack_artillery4 = {
+		
+
+		enable_equipments = {
+			pack_artillery_equipment_3
+		}
+		path = {
+			leads_to_tech = antitank10
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = artillery_folder
+			position = { x = 11 y = @1942 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		
+		
+		ai_will_do = {
+			factor = 4
+		}
+	}
+
+###Mountaingun
+	pack_artillery_m_1 = {
+		
+		enable_subunits = {
+			mountain_gun_brigade
+		
+		}
+		path = {
+			leads_to_tech = pack_artillery_m_2_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = pack_artillery_m_2_2
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 1918
+		folder = {
+			name = artillery_folder
+			position = { x = 9 y = @1918 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		
+		
+		ai_will_do = {
+			factor = 4
+		}
+	}
+###mountain gun lighter(more special eq)
+	pack_artillery_m_2_1 = {
+		
+
+		on_research_complete = {
+			custom_effect_tooltip = pack_artillery_m_2_1_tt
+		}
+		show_effect_as_desc = yes	
+		XOR = {
+			pack_artillery_m_2_2
+		}
+	    allow = {
+		     NOT = { has_tech = "pack_artillery_m_2_2" }
+		}
+		path = {
+			leads_to_tech = pack_artillery_m_3
+			research_cost_coeff = 1
+		}
+		mountain_gun_brigade = {
+			need = {
+				special_equipment = 10
+			}
+			defense = 0.25
+			breakthrough = 0.2
+		}
+
+
+		research_cost = 0.7
+		start_year = 1936
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = @1936 }
+		}
+		
+		categories = {
+			artillery
+		}	
+		
+		ai_will_do = {
+			factor = 4
+		}
+	}
+
+###Mountain gun heavier charges
+	pack_artillery_m_2_2 = {
+		
+
+		XOR = {
+			pack_artillery_m_2_1
+		}
+	    allow = {
+		     NOT = { has_tech = "pack_artillery_m_2_1" }
+		}
+		path = {
+			leads_to_tech = pack_artillery_m_3
+			research_cost_coeff = 1
+		}
+		mountain_gun_brigade = {
+			need = {
+				special_equipment = 10
+			}
+			soft_attack = 0.15
+		}
+		on_research_complete = {
+			custom_effect_tooltip = pack_artillery_m_2_2_tt
+		}
+		show_effect_as_desc = yes	
+		
+		research_cost = 0.7
+		start_year = 1936
+		folder = {
+			name = artillery_folder
+			position = { x = 10 y = @1936 }
+		}
+		
+		categories = {
+			artillery
+		}
+	
+		ai_will_do = {
+			factor = 4
+		}
+	}
+
+###paradrop
+	pack_artillery_m_3 = {
+		
+        paradrop_organization_factor = 0.1
+		mountain_gun_brigade = {
+			need = {
+				special_equipment = 5
+			}
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = pack_artillery_m_3_tt
+		}
+		show_effect_as_desc = yes	
+
+		
+		research_cost = 1
+		start_year = 1938
+		folder = {
+			name = artillery_folder
+			position = { x = 9 y = @1938 }
+		}
+		
+		categories = {
+			artillery
+		}
+	
+		ai_will_do = {
+			factor = 4
+		}
+	}
+
+###Field guns
+	field_gun = {
+		enable_subunits = {
+			field_gun_brigade
+			field_gun_brigade_mot
+			field_gun_support
+		}
+		
+		enable_equipments = {
+			field_gun_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = field_gun2_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = field_gun2_2
+			research_cost_coeff = 1
+		}
+
+        
+		research_cost = 1
+		folder = {
+			name = artillery_folder
+			position = { x = 15 y = @1918 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+####breech
+	field_gun2_1  = {
+
+		category_field_gun = {
+	    	soft_attack = 0.1
+			
+		}		
+		path = {
+			leads_to_tech = field_gun3
+			research_cost_coeff = 1
+		}
+
+		show_effect_as_desc = yes	
+		research_cost = 0.8
+		start_year = 1930
+		folder = {
+			name = artillery_folder
+			position = { x = 16 y = @1930 }
+		}
+		
+		categories = {
+			artillery
+		}
+	
+		ai_will_do = {
+			factor = 4
+		}
+	}
+#####AT sights
+	field_gun2_2  = {
+		
+
+		category_field_gun = {
+		ap_attack = 0.1
+		hard_attack = 0.1
+			
+		}	
+		path = {
+			leads_to_tech = field_gun3
+			research_cost_coeff = 1
+		}
+
+		show_effect_as_desc = yes	
+		research_cost = 0.8
+		start_year = 1930
+		folder = {
+			name = artillery_folder
+			position = { x = 14 y = @1930 }
+		}
+		
+		categories = {
+			artillery
+		}
+	
+		ai_will_do = {
+			factor = 4
+		}
+	}
+
+	field_gun3  = {
+	
+		enable_equipments = {
+			field_gun_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = field_gun5_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = field_gun5_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = field_gun_mot
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 1
+		folder = {
+			name = artillery_folder
+			position = { x = 15 y = @1936 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	field_gun_mot = {
+
+		on_research_complete = {
+			custom_effect_tooltip = fieldgunmot_tt
+		}
+		field_gun_support = {
+			need = {
+				motorized_equipment = 20
+				horse_equipment = -20
+			}
+			fuel_capacity = 50
+			soft_attack = 0.2
+			hard_attack = 0.2
+			defense = 0.2
+			breakthrough = 0.2
+		}
+		
+		
+		research_cost = 1
+		start_year = 1937
+		folder = {
+			name = artillery_folder
+			position = { x = 16 y = @1937 }
+		}
+		
+		ai_will_do = {
+			factor = 10			
+		}
+		
+		categories = {
+			artillery
+		}
+	}
+
+
+###bigger chamber, optimized for motor traction
+	field_gun5_1  = {
+		
+
+		show_effect_as_desc = yes
+
+        XOR = {
+		  field_gun5_2
+		}
+	    allow = {
+		     NOT = { has_tech = "field_gun5_2" }
+		}
+		
+		field_gun_brigade_mot = {
+			need = {
+				motorized_equipment = 10
+			}
+			defense = 0.25
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = antitank10
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 0.8
+		start_year = 1940
+		folder = {
+			name = artillery_folder
+			position = { x = 14 y = @1940 }
+		}
+		
+		categories = {
+			artillery
+		}
+	
+		ai_will_do = {
+			factor = 4
+		}
+	}
+
+###lighter, optimized for spam
+	field_gun5_2  = {
+		
+
+
+		show_effect_as_desc = yes
+		XOR ={
+		  field_gun5_1
+        }
+	    allow = {
+		     NOT = { has_tech = "field_gun5_1" }
+		}
+		path = {
+			leads_to_tech = antitank10
+			research_cost_coeff = 1
+		}
+		field_gun_brigade = {			
+	        forest = {
+				movement = 0.1
+	    	}
+		    hills = {
+				movement = 0.1
+	    	}
+	    	mountain = {
+				movement = 0.2
+		    }		
+		    jungle = {
+				movement = 0.2
+		    }
+		    marsh = {
+				movement = 0.2
+			}
+		}	
+		research_cost = 0.8
+		start_year = 1940
+		folder = {
+			name = artillery_folder
+			position = { x = 16 y = @1940 }
+		}
+		
+		categories = {
+			artillery
+		}
+	
+		ai_will_do = {
+			factor = 4
+		}
+	}
+
+###################### light artillery
+	artillery1 = {
+
+		enable_subunits = {
+			artillery_brigade
+		}
+		enable_subunits = {
+			artillery_brigade_mot 
+		}
+		
+		enable_equipments = {
+			artillery_equipment_1
+		}
+		path = {
+			leads_to_tech = artillery2 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		folder = {
+			name = artillery_folder
+			position = { x = -3 y = @1918 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	
+	###### Gun overhaul, better breech
+	artillery2 = {
+
+		
+		path = {
+			leads_to_tech = artillery3
+			research_cost_coeff = 1
+		}
+
+		category_light_artillery = {
+	      	breakthrough = 0.125
+			soft_attack = 0.1
+			
+		}
+		category_heavy_artillery = {
+	      	breakthrough = 0.125
+			soft_attack = 0.1
+			
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1.2
+		start_year = 1930
+		folder = {
+			name = artillery_folder
+			position = { x = -2 y = @1930 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	###### split trail
+	artillery3 = {
+
+		
+		path = {
+			leads_to_tech = artillery4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = heavy_artillery2
+			research_cost_coeff = 1
+		}
+		category_light_artillery = {
+		defense = 0.175
+			
+		}
+		category_heavy_artillery = {
+		defense = 0.175
+			
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1.2
+		start_year = 1935
+		folder = {
+			name = artillery_folder
+			position = { x = -2 y = @1935 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	artillery4 = {
+		
+		enable_equipments = {
+			artillery_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = artillery5_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = artillery5_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.3
+
+		start_year = 1937
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -5 y = @1937 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	###### motorized support and line arty buff, firepower upgrade
+	artillery5_1 = {
+
+		
+		path = {
+			leads_to_tech = artillery7_2
+			research_cost_coeff = 1
+		}
+	    allow = {
+		     NOT = { has_tech = "artillery5_2" }
+		}
+
+		XOR = {
+			artillery5_2
+		}
+		artillery = {
+			need = {
+				motorized_equipment = 20
+				horse_equipment = -20
+			}
+			fuel_capacity = 50
+			soft_attack = 0.2
+			defense = 0.2
+			breakthrough = 0.2
+		}
+		artillery_brigade_mot = {
+			need = {
+				motorized_equipment = 10
+			}
+			breakthrough = 0.3
+			defense = 0.25
+		}
+		on_research_complete = {
+			custom_effect_tooltip = artillery5_1_tt
+			
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1.3
+		start_year = 1940
+		folder = {
+			name = artillery_folder
+			position = { x = -6 y = @1940 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	###### terrain buff, carriage upgrade
+	artillery5_2 = {
+		
+		path = {
+			leads_to_tech = artillery7_2
+			research_cost_coeff = 1
+		}
+		XOR = {
+			artillery5_1
+		}
+		allow = {
+			NOT = { has_tech = "artillery5_1" }
+		}
+
+		artillery_brigade = {	
+			forest = {
+				movement = 0.15
+	    	}
+	    	hills = {
+				movement = 0.1
+	    	}
+	    	mountain = {
+				movement = 0.1
+	    	}
+    		jungle = {
+				movement = 0.15
+			}
+			marsh = {
+				movement = 0.15
+			}
+			river = {
+				movement = 0.1
+	     	}
+		}
+		artillery_brigade_mot = {
+			forest = {
+				movement = 0.15
+	    	}
+	    	hills = {
+				movement = 0.1
+	    	}
+	    	mountain = {
+				movement = 0.1
+	    	}
+    		jungle = {
+				movement = 0.15
+			}
+			marsh = {
+				movement = 0.15
+			}
+			river = {
+				movement = 0.1
+	     	}
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1.3
+		start_year = 1940
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = @1940 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}		
+	
+###AT Ammo and sights +ic
+	artillery7_2 = {
+				
+
+
+		path = {
+			leads_to_tech = artillery8_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = artillery8_2
+			research_cost_coeff = 1
+		}
+		category_light_artillery = {
+			ap_attack = 2
+			hard_attack = 0.2
+			
+		}
+		
+		show_effect_as_desc = yes
+		
+		research_cost = 1.3
+		start_year = 1941
+		folder = {
+			name = artillery_folder
+			position = { x = -5 y = @1941 }
+		}
+		
+		categories = {
+			artillery
+		}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+
+	
+
+###############shell upgrade
+	artillery8_1 = {
+
+		category_light_artillery = {
+			soft_attack = 0.1
+			breakthrough = 0.15
+		}
+		XOR = {
+			artillery8_2
+		}
+	    allow = {
+		     NOT = { has_tech = "artillery8_2" }
+		}
+		path = {
+			leads_to_tech = artillery7_1
+			research_cost_coeff = 1
+		}		
+		
+		research_cost = 0.8
+		start_year = 1942
+		folder = {
+			name = artillery_folder
+			position = { x = -6 y = @1942 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	artillery8_2 = {
+		
+
+		enable_equipments = {
+			artillery_equipment_3
+		}
+		path = {
+			leads_to_tech = artillery7_1
+			research_cost_coeff = 1
+		}
+		XOR = {
+			artillery8_1
+		}
+	    allow = {
+		     NOT = { has_tech = "artillery8_1" }
+		}
+		
+		path = {
+		
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 1.4
+		start_year = 1942
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = @1942 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+###################### light mountain artillery
+	artillery7_1 = {
+
+		enable_subunits = {
+			mountain_artillery_brigade
+		}
+
+		
+		research_cost = 0.5
+		start_year = 1943
+		folder = {
+			name = artillery_folder
+			position = { x = -5 y = @1943 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+#######155mm arty
+	heavy_artillery1 = {
+		enable_subunits = {
+			artillery_heavy
+			artillery_heavy_support
+			artillery_heavy_mot 
+		}
+		
+		enable_equipments = {
+			heavy_artillery_equipment_1
+		}
+
+		path = {
+			leads_to_tech = artillery2 
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = @1918 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				tag = USA
+				factor = 50
+			}
+			modifier = {
+				tag = GER
+				factor = 50
+			}
+			modifier = {
+				tag = ENG
+				factor = 30
+			}
+		}
+	}
+
+	heavy_artillery2 = {
+	
+		enable_equipments = {
+			heavy_artillery_equipment_2
+		}
+
+		path = {
+			leads_to_tech = heavy_artillery3_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = heavy_artillery3_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.3
+		start_year = 1937
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = @1937 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = USA
+				factor = 50
+			}
+			modifier = {
+				tag = GER
+				factor = 50
+			}
+			modifier = {
+				tag = ENG
+				factor = 30
+			}	
+		}		
+	}
+
+##Motor traction, bonuses just for line for more trucks
+	heavy_artillery3_1 = {
+		
+		XOR = {
+			heavy_artillery3_2
+		}
+	    allow = {
+		     NOT = { has_tech = "heavy_artillery3_2" }
+		}
+		
+		path = {
+			leads_to_tech = heavy_artillery5_1
+			research_cost_coeff = 1
+		}
+
+		show_effect_as_desc = yes
+		artillery_heavy_mot = {
+			need = {
+				motorized_equipment = 10
+			}
+			breakthrough = 0.3
+			defense = 0.25			
+		}
+		on_research_complete = {
+			custom_effect_tooltip = heavy_artillery3_1_tt
+		}
+
+
+		show_effect_as_desc = yes
+		
+		research_cost = 1.3
+		start_year = 1939
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = @1939 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+	   
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = USA
+				factor = 50
+			}
+			modifier = {
+				tag = GER
+				factor = 50
+			}
+			modifier = {
+				tag = ENG
+				factor = 30
+			}
+		}
+	}
+
+###sturdy carriage, cheaper
+	heavy_artillery3_2 = {
+		
+		
+
+		path = {
+			leads_to_tech = heavy_artillery5_1
+			research_cost_coeff = 1
+		}
+	
+		XOR = {
+			heavy_artillery3_1
+		}
+	    allow = {
+		     NOT = { has_tech = "heavy_artillery3_1" }
+		}
+		artillery_heavy = {	
+			forest = {
+				movement = 0.15
+			}
+			hills = {
+				movement = 0.15
+			}
+			mountain = {
+				movement = 0.15
+			}
+			jungle = {
+				movement = 0.15
+			}
+			marsh = {
+				movement = 0.15
+			}
+			river = {
+				movement = 0.15
+			}
+			desert = {
+				movement = 0.15
+			}
+		}
+		artillery_heavy_mot = {
+			forest = {
+				movement = 0.2
+			}
+			hills = {
+				movement = 0.15
+			}
+			mountain = {
+				movement = 0.15
+			}
+			jungle = {
+				movement = 0.2
+			}
+			marsh = {
+				movement = 0.2
+			}
+			river = {
+				movement = 0.15
+			}
+			desert = {
+				movement = 0.15
+			}		
+		}
+		show_effect_as_desc = yes			
+		research_cost = 1.3
+		start_year = 1939
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = @1939 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+	   
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = USA
+				factor = 50
+			}
+			modifier = {
+				tag = GER
+				factor = 50
+			}
+			modifier = {
+				tag = ENG
+				factor = 30
+			}
+		}
+	}
+
+	# muzzle break
+	heavy_artillery5_1 = {
+		
+
+		on_research_complete = {
+			custom_effect_tooltip = heavy_artillery5_1_tt
+		}
+		show_effect_as_desc = yes			
+		artillery_heavy_support = {
+			need = {
+				motorized_equipment = 32
+				horse_equipment = -32
+			}
+			fuel_capacity = 50
+			defense = 0.2
+			soft_attack = 0.2
+			breakthrough = 0.2
+		}
+
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = USA
+				factor = 50
+			}
+			modifier = {
+				tag = GER
+				factor = 50
+			}
+			modifier = {
+				tag = ENG
+				factor = 30
+			}	
+		}
+		path = {
+			leads_to_tech = heavy_artillery6_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = heavy_artillery6_1
+			research_cost_coeff = 1
+		}
+
+		
+		research_cost = 1.3
+		start_year = 1940
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = @1940 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = USA
+				factor = 50
+			}
+			modifier = {
+				tag = GER
+				factor = 50
+			}
+			modifier = {
+				tag = ENG
+				factor = 30
+			}	
+		}
+	}
+
+	
+	heavy_artillery6_1 = {
+		
+
+		enable_equipments = {
+			heavy_artillery_equipment_3
+		}
+		path = {
+			leads_to_tech = heavy_artillery7
+			research_cost_coeff = 1
+		}
+		XOR = {
+			heavy_artillery6_2
+		}
+	    allow = {
+		     NOT = { has_tech = "heavy_artillery6_2" }
+		}
+		
+		research_cost = 1.4
+		start_year = 1942
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = @1942 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = USA
+				factor = 50
+			}
+			modifier = {
+				tag = GER
+				factor = 50
+			}
+			modifier = {
+				tag = ENG
+				factor = 30
+			}	
+		}
+	}
+
+####rocket boosted rounds
+	heavy_artillery6_2 = {
+		
+		category_heavy_artillery = {
+		   breakthrough = 0.15
+		   soft_attack = 0.1
+		}
+		path = {
+			leads_to_tech = heavy_artillery7
+			research_cost_coeff = 1
+		}
+		XOR = {
+			heavy_artillery6_1
+		}
+		allow = {
+			NOT = { has_tech = "heavy_artillery6_1" }
+		}
+		
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = @1942 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = USA
+				factor = 50
+			}
+			modifier = {
+				tag = GER
+				factor = 50
+			}
+			modifier = {
+				tag = ENG
+				factor = 30
+			}	
+		}
+	}
+
+####fc
+	heavy_artillery7 = {
+		
+		category_heavy_artillery = {
+			soft_attack = 0.1
+		}
+
+		
+		research_cost = 1.5
+		start_year = 1943
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = @1943 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = USA
+				factor = 50
+			}
+			modifier = {
+				tag = GER
+				factor = 50
+			}
+			modifier = {
+				tag = ENG
+				factor = 30
+			}	
+		}
+	}
+#######200mm arty
+	siege_artillery1 = {
+		enable_subunits = {
+			artillery_siege_support
+		}
+		
+		enable_equipments = {
+			siege_artillery_equipment_1
+		}
+
+		path = {
+			leads_to_tech = siege_artillery2 
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.4
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = @1918 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				tag = USA
+				factor = 50
+			}
+			modifier = {
+				tag = GER
+				factor = 50
+			}
+			modifier = {
+				tag = ENG
+				factor = 30
+			}
+		}
+	}
+#improved scout plane cordination
+	siege_artillery2 = {
+		dependencies = {
+			scout_plane1 = 1
+		}
+		
+		artillery_siege_support = {	
+			fort = {
+				attack = 0.1
+	    	}
+	    	urban = {
+				attack = 0.025
+	    	}
+
+		}
+		path = {
+			leads_to_tech = siege_artillery3 
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.4
+		start_year = 1937
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = @1937 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				tag = USA
+				factor = 50
+			}
+			modifier = {
+				tag = GER
+				factor = 50
+			}
+			modifier = {
+				tag = ENG
+				factor = 30
+			}
+		}
+	}
+	siege_artillery3 = {
+		
+		enable_equipments = {
+			siege_artillery_equipment_2
+		}
+
+		path = {
+			leads_to_tech = siege_artillery4_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = siege_artillery4_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.6
+		start_year = 1938
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = @1938 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				tag = USA
+				factor = 50
+			}
+			modifier = {
+				tag = GER
+				factor = 50
+			}
+			modifier = {
+				tag = ENG
+				factor = 30
+			}
+		}
+	}
+#breakthrough and def
+	siege_artillery4_1 = {
+		
+		path = {
+			leads_to_tech = siege_artillery5_1
+			research_cost_coeff = 1
+		}
+		on_research_complete = {
+			custom_effect_tooltip = siege_artillery4_1_tt
+		}
+		show_effect_as_desc = yes				
+		research_cost = 1.4
+		start_year = 1940
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = @1940 }
+		}
+		XOR = {
+			siege_artillery4_2
+		}		
+		categories = {
+			artillery
+		}
+		artillery_siege_support = {
+			maximum_speed = -0.163
+			need = {
+				mechanized_equipment = 35
+				motorized_equipment = -49
+			}
+			defense = 0.2
+			breakthrough = 0.4
+		}
+		artillery_siege_support = {
+			battalion_mult = {
+				category = category_light_artillery
+				defense = 0.05
+				breakthrough = 0.1
+			}
+		}	
+		artillery_siege_support = {
+			battalion_mult = {
+				category = category_heavy_artillery
+				defense = 0.05
+				breakthrough = 0.1
+			}
+		}	
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				tag = USA
+				factor = 50
+			}
+			modifier = {
+				tag = GER
+				factor = 50
+			}
+			modifier = {
+				tag = ENG
+				factor = 30
+			}
+		}
+	}
+#max speed to 5kph
+	siege_artillery5_1 = {
+		
+		path = {
+			leads_to_tech = siege_artillery6
+			research_cost_coeff = 1
+		}
+		on_research_complete = {
+			custom_effect_tooltip = siege_artillery5_1_tt
+		}
+		show_effect_as_desc = yes			
+		research_cost = 1.5
+		start_year = 1941
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = @1941 }
+		}
+		
+		artillery_siege_support = {
+		maximum_speed = 0.118
+		need = {
+			mechanized_equipment = 15
+		}
+	
+
+		}
+			
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				tag = USA
+				factor = 50
+			}
+			modifier = {
+				tag = GER
+				factor = 50
+			}
+			modifier = {
+				tag = ENG
+				factor = 30
+			}
+		}
+	}
+##rough terrain attack 
+	siege_artillery4_2 = {
+		
+		path = {
+			leads_to_tech = siege_artillery5_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.4
+		start_year = 1940
+		folder = {
+			name = artillery_folder
+			position = { x = 5 y = @1940 }
+		}
+		XOR = {
+			siege_artillery4_1
+		}			
+		categories = {
+			artillery
+		}
+		artillery_siege_support = {	
+			forest = {
+				movement = 0.1
+				attack = 0.05
+			}
+			hills = {
+				movement = 0.05
+				attack = 0.05
+			}
+			jungle = {
+				movement = 0.1
+				attack = 0.05
+			}
+			marsh = {
+				movement = 0.15
+				attack = 0.05
+			}
+			mountain = {
+				movement = 0.10
+				attack = 0.05
+			}
+			river = {
+				movement = 0.05
+			}
+		}		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				tag = USA
+				factor = 50
+			}
+			modifier = {
+				tag = GER
+				factor = 50
+			}
+			modifier = {
+				tag = ENG
+				factor = 30
+			}
+		}
+	}
+#hard and urban attack
+	siege_artillery5_2 = {
+		
+		path = {
+			leads_to_tech = siege_artillery6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1941
+		folder = {
+			name = artillery_folder
+			position = { x = 5 y = @1941 }
+		}
+		
+		categories = {
+			artillery
+		}
+		artillery_siege_support = {	
+			urban = {
+				attack = 0.075
+			}
+			ap_attack = 2
+			hard_attack = 0.2
+		}
+				
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				tag = USA
+				factor = 50
+			}
+			modifier = {
+				tag = GER
+				factor = 50
+			}
+			modifier = {
+				tag = ENG
+				factor = 30
+			}
+		}
+	}
+#extra attack for other arty
+	siege_artillery6 = {
+			
+		research_cost = 1.5
+		start_year = 1943
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = @1943 }
+		}
+		artillery_siege_support = {
+			battalion_mult = {
+				category = category_light_artillery
+				soft_attack = 0.025
+				hard_attack = 0.025
+			}
+		}
+		artillery_siege_support = {
+			battalion_mult = {
+				category = category_heavy_artillery
+				soft_attack = 0.075
+				hard_attack = 0.075
+			}
+		}			
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				tag = USA
+				factor = 50
+			}
+			modifier = {
+				tag = GER
+				factor = 50
+			}
+			modifier = {
+				tag = ENG
+				factor = 30
+			}
+		}
+	}
+# sights and rangefinding
+	rocket_artillery_spin = {
+
+		rocket_artillery_brigade = {
+			soft_attack = 0.125
+			breakthrough = 0.05
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.125
+			breakthrough = 0.05
+		}
+		allow = {
+			NOT = { has_tech = "rocket_artillery_fin" }
+		}
+		XOR = {
+			rocket_artillery_fin
+		}
+		
+		path = {
+			leads_to_tech = rocket_artillery
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.2
+		start_year = 1939
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = @1939 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			rocketry
+		}
+	}
+
+	rocket_artillery_fin = {
+
+		rocket_artillery_brigade = {
+			breakthrough = 0.25
+		}
+		motorized_rocket_brigade = {
+			breakthrough = 0.25
+		}
+		allow = {
+			NOT = { has_tech = "rocket_artillery_spin" }
+		}
+		XOR = {
+			rocket_artillery_spin
+		}
+		
+		path = {
+			leads_to_tech = rocket_artillery
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.2
+		start_year = 1939
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = @1939 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			rocketry
+		}
+	}
+	
+	rocket_artillery = {
+		
+
+		enable_equipments = {
+			rocket_artillery_equipment_1
+		}
+		enable_equipment_modules = {
+			ship_rocket_arty
+		}
+		enable_subunits = {
+			rocket_artillery_brigade
+		}
+		
+		path = {
+			leads_to_tech = rocket_artillery3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = motorized_rocket_unit
+			research_cost_coeff = 1
+		}
+		research_cost = 1.3
+		start_year = 1940
+		folder = {
+			name = artillery_folder
+			position = { x = 7 y = @1940 }
+		}
+		
+		ai_will_do = {
+			factor = 0	
+		}
+		
+		categories = {
+			rocketry
+			artillery
+		}
+	}
+
+	motorized_rocket_unit = {
+
+		enable_subunits = {
+			motorized_rocket_brigade
+		}
+		path = {
+			leads_to_tech = motorized_rocket_support
+			research_cost_coeff = 1
+		}	
+		research_cost = 0.8
+		start_year = 1940
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 9 y = @1940 }
+		}
+		ai_will_do = {
+			factor = 4	
+		}
+		
+		categories = {
+			rocketry
+			artillery
+			mot_rockets
+		}
+	}
+
+	motorized_rocket_support = {
+
+		rocket_artillery = {
+			need = {
+				motorized_equipment = 25
+				horse_equipment = -25
+			}
+			fuel_capacity = 50
+			defense = 0.1
+			soft_attack = 0.05
+			breakthrough = 0.15
+		}
+		on_research_complete = {
+			custom_effect_tooltip = rocket_sup_arty_tt
+		}
+		research_cost = 0.8
+		start_year = 1941
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 9 y = @1941 }
+		}
+		ai_will_do = {
+			factor = 4	
+		}
+		
+		categories = {
+			rocketry
+			mot_rockets
+		}
+	}
+
+
+##Improved launcher and propellant
+	rocket_artillery3 = {
+
+
+
+		path = {
+			leads_to_tech = rocket_artillery4
+			research_cost_coeff = 1
+		}
+		category_rocket_artillery = {
+	      	breakthrough = 0.08
+			soft_attack = 0.08
+			
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1.7
+		start_year = 1942
+		folder = {
+			name = artillery_folder
+			position = { x = 7 y = @1942 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			rocketry
+			artillery
+		}
+	}
+
+	rocket_artillery4 = {
+		
+	
+		enable_equipments = {
+			rocket_artillery_equipment_2
+		}
+
+		
+		
+		research_cost = 2.6
+		start_year = 1943
+		folder = {
+			name = artillery_folder
+			position = { x = 7 y = @1943 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			rocketry
+			artillery
+		}
+	}
+
+	###### Anti-tank
+	interwar_antitank = {
+
+		enable_equipments = {
+			anti_tank_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = at_line_mot
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = antitank4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.3
+		start_year = 1930
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 19 y = @1930 }
+		}
+	
+		ai_will_do = {
+			factor = 10
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+##### Motor towing	
+	at_line_mot = {
+		
+		path = {
+			leads_to_tech = antitank1
+			research_cost_coeff = 1
+		}
+		
+		show_effect_as_desc = yes
+		anti_tank_brigade_mot = {
+			need = {
+				motorized_equipment = 10
+			}
+			hard_attack = 0.1
+			defense = 0.25
+		}
+		on_research_complete = {
+			custom_effect_tooltip = antitankmot_tt
+		}
+
+
+		show_effect_as_desc = yes
+		
+		research_cost = 1.3
+		start_year = 1936
+		folder = {
+			name = artillery_folder
+			position = { x = 20 y = @1936 }
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+		
+	   
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = USA
+				factor = 50
+			}
+			modifier = {
+				tag = GER
+				factor = 50
+			}
+			modifier = {
+				tag = ENG
+				factor = 30
+			}
+		}
+	}
+	antitank1 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = antitank1_tt
+		}
+		anti_tank = {
+			need = {
+				motorized_equipment = 20
+				horse_equipment = -20
+			}
+			fuel_capacity = 50
+			defense = 0.2
+			hard_attack = 0.2
+			soft_attack = 0.2
+		}
+		
+		
+		research_cost = 1
+		start_year = 1938
+		folder = {
+			name = artillery_folder
+			position = { x = 20 y = @1938 }
+		}
+		
+		ai_will_do = {
+			factor = 10			
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+
+
+	antitank4 = {
+		
+		
+		enable_equipments = {
+			anti_tank_equipment_2
+		}
+
+		path = {
+			leads_to_tech = antitank5_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = antitank5_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.3
+		start_year = 1939
+		folder = {
+			name = artillery_folder
+			position = { x = 19 y = @1939 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+
+####The growing weight of new at guns causes issues with difficult terrain.(Pak 40 i am looking at you)
+	antitank5_1 = {
+		
+		
+		enable_equipments = {
+			anti_tank_equipment_3
+		}
+		XOR = {
+			antitank5_2
+		}
+		allow = {
+			NOT = { has_tech = "antitank5_2" }
+		}
+
+		path = {
+			leads_to_tech = antitank6_1
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 1.6
+		start_year = 1941
+		folder = {
+			name = artillery_folder
+			position = { x = 18 y = @1941 }
+		}
+		anti_tank_brigade = {			
+			forest = {
+				movement = -0.1
+			}
+			hills = {
+				movement = -0.1
+			}
+			mountain = {
+				movement = -0.1
+			}		
+			jungle = {
+				movement = -0.1
+			}
+			marsh = {
+				movement = -0.1
+			}
+			river = {
+				movement = -0.1
+			}
+		}
+		anti_tank_brigade_mot = {			
+			forest = {
+				movement = -0.1
+			}
+			hills = {
+				movement = -0.1
+			}
+			mountain = {
+				movement = -0.1
+			}		
+			jungle = {
+				movement = -0.1
+			}
+			marsh = {
+				movement = -0.1
+			}
+			river = {
+				movement = -0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+
+###keep the 50mm relevant
+	antitank5_2 = {
+
+#		on_research_complete = {
+#			custom_effect_tooltip = antitank5_2_tt
+#		}
+#		show_effect_as_desc = yes
+		anti_tank = {
+			hard_attack = 0.1
+			ap_attack = 0.15
+		}
+		anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.2
+		}
+		anti_tank_brigade_mot = {
+			hard_attack = 0.1
+			ap_attack = 0.2
+		}
+		XOR = {
+			antitank5_1 
+		}
+		allow = {
+			NOT = { has_tech = "antitank5_1" }
+		}
+		
+		
+		research_cost = 1.6
+		start_year = 1941
+		folder = {
+			name = artillery_folder
+			position = { x = 20 y = @1941 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+
+	antitank6_1 = {
+	
+		enable_equipments = {
+			anti_tank_equipment_4
+		}	
+		
+		research_cost = 1.8
+		start_year = 1944
+		folder = {
+			name = artillery_folder
+			position = { x = 18 y = @1944 }
+		}
+
+				
+		ai_will_do = {
+			factor = 10
+			
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+
+
+###heat
+	antitank10 = {
+		
+		category_anti_tank = {
+			hard_attack = 0.04
+		}
+		category_field_gun = {
+			hard_attack = 0.2
+			ap_attack = 0.2
+		}
+		category_pack_artillery = {
+			hard_attack = 0.2
+			ap_attack = 1
+		}
+		
+		research_cost = 1.3
+		start_year = 1943
+		folder = {
+			name = artillery_folder
+			position = { x = 15 y = @1943 }
+		}
+		
+		
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+
+	interwar_antiair = {
+   
+		enable_equipments = {
+			anti_air_equipment_1
+		}
+   
+		enable_equipment_modules = { 
+			ship_anti_air_2
+		}
+		path = {
+			leads_to_tech = antiair3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = antiair4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = anti_air_moto
+			research_cost_coeff = 1
+		}		
+		research_cost = 1
+
+		start_year = 1935
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 23 y = @1935 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+						
+		categories = {
+			artillery
+		}	
+	}
+
+
+	anti_air_moto = {
+
+		on_research_complete = {
+			custom_effect_tooltip = antiairmot_tt
+		}
+		anti_air_company = {
+			need = {
+				motorized_equipment = 16
+				horse_equipment = -16
+			}
+			fuel_capacity = 50
+			defense = 0.2
+			air_attack = 0.2
+		}
+		
+		research_cost = 1
+		start_year = 1937
+		folder = {
+			name = artillery_folder
+			position = { x = 22 y = @1938 }
+		}
+		
+		ai_will_do = {
+			factor = 10			
+		}
+		
+		categories = {
+			artillery
+		}
+	}
+
+
+	antiair3 = {
+		
+	
+		enable_equipments = {
+			anti_air_equipment_2
+		}
+
+		enable_equipment_modules = { 
+			ship_anti_air_3
+		}
+		path = {
+			leads_to_tech = antiair5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.1
+
+		start_year = 1940
+
+		modifier = {
+			navy_anti_air_attack_factor = 0.03
+		}
+		folder = {
+			name = artillery_folder
+			position = { x = 23 y = @1940 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+		
+		categories = {
+			artillery
+		}
+	}
+	
+
+	
+	antiair5 = {
+		
+
+		enable_equipments = {
+			anti_air_equipment_3
+		}
+		enable_equipment_modules = { 
+			ship_anti_air_4
+		}
+
+		
+		research_cost = 1.1
+
+		start_year = 1943
+		
+		modifier = {
+			navy_anti_air_attack_factor = 0.03
+		}
+		folder = {
+			name = artillery_folder
+			position = { x = 23 y = @1943 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+		
+		categories = {
+			artillery
+		}
+	}
+	antiair4 = {
+				
+
+		category_anti_air = {
+			air_attack = 0.12
+		}
+		category_heavy_anti_air = {
+			air_attack = 0.12
+		}
+		path = {
+			leads_to_tech = antiairfc
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.1
+
+		start_year = 1939
+
+		modifier = {
+			navy_anti_air_attack_factor = 0.03
+		}
+		folder = {
+			name = artillery_folder
+			position = { x = 25 y = @1939 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+		
+		categories = {
+			artillery
+		}
+	}
+###firecontrol
+	antiairfc = {
+
+		category_anti_air = {
+			air_attack = 0.12
+		}
+		category_heavy_anti_air = {
+			air_attack = 0.12
+		}
+		enable_building = {
+			building = anti_air_building
+			level = 9
+		}
+		
+		path = {
+			leads_to_tech = antiairfc2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.1
+
+		start_year = 1941
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 25 y = @1941 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+						
+		categories = {
+			artillery
+		}
+	}
+
+	antiairfc2 = {
+
+		category_anti_air = {
+			air_attack = 0.12
+		}
+		category_heavy_anti_air = {
+			air_attack = 0.12
+		}
+		enable_building = {
+			building = anti_air_building
+			level = 10
+		}
+		
+		
+		research_cost = 1.1
+
+		start_year = 1944
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 25 y = @1944 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+						
+		categories = {
+			artillery
+		}
+	}
+
+	mountain_gun = {
+
+		research_cost = 1
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+
+		artillery_brigade = {
+			mountain = {
+				movement = 0.15 #If you change this - Change the custom tooltip too: RAJ_revive_the_screw_guns_effect ROM_modern_at_guns_tech_tt
+			}
+		}
+
+		anti_tank_brigade = {
+			mountain = {
+				movement = 0.15 #If you change this - Change the custom tooltip too: RAJ_revive_the_screw_guns_effect ROM_modern_at_guns_tech_tt
+			}
+	
+		}
+	}
+}

@@ -1,0 +1,324 @@
+﻿add_namespace = wtt_manchukou
+
+# Manchukou demands warlord be puppeted
+country_event = {
+	id = wtt_manchukou.1
+	title = wtt_manchukou.1.t
+	desc = wtt_manchukou.1.desc
+	picture = GFX_report_event_manchukuo_army_2
+
+	is_triggered_only = yes
+	
+	#Accept puppet
+	option = {
+		name = wtt_manchukou.1.a
+		ai_chance = { 
+			base = 10 
+			modifier = {
+				has_global_flag = CHI_xian_refused
+				factor = 0
+			}
+		}
+		FROM = {
+			puppet = ROOT
+			country_event = { id = wtt_manchukou.2 }
+		}
+	}
+
+	#Never
+	option = {
+		name = wtt_manchukou.1.b
+		ai_chance = { 
+			base = 10 
+		}
+		FROM = {
+			country_event = { id = wtt_manchukou.3 }
+		}
+	}
+}
+
+# Answer from warlord wtt_manchukou.1 - Yes
+country_event = {
+	id = wtt_manchukou.2
+	title = wtt_manchukou.2.t
+	desc = wtt_manchukou.2.desc
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou.2.a
+	}
+}
+
+
+# Answer from warlord wtt_manchukou.1 - No
+country_event = {
+	id = wtt_manchukou.3
+	title = wtt_manchukou.3.t
+	desc = wtt_manchukou.3.desc
+	picture = GFX_report_event_chinese_soldiers_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou.3.a
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = FROM
+		}
+	}
+}
+
+#First five year plan
+country_event = {
+	id = wtt_manchukou.11
+	title = wtt_manchukou.11.t
+	desc = wtt_manchukou.11.desc
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+	
+	#Air
+	option = {
+		name = wtt_manchukou.11.a
+		ai_chance = {
+			base = 0
+		}
+		add_timed_idea = { days = 1825 idea = MAN_five_year_plan_air }
+	}	
+	#Tank
+	option = {
+		name = wtt_manchukou.11.b
+		ai_chance = {
+			base = 10
+		}
+		add_timed_idea = { days = 1825 idea = MAN_five_year_plan_tank }
+	}	
+	#Industry
+	option = {
+		name = wtt_manchukou.11.c
+		ai_chance = {
+			base = 5
+		}
+		add_timed_idea = { days = 1825 idea = MAN_five_year_plan_industry }
+	}
+}
+
+###   ##  #  # ###  ### ###      ##  ##  ###   ##  ###  ##   ##  ### 
+#  # #  # ## # #  #  #   #      #   #  # #  # #  #  #  #  # #    #   
+###  #### # ## #  #  #   #       #  #### ###  #  #  #  #### # ## ##  
+#  # #  # #  # #  #  #   #        # #  # #  # #  #  #  #  # #  # #   
+###  #  # #  # ###  ###  #      ##  #  # ###   ##   #  #  #  ##  ### 
+
+add_namespace = wtt_manchukou_bandit_sabotage
+#Bandit sabotage - factory sabotaged
+country_event = {
+	id = wtt_manchukou_bandit_sabotage.21
+	title = wtt_manchukou_bandit_sabotage.21.t
+	desc = wtt_manchukou_bandit_sabotage.21.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou_bandit_sabotage.21.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}
+	}
+}
+
+#Bandit sabotage - civilian factory sabotaged
+country_event = {
+	id = wtt_manchukou_bandit_sabotage.22
+	title = wtt_manchukou_bandit_sabotage.22.t
+	desc = wtt_manchukou_bandit_sabotage.21.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou_bandit_sabotage.21.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+#Bandit sabotage - bridge blown
+country_event = {
+	id = wtt_manchukou_bandit_sabotage.23
+	title = wtt_manchukou_bandit_sabotage.23.t
+	desc = wtt_manchukou_bandit_sabotage.23.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou_bandit_sabotage.21.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+
+###########################
+# MALANCU TFV events Events
+###########################
+
+
+country_event = {
+	id = wtt_manchukou.33
+	title = "Puyi palace is destoyed"
+	desc = "wtt_manchukou.33.d"	
+	picture = GFX_report_event_saf_soldiers	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Mandate of Heaven is lost"	
+		ai_chance = {
+			base = 100
+		}
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Zhang Jinghui"
+			desc = ""
+			picture = "GFX_portrait_man_zhang_jinghui"
+			expire = "1965.1.1.1"
+			ideology = rexism
+			traits = { unworty_ruler }
+		}
+		hidden_effect = {
+			set_country_flag = japanese_way
+		}
+		custom_effect_tooltip = japanese_wayish
+	}	
+	option = {
+		name = "Mandate of Heaven is stil ours"
+		
+		ai_chance = {
+			base = 0
+		}
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Zhang Jinghui"
+			desc = ""
+			picture = "GFX_portrait_man_zhang_jinghui"
+			expire = "1965.1.1.1"
+			ideology = rexism
+			traits = { worty_ruler }
+		}
+		hidden_effect = {
+			set_country_flag = manchurian_way
+		}
+		custom_effect_tooltip = manchurian_wayish
+		
+	}
+ }
+ country_event = {
+	id = wtt_manchukou.40
+	title = "Restores Order in Manchuria"
+	desc = "wtt_manchukou.40.d"	
+	picture = GFX_report_event_saf_soldiers	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Tojo will lead us to greatness"	
+		ai_chance = {
+			base = 100
+		}
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Tojo Hideki"
+			desc = ""
+			picture = "tojo_man.dds"
+			expire = "1965.1.1.1"
+			ideology = rexism
+		}
+	}
+ }
+
+# MAN_secure_interests_in_china completed
+# MAN National focus
+
+country_event = {
+	id = wtt_manchukou.34
+	title = "Manchukou takes control of Chinese Ports"
+	desc = wtt_manchukou.34.d		
+	picture = GFX_report_event_saf_soldiers	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will take them"
+		
+		ai_chance = {
+			base = 80
+
+		}
+		
+		effect_tooltip = {
+			MAN = {
+				transfer_state = 743
+				transfer_state = 608
+				transfer_state = 609
+				transfer_state = 621
+				transfer_state = 745
+				transfer_state = 728
+				transfer_state = 326
+
+			}
+		}
+		hidden_effect = {
+			transfer_state = 743
+			transfer_state = 608
+			transfer_state = 609
+			transfer_state = 621
+			transfer_state = 745
+			transfer_state = 728
+			transfer_state = 326
+		}
+	}
+	option = {
+		name = "We need more Workers,Not Land"
+		
+		ai_chance = {
+			base = 20
+
+		}
+		
+		effect_tooltip = {
+			MAN = {
+				set_country_flag = kill_kill_kill
+			}
+		}
+		hidden_effect = {
+			set_country_flag = kill_kill_kill
+		}
+	}
+	
+}

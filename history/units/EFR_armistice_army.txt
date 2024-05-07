@@ -1,0 +1,261 @@
+﻿### OOB ###
+division_template = {
+	name = "Division d'Infanterie Vichy"		# Infantry Division
+	division_names_group = FRA_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+				
+		field_gun_brigade = { x = 3 y = 0 }		
+		field_gun_brigade = { x = 3 y = 1 }
+		field_gun_brigade = { x = 3 y = 2 }		
+		anti_tank_brigade = { x = 3 y = 3 }	
+		
+		artillery_heavy = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		logistics_company = { x = 1 y = 0 }
+		anti_tank = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Division d'Infanterie Motorisée"
+	
+	division_names_group = FRA_MOT_01
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+
+		artillery_brigade_mot = { x = 3 y = 0 }
+		artillery_brigade_mot = { x = 3 y = 1 }
+		artillery_brigade_mot = { x = 3 y = 2 }
+		anti_tank_brigade_mot = { x = 3 y = 3 }
+		
+		artillery_heavy_mot = { x = 4 y = 0 }
+		anti_air_mot = { x = 4 y = 1 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		mobile_engineer = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 2 }
+		pack_artillery = { x = 0 y = 3 }
+		maintenance_company = { x = 1 y = 0 }
+		logistics_company_mot = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	##### armistice army #####
+
+	##Métropole
+	# 1er groupe de divisions militaires (Avignon)
+	division = {
+		name = "7. Division Militaire"
+		location = 641  # Bourg En Bresse
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "14. Division Militaire"
+		location = 6613  # Lyon
+		division_template = "Division d'Infanterie Motorisée"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "15. Division Militaire"
+		location = 11834  # Marseille
+		division_template = "Division d'Infanterie Motorisée"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "16. Division Militaire"
+		location = 9898  # Montpellier
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+	# 2e groupe de divisions militaires (Clermont-Ferrand) :
+	division = {
+		name = "9. Division Militaire"
+		location = 651  # Chateauroux
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "12. Division Militaire"
+		location = 620  # Limoges
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "13. Division Militaire"
+		location = 769  # Clermont-Ferrand
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "17. Division Militaire"
+		location = 6766  # Toulouse
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+
+
+	#Afrique du Nord
+	# MAROC
+	division = {
+		name = "Division de Fez"
+		location = 7100  # Fez
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "Division de Meknès"
+		location = 4084  # Mèknes
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "Division de Casablanca"
+		location = 7069  # Casablanca
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "Division de Marrakech"
+		location = 4139  # Marrakech
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "Division de Marrakech 2"
+		location = 4139  # Marrakech
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+
+
+	#XIX Corps D'Armée Algérie et Tunis
+	division = {
+		name = "Division de Marche d'Algers"
+		location = 1145  # Algers
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "Division de Marche d'Algers 2"
+		location = 1145  # Algers
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "Division de Marche d'Algers 3"
+		location = 1145  # Algers
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "Division de Marche de Constantine"
+		location = 12051  # Constantine
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "Division de Marche d'Oran"
+		location = 7132  # Oran
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "Division de Marche de Tunis"
+		location = 11969  # Tunis
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+	#Syrie
+	division = {
+		name = "Division du Levant"
+		location = 11935  # Damas
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "Division du Levant 2"
+		location = 11935  # Damas
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "Division du Levant 3"
+		location = 11935  # Damas
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "EFR" } }
+		start_experience_factor = 0.5
+	}
+}

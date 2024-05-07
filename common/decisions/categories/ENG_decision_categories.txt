@@ -1,0 +1,72 @@
+################
+##### ENG ######
+################
+ENG_operation_compass = {
+	icon = GFX_decision_category_military_operation
+	allowed = {
+		original_tag = ENG
+	}
+	priority = 150
+}
+ENG_africa_explanation = {
+	icon = military_operation
+
+	allowed = {
+		original_tag = ENG
+	}
+
+	visible = {
+		NOT = {
+			has_war_with = ITA 
+		}
+	}
+
+	priority = 210
+}
+ENG_budget_decisions = {
+	available = {
+		OR = {
+			NOT = {
+				JAP = {
+					has_war_with = USA
+				}
+			}
+			date < 1941.2.1
+		}
+	}
+	visible = {
+		OR = {
+			NOT = {
+				JAP = {
+					has_war_with = USA
+				}
+			}
+			date < 1941.2.1
+		}
+	}
+	allowed = {
+		original_tag = ENG
+	}
+	priority = 80
+}
+ENG_war_measures = {
+	icon = generic_propaganda
+	
+	allowed = {
+		original_tag = ENG
+	}
+	priority = 85
+}
+
+
+
+
+ENG_aid_china = {
+	picture = GFX_decision_cat_picture_generic_border_conflicts
+	
+	icon = generic_political_actions
+	allowed = {
+		original_tag = ENG
+	}
+	priority = 80
+}

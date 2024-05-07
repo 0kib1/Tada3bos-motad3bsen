@@ -1,0 +1,351 @@
+ideas = {
+	naval_academy_spirit = {
+		instilled_aggression_spirit = {
+			ledger = navy
+			
+			modifier = {
+				naval_torpedo_enemy_critical_chance_factor = 0.2
+				naval_damage_factor = 0.1
+
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		calculated_restraint_spirit = {
+			ledger = navy
+			
+			modifier = {
+				naval_retreat_speed = -0.2
+				naval_defense_factor  = 0.1
+
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		signals_training_spirit = {
+			ledger = navy
+			modifier = {
+				naval_speed_factor = 0.05
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		fleet_in_being_academy_spirit = {
+			ledger = navy
+			
+			modifier = {
+				naval_morale_factor = 0.3
+				naval_critical_effect_factor = -0.3
+			}
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+		trade_interdiction_academy_spirit = {
+			ledger = navy
+
+			modifier = {
+				convoy_escort_efficiency = 0.1
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					convoy_raiding_coordination = 0.25
+				}
+				
+				ship_hull_cruiser = {
+					convoy_raiding_coordination = 0.25
+				}
+				
+				ship_hull_light = {
+					convoy_raiding_coordination = 0.25
+				}
+				ship_hull_submarine = {
+					convoy_raiding_coordination = 0.25
+				}
+				ship_hull_carrier = {
+					convoy_raiding_coordination = 0.25
+				}					
+			}
+			ai_will_do = {
+				factor = 1.5
+				modifier = {
+					tag = GER
+					factor = 5
+				}
+			}
+		}
+		base_strike_academy_spirit = {
+			ledger = navy
+		
+			modifier = {
+				sortie_efficiency = 0.1
+			}
+			ai_will_do = {
+				factor = 1.5
+				modifier = {
+					tag = JAP
+					factor = 5
+				}
+			}
+		}
+		best_of_the_best_naval_academy_spirit = {
+			ledger = navy
+			modifier = {
+				positioning = 0.1
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					tag = USA
+					factor = 5
+				}
+				modifier = {
+					tag = ENG
+					factor = 5
+				}
+			}
+		}
+		naval_academy_scholarships_spirit = {
+			ledger = navy
+			modifier = {
+				experience_gain_destroyer_combat_factor = 0.3
+				experience_gain_light_cruiser_combat_factor = 0.3
+				experience_gain_battleship_combat_factor = 0.3
+				experience_gain_heavy_cruiser_combat_factor = 0.3
+				experience_gain_submarine_combat_factor = 0.3
+				experience_gain_carrier_combat_factor = 0.3
+				experience_gain_battle_cruiser_combat_factor = 0.3
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_spirit = {
+		jeune_ecole_spirit = {
+			ledger = navy
+			research_bonus = {
+				dd_tech = 0.3
+			}
+			modifier = {
+				screening_efficiency = 0.05
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		flexible_contracts_spirit = { #start by picking this#
+			ledger = navy
+			modifier = {
+				naval_manufacturer_cost_factor = -0.7
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		integrated_designers_spirit = { #Once you've picked the one above you transition into this#
+			ledger = navy
+			visible = { has_dlc = "Man the Guns" }
+			research_bonus = {
+				ship_modules_tech = 0.1
+				naval_equipment = 0.1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		naval_reform_spirit = { #You can do this if you are trolling#
+			ledger = navy
+			modifier = {
+				experience_gain_navy_factor = 0.05
+				experience_gain_navy_unit_factor = 0.05
+				navy_fuel_consumption_factor = -0.2
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					tag = GER
+					factor = 5
+				}
+				modifier = {
+					tag = JAP
+					factor = 5
+				}
+			}
+		}
+		naval_refit_yards_spirit = {
+			ledger = navy
+			modifier = {
+				refit_speed = 0.25
+				repair_speed_factor = 0.15
+				
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		fleet_in_being_navy_spirit = {
+			ledger = navy
+	
+			research_bonus = {
+				bb_tech = 0.3
+			}
+			modifier = {
+				naval_has_potf_in_combat_attack = 0.025
+				naval_has_potf_in_combat_defense = 0.025
+			}
+			ai_will_do = {
+				factor = 1.5
+				modifier = {
+					tag = USA
+					factor = 5
+				}
+				modifier = {
+					tag = ENG
+					factor = 5
+				}
+			}
+		}
+		trade_interdiction_navy_spirit = {
+			ledger = navy
+
+			research_bonus = {
+				ss_tech = 0.3
+			}
+			modifier = {
+				sub_retreat_speed = 0.05
+			}
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+		base_strike_navy_spirit = {
+			ledger = navy
+
+			research_bonus = {
+				cv_tech = 0.3
+			}
+			modifier = {
+				naval_has_potf_in_combat_attack = 0.025
+				naval_has_potf_in_combat_defense = 0.025
+			}
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+	}
+
+	naval_command_spirit = {
+		close_combat_navy_spirit = {
+			ledger = navy
+			modifier ={
+				navy_screen_attack_factor = 0.05
+				naval_torpedo_screen_penetration_factor = 0.1
+				naval_torpedo_hit_chance_factor = 0.05
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					tag = GER
+					factor = 5
+				}
+			}
+		}
+		night_fighting_spirit = {
+			ledger = navy
+			modifier = {
+				night_spotting_chance = 0.2
+				naval_night_attack = 0.15
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		surprise_attacks_spirit = { 
+			ledger = navy
+			modifier = {
+				naval_retreat_speed_after_initial_combat = 0.1
+				naval_retreat_chance_after_initial_combat = 0.1
+				naval_retreat_speed = 0.05
+				naval_enemy_positioning_in_initial_attack = 0.2
+			}
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+		efficient_communications_spirit = {
+			ledger = navy
+			modifier = {
+				naval_enemy_fleet_size_ratio_penalty_factor = 0.1
+				naval_damage_factor = 0.05
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					tag = JAP
+					factor = 5
+				}
+				modifier = {
+					tag = USA
+					factor = 5
+				}
+				modifier = {
+					tag = ENG
+					factor = 5
+				}
+			}
+		}
+		surface_raiders_spirit = {
+			ledger = navy
+			modifier = {
+				screening_without_screens = 0.2
+				naval_speed_factor = 0.05
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		decisive_battle_spirit = {
+			ledger = navy
+			available = {
+				has_tech = improved_ship_hull_heavy
+			}
+			modifier = {
+				naval_retreat_chance = -0.15
+				naval_retreat_speed = -0.15
+				naval_hit_chance = 0.1
+				naval_damage_factor = -0.05
+			}
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+		inclimate_weather_experience_spirit = {
+			ledger = navy
+			available = {
+				has_tech = improved_ship_hull_carrier
+			}
+			modifier = {
+				sortie_efficiency = 0.1
+				naval_strike_targetting_factor = 0.05
+			}
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+		brave_commanders_spirit = {
+			ledger = navy
+			modifier = {
+				naval_critical_score_chance_factor = 0.2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		} 
+	}
+}

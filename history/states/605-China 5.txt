@@ -1,0 +1,37 @@
+state = {
+	id = 605
+	name = "STATE_605"
+	resources = {
+		tungsten = 5
+		steel = 20
+		chromium = 5
+		oil = 4
+		
+	}
+
+	history = {
+		set_state_flag = JAP_interior_flag
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 7
+		}
+		victory_points = {
+			4925 5 
+		}
+		victory_points = {
+			6999 25 #20
+		}
+	}
+
+	provinces = {
+		1367 1395 1893 2030 2091 4925 5048 6999 7240 7256 8026 10132 10144 11865 12274 12705 12767 
+	}
+	manpower = 52963300
+	buildings_max_level_factor = 1.000
+	state_category = city
+}

@@ -1,0 +1,16 @@
+ideas = {
+	# MILITARY
+
+	theorist_production = {
+		IRQ_nuri_as_said = {
+
+			picture = generic_political_advisor_arab_1
+				
+			allowed = {
+				original_tag = IRQ
+			}
+			
+			traits = { armaments_organizer }
+		}	
+	}
+}

@@ -1,0 +1,41 @@
+state = {
+	id = 731
+	name = "STATE_731"
+	manpower = 1051453
+	
+	state_category = city
+	resources = {
+		
+		chromium = 10 # was: 22
+		aluminium = 15 # was: 58
+		tungsten = 5 # was: 20
+	}
+
+	history = {
+		owner = GRE
+		victory_points = {
+			11818 5 
+		}
+		#victory_points = {
+		#	3844 1
+		#}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 3
+			industrial_complex = 1
+			air_base = 2
+			11818 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = GRE
+		add_claim_by = BUL
+
+	}
+	
+	provinces = {
+		936 966 3844 10163 11818 11905
+	}
+}

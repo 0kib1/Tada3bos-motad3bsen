@@ -1,0 +1,30 @@
+state = {
+	id = 593
+	name = "STATE_593"
+	manpower = 12700000
+	state_category = town
+	resources = {
+		tungsten = 8 # was: 20
+		steel = 16 # was: 20
+		chromium = 2 # was: 4
+		aluminium = 4
+		oil = 2
+	}
+
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 2
+			
+		}
+
+		
+	}
+	provinces = {
+		1078 1120 1162 1202 4050 4165 4207 7067 7141   9970 9978 9997 10080 12014 12095 
+	}
+}

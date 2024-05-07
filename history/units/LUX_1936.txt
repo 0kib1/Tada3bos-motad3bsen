@@ -1,0 +1,24 @@
+﻿division_template = {
+	name = "Public Force"		
+	# Luxembourg had a token garrison force of ~600 men
+	regiments = {
+		garrison = { x = 0 y = 0 }
+	}
+}
+
+#### OOB ####
+units = { 
+
+}
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+			amount = 700
+			producer = CZE
+		}
+	add_equipment_to_stockpile = {
+		type = horse_equipment_0
+			amount = 800
+			producer = CZE
+		}
+}

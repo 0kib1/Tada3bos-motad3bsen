@@ -1,0 +1,7996 @@
+on_actions = {
+	on_daily_SOV = {
+		effect = {
+			
+			
+			if = {
+				limit = {
+					
+					HUN = {
+						has_capitulated = no 
+					}
+					SLO = {
+						has_capitulated = no 
+					}
+					BUL = {
+						has_capitulated = no 
+					}
+					ROM = {
+						has_capitulated = no 
+					}			
+					SOV = {
+						OR = {
+							divisions_in_state = {
+								type = infantry
+								size > 0
+								state = 152
+							}
+							divisions_in_state = {
+								type = infantry
+								size > 0
+								state = 153
+							}
+							divisions_in_state = {
+								type = infantry
+								size > 0
+								state = 736
+							}
+							divisions_in_state = {
+								type = infantry
+								size > 0
+								state = 797
+							}
+							divisions_in_state = {
+								type = infantry
+								size > 0
+								state = 4
+							}
+							divisions_in_state = {
+								type = infantry
+								size > 0
+								state = 808
+							}
+							divisions_in_state = {
+								type = infantry
+								size > 0
+								state = 155
+							}
+							divisions_in_state = {
+								type = infantry
+								size > 0
+								state = 154
+							}
+							divisions_in_state = {
+								type = infantry
+								size > 0
+								state = 82
+							}
+							divisions_in_state = {
+								type = infantry
+								size > 0
+								state = 81
+							}
+							divisions_in_state = {
+								type = infantry
+								size > 0
+								state = 48
+							}
+							divisions_in_state = {
+								type = infantry
+								size > 0
+								state = 731
+							}
+							divisions_in_state = {
+								type = infantry
+								size > 0
+								state = 185
+							}
+						
+							divisions_in_state = {
+								type = infantry
+								size > 0
+								state = 160
+							}
+							divisions_in_state = {
+								type = infantry
+								size > 0
+								state = 161
+							}
+							divisions_in_state = {
+								type = infantry
+								size > 0
+								state = 157
+							}
+							divisions_in_state = {
+								type = infantry
+								size > 0
+								state = 117
+							}
+							divisions_in_state = {
+								type = infantry
+								size > 0
+								state = 156
+							}
+							
+						}
+						
+					}
+				}
+				SOV = {
+					delete_unit = {
+						state = 736
+						disband = no #will refund equipment and manpower
+					}
+					delete_unit = {
+						state = 153
+						disband = no #will refund equipment and manpower
+					}
+					delete_unit = {
+						state = 152
+						disband = no #will refund equipment and manpower
+					}
+					delete_unit = {
+						state = 808
+						disband = no #will refund equipment and manpower
+					}
+					delete_unit = {
+						state = 155
+						disband = no #will refund equipment and manpower
+					}
+					delete_unit = {
+						state = 154
+						disband = no #will refund equipment and manpower
+					}
+					delete_unit = {
+						state = 82
+						disband = no #will refund equipment and manpower
+					}
+					delete_unit = {
+						state = 81
+						disband = no #will refund equipment and manpower
+					}
+					delete_unit = {
+						state = 48
+						disband = no #will refund equipment and manpower
+					}
+					delete_unit = {
+						state = 731
+						disband = no #will refund equipment and manpower
+					}
+					delete_unit = {
+						state = 185
+						disband = no #will refund equipment and manpower
+					}
+					delete_unit = {
+						state = 156
+						disband = no #will refund equipment and manpower
+					}
+					delete_unit = {
+						state = 117
+						disband = no #will refund equipment and manpower
+					}
+					delete_unit = {
+						state = 157
+						disband = no #will refund equipment and manpower
+					}
+					delete_unit = {
+						state = 161
+						disband = no #will refund equipment and manpower
+					}
+					delete_unit = {
+						state = 160
+						disband = no #will refund equipment and manpower
+					}
+					delete_unit = {
+						state = 797
+						disband = no #will refund equipment and manpower
+					}
+					delete_unit = {
+						state = 736
+						disband = no #will refund equipment and manpower
+					}
+					delete_unit = {
+						state = 4
+						disband = no #will refund equipment and manpower
+					}
+				
+				}
+				
+			}
+
+		}
+		
+	}
+	on_startup = {
+		effect = {
+			
+			every_country = {
+				limit = { 
+					OR ={
+						tag = ETH
+						tag = CHI
+						tag = SWE
+						tag = NOR
+						tag = BEL
+						tag = LUX
+						tag = HOL
+						tag = IRQ
+						tag = PER
+						tag = TUR
+						tag = INS 
+						tag = SIA 
+						tag = VEN 
+						tag = POR
+						tag = BRA
+						tag = PAR
+						tag = MEX 
+						tag = DEN
+						tag = LAT
+						tag = ALB 
+						tag = AUS
+						tag = IRE
+						tag = YUG
+						tag = GRE
+						tag = SWI
+						tag = DNZ
+						tag = SOV
+					}	
+				}
+				add_ideas = no_market	
+			}
+			
+			every_country = {
+				limit = { 
+					is_in_faction_with = ENG
+					NOT = {
+						tag = ENG
+						tag = AST 
+					}
+					
+				}
+				add_timed_idea = {
+					days = 1460
+					idea = ENG_prepare_for_the_inevitable_idea
+				}
+		
+			}
+			
+			CHI = {
+				set_variable = { CHI_juntuan_division_cap = 0 }
+				set_division_template_cap = {  division_template = "Juntuan" division_cap = CHI_juntuan_division_cap }
+				
+			}
+			JAP = {
+				add_opinion_modifier = {
+					modifier = usa_jap_trade
+					target = USA
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					modifier = usa_jap_trade
+					target = JAP
+				}
+			}
+			every_country = {
+				add_ideas = no_guarantees 
+			}
+			SPR = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 171
+							state = 174
+							state = 788
+							state = 791
+							state = 176
+							state = 166
+							state = 172
+							state = 170
+							state = 169
+							
+						}
+					}
+					set_state_flag = SPA_northern_garrisons_state_flag
+					add_to_variable = { var = SPA_garrison_control value = 3 }
+
+					SPA_garrison_control_cost_calculation = yes
+				}
+			}
+			
+			every_country = {
+				set_variable = { speeches_enabled = 0 }
+				set_variable = { music_enabled = 2 }
+				country_event = { 
+					id = startevent.2 
+				} 
+			}
+			SOV = {
+				set_country_flag = convoys400_flag
+			}
+			if = {
+				limit = {
+					NZL = {
+						is_ai = no
+					}
+				}
+				
+				517 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				285 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+			
+				}
+				521 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			
+				}
+				519 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				
+				}
+				522 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			
+				}
+				518 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				
+				}
+			}
+			if = {
+				limit = {
+					NZL = {
+						is_ai = yes
+					}
+				}
+				AST = {
+					annex_country = {
+						target = NZL
+						transfer_troops = yes
+					}	
+				}
+				284 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+					add_core_of = AST
+				}
+				723 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_core_of = AST
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = disable_lobby_parasites
+						option = HISTORICAL
+					}
+				}
+				MEX = {
+					add_ideas =	neutrality_idea	
+					add_ideas =	free_trade
+					add_ideas =	no_spies_idea
+					add_ideas =	developing_country
+				}
+				IRE = {
+					add_ideas =	neutrality_idea	
+					add_ideas =	free_trade
+					add_ideas =	no_spies_idea
+					add_ideas =	developing_country
+				}
+				AST = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 6
+					}
+					add_offsite_building = {
+						type = dockyard
+						level = 5
+					}
+				}
+				ENG = {
+					add_offsite_building = {
+						type = arms_factory 
+						level = 5
+						instant_build = yes 
+					}
+					add_offsite_building = {
+						type = industrial_complex
+						level = 6 
+						instant_build = yes 
+					}
+				}
+				CAN = {
+					add_offsite_building = {
+						type = arms_factory 
+						level = 5
+						instant_build = yes 
+					}
+					add_offsite_building = {
+						type = industrial_complex
+						level = 7
+						instant_build = yes 
+					}
+					add_offsite_building = {
+						type = dockyard
+						level = 5
+						instant_build = yes 
+					}
+				}
+			
+				SAF = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes 
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = disable_lobby_parasites
+						option = DEFAULT
+					}
+				}
+				MEX = {
+					add_ideas =	neutrality_idea	
+					add_ideas =	free_trade
+					add_ideas =	no_spies_idea
+					add_ideas =	developing_country
+				}
+				IRE = {
+					add_ideas = neutrality_idea	
+					add_ideas = free_trade
+					add_ideas = no_spies_idea
+					add_ideas = developing_country
+				}
+				AST = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 6
+					}
+					add_offsite_building = {
+						type = dockyard
+						level = 5
+					}
+				}
+				ENG = {
+					add_offsite_building = {
+						type = arms_factory 
+						level = 5
+						instant_build = yes 
+					}
+					add_offsite_building = {
+						type = industrial_complex
+						level = 6 
+						instant_build = yes 
+					}
+				}
+				CAN = {
+					add_offsite_building = {
+						type = arms_factory 
+						level = 5
+						instant_build = yes 
+					}
+					add_offsite_building = {
+						type = industrial_complex
+						level = 7
+						instant_build = yes 
+					}
+					add_offsite_building = {
+						type = dockyard
+						level = 5
+						instant_build = yes 
+					}
+				}
+			
+				SAF = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes 
+					}
+				}
+			}
+
+			ITA = {
+				every_army_leader = {
+					add_unit_leader_trait = ita_kwantung_veto
+				}
+			}	
+			GER = {
+				every_army_leader = {
+					add_unit_leader_trait = ita_kwantung_veto
+				}
+			}
+			SOV = {
+				every_army_leader = {
+					add_unit_leader_trait = ita_kwantung_veto
+				}
+			}
+
+			every_country = {
+				set_variable = {
+					var = min_fuel
+					value = 0.800
+				}
+			}
+			every_country = {
+				limit= {	has_country_flag = fuel_system_enabled }
+				add_to_array= { GLOBAL.fuel_system_manager = THIS.id }
+			}			
+			if = {
+				limit = { 
+					date > 1936.01.01 
+				}
+				set_global_flag = SP_start_bm
+			}			
+			GER = {
+				if = {
+					limit = { 
+						GER = { 
+							is_ai = yes 
+						}
+					} 
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 10000 producer = GER }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 8000 producer = GER }
+					add_equipment_to_stockpile = { type = horse_equipment_0 amount = 4000 producer = GER } 					
+					add_equipment_to_stockpile = { type = special_equipment_1 amount = 8000 producer = GER } 					
+
+					54 = { add_extra_state_shared_building_slots = 25 add_building_construction = { type = arms_factory level = 25 } }
+					59 = { add_extra_state_shared_building_slots = 25 add_building_construction = { type = arms_factory level = 25 } }
+					60 = { add_extra_state_shared_building_slots = 15 add_building_construction = { type = industrial_complex level = 25 } }
+
+					59 = { add_extra_state_shared_building_slots = 2 add_building_construction = { type = synthetic_refinery level = 2 instant_build = yes } }
+					64 = { add_extra_state_shared_building_slots = 2 add_building_construction = { type = synthetic_refinery level = 2 instant_build = yes } }
+					60 = { add_extra_state_shared_building_slots = 2 add_building_construction = { type = synthetic_refinery level = 2 instant_build = yes } }
+					54 = { add_extra_state_shared_building_slots = 2 add_building_construction = { type = synthetic_refinery level = 2 instant_build = yes } }
+					50 = { add_extra_state_shared_building_slots = 2 add_building_construction = { type = synthetic_refinery level = 2 instant_build = yes } }
+				}
+			}	
+			FIN = {
+				if = {
+					limit = { 
+						FIN = { is_ai = yes }
+					}
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 15000 producer = FIN }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 producer = FIN }
+					add_equipment_to_stockpile = { type = horse_equipment_0 amount = 1000 producer = FIN }
+					add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 2000 producer = FIN }
+				}
+			}					
+			JAP = {
+				if = {
+					limit = { 
+						JAP = { 
+							is_ai = yes 
+						}
+					}
+
+					set_technology = {
+						trench_warfare = 0
+						superior_firepower = 1
+					}
+				}
+			}			
+			RAJ = {
+				if = {
+					limit = { 
+						RAJ = {
+							is_ai = yes
+						}
+					}
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 25000 producer = RAJ }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 4000 producer = RAJ }
+					add_equipment_to_stockpile = { type = horse_equipment_0 amount = 5000 producer = RAJ } 
+				}
+			}
+			HUN = {
+				if = { limit = { HUN = { is_ai = yes } } load_oob = "Infantry_ai" }
+			}
+			ROM = {
+				if = { limit = { ROM = { is_ai = yes } } load_oob = "Infantry_ai" }
+			}
+			HOL = {
+				if = { limit = { HOL = { is_ai = yes } } load_oob = "Infantry_ai" }
+			}
+			MAN = {
+				if = { limit = { MAN = { is_ai = yes } } load_oob = "Infantry_ai" }
+			}
+			SOV = {
+				516 = { set_state_flag = SOV_gulag_economy_flag }
+				644 = { set_state_flag = SOV_gulag_economy_flag }
+				562 = { set_state_flag = SOV_gulag_economy_flag }
+				579 = { set_state_flag = SOV_gulag_economy_flag }
+				574 = { set_state_flag = SOV_gulag_economy_flag }
+				575 = { set_state_flag = SOV_gulag_economy_flag }
+				576 = { set_state_flag = SOV_gulag_economy_flag }
+				577 = { set_state_flag = SOV_gulag_economy_flag }
+				580 = { set_state_flag = SOV_gulag_economy_flag }
+
+				if = {
+					limit = { 
+						SOV = { is_ai = yes }
+					}
+					229 = { add_building_construction = { type = infrastructure level = 6 instant_build = yes } }
+
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 5000 producer = SOV }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 4000 producer = SOV }
+					add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 1500 producer = SOV }
+					add_equipment_to_stockpile = { type = horse_equipment_0 amount = 4000 producer = SOV } 
+					add_equipment_to_stockpile = { type = armored_cars_equipment_1 amount = 1000 producer = SOV } 
+					add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2000 producer = SOV } 
+					add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 1000 producer = SOV } 
+
+					delete_unit_template_and_units = {
+						division_template = "Kavaleriyskaya Diviziya"
+						disband = yes
+					}
+					delete_unit_template_and_units = {
+						division_template = "NKVD Pogranichnaya Diviziya"
+						disband = yes
+					}
+				}
+			}
+
+			if = {
+				limit = { 
+					GER = { is_ai = yes }
+					ROM = { is_ai = yes }
+				}
+				ROM = {
+					give_resource_rights = { receiver = GER state = 46 }
+				}
+			}
+
+			if = {
+				limit = { 
+					POL = { is_ai = no }
+				}
+				830 = {
+					set_building_level = {
+						type = infrastructure
+						level = 9
+					}
+				}
+			}
+			
+			USA = {
+				country_event = { id = usa.31 days = 20 }
+			}
+			ENG = {
+				if = {
+					limit = { 
+						ENG = { is_ai = yes } 
+					}
+					delete_unit_template_and_units = {
+						division_template = "Cavalry Brigade"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Army Tank Brigade"
+					}
+				}	
+			}
+		
+			if = {
+				limit = { GER = { is_ai = yes } }
+				GER = { add_ideas = ger_ai load_oob = "GER_ai" }
+			}
+			if = {
+				limit = { SOV = { is_ai = yes } }
+				SOV = { add_ideas = sov_ai load_oob = "SOV_ai" }
+			}
+			if = {
+				limit = { JAP = { is_ai = yes } }
+				JAP = { add_ideas = jap_ai load_oob = "JAP_ai" }
+			}
+			if = {
+				limit = { USA = { is_ai = yes } }
+				USA = { add_ideas = usa_ai load_oob = "USA_ai" }
+			}
+			if = {
+				limit = { ITA = { is_ai = yes } }
+				ITA = { add_ideas = ita_ai load_oob = "Infantry_ai" }
+			}
+			if = {
+				limit = { ENG = { is_ai = yes } }
+				ENG = { add_ideas = eng_ai load_oob = "ENG_ai" }
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				PER = {
+					give_resource_rights = { receiver = ENG state = 411 }
+					give_resource_rights = { receiver = ENG state = 412 }
+					give_resource_rights = { receiver = ENG state = 413 }
+				}
+				IRQ = {
+					give_resource_rights = { receiver = ENG state = 291 }
+					give_resource_rights = { receiver = ENG state = 676 }
+				}
+				MAN = {
+					give_resource_rights = { receiver = JAP state = 716 }
+					give_resource_rights = { receiver = JAP state = 328 }
+				}
+			}
+			#Mexican oil concessions
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				MEX = {
+					give_resource_rights = { receiver = ENG state = 476 }
+					give_resource_rights = { receiver = ENG state = 477 }
+					give_resource_rights = { receiver = USA state = 479 }
+					give_resource_rights = { receiver = USA state = 480 }
+				}
+			}
+		}
+	}
+	on_unit_leader_promote_from_ranks_veteran = { #Unit leader scope, FROM is unit
+		effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = GER
+						tag = ITA
+						tag = SOV
+						tag = IRQ
+					}
+				}
+				if = {
+					limit = { 
+						NOT = {
+							has_global_flag = SPR_over_flag_tt
+						}
+						any_army_leader = {
+							NOT = {
+								has_trait = ita_kwantung_veto
+							}
+						} 
+					}
+					every_army_leader = {
+						add_unit_leader_trait = ita_kwantung_veto
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					tag = SPR
+				}
+				if = {
+					limit = { 
+						NOT = {
+							has_global_flag = SPR_over_flag_tt
+						}
+						any_army_leader = {
+							NOT = {
+								has_trait = spr_kwantung_veto
+							}
+						} 
+					}
+					every_army_leader = {
+						add_unit_leader_trait = spr_kwantung_veto
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = JAP
+						tag = MAN
+					}
+				}
+				if = {
+					limit = { 
+						NOT = {
+							has_global_flag = JAP_china_war_over_flag
+						}
+						any_army_leader = {
+							NOT = {
+								has_trait = jap_kwantung_veto
+							}
+						} 
+					}
+					every_army_leader = {
+						add_unit_leader_trait = jap_kwantung_veto
+					}
+				}
+			}
+			
+		}
+	}
+
+	on_unit_leader_promote_from_ranks_green = { #Unit leader scope, FROM is unit
+		effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = GER
+						tag = ITA
+						tag = IRQ
+					}
+				}
+				if = {
+					limit = { 
+						NOT = {
+							has_global_flag = SPR_over_flag_tt
+						}
+						any_army_leader = {
+							NOT = {
+								has_trait = ita_kwantung_veto
+							}
+						} 
+					}
+					every_army_leader = {
+						add_unit_leader_trait = ita_kwantung_veto
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					tag = SPR
+				}
+				if = {
+					limit = { 
+						NOT = {
+							has_global_flag = SPR_over_flag_tt
+						}
+						any_army_leader = {
+							NOT = {
+								has_trait = spr_kwantung_veto
+							}
+						} 
+					}
+					every_army_leader = {
+						add_unit_leader_trait = spr_kwantung_veto
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = JAP
+						tag = MAN
+					}
+				}
+				if = {
+					limit = { 
+						NOT = {
+							has_global_flag = JAP_china_war_over_flag
+						}
+						any_army_leader = {
+							NOT = {
+								has_trait = jap_kwantung_veto
+							}
+						} 
+					}
+					every_army_leader = {
+						add_unit_leader_trait = jap_kwantung_veto
+					}
+				}
+			}
+		}
+	}
+	on_unit_leader_level_up = { 
+		
+	}
+	# country 		
+	on_new_term_election = {
+		random_events = {
+			100 = spain.9
+		}
+		random_events = {
+			100 = election.2
+			100 = election.3
+			100 = election.4
+			100 = election.5
+			100 = election.6
+			100 = election.11
+			100 = election.12
+			100 = election.13
+			100 = election.14
+			100 = election.15
+		}
+	}
+
+	# country, FROM = ace, PREV = enemy ace 
+	# This event fires twice, once for each ace.
+	on_aces_killed_each_other = {
+		random_events = {
+			100 = aces_killed_each_other.1
+		}
+	}
+	
+	# country, FROM = our ace, 
+	# PREV = enemy ace, has killed FROM
+	on_ace_killed_by_ace = {
+		random_events = {
+			100 = ace_killed_by_ace.1
+		}
+	}
+
+	# country, FROM = our ace, 
+	# PREV = enemy ace, killed by FROM
+	on_ace_killed_other_ace = {
+		random_events = {
+			100 = ace_killed_other_ace.1
+		}
+	}
+
+	# country, FROM = ace
+	on_ace_killed = {
+		random_events = {
+			100 = ace_died.1
+		}
+	}
+	# our ace died in accident
+	# country, FROM = ace
+	on_ace_killed_on_accident = {
+	
+	}
+	
+	# enemy ace is killed by our non name
+	# country, FROM = enemy ace
+	on_non_ace_killed_other_ace = {
+	
+	}
+	# During justifying wargoals
+	# triggered daily, so make sure there is a sink somewhere not firing events
+	# country, FROM = target nation
+	on_justifying_wargoal_pulse = {
+
+		random_events = {
+			100 = war_justification.1
+			100 = war_justification.2
+			100 = war_justification.3
+			100 = war_justification.4
+			100 = war_justification.5
+			100 = war_justification.6
+			100 = war_justification.7
+			100 = war_justification.8
+			100 = war_justification.9
+			100 = war_justification.10
+			100 = war_justification.11
+			100 = war_justification.12
+			100 = war_justification.13
+			100 = war_justification.14
+			100 = war_justification.15
+			100 = war_justification.16
+			100 = war_justification.17
+			100 = war_justification.18
+			100 = war_justification.19
+			17000 = 0
+		}
+	}
+
+	on_wargoal_expire = {
+		random_events = {
+			100 = war_justification.301
+		}
+	}
+
+	on_nuke_drop = {
+
+		effect = {
+			if = {
+				limit = { NOT = { has_country_flag = achievement_has_dropped_nuke } }
+				goto_state = FROM
+				set_country_flag = achievement_has_dropped_nuke
+			}
+			if = {
+				limit = {
+					FROM = { state = 378 }					
+				}
+				set_country_flag = achievement_has_nuked_california
+			}
+			if = {
+				limit = {
+					FROM = { is_core_of = AST }					
+				}
+				set_country_flag = achievement_AST_nuke_self
+			}
+			if = {
+				limit = {
+					tag = SWE
+					FROM = {
+						is_owned_by = DEN
+						is_core_of = DEN
+					}
+				}
+				set_country_flag = achievement_med_plutonium
+			}
+			if = {
+				limit = {
+					FROM = { 
+						OR = {
+							state = 529
+							state = 528
+							state = 531
+							state = 803
+							state = 282
+						}
+					}
+					has_global_flag = JAP_nuke_1
+					NOT = {
+						has_global_flag = JAP_nuke_2
+					}
+				}
+				set_global_flag = JAP_nuke_2
+			}
+			if = {
+				limit = {
+					FROM = { 
+						OR = {
+							state = 529
+							state = 528
+							state = 531
+							state = 803
+							state = 282
+						}
+					}
+					NOT = {
+						has_global_flag = JAP_nuke_1
+					}
+				}
+				set_global_flag = JAP_nuke_1
+			}
+			
+			news_event = { id = nuke_dropped.2 days = 1 }
+			news_event = { id = nuke_dropped.3 days = 1 }
+			news_event = { id = nuke_dropped.4 days = 1 }
+			news_event = { id = nuke_dropped.5 days = 1 }
+			news_event = { id = nuke_dropped.6 days = 1 }
+			news_event = { id = nuke_dropped.7 days = 1 }
+			news_event = { id = nuke_dropped.8 days = 1 }
+			news_event = { id = nuke_dropped.9 days = 1 }
+			news_event = { id = nuke_dropped.10 days = 1 }
+			news_event = { id = nuke_dropped.11 days = 1 }
+			news_event = { id = nuke_dropped.12 days = 1 }
+			news_event = { id = nuke_dropped.13 days = 1 }
+		}
+		random_events = {
+			100 = nuke_dropped.0
+		}
+	}
+
+
+	# country random events
+	#on_bi_yearly_pulse = {
+	#
+	#}
+
+	#on_five_year_pulse = {
+	#
+	#}
+
+	on_border_war_lost = {
+		effect = {
+			owner = {
+				country_event = { id = china.14 }
+				country_event = { id = china.16 }
+			}
+		}
+	}
+	
+	on_leave_faction = {
+		effect = {
+			if = {
+				limit = { 
+					AND = {
+						tag = CAN 	
+						NOT = { has_dlc = "Together for Victory" }
+					}
+				}
+				drop_cosmetic_tag = yes
+			}
+			FROM = {
+				add_opinion_modifier = {
+					modifier = faction_traitor
+					target = ROOT
+					days = 365
+				}
+			
+				add_opinion_modifier = {
+					modifier = faction_traitor_trade
+					target = ROOT
+					days = 365
+				}
+			}
+		}
+	}
+
+	#FROM is the one that joins the faction
+	on_create_faction = {
+		effect = {
+			# Sunset invasion check
+			if = {
+				limit = {
+					FROM = { is_puppet = no }
+					OR = {
+						AND = {
+							tag = MEX
+							FROM = {
+								capital_scope = {
+									NOT = { is_on_continent = south_america }
+								}
+							}
+						}
+						AND = {
+							FROM = {
+								tag = MEX
+							}
+							capital_scope = {
+								NOT = { is_on_continent = south_america }
+							}
+						}
+					}
+				}
+				set_country_flag = achievement_failed_sunset_invasion
+			}
+		}
+	}
+
+	#FROM is country getting invited.
+	on_offer_join_faction = {
+		effect = {
+			#Give achievement to nation joining a faction, but not in one from game start
+			if = {
+				limit = {
+					date > 1936.01.02
+				}
+				FROM = {
+					if = {
+						limit = {
+							is_faction_leader = no
+						}
+						set_country_flag = achievement_has_joined_faction
+					}
+				}
+			}
+			#Remove anti_soviet_pact if joining commie Soviet in faction
+			if = {
+				limit = {
+					original_tag = SOV
+					has_government = communism
+					FROM = {
+						has_idea = anti_soviet_pact 
+					}
+				}
+				FROM = {
+					remove_ideas = anti_soviet_pact
+				}
+			}
+	
+			# Sunset invasion check
+			if = {
+				limit = {
+					is_puppet = no
+					OR = {
+						AND = {
+							tag = MEX
+							FROM = {
+								capital_scope = {
+									NOT = { is_on_continent = south_america }
+								}
+							}
+						}
+						AND = {
+							FROM = {
+								tag = MEX
+							}
+							capital_scope = {
+								NOT = { is_on_continent = south_america }
+							}
+						}
+					}
+				}
+				set_country_flag = achievement_failed_sunset_invasion
+			}			
+		}
+	}
+
+	#FROM is faction leader on join faction requests. THIS DOES NOT FIRE ON ADD_TO_FACTION EFFECT! USE ON_OFFER_JOIN_FACTION!
+	on_join_faction = {
+		effect = {
+			set_country_flag = achievement_has_joined_faction
+			#Remove anti_soviet_pact if joining commie Soviet in faction
+			if = {
+				limit = {
+					has_idea = anti_soviet_pact 
+					FROM = {
+						original_tag = SOV
+						has_government = communism
+					}
+				}
+				remove_ideas = anti_soviet_pact
+			}
+
+			# Sunset invasion check
+			if = {
+				limit = {
+					is_puppet = no
+					OR = {
+						AND = {
+							tag = MEX
+							FROM = {
+								capital_scope = {
+									NOT = { is_on_continent = south_america }
+								}
+							}
+						}
+						AND = {
+							FROM = {
+								tag = MEX
+							}
+							capital_scope = {
+								NOT = { is_on_continent = south_america }
+							}
+						}
+					}
+				}
+				set_country_flag = achievement_failed_sunset_invasion
+			}
+			# Romania shouldn't declare war on Bulgaria on historical mode, if both are going to join the Axis
+			if = {
+				limit = {
+					original_tag = BUL
+					FROM = { original_tag = GER }
+					is_historical_focus_on = yes
+				}
+				ROM = {
+					add_ai_strategy = {
+						type = befriend
+						id = "BUL"
+						value = 200
+					}
+				}
+			}																						 
+		}
+	}
+
+	#FROM is war target
+	on_declare_war = {
+  		effect = {
+			if = {
+				limit = {
+					tag = HUN 
+				}
+				HUN = {
+					add_timed_idea = {
+						idea = HUN_overeliance_german_trade
+						days = 180
+					}
+				}
+			}
+		
+			if = {
+				limit = {
+					FROM = { tag = POL }
+					ROOT = { tag = GER }
+				}
+				hidden_effect = {
+					every_country = {limit = { check_variable= { speeches_enabled > 0}  }
+						scoped_sound_effect = "sp_chamberlain"
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = { tag = YUG }
+					ROOT = { 
+						OR = {
+							tag = GER
+							is_in_faction_with = GER 
+						}
+					}	
+				}
+				ENG = { add_to_faction = YUG }
+			}	
+			if = {
+				limit = {
+					FROM = { tag = USA }
+					ROOT = { tag = JAP }
+				}
+				hidden_effect = {
+					every_country = {limit = { check_variable= { speeches_enabled > 0}  }
+						scoped_sound_effect = "sp_usa_speech_japan_attack"
+					}	
+				}
+			}
+   		}   		
+		effect = {
+			
+			if = {
+				limit = {
+					FROM = { tag = SOV }
+					ROOT = { tag = GER }
+				}
+				GER = {
+					swap_ideas = {
+						remove_idea = general_staff1
+						add_idea = general_staff2
+					}
+				}
+			}			
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+					OR = {
+						AND = {
+							has_naval_treaty_trigger = yes
+							FROM = {
+								is_major = yes
+							}
+						}
+						AND = {
+							is_major = yes
+							FROM = {
+								has_naval_treaty_trigger = yes
+							}
+						}
+					}
+				}
+				every_country = {
+					limit = { has_naval_treaty_trigger = yes }
+					remove_naval_treaty_effect = yes
+					set_country_flag = FLG_treaty_already_gone
+					#MTG_TODO_GABRIEL: news event
+				}
+			}
+			
+
+			## Soviet war after purge
+			if = {
+				limit = {
+					OR = {
+						FROM = { tag = SOV }
+						ROOT = { tag = SOV }
+					}
+					SOV = {
+						NOT = { has_country_flag = SOV_war_since_purge }
+						has_completed_focus = SOV_great_purge
+					}
+				}
+				SOV = { set_country_flag = SOV_war_since_purge }
+			}							
+			#Greece if ita or ger is a  player
+			if = {
+				limit = {
+				OR = {
+					FROM = { tag = GRE }
+					ROOT = { tag = GRE }
+				}
+				OR = { ITA = { is_ai = no } GER = { is_ai = no } }			
+				}		
+				GRE = { add_ideas = GRE_spirit_of_spartans }
+			}
+			# Remove pact opinion modifiers if at war with Germany
+			if = {
+				limit = {
+					tag = GER
+					FROM = {
+						OR = {
+							has_opinion_modifier = anti_comintern_pact_opinion
+							has_opinion_modifier = tripartite_pact_opinion
+							has_idea = anti_soviet_pact
+						}
+					}
+				}
+				FROM = {
+					remove_opinion_modifier = { target = GER modifier = anti_comintern_pact_opinion }
+					remove_opinion_modifier = { target = GER modifier = tripartite_pact_opinion }
+					remove_ideas = anti_soviet_pact
+				}
+			}
+			if = {
+				limit = {
+					FIN = { has_completed_focus = FIN_abandoned }
+					ROOT = {
+						TAG = FIN
+					}
+					FROM = {
+						TAG = SOV
+					}
+				}
+				FIN = { complete_national_focus = FIN_continuation_war }	 
+			}
+			if = {
+				limit = {
+					FIN = { has_completed_focus = FIN_abandoned }
+					ROOT = {
+						TAG = SOV
+					}
+					FROM = {
+						TAG = FIN
+					}
+				}
+				FIN = { complete_national_focus = FIN_continuation_war }	 
+			}
+			#Germany has started a war - allies should try to contain Germany
+			if = {
+				limit = {
+					ROOT = {
+						TAG = GER
+					}
+					FROM = {
+						TAG = POL
+					}
+				}
+				ENG = { country_event = { id = britain.38 days = 7 } }		
+				SAF = { country_event = { id = britain.38 days = 7 } }	
+				CAN = { country_event = { id = britain.38 days = 7 } }
+				AST = { country_event = { id = britain.38 days = 7 } }
+				NZL = { country_event = { id = britain.38 days = 7 } }
+				RAJ = { country_event = { id = britain.38 days = 7 } }				
+			}
+			if = {
+				limit = {
+					ROOT = {
+						TAG = GER
+					}
+					FROM = {
+						TAG = POL
+					}
+					NOT = { has_global_flag = sov_yes_pact }
+				}
+				SOV = { country_event = { id = germany.248 days = 3 } }				
+			}			
+			#Call Anti-Soviet pact members to war
+			if = {
+				limit = {
+					ROOT = { tag = SOV }
+					FROM = { has_idea = anti_soviet_pact }
+				}
+				FROM = {
+					country_event = { id = germany.84 days = 1 }
+				}
+			}
+			#Remove MEFO bills if Germany goes to war
+			if = {
+				limit = {
+					ROOT = { original_tag = GER }
+					ROOT = { GER_has_mefo_bills = yes }
+					NOT = { FROM = { original_tag = GER } } # Don't remove it from Fascist Germany if they start the civil war
+				}
+				ROOT = {
+					GER_remove_mefo_bills = yes
+					set_country_flag = mefo_bills_removed_through_war
+				}
+				
+			}
+
+			#Remove MEFO bills if Germany is declared war on
+			if = {
+				limit = {
+					FROM = { original_tag = GER }
+					FROM = { GER_has_mefo_bills = yes }
+				}
+				FROM = {
+					GER_remove_mefo_bills = yes
+					set_country_flag = mefo_bills_removed_through_war
+				}
+			}
+
+			#Remove previous ideology civil war faction from Democratic Germany faction and add Democratic civil war faction to Germany's faction
+			if = {
+				limit = {
+					FROM = {
+						is_in_faction_with = GER
+					#	has_civil_war = yes
+						NOT = { has_government = democratic }
+					}
+					has_government = democratic
+					GER = { has_government = democratic }
+				}
+				FROM = { set_country_flag = GER_civil_war_target }
+				GER = { remove_from_faction = FROM }
+				GER = { add_to_faction = ROOT }
+				GER = { country_event = wtt_germany.52 }
+			}
+
+			#If prepared by siphoning equipment, receive equipment back
+			if = {
+				limit = {
+					FROM = {
+						has_civil_war = yes
+						has_country_flag = siphoned_equipment_stockpiles_for_civil_war
+					}
+					has_civil_war = yes
+				}
+				FROM = {
+					clr_country_flag = siphoned_equipment_stockpiles_for_civil_war
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 1000
+					}
+				}
+			}
+
+			#If prepared with surprise attack plan, get bonus
+			if = {
+				limit = {
+					FROM = {
+						original_tag = ROOT
+						#has_civil_war = yes
+						has_country_flag = formulated_surprise_attack_plan_for_civil_war
+					}
+					#has_civil_war = yes
+				}
+				FROM = {
+					clr_country_flag = formulated_surprise_attack_plan_for_civil_war
+					add_timed_idea = {
+						idea = civil_war_surprise_attack_plan
+						days = 30
+					}
+				}
+			}
+		
+		}
+	}
+	
+	# When a new faction is formed
+	on_faction_formed = {
+		effect = {
+			news_event = { id = news.159 }
+		}
+	}
+
+	on_war = {
+		effect = {
+			
+			if = {
+				limit = {
+					OR = {
+						FROM = {
+							OR = {
+								has_idea = disarmed_nation 
+								has_idea = volunteer_only
+							}
+						}					
+						ROOT = {
+							OR = {
+								has_idea = disarmed_nation 
+								has_idea = volunteer_only
+							}
+						}
+					}
+				}
+				add_ideas = limited_conscription
+			}		
+		}
+		effect = {
+			if = {
+				limit = {
+					tag = IRE
+					has_war_with = GER
+				}
+			 IRE = { add_ideas = IRE_war_1 }
+			 IRE = { add_ideas = IRE_IRA_idea }
+			}
+		}	
+	}	
+	# ROOT is capitulated country, FROM is winner
+	on_capitulation = {
+	effect = {	
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						tag = GER
+						is_in_faction_with = GER 
+					} 
+				}
+				ROOT = { tag = GRE }
+			}
+			
+			GRE = {
+		   		transfer_navy = {
+					target = ENG
+				}
+			}
+			if = {
+				limit = {
+					country_exists = BUL
+				}
+				BUL = {
+					transfer_state = 184
+				}
+
+			}
+			if = {
+				limit = {
+					NOT = {
+						country_exists = BUL
+					}
+				}
+				GER = {
+					transfer_state = 184
+				}
+			}
+			ENG = {
+				transfer_state = 182
+			}
+			ITA = {
+				transfer_state = 47
+				transfer_state = 185
+				transfer_state = 186
+			}	
+			GER = {
+				transfer_state = 731
+				transfer_state = 829
+				transfer_state = 832
+
+			}				
+			if = {
+	   			limit = {
+	   				833 = {
+						is_fully_controlled_by = GRE
+					}
+	   			}
+	   			ENG = {
+					transfer_state = 833
+				}
+			}
+			if = {
+	   			limit = {
+					NOT = {
+	   				    182 = {
+						    is_fully_controlled_by = ENG
+					    }
+				    }
+	   			}
+	   			GER = {
+					transfer_state = 182
+				}
+			}			
+		}
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						tag = SOV
+						is_in_faction_with = SOV
+					} 
+				}
+				ROOT = { tag = GER }
+				
+			}
+			every_state = {
+				limit = {		
+					is_core_of = SOV
+				}
+				remove_core_of = POL
+				
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						tag = ENG
+						is_in_faction_with = ENG
+					} 
+				}
+				ROOT = { tag = GER }
+				
+			}
+			every_state = {
+				limit = {		
+					is_core_of = SOV
+				}
+				remove_core_of = POL
+				
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						tag = GER
+						is_in_faction_with = GER 
+					} 
+				}
+				ROOT = { tag = YUG }
+			}
+			YUG = {
+		   		transfer_navy = {
+					target = ENG
+				}
+			}
+			if = {
+				limit = {
+					country_exists = HUN
+				}	
+				GER = {
+					transfer_state = 102
+					add_state_core = 102
+					transfer_state = 109	
+					transfer_state = 104
+					transfer_state = 107
+					transfer_state = 108
+					transfer_state = 106
+	   				transfer_state = 764
+				}
+				HUN = {
+	   				transfer_state = 45
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						country_exists = HUN
+					}	
+				}	
+				GER = {
+					transfer_state = 102
+					add_state_core = 102
+					transfer_state = 109	
+					transfer_state = 104
+					transfer_state = 107
+					transfer_state = 108
+					transfer_state = 106	
+					transfer_state = 45
+	   				transfer_state = 764
+				}
+			}	
+			ITA = {
+				transfer_state = 187
+				add_state_core = 187
+				transfer_state = 105
+				transfer_state = 103
+			}
+			if = {
+				limit = {
+					BUL = {
+						is_ai = no
+					}
+				}	
+				BUL = {
+					transfer_state = 106	
+				}
+			}			   			
+		}
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						tag = GER
+						is_in_faction_with = GER 
+					} 
+				}
+				ROOT = { tag = DEN }
+			}
+			DEN = {
+		   		transfer_navy = {
+					target = ENG
+				}
+			}
+			GER = {
+				transfer_state = 99
+				transfer_state = 37
+			}	
+			ENG = {  
+				transfer_state = 100
+				transfer_state = 101
+			}	
+		}
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						tag = GER
+						is_in_faction_with = GER 
+					} 
+				}
+				ROOT = { tag = NOR }
+			}
+			NOR = {
+		   		transfer_navy = {
+					target = ENG
+				}
+			}
+			ENG = {
+				country_event = britain.9
+			}
+		   	every_state = {
+		   		limit = {
+		   			is_core_of = NOR
+	   			}	
+	   			GER = { transfer_state = PREV }
+	   		}	
+		}
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						tag = GER
+						is_in_faction_with = GER 
+					} 
+				}
+				ROOT = { tag = HOL }
+			}
+			HOL = {
+		   		transfer_navy = {
+					target = ENG
+				}
+			}
+			ENG = {
+				set_autonomy = {
+					target = INS
+					autonomous_state = autonomy_puppet
+					freedom_level = 0.4
+				}
+			}
+			INS = {
+				give_military_access = USA
+			}		
+		}
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						tag = GER
+						is_in_faction_with = GER 
+					} 
+				}
+				ROOT = { tag = BEL }
+			}
+			BEL = {
+		   		transfer_navy = {
+					target = ENG
+				}
+			}	
+		}
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						tag = GER
+						is_in_faction_with = GER 
+					} 
+				}
+				ROOT = { tag = POL }
+				POL = {
+					is_ai = no
+				}
+			}
+			
+			POL = {
+				set_politics = {
+					ruling_party = democratic
+				}
+				set_party_name = { 
+					ideology = democratic 
+					long_name = POL_cap_name_long
+					name = POL_cap_name_short
+				}
+				create_country_leader = {
+					name = "Władysław Sikorski"
+					desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
+					picture = "gfx/leaders/POL/r56_bullshit_deosntwork.dds"
+					expire = "1965.1.1"
+					ideology = liberalism
+					traits = {
+						#
+					}
+				}
+	            transfer_state = 830
+				transfer_state = 831
+				add_manpower = -2000000
+			}
+            GER = {
+				set_state_controller = 85
+				set_state_controller = 86
+				set_state_controller = 87
+				set_state_controller = 98
+				set_state_controller = 10
+				set_state_controller = 90
+				set_state_controller = 762
+				set_state_controller = 88
+				set_state_controller = 72
+				set_state_controller = 811
+				set_state_controller = 92	
+			}
+			SOV = {
+				transfer_state = 96
+				transfer_state = 784
+				transfer_state = 95
+				transfer_state = 97
+				transfer_state = 94
+				transfer_state = 93
+				transfer_state = 91
+				transfer_state = 89
+				transfer_state = 827
+			}	
+		}
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						tag = GER
+						is_in_faction_with = GER 
+					} 
+				}
+				ROOT = { tag = POL }
+				POL = {
+					is_ai = yes
+				}
+			}
+			POL = {
+				transfer_navy = {
+				    target = ENG
+			    }
+		    }
+            GER = {
+				transfer_state = 85
+				transfer_state = 86
+				transfer_state = 87
+				transfer_state = 98
+				transfer_state = 10
+				transfer_state = 90
+				transfer_state = 762
+				transfer_state = 88
+				transfer_state = 72
+				transfer_state = 811
+				transfer_state = 92	
+			}
+			SOV = {
+				transfer_state = 96
+				transfer_state = 784
+				transfer_state = 95
+				transfer_state = 97
+				transfer_state = 94
+				transfer_state = 93
+				transfer_state = 91
+				transfer_state = 89
+				transfer_state = 827
+			}
+			ENG = {
+				transfer_state = 830
+				transfer_state = 831
+			}
+			830 = {
+				set_state_category = megalopolis
+			}
+		}
+		if = {
+			limit = {		
+	
+				FROM = { tag = SPR }
+				ROOT = { tag = SPN }
+				NOT = {
+					has_global_flag = scw_over
+				}
+			}
+			hidden_effect = { 
+				set_global_flag = scw_over
+				every_country = {
+					set_variable = { var = super_event value = 7 }			
+				}
+				ITA = {
+					add_to_variable = { ITA_re_experience_gain_army_factor = 0.3 }
+				}
+				if = {
+					limit = {
+						GER = {
+							has_idea = general_staff0
+						}
+					}
+					GER = {
+						swap_ideas = {
+							remove_idea = general_staff0
+							add_idea = general_staff1
+						}
+
+					}
+					
+				}
+				if = {
+					limit = {
+						GER = {
+							has_idea = og_general_staff
+						}
+					}
+					GER = {
+						swap_ideas = {
+							remove_idea = og_general_staff
+							add_idea = general_staff1
+						}
+
+					}
+				}
+				
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = ETH_capitulated
+						}
+					}
+				
+					ITA = {
+						annex_country = { target = ETH }
+						country_event = { id = italy.32 }
+					}
+				}
+				
+				set_global_flag = SPR_over_flag_tt
+				every_country = {limit = { check_variable= { music_enabled > 0}  }
+					scoped_sound_effect = "se_spanish_civil_war_nationalist_victory"
+				}
+
+				ITA = {	
+					if = {
+						limit = { 
+							any_army_leader = {
+								has_trait = ita_kwantung_veto
+							} 
+						}
+						every_army_leader = {
+							remove_unit_leader_trait = ita_kwantung_veto
+						}
+					}
+
+				}	
+				GER = {	
+			
+					if = {
+						limit = { 
+							any_army_leader = {
+								has_trait = ita_kwantung_veto
+							} 
+						}
+						every_army_leader = {
+							remove_unit_leader_trait = ita_kwantung_veto
+						}
+					}
+					
+				}
+				IRQ = {	
+			
+					if = {
+						limit = { 
+							any_army_leader = {
+								has_trait = ita_kwantung_veto
+							} 
+						}
+						every_army_leader = {
+							remove_unit_leader_trait = ita_kwantung_veto
+						}
+					}
+					
+				}
+				SPR = {	
+			
+					add_ideas = ROM_ger_trade_treaty
+					if = {
+						limit = { 
+							any_army_leader = {
+								has_trait = spr_kwantung_veto
+							} 
+						}
+						every_army_leader = {
+							remove_unit_leader_trait = spr_kwantung_veto
+						}
+					}
+				}
+				SOV = {	
+					if = {
+						limit = { 
+							any_army_leader = {
+								has_trait = ita_kwantung_veto
+							} 
+						}
+						every_army_leader = {
+							remove_unit_leader_trait = ita_kwantung_veto
+						}
+					}
+				}
+				SOV = { change_tag_from = SPN }
+				SPN = {
+					remove_ideas = SPR_death_before_surrender
+					delete_unit_template_and_units = {
+						division_template = "Guarnición Republicana"
+						disband = yes
+					}
+					delete_unit_template_and_units = {
+						division_template = "División de la Guardia de Asalto"
+						disband = yes
+					}	
+					delete_unit_template_and_units = {
+						division_template = "Brigada de Juventudes Sindicales"
+						disband = yes
+					}	
+					delete_unit_template_and_units = {
+						division_template = "Guarnición Nacionalista"
+						disband = yes
+					}
+					delete_unit_template_and_units = {
+						division_template = "Requeté Carlista"
+						disband = yes
+					}
+					delete_unit_template_and_units = {
+						division_template = "Brigada da la Guardia Civil"
+						disband = yes
+					}
+					delete_unit_template_and_units = {
+						division_template = "Brigada de la Guardia Civil"
+						disband = yes
+					}
+					delete_unit_template_and_units = {
+						division_template = "Gornostrelkovaya Diviziya"
+						disband = yes
+					}
+
+				}
+				SPR = { 
+					annex_country = { target = SPN transfer_troops = no }
+					add_ideas = SPA_recovering_from_civil_war
+					set_rule = {
+						can_access_market = yes
+					}
+					remove_ideas = SPR_death_before_surrender
+					delete_unit_template_and_units = {
+						division_template = "Guarnición Republicana"
+						disband = yes
+					}
+					delete_unit_template_and_units = {
+						division_template = "División de la Guardia de Asalto"
+						disband = yes
+					}	
+					delete_unit_template_and_units = {
+						division_template = "Brigada de Juventudes Sindicales"
+						disband = yes
+					}	
+					delete_unit_template_and_units = {
+						division_template = "Guarnición Nacionalista"
+						disband = yes
+					}
+					delete_unit_template_and_units = {
+						division_template = "Requeté Carlista"
+						disband = yes
+					}
+					delete_unit_template_and_units = {
+						division_template = "Brigada da la Guardia Civil"
+						disband = yes
+					}
+					delete_unit_template_and_units = {
+						division_template = "Brigada de la Guardia Civil"
+						disband = yes
+					}
+				}
+				
+				794 ={
+					remove_core_of = SPR 
+					#add_core_of = 
+				}
+				165 ={
+					remove_core_of = SPR 
+				}
+				41 ={
+					remove_core_of = SPR 
+				}
+				793 ={
+					remove_core_of = SPR 
+				}
+				167 ={
+					remove_core_of = SPR 
+				}
+				41 ={
+					remove_core_of = SPR 
+				}
+				175 ={
+					remove_core_of = SPR 
+				}
+				168 ={
+					remove_core_of = SPR 
+				}
+				173 ={
+					remove_core_of = SPR 
+				}
+			}
+		}	
+		if = {
+			limit = {		
+	
+				FROM = { tag = SPN }
+				ROOT = { tag = SPR }
+				NOT = {
+					has_global_flag = scw_over
+				}
+			}
+			hidden_effect = { 
+				add_named_threat = { threat = 5 name = RepublicanVictory }
+				every_country = {
+					set_variable = { var = super_event value = 6 }			
+				}
+				ITA = {
+					add_to_variable = { ITA_re_experience_gain_army_factor = 0.3 }
+				}
+				if = {
+					limit = {
+						GER = {
+							has_idea = general_staff0
+						}
+					}
+					GER = {
+						swap_ideas = {
+							remove_idea = general_staff0
+							add_idea = general_staff1
+						}
+
+					}
+				}
+				if = {
+					limit = {
+						GER = {
+							has_idea = og_general_staff
+						}
+					}
+					GER = {
+						swap_ideas = {
+							remove_idea = og_general_staff
+							add_idea = general_staff1
+						}
+
+					}
+				}
+				
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = ETH_capitulated
+						}
+					}
+			
+					ITA = {
+						annex_country = { target = ETH }
+						country_event = { id = italy.32 }
+					}
+				}
+				set_global_flag = SPR_over_flag_tt
+				every_country = {limit = { check_variable= { music_enabled > 0}  }
+					scoped_sound_effect = "se_spanish_civil_war_republican_victory"
+				}
+				every_country = {
+					limit = {
+						OR = {
+							tag = ENG 
+							tag = FRA 
+							tag = CAN 
+							tag = AST 
+							tag = SAF 
+							tag = RAJ 
+							tag = NZL 
+						}
+					}
+					add_war_support = 0.05
+				}
+
+				ITA = {	
+					if = {
+						limit = { 
+							any_army_leader = {
+								has_trait = ita_kwantung_veto
+							} 
+						}
+						every_army_leader = {
+							remove_unit_leader_trait = ita_kwantung_veto
+						}
+					}
+					
+				}	
+				GER = {	
+					if = {
+						limit = { 
+							any_army_leader = {
+								has_trait = ita_kwantung_veto
+							} 
+						}
+						every_army_leader = {
+							remove_unit_leader_trait = ita_kwantung_veto
+						}
+					}
+					
+				}
+				IRQ = {	
+			
+					if = {
+						limit = { 
+							any_army_leader = {
+								has_trait = ita_kwantung_veto
+							} 
+						}
+						every_army_leader = {
+							remove_unit_leader_trait = ita_kwantung_veto
+						}
+					}
+					
+				}
+				SPR = {	
+					add_ideas = ROM_ger_trade_treaty
+					if = {
+						limit = { 
+							any_army_leader = {
+								has_trait = spr_kwantung_veto
+							} 
+						}
+						every_army_leader = {
+							remove_unit_leader_trait = spr_kwantung_veto
+						}
+					}
+
+				}
+
+				SOV = {	
+					if = {
+						limit = { 
+							any_army_leader = {
+								has_trait = ita_kwantung_veto
+							} 
+						}
+						every_army_leader = {
+							remove_unit_leader_trait = ita_kwantung_veto
+						}
+					}
+				}		
+			}
+			set_global_flag = scw_over
+			set_global_flag = scw_over_spr_lost
+			SOV = { change_tag_from = SPN }
+			SPN = {
+				set_rule = {
+						can_access_market = yes
+					}
+				remove_ideas = SPR_death_before_surrender
+				delete_unit_template_and_units = {
+					division_template = "Guarnición Republicana"
+					disband = yes
+				}
+				delete_unit_template_and_units = {
+					division_template = "División de la Guardia de Asalto"
+					disband = yes
+				}	
+				delete_unit_template_and_units = {
+					division_template = "Brigada de Juventudes Sindicales"
+					disband = yes
+				}	
+				delete_unit_template_and_units = {
+					division_template = "Guarnición Nacionalista"
+					disband = yes
+				}
+				delete_unit_template_and_units = {
+					division_template = "Requeté Carlista"
+					disband = yes
+				}
+				delete_unit_template_and_units = {
+					division_template = "Brigada da la Guardia Civil"
+					disband = yes
+				}
+				delete_unit_template_and_units = {
+					division_template = "Brigada de la Guardia Civil"
+					disband = yes
+				}
+				delete_unit_template_and_units = {
+					division_template = "Gornostrelkovaya Diviziya"
+					disband = yes
+				}
+
+			}
+			
+			SPR = { 
+				annex_country = { target = SPN transfer_troops = no }
+				remove_ideas = SPR_death_before_surrender
+				
+				add_ideas = SPA_recovering_from_civil_war
+				delete_unit_template_and_units = {
+					division_template = "Guarnición Republicana"
+					disband = yes
+				}
+				delete_unit_template_and_units = {
+					division_template = "División de la Guardia de Asalto"
+					disband = yes
+				}	
+				delete_unit_template_and_units = {
+					division_template = "Brigada de Juventudes Sindicales"
+					disband = yes
+				}	
+				delete_unit_template_and_units = {
+					division_template = "Guarnición Nacionalista"
+					disband = yes
+				}
+				delete_unit_template_and_units = {
+					division_template = "Requeté Carlista"
+					disband = yes
+				}
+				delete_unit_template_and_units = {
+					division_template = "Brigada da la Guardia Civil"
+					disband = yes
+				}
+				delete_unit_template_and_units = {
+					division_template = "Brigada de la Guardia Civil"
+					disband = yes
+				}
+			}
+			794 ={
+				remove_core_of = SPR 
+				#add_core_of = 
+			}
+			165 ={
+				remove_core_of = SPR 
+			}
+			41 ={
+				remove_core_of = SPR 
+			}
+			793 ={
+				remove_core_of = SPR 
+			}
+			167 ={
+				remove_core_of = SPR 
+			}
+			41 ={
+				remove_core_of = SPR 
+			}
+			175 ={
+				remove_core_of = SPR 
+			}
+			168 ={
+				remove_core_of = SPR 
+			}
+			173 ={
+				remove_core_of = SPR 
+			}
+			SOV = {	
+				add_offsite_building = { type = industrial_complex level = 15 }
+			}	
+		}
+		if = {
+			limit = {
+				FROM = { tag = GER }
+				ROOT = { tag = FRA }
+				FRA = { 
+					has_country_flag = FRA_u_held_1
+					NOT = { 
+						has_completed_focus = FRA_refus_absurde
+					}	
+				}
+			}
+			set_variable = {
+				var = political_weight
+				value = 50
+			} 
+		}
+		if = {
+			limit = {
+				FROM = { tag = GER }
+				ROOT = { tag = FRA }
+				FRA = { 
+					has_country_flag = FRA_u_held_2
+					NOT = { 
+						has_completed_focus = FRA_refus_absurde
+					}
+				}
+			}
+			set_variable = {
+				var = political_weight
+				value = 100
+			} 
+		}
+		if = {
+			limit = {
+				FROM = { tag = GER }
+				ROOT = { tag = FRA }
+				FRA = { 
+					has_country_flag = FRA_u_held_3
+					NOT = { 
+						has_completed_focus = FRA_refus_absurde
+					}
+				}
+			}
+			set_variable = {
+				var = political_weight
+				value = 150
+			} 
+		}
+		if = {
+			limit = {
+				FROM = { tag = GER }
+				ROOT = { tag = FRA }
+				FRA = { 
+					has_country_flag = FRA_u_held_4
+					NOT = { 
+						has_completed_focus = FRA_refus_absurde
+					}
+				}
+			}
+			set_variable = {
+				var = political_weight
+				value = 200
+			} 
+		}
+		if = {
+			limit = {
+				FROM = { tag = GER }
+				ROOT = { tag = FRA }
+				FRA = { 
+					has_country_flag = FRA_u_held_5
+					NOT = { 
+						has_completed_focus = FRA_refus_absurde
+					}
+				}
+			}
+			set_variable = {
+				var = political_weight
+				value = 250
+			} 
+		}
+		if = {
+			limit = {
+				FROM = { tag = GER }
+				ROOT = { tag = FRA }
+				FRA = { 
+					has_country_flag = FRA_u_held_6
+					NOT = { 
+						has_completed_focus = FRA_refus_absurde
+					}
+				}
+			}
+			set_variable = {
+				var = political_weight
+				value = 300
+			} 
+		}
+		 if = {
+			limit = {
+				FROM = { tag = GER }
+				ROOT = { tag = FRA }
+				FRA = { 
+					has_country_flag = FRA_u_held_7
+					NOT = { 
+						has_completed_focus = FRA_refus_absurde
+					}
+				}
+			}
+			set_variable = {
+				var = political_weight
+				value = 350
+			} 
+		}
+		if = {
+			limit = {
+				FROM = { tag = GER }
+				ROOT = { tag = FRA }
+				FRA = { 
+					has_country_flag = FRA_u_held_8
+					NOT = { 
+						has_completed_focus = FRA_refus_absurde
+					}
+				}
+			}
+			set_variable = {
+				var = political_weight
+				value = 400
+			} 
+		}
+		if = {
+			limit = {
+				FROM = { tag = GER }
+				ROOT = { tag = FRA }
+				FRA = { 
+					has_country_flag = FRA_u_held_9
+					NOT = { 
+						has_completed_focus = FRA_refus_absurde
+					}
+				}
+			}
+			set_variable = {
+				var = political_weight
+				value = 450
+			} 
+		}
+		if = {
+			limit = {
+				FROM = { tag = GER }
+				ROOT = { tag = FRA }
+				FRA = { 
+					has_country_flag = FRA_u_held_10
+					NOT = { 
+						has_completed_focus = FRA_refus_absurde
+					}
+				}
+			}
+			set_variable = {
+				var = political_weight
+				value = 500
+			} 
+		}
+		if = {
+			limit = {
+				FROM = { 
+					OR = {
+						tag = GER 			
+						is_in_faction_with = GER
+					}
+				}
+				ROOT = { tag = ENG }
+				NOT = {
+					ENG = {
+						has_country_flag = USA_sealion_has_begun
+					}
+				}	
+			}
+			ENG = {
+				set_country_flag = USA_sealion_has_begun
+				add_ideas = USA_last_bastion_of_democracy
+			}
+			CAN = {
+				add_ideas = USA_last_bastion_of_democracy
+			}
+			MEX = {
+				add_ideas = USA_last_bastion_of_democracy
+			}
+			BRA = {
+				add_ideas = USA_last_bastion_of_democracy
+			}
+			SAF = {
+				add_ideas = USA_last_bastion_of_democracy
+			}
+			FRA = {
+				add_ideas = USA_last_bastion_of_democracy
+			}
+			IRE = {
+				add_ideas = USA_last_bastion_of_democracy
+			}
+			RAJ = {
+				add_ideas = USA_last_bastion_of_democracy
+			}
+			AST = {
+				add_ideas = USA_last_bastion_of_democracy
+			}
+			NZL = {
+				add_ideas = USA_last_bastion_of_democracy
+			}
+			POL = {
+				add_ideas = USA_last_bastion_of_democracy
+			}
+
+
+		}	
+		if = {
+			limit = {
+				FROM = { tag = SOV }
+				ROOT = { tag = FIN }
+				date < 1941.06.01
+			}
+		 	FIN = {
+		 		set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 5
+					neutrality = 10
+					fascism = 5
+					communism = 80
+				}
+		
+			}
+			SOV = { add_to_faction = FIN }	
+		}
+		if = {
+			limit = {
+				FROM = { tag = GER }
+				ROOT = { tag = POL }
+			}
+			FRA = {
+				complete_national_focus = FRA_phoney_war
+			}	
+		} 
+		if = {
+			limit = {
+				FROM = { 
+					OR = {
+						is_in_faction_with = GER
+						tag = GER 
+					}
+				}
+				ROOT = { tag = NOR }
+			}
+			FRA = {
+				add_to_variable = { var = FRA_initial_war_euthasium_army_core_attack_factor_modifier value = -0.075 }
+				add_to_variable = { var = FRA_initial_war_euthasium_army_core_defence_factor_modifier value = -0.075 }
+				add_to_variable = { var = FRA_initial_war_euthasium_air_ground_attack_modifier value = -0.075 }
+			}	
+		}
+		 if = {
+			limit = {
+				FROM = { 
+					OR = {
+						is_in_faction_with = GER
+						tag = GER 
+					}
+				}
+				ROOT = { tag = DEN }
+			}
+			FRA = {
+				add_to_variable = { var = FRA_initial_war_euthasium_army_core_attack_factor_modifier value = -0.05 }
+				add_to_variable = { var = FRA_initial_war_euthasium_army_core_defence_factor_modifier value = -0.05 }
+				add_to_variable = { var = FRA_initial_war_euthasium_air_ground_attack_modifier value = -0.05 }
+			}	
+		}
+		if = {
+			limit = {
+				FROM = { 
+					OR = {
+						is_in_faction_with = GER
+						tag = GER 
+					}
+				}
+				ROOT = { tag = HOL }
+			}
+			FRA = {
+				add_to_variable = { var = FRA_initial_war_euthasium_army_core_attack_factor_modifier value = -0.05 }
+				add_to_variable = { var = FRA_initial_war_euthasium_army_core_defence_factor_modifier value = -0.05 }
+				add_to_variable = { var = FRA_initial_war_euthasium_air_ground_attack_modifier value = -0.05 }
+			}	
+		}
+		if = {
+			limit = {
+				FROM = { 
+					OR = {
+						is_in_faction_with = GER
+						tag = GER 
+					}
+				}
+				ROOT = { tag = BEL }
+				FRA = {
+					NOT = {
+						has_completed_focus	= FRA_retraite
+					}
+				}
+			}
+			FRA = {
+				 add_to_variable = { var = FRA_initial_war_euthasium_army_core_attack_factor_modifier value = -0.05 }
+				add_to_variable = { var = FRA_initial_war_euthasium_army_core_defence_factor_modifier value = -0.05 }
+				add_to_variable = { var = FRA_initial_war_euthasium_air_ground_attack_modifier value = -0.05 }
+				complete_national_focus = FRA_retraite
+			}	
+		}        
+	   if = {
+			limit = {
+				FROM = { tag = ITA }
+				ROOT = { tag = ETH }
+				NOT = {
+					has_global_flag = SPR_over_flag_tt
+				}
+			}
+			set_global_flag = ETH_capitulated
+			271 = {
+				add_core_of = ITA
+			}
+			ITA = {
+				annex_country = { target = ETH }
+				country_event = { id = italy.32 }
+			}
+			hidden_effect = {
+				every_country = {limit = { check_variable= { speeches_enabled > 0}  }
+					scoped_sound_effect = "sp_ita_ethiopia"
+				}
+			}
+		} 			
+		if = {
+			limit = {
+				ROOT = { original_tag = ENG }
+				FROM = { original_tag = GER }
+			}
+			ENG = {
+	   			if = {
+					limit = {
+						controls_state = 446
+		   			}
+ 					set_capital = { state = 446 }
+					332 = {
+	   					add_building_construction = {
+							type = naval_base
+							province = 12503
+							level = 14
+							instant_build = yes
+						}
+					}
+				} 
+				if = {
+					limit = {
+						NOT = {
+							controls_state = 446
+						}
+						AND = {
+							controls_state = 332
+						}
+					}
+					set_capital = { state = 332}
+					332 = {
+						add_building_construction = {
+						type = naval_base
+						province = 12503
+						level = 14
+						instant_build = yes
+						}
+					}
+				}
+			}
+			USA = {
+				add_ideas = north_american_aviation
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 20000 producer = USA }
+				if = {
+					limit = {
+						has_tech = air_superiority
+					}
+					set_technology = {
+						infrastructure_destruction = 1
+						home_defence = 1
+						naval_strike_tactics = 1
+						dogfighting_experience = 1
+						multialtitude_flying = 1
+						logistical_bombing = 1
+						day_bombing = 1
+						air_offense = 1
+						flying_fortress = 1
+						offensive_formations = 1
+						mass_destruction = 1
+					}
+				}
+				if = {
+					limit = {
+						has_tech = formation_flying 
+					}
+					set_technology = {
+						formation_flying = 1
+						dive_bombing = 1
+						direct_ground_support = 1
+						formation_fighting = 1 
+						hunt_and_destroy = 1
+						combat_unit_destruction = 1
+						battlefield_support = 1
+						keypoint_bombing = 1
+						ground_support_integration = 1
+						naval_strike_torpedo_tactics = 1
+						strategic_destruction = 1
+						forward_interception = 1
+					}
+				}
+				if = {
+					limit = {
+						has_tech = force_rotation 
+					}
+					set_technology = {
+						fighter_baiting = 1
+						low_echelon_support = 1
+						dispersed_fighting = 1
+						operational_destruction = 1
+						fighter_veteran_initiative = 1
+						naval_strike_torpedo_tactics_oi = 1
+						cas_veteran_initiative = 1
+						carousel_bombing = 1
+						infiltration_bombing = 1
+						air_skirmish = 1
+						high_level_bombing = 1
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_tech = usa_fighter_1936 
+						}
+					}
+					set_technology = {
+						usa_fighter_1936 = 1
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_tech = usa_fighter_1938
+						}
+					}
+					set_technology = {
+						usa_fighter_1938 = 1
+					}	
+				}
+				if = {
+					limit = {
+			  			date > 1939.01.01
+			   			NOT = {
+							has_tech = usa_fighter_1940
+						}
+					}
+					set_technology = {
+						usa_fighter_1940 = 1 
+					}
+				}
+				if = {
+					limit = {
+			   			date > 1941.01.01
+			  			 NOT = {
+							has_tech = usa_fighter_1942
+						}
+					}
+					set_technology = {
+						usa_fighter_1942 = 1 
+					}
+				}
+				if = {
+					limit = {
+			  			date > 1943.01.01
+			  			NOT = {
+							has_tech = usa_fighter_1944
+						}
+					}
+					set_technology = {
+						usa_fighter_1944 = 1 
+					}
+				}
+			}
+		}
+
+			if = {
+				limit = {
+							ROOT = { original_tag = FRA }
+							FROM = { original_tag = GER }
+						}
+					
+				INS = {
+					add_ideas = INS_rubber_trading_idea 
+					}
+				}
+			if = {
+				limit = {
+							ROOT = { original_tag = CHI }
+							FROM = { original_tag = JAP }
+						}
+					
+				USA = {
+					set_country_flag = JAP_victory_over_chinese_the_peeps
+					}
+				}								
+			if = {
+				limit = {
+					OR = {
+						ROOT = { original_tag = ENG }
+						FROM = { original_tag = GER }
+					}
+					OR = {
+						ROOT = { original_tag = ENG }
+						FROM = { original_tag = ITA }
+					}
+					OR = {
+						ROOT = { original_tag = ENG }
+						FROM = { original_tag = ROM }
+					}
+					OR = {
+						ROOT = { original_tag = ENG }
+						FROM = { original_tag = HUN }
+					}
+					OR = {
+						ROOT = { original_tag = ENG }
+						FROM = { original_tag = BUL }
+					}
+					OR = {
+						ROOT = { original_tag = ENG }
+						FROM = { original_tag = SPR }
+					}
+					OR = {
+						ROOT = { original_tag = ENG }
+						FROM = { original_tag = CZE }
+					}
+					OR = {
+						ROOT = { original_tag = ENG }
+						FROM = { original_tag = SLO }
+					}						
+				}
+				USA = {
+					add_timed_idea = {
+						idea = USA_britain_has_fallen_idea 
+						days = 365
+					}
+				}
+				SOV = {
+					add_timed_idea = {
+						idea = SOV_britain_has_fallen_idea
+						days = 365
+					}
+				}				
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = DEN }
+					FROM = { original_tag = GER }
+					GER = { is_ai = yes }
+				}
+				GER = { load_oob = "GER_invade_Norway" }
+				NOR = {
+					add_timed_idea = {
+						idea = French_Malaise 
+						days = 365 
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = INS }
+					FROM = { 
+						OR  = {
+							original_tag = JAP 
+							original_tag = MAN 
+						}
+						
+					}
+				}
+				country_event = { hours = 6 id = news.471 }
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = RAJ }
+					FROM = { 
+						OR = { 
+							is_in_faction_with = JAP
+							tag = JAP
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = ENG 
+							tag = ENG
+						}
+					}
+					USA_allies_pacific_war_level_up = yes 
+					country_event = { id = usa.67 }						
+				}
+
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = INS }
+					FROM = { 
+						OR = { 
+							is_in_faction_with = JAP
+							tag = JAP
+						}
+					}	
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = ENG 
+							tag = ENG
+						}
+					}
+					USA_allies_pacific_war_level_up = yes 
+					country_event = { id = usa.69 }						
+				}
+				hidden_effect = {
+					every_country = {limit = { check_variable= { speeches_enabled > 0}  }
+						scoped_sound_effect = "sp_jap_banzai"
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ROOT = { original_tag = AST }
+					FROM = { 
+						OR = { 
+							is_in_faction_with = JAP
+							tag = JAP
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = ENG 
+							tag = ENG
+						}
+					}
+					USA_allies_pacific_war_level_up = yes 
+					country_event = { id = usa.71 }						
+				}
+			}
+			
+			if = {
+				limit = {
+					NOT = {
+						tag = SPR
+						tag = SPN
+					}
+				}		
+				news_event = { id = country_capitulated.0 days = 0 }
+			}	
+			if = {
+				limit = {
+					NOT = { original_tag = GER }
+					NOT = { has_government = fascism }
+					NOT = { has_civil_war = yes }
+				}
+			}
+			if = {
+				limit = { 
+					original_tag = POL
+					has_government = neutrality
+				}
+				retire_country_leader = yes
+			}
+			if = {
+				limit = {
+					original_tag = YUG
+				}
+				remove_ideas = YUG_idea_economic_aid
+			}
+			if = { #bug fix to central africa flipping to GER on BEL capitulation
+				limit = {
+					ROOT = { tag = BEL is_in_faction = yes }
+					FROM = { is_in_faction_with = GER }
+				}
+
+				if = { limit = { 295 = { CONTROLLER = { is_in_faction_with = GER } } }
+					BEL = { set_state_controller = 295 }
+				}
+
+				if = { limit = { 538 = { CONTROLLER = { is_in_faction_with = GER } } }
+					BEL = { set_state_controller = 538 }
+				}
+
+				if = { limit = { 718 = { CONTROLLER = { is_in_faction_with = GER } } }
+					BEL = { set_state_controller = 718 }
+				}
+
+				if = { limit = { 768 = { CONTROLLER = { is_in_faction_with = GER } } }
+					BEL = { set_state_controller = 768 }
+				}
+				if = { limit = { 769 = { CONTROLLER = { is_in_faction_with = GER } } }
+					BEL = { set_state_controller = 769 }
+				}
+			}
+
+			if = { #Japan peace 
+				limit = {
+					ROOT = { original_tag = "JAP" }
+					FROM = { is_in_faction_with = ENG }
+				}
+				
+				FRA = {
+					transfer_state = 671
+					transfer_state = 670
+					transfer_state = 741
+					transfer_state = 286
+				}
+
+				USA = {
+					transfer_state = 647
+					transfer_state = 684
+					transfer_state = 633
+				}
+				
+
+				JAP = {
+					white_peace = ENG
+					white_peace = USA
+				}
+
+				CHI = {
+					complete_national_focus = CHI_peace_out_Japan
+					transfer_state = 524
+				}
+				USA = {
+					set_autonomy = {
+						target = JAP
+						autonomous_state = autonomy_puppet
+						freedom_level = 0.4
+					}
+					if = {
+						limit = {
+							USA = {
+								has_country_flag = USA_alf_landon_in_charge_flag
+							}
+						}
+						remove_country_leader_trait = dislikes_japan
+					}
+					transfer_state = 526
+					transfer_state = 646
+					transfer_state = 645
+					transfer_state = 648
+					JAP = {
+						set_cosmetic_tag = JAP_USA
+						retire_country_leader = yes
+						create_country_leader = {
+							name = "Douglas MacArthur"
+							desc = ""
+							picture = "GFX_portrait_Douglas_MacArthur"
+							expire = "1965.1.1.1"
+							ideology = liberalism
+							traits = {
+							}
+						}
+						JAP_island_hopping_level_down = yes 
+						JAP_island_hopping_level_down = yes 
+						JAP_island_hopping_level_down = yes 
+						JAP_island_hopping_level_down = yes 
+						JAP_island_hopping_level_down = yes 
+						JAP_island_hopping_level_down = yes 
+						JAP_island_hopping_level_down = yes 
+						JAP_island_hopping_level_down = yes 
+						JAP_island_hopping_level_down = yes 
+						JAP_island_hopping_level_down = yes 
+					}
+					USA_island_hopping_level_up = yes
+					USA_island_hopping_level_up = yes
+					USA_island_hopping_level_up = yes
+					USA_island_hopping_level_up = yes
+					USA_island_hopping_level_up = yes
+					USA_island_hopping_level_up = yes
+					USA_island_hopping_level_up = yes
+					USA_island_hopping_level_up = yes
+					USA_island_hopping_level_up = yes
+					USA_island_hopping_level_up = yes
+					USA_island_hopping_level_up = yes
+				}
+				SOV = {
+					transfer_state = 537
+					transfer_state = 555
+				}
+				GER = {
+					GER_atlantik_wall_level_down = yes 
+					GER_atlantik_wall_level_down = yes 
+					GER_atlantik_wall_level_down = yes 
+					GER_atlantik_wall_level_down = yes 
+					GER_atlantik_wall_level_down = yes 
+					GER_atlantik_wall_level_down = yes 
+					GER_atlantik_wall_level_down = yes 
+					GER_atlantik_wall_level_down = yes 
+					GER_atlantik_wall_level_down = yes 
+					GER_atlantik_wall_level_down = yes 
+				}
+			}
+
+			if = { #AA Line Peace 
+				limit = {
+					ROOT = { original_tag = "SOV" }
+					FROM = { is_in_faction_with = GER }
+				}
+				# German Occupation Zone
+
+				SOV = {
+					white_peace = GER
+					if = {
+						limit = {
+							has_global_flag = jap_sov_war
+						}
+						white_peace = JAP
+					}	
+					news_event = { id = news.4 days = 5 }		
+					diplomatic_relation = { country = GER relation = non_aggression_pact }
+			
+				}
+
+				GER = {
+					set_country_flag = GER_victory_over_the_soviet_union
+					diplomatic_relation = { country = SOV relation = non_aggression_pact }
+				}
+
+				FIN = {
+					transfer_state = 146
+					transfer_state = 216
+					transfer_state = 215
+					transfer_state = 147
+					transfer_state = 213
+				}
+
+				PER = {
+					transfer_state = 419
+					transfer_state = 420 
+					transfer_state = 226
+					transfer_state = 418
+					transfer_state = 416 
+					transfer_state = 266
+				}
+
+				every_state = {
+					limit = {		
+						is_core_of = SOV
+					}
+					remove_core_of = POL
+					
+				}
+
+				if = {
+					limit = {
+						ROM = { is_in_faction_with = GER }
+					}
+					ROM = {
+						transfer_state = 80
+						transfer_state = 78 
+						transfer_state = 766
+						transfer_state = 192 
+					}
+					else = {
+						GER = {
+							transfer_state = 80
+							transfer_state = 78 
+							transfer_state = 766 
+						}
+					}
+				}
+
+				GER = {
+					transfer_state = 208
+					transfer_state = 209
+					transfer_state = 210
+					transfer_state = 242
+					transfer_state = 243
+					transfer_state = 224
+					transfer_state = 220
+					transfer_state = 240
+					transfer_state = 260
+					transfer_state = 245
+					transfer_state = 218
+					transfer_state = 238
+					transfer_state = 237
+					transfer_state = 236
+					transfer_state = 247
+					transfer_state = 248
+					transfer_state = 223
+					transfer_state = 254
+					transfer_state = 256
+					transfer_state = 250
+					transfer_state = 195
+					transfer_state = 398
+					transfer_state = 137
+					transfer_state = 651
+
+					transfer_state = 217
+					transfer_state = 265
+					transfer_state = 239
+					transfer_state = 257
+					transfer_state = 258
+					transfer_state = 222
+					transfer_state = 205
+					transfer_state = 219
+					transfer_state = 265
+					transfer_state = 246
+					transfer_state = 263
+					transfer_state = 244
+					transfer_state = 264
+					transfer_state = 351
+
+					transfer_state = 253
+					transfer_state = 252
+					transfer_state = 255
+					transfer_state = 239
+					transfer_state = 401
+					transfer_state = 407
+					transfer_state = 406
+					transfer_state = 652
+					transfer_state = 251
+					transfer_state = 249
+					transfer_state = 399
+					transfer_state = 400
+					transfer_state = 397
+					transfer_state = 214
+					transfer_state = 262
+					transfer_state = 229
+					transfer_state = 230
+					transfer_state = 231
+					transfer_state = 232
+					transfer_state = 233
+					transfer_state = 234
+					transfer_state = 235
+					transfer_state = 93
+					transfer_state = 91
+					transfer_state = 89
+					transfer_state = 199
+					transfer_state = 201
+					transfer_state = 198
+					transfer_state = 202
+					transfer_state = 193
+					transfer_state = 203
+					transfer_state = 197
+					transfer_state = 225
+					transfer_state = 259
+					transfer_state = 226
+					transfer_state = 196
+					transfer_state = 200
+					transfer_state = 221
+					transfer_state = 228
+					transfer_state = 227
+					transfer_state = 97
+					transfer_state = 94
+					transfer_state = 95
+					transfer_state = 96
+					transfer_state = 194
+					transfer_state = 204
+					transfer_state = 206
+					transfer_state = 207
+					transfer_state = 241
+					transfer_state = 11
+					transfer_state = 784
+					transfer_state = 189
+					transfer_state = 12
+					transfer_state = 190
+					transfer_state = 13
+					transfer_state = 827
+					transfer_state = 191
+				}
+				if = {
+					limit = {
+						has_global_flag = jap_sov_war
+					}
+					JAP = {
+						transfer_state = 408
+						transfer_state = 409
+						transfer_state = 560
+						transfer_state = 657
+						transfer_state = 655
+						transfer_state = 561
+						transfer_state = 563
+						transfer_state = 564
+						transfer_state = 565
+						transfer_state = 574
+						transfer_state = 562
+						transfer_state = 637
+						transfer_state = 644
+					}
+				}
+				
+				every_country = {
+					limit = {
+						AND = {
+							check_variable= { 
+								speeches_enabled > 0
+							} 
+							check_variable= { 
+								music_enabled < 2
+							} 
+						}
+					}
+					scoped_sound_effect = "sp_ger_victory"
+				}
+				every_country = {
+					limit = { 
+						AND = {
+							check_variable= { 
+								music_enabled > 0
+							} 
+							check_variable= { 
+								speeches_enabled > 0
+							} 
+						}
+					}
+					scoped_sound_effect = "sp_ger_victory"
+				}
+			}
+			
+
+			if = { #fall of france
+				limit = {
+					ROOT = { tag = FRA is_in_faction_with = ENG }
+					FROM = { is_in_faction_with = GER }
+					FRA = {
+						NOT = { 
+							has_completed_focus = FRA_refus_absurde
+						}
+					}
+				}
+		
+				ENG = {				
+					load_oob = ENG_France_Merchant_fleet 
+					news_event = { id = news.44 }	
+				}
+						
+				# German Occupation Zone
+				if = {
+					limit = {
+						GER = {
+							has_idea = GER_blitzkrieg
+						}
+					}
+					remove_ideas = GER_blitzkrieg
+				}
+				GER = {	
+					country_event = germany.703
+				}
+				every_state = {
+					limit = {
+						is_core_of = BEL
+					}	
+					GER = { transfer_state = PREV }
+					FRA = {
+						transfer_state = 718
+						transfer_state = 538
+						transfer_state = 295
+						transfer_state = 768
+						transfer_state = 769
+					}	
+				}
+				every_state = {
+					limit = {
+						is_core_of = HOL
+					}	
+					GER = { transfer_state = PREV }
+					FRA = {
+						transfer_state = 309
+						transfer_state = 695
+					}
+	   			}
+				every_state = {
+					limit = {
+						is_core_of = LUX
+					}	
+					GER = { transfer_state = PREV }
+				}
+				FRA = {		
+					add_ideas = USA_no_refs
+					remove_dynamic_modifier = { modifier = FRA_politics_strong_modifier }	
+					set_variable = {
+						FRA_max_planning_factor_var = 0
+					}
+					set_variable = {
+						FRA_army_attack_factor_var = 0
+					}
+					set_variable = {
+						FRA_army_speed_factor_var = 0
+					}
+					set_variable = {
+						FRA_army_morale_factor_var = 0
+					}
+					set_variable = {
+						FRA_max_dig_in_var = 0
+					}
+					set_variable = {
+						FRA_planning_speed_var = 0
+					}
+					set_variable = {
+						FRA_land_doctrine_cost_factor_var = 0
+					}
+					set_cosmetic_tag = FRA_FREE	
+					set_country_flag = free_france			
+					set_capital = { state = 539}
+					country_event = france.10
+					if = { limit = { has_idea = FRA_disjointed_government }
+					remove_ideas = FRA_disjointed_government }
+					if = { limit = { has_idea = French_Malaise }
+					remove_ideas = French_Malaise }
+					if = { limit = { has_idea = FRA_agricultural_bank }
+					remove_ideas = FRA_agricultural_bank }
+					set_state_controller = 515
+					set_state_controller = 660
+					set_state_controller = 539
+					set_state_controller = 557
+					set_state_controller = 556
+					set_state_controller = 272
+					set_state_controller = 543
+					set_state_controller = 641					
+					set_state_controller = 713
+					set_state_controller = 774
+					set_state_controller = 780
+					set_state_controller = 772
+					set_state_controller = 773
+					set_state_controller = 779
+					set_state_controller = 778
+					set_state_controller = 781
+					set_state_controller = 776		
+
+					set_state_controller = 777	
+						
+					
+					transfer_ship = {
+						type = heavy_cruiser
+						prefer_name = "Tourville"
+						target = EFR
+					}
+					transfer_ship = {
+						type = heavy_cruiser
+						prefer_name = "Colbert"
+						target = EFR
+					}
+					transfer_ship = {
+						type = heavy_cruiser
+						prefer_name = "Foch"
+						target = EFR
+					}
+					transfer_ship = {
+						type = light_cruiser
+						prefer_name = "Pluton"
+						target = EFR
+					}
+					transfer_ship = {
+						type = light_cruiser
+						prefer_name = "Primauguet"
+						target = EFR
+					}
+					transfer_ship = {
+						type = light_cruiser
+						prefer_name = "Duguay-Trouin"
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = destroyer
+						prefer_name = ""
+						target = EFR
+					}
+					transfer_ship = {
+						type = battleship
+						prefer_name = "Bretagne"
+						target = EFR
+					}
+					transfer_ship = {
+						type = battleship
+						prefer_name = "Lorraine"
+						target = EFR
+					}	
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine1
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+					transfer_ship = {
+						type = submarine
+						target = EFR
+					}
+				} 
+				GER = {
+					set_state_controller = 28
+					set_state_controller = 17
+					set_state_controller = 27
+					set_state_controller = 18
+					set_state_controller = 29
+					set_state_controller = 15
+					set_state_controller = 16
+					set_state_controller = 24
+					set_state_controller = 30
+					set_state_controller = 14
+					set_state_controller = 23
+					set_state_controller = 19
+					set_state_controller = 785	
+					transfer_state = 29	
+					country_event = { days = 7 id = germany.236 }
+					country_event = { days = 7 id = germany.107 }
+				}		
+				EFR = {
+					inherit_technology = GER
+					set_research_slots = 4
+					transfer_state = 26
+					transfer_state = 22
+					transfer_state = 31
+					transfer_state = 25
+					transfer_state = 20
+					transfer_state = 33
+					transfer_state = 1
+					transfer_state = 21
+					transfer_state = 735
+					transfer_state = 32
+					transfer_state = 514
+
+					transfer_state = 677
+					transfer_state = 680
+					transfer_state = 554
+					transfer_state = 458
+					transfer_state = 459
+					transfer_state = 460
+					transfer_state = 461
+					transfer_state = 462
+				
+					transfer_state = 665
+					transfer_state = 671
+					transfer_state = 670
+					transfer_state = 741
+					transfer_state = 286
+					transfer_state = 513
+
+					transfer_state = 553
+					transfer_state = 728
+					set_capital = { state = 26}
+					add_ideas = neutrality_idea 
+				
+					diplomatic_relation = { country = GER relation = non_aggression_pact }					
+					every_state = {
+						limit = {
+							is_core_of = FRA
+							is_controlled_by = EFR
+						}
+						add_core_of = EFR
+						
+					}
+					every_state = {
+						limit = {
+							NOT = {
+								is_core_of = FRA
+							}
+							is_controlled_by = EFR
+						}
+						add_claim_by = FRA
+						
+					}
+					28 = {
+						remove_core_of = EFR
+					}
+				}
+				553 = {	
+					set_demilitarized_zone = yes
+				}
+				677 = {	
+					set_demilitarized_zone = yes
+				}
+				554 = {	
+					set_demilitarized_zone = yes
+				}
+				680 = {	
+					set_demilitarized_zone = yes
+				}
+				set_variable = {
+					var = EFR_volunteer_soldiers
+					value = 0 
+				}
+			}
+			
+			if = {
+				limit = {
+					tag = POL
+					has_global_flag = sov_yes_pact
+					SOV = { exists = yes }
+					NOT = { GER = { has_war_with = SOV } }
+				}
+				GER = { country_event = germany.14 } 
+			}			
+			if = {
+				limit = {
+					tag = DEN
+				}
+				ENG = { country_event = usa.48 } 
+			}
+			if = {
+				limit = {
+					tag = NOR
+				}
+				ENG = { load_oob = ENG_Norway_Merchant_fleet } 
+			}
+		}
+	}
+
+	# ROOT is previously capitulated country
+	on_uncapitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { original_tag = RAJ }
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = ENG 
+							tag = ENG
+						}
+					}
+					USA_allies_pacific_war_level_down = yes 
+					country_event = { id = usa.68 }						
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = INS }
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = ENG 
+							tag = ENG
+						}
+					}
+					USA_allies_pacific_war_level_down = yes 
+					country_event = { id = usa.70 }						
+				}
+			}
+
+			if = {
+				limit = {
+					ROOT = { original_tag = AST }
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = ENG 
+							tag = ENG
+						}
+					}
+					USA_allies_pacific_war_level_down = yes 
+					country_event = { id = usa.72 }						
+				}
+			}
+			if = {
+				limit = {
+					original_tag = FRA
+					has_government = democratic
+					is_puppet = no
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+	
+	on_government_change = {
+		effect = {			
+			#Make sure Soviet can always create factions
+			if = {
+				limit = {
+					original_tag = SOV
+					NOT = { has_government = communism }
+				}
+				set_rule = { can_create_factions = yes }
+			}
+			if = {
+				limit = { has_government = democratic }
+				if = {
+					limit = { has_idea = democratic_opposition_voicing_protests }
+					remove_ideas = democratic_opposition_voicing_protests
+				}
+				if = {
+					limit = { has_idea = democratic_revolutionaries }
+					remove_ideas = democratic_revolutionaries
+				}
+				if = {
+					limit = { has_idea = reign_of_terror }
+					remove_ideas = reign_of_terror
+				}
+			}
+			if = {
+				limit = { has_government = communism }
+				if = {
+					limit = { TAG = SAF }
+					set_cosmetic_tag = SAF_COM
+				}
+				if = {
+					limit = { has_idea = communist_partisans_recruiting }
+					remove_ideas = communist_partisans_recruiting
+				}
+				if = {
+					limit = { has_idea = communist_revolutionaries }
+					remove_ideas = communist_revolutionaries
+				}
+				if = {
+					limit = { has_idea = communism_defeated }
+					remove_ideas = communism_defeated
+				}
+
+				#Remove anti_soviet_pact
+				if = {
+					limit = { has_idea = anti_soviet_pact }
+					remove_ideas = anti_soviet_pact
+				}
+			}
+			if = {
+				limit = { has_government = fascism }
+				if = {
+					limit = { has_idea = fascist_assault_divisions }
+					remove_ideas = fascist_assault_divisions
+				}
+				if = {
+					limit = { has_idea = fascist_revolutionaries }
+					remove_ideas = fascist_revolutionaries
+				}
+				if = {
+					limit = { has_idea = fascism_defeated }
+					remove_ideas = fascism_defeated
+				}
+				if = {
+					limit = { has_idea = anti_nazi_coup }
+					remove_ideas = anti_nazi_coup
+				}
+			}
+			if = {
+				limit = { has_government = fascism }
+				if = {
+					limit = { has_idea = free_trade }
+					add_ideas = export_focus
+				}
+			}
+			if = {
+				every_country = {
+					limit = {
+						original_tag = SLO
+						has_government = communism 
+					}
+					declare_war_on = {
+						target = GER
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = HUN 
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = ROM
+						type = annex_everything
+					}
+					 declare_war_on = {
+						target = ITA
+						type = annex_everything
+					}
+				}	
+			}
+			if = {
+				every_country = {
+					limit = {
+						original_tag = SLO
+						has_government = communism 
+					}
+				SOV = { add_to_faction = PREV }   
+				}
+			}		 		   
+			#Replace the following two with events for SOV if they are not communist.
+			#if = {
+			#	limit = { 
+			#		OR = {
+			#			has_idea = trotskyite_plot 
+			#			has_idea = trotskyite_plot_purged
+			#		}
+			#		NOT = {
+			#			has_civil_war = yes
+			#		}
+			#	}
+			#	country_event = { id = soviet.54 }
+			#}
+		}
+	}
+
+	on_coup_succeeded = {
+		effect = {
+			#Turn elections on for democracies created from coup
+			random_other_country = {
+				limit = {
+					has_government = democratic
+					original_tag = ROOT
+				}
+				set_politics = {
+					elections_allowed = yes
+				}
+			}
+		}
+	}
+
+	#ROOT is winner #FROM gets annexed - This will also fire on_annex
+	on_civil_war_end = {
+		effect = {
+
+			#End of SCW
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SPR
+					}
+				}
+				ROOT = {
+					set_country_flag = achievement_won_spanish_civil_war
+				}
+			}
+			if = {
+				limit = {
+					has_government = democratic			
+				}
+				set_politics = {
+					elections_allowed = yes
+				}
+			}
+			#End of German Civil War
+			if = {
+				limit = {
+					FROM = {
+						original_tag = GER
+						has_government = fascism
+					}
+					original_tag = GER
+					has_government = neutrality
+				}
+				set_global_flag = { flag = civil_war_olympics value = 1 days = 30 }
+				country_event = { id = wtt_germany.18 days = 1 }
+			}
+
+			#End of ideology Civil War
+			if = {
+				limit = {
+					has_country_flag = ideology_civil_war
+				}
+				clr_country_flag = ideology_civil_war
+				set_country_flag = { flag = won_ideology_civil_war value = 1 days = 365 }
+				country_event = { id = generic.11 days = 1 }
+			}
+		}
+	}
+
+	#used when puppeting in a peace conference
+	#ROOT = nation being puppeted, FROM = overlord
+	
+	on_puppet = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						original_tag = GER
+					}
+					has_government = communism
+					has_country_leader = { name = "Wilhelm Pieck" }
+					FROM = {
+						original_tag = SOV
+						has_government = communism
+						has_country_leader = { name = "Joseph Stalin" } # Would look silly if Trotsky released Stalin's Puppet
+					}
+				}
+				add_country_leader_trait = stalins_puppet
+			}	
+		#	if = {
+		#		limit = {
+		#			ROOT = { tag = ETH }
+		#			FROM = { tag = ITA }
+		#			ITA = { is_ai = yes }				
+		#		}
+		#		ETH = { 
+		#			inherit_technology = ITA
+		#			set_cosmetic_tag = ETH_ITA
+		#			create_country_leader = {
+		#				name = "Prince Amedeo"
+		#				#desc = 
+		#				picture = "Ethiopia_leader.dds"
+		#				expire = "1965.1.1"
+		#				ideology = nazism
+		#				traits = {
+		#					#
+		#			}
+		#			}
+		#			#remove_state_core = 271
+		#			transfer_state = 550
+		#			transfer_state = 559
+		#			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 3000 producer = ITA }
+		#			add_equipment_to_stockpile = { type = horse_equipment_0 amount = 1000 producer = ITA }
+		#		}
+		#	}
+		#	if = {
+		#		limit = {
+		#			ROOT = { tag = ETH }
+		#			FROM = { tag = ITA }
+		#			ITA = { is_ai = no }				
+		#		}
+		#		ETH = { 
+		#			inherit_technology = ITA
+		#			set_cosmetic_tag = ETH_ITA
+		#			create_country_leader = {
+		#				name = "Prince Amedeo"
+		#				#desc = 
+		#				picture = "Ethiopia_leader.dds"
+		#				expire = "1965.1.1"
+		#				ideology = nazism
+		#				traits = {
+		#				#
+		#				}
+		#			}
+		#			#remove_state_core = 271
+		#			transfer_state = 550
+		#			transfer_state = 559
+		#			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 3000 producer = ITA }
+		#			add_equipment_to_stockpile = { type = horse_equipment_0 amount = 1000 producer = ITA }
+		#		}
+		#	}
+		#	if = {
+		#		limit = {
+		#			ROOT = { tag = ETH }
+		#			FROM = { tag = ITA }
+		#			ALB = { is_ai = no }				
+		#		}
+		#		ITA = { set_autonomy = { target = ETH autonomy_state = autonomy_satellite } }
+		#		ETH = { change_tag_from = ALB }
+		#		ETH = { 
+		#			inherit_technology = ITA
+		#			set_cosmetic_tag = ETHH_ITA
+		#			create_country_leader = {	
+		#				name = "Prince Amedeo"
+		#				#desc = 
+		#				picture = "Ethiopia_leader.dds"
+		#				expire = "1965.1.1"
+		#				ideology = nazism
+		#				traits = {
+		#				#
+		#				}
+		#			}
+		#			#remove_state_core = 271
+		#			transfer_state = 550
+		#			transfer_state = 559
+		#			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 3000 producer = ITA }
+		#			add_equipment_to_stockpile = { type = horse_equipment_0 amount = 1000 producer = ITA }
+		#		}
+		#	}
+		#	if = {
+		#		limit = {
+		#			ROOT = { tag = ETH }
+		#			FROM = { tag = ITA }
+		#			ETH = { is_ai = no }				
+		#		}
+		#		ITA = { set_autonomy = { target = ETH autonomy_state = autonomy_satellite } }
+		#		ETH = { change_tag_from = ALB }
+		#		ETH = { 
+		#			inherit_technology = ITA
+		#			set_cosmetic_tag = ETHH_ITA
+		#			create_country_leader = {	
+		#				name = "Prince Amedeo"
+		#				#desc = 
+		#				picture = "Ethiopia_leader.dds"
+		#				expire = "1965.1.1"
+		#				ideology = nazism
+		#				traits = {
+		#				#
+		#				}
+		#			}
+		#			#remove_state_core = 271
+		#			transfer_state = 550
+		#			transfer_state = 559
+		#			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 3000 producer = ITA }
+		#			add_equipment_to_stockpile = { type = horse_equipment_0 amount = 1000 producer = ITA }
+		#		}
+		#	}
+
+
+		}
+	}
+	
+	#used when puppeting through the occupied territories menu during peace time (or when releasing from non-core but owned territory, f.e. Britain releasing Egypt)
+	#ROOT = nation being released, FROM = overlord
+	
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						original_tag = GER
+					}
+					has_government = communism
+					has_country_leader = { name = "Wilhelm Pieck" }
+					FROM = {
+						original_tag = SOV
+						has_government = communism
+						has_country_leader = { name = "Joseph Stalin" } # Would look silly if Trotsky released Stalin's Puppet
+					}
+				}
+				add_country_leader_trait = stalins_puppet
+			}
+		}
+	}
+
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {	
+		effect = {
+			if = {
+				limit = {
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = JAP
+							tag = JAP
+						}
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = ENG
+							tag = ENG
+						}
+					}
+					FROM.FROM = {
+						OR = {
+							state = 623
+							state = 327
+							state = 624
+							state = 625
+							state = 628
+							state = 627
+							state = 626
+							state = 333
+							state = 334
+							state = 672
+							state = 671
+							state = 335
+							state = 673
+							state = 667
+							state = 668
+							state = 669
+							state = 738
+							state = 523
+							state = 737
+							state = 534
+							state = 635
+							state = 670
+							state = 741
+							state = 286
+							state = 289
+							state = 724
+							state = 336
+							state = 684
+							state = 633
+							state = 639
+						}
+					}
+				}
+				if = {
+					limit = {
+						ENG = {
+							divisions_in_state = { size < 2   state = FROM.FROM }
+						}
+						RAJ = {
+							divisions_in_state = { size < 2   state = FROM.FROM }
+						}
+						AST = {
+							divisions_in_state = { size < 2   state = FROM.FROM }
+						}
+						NZL = {
+							divisions_in_state = { size < 2   state = FROM.FROM }
+						}
+						USA = {
+							divisions_in_state = { size < 2   state = FROM.FROM }
+						}
+						SAF = {
+							divisions_in_state = { size < 2   state = FROM.FROM }
+						}
+						FRA = {
+							divisions_in_state = { size < 2   state = FROM.FROM }
+						}
+						CAN = {
+							divisions_in_state = { size < 2   state = FROM.FROM }
+						}
+					}
+					FROM.FROM = {
+						set_state_controller_to  = JAP 
+
+					}	
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = ENG
+							tag = ENG
+						}
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = JAP
+							tag = JAP
+						}
+					}
+					FROM.FROM = {
+						OR = {
+							state = 623
+							state = 327
+							state = 624
+							state = 625
+							state = 628
+							state = 627
+							state = 626
+							state = 333
+							state = 334
+							state = 672
+							state = 671
+							state = 335
+							state = 673
+							state = 667
+							state = 668
+							state = 669
+							state = 738
+							state = 523
+							state = 737
+							state = 534
+							state = 635
+							state = 670
+							state = 741
+							state = 286
+							state = 289
+							state = 724
+							state = 336
+							state = 684
+							state = 633
+							state = 639
+						}
+					}
+				}
+				if = {
+					limit = {
+						JAP = {
+							divisions_in_state = { size < 2   state = FROM.FROM }
+						}
+						MAN = {
+							divisions_in_state = { size < 2   state = FROM.FROM }
+						}
+						SIA = {
+							divisions_in_state = { size < 2   state = FROM.FROM }
+						}
+					}
+					FROM.FROM = {
+						set_state_controller_to = ROOT 
+
+					}	
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = SOV
+							tag = SOV
+						}
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					FROM.FROM = {
+						state = 217
+					}
+					SOV = {
+						has_capitulated = no
+					}
+				}
+				GER = {
+					country_event = { id = germany.1001 days = 1 }
+				}	
+			}
+			if = {
+				limit = {
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = SOV
+							tag = SOV
+						}
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					FROM.FROM = {
+						state = 96
+					}
+					SOV = {
+						has_capitulated = no
+					}
+					POL = {
+						has_completed_focus = POL_akcja_burza
+					}
+				}
+				96 = {
+					remove_dynamic_modifier = {
+						modifier = POL_war_zone_modifier
+					}
+				}	
+			}
+			if = {
+				limit = {
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = SOV
+							tag = SOV
+						}
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					FROM.FROM = {
+						state = 784
+					}
+					SOV = {
+						has_capitulated = no
+					}
+					POL = {
+						has_completed_focus = POL_akcja_burza
+					}
+				}
+				784 = {
+					remove_dynamic_modifier = {
+						modifier = POL_war_zone_modifier
+					}
+				}	
+			}
+			if = {
+				limit = {
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = SOV
+							tag = SOV
+						}
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					FROM.FROM = {
+						state = 95
+					}
+					SOV = {
+						has_capitulated = no
+					}
+					POL = {
+						has_completed_focus = POL_akcja_burza
+					}
+				}
+				95 = {
+					remove_dynamic_modifier = {
+						modifier = POL_war_zone_modifier
+					}
+				}	
+			}
+			if = {
+				limit = {
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = SOV
+							tag = SOV
+						}
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					FROM.FROM = {
+						state = 94
+					}
+					SOV = {
+						has_capitulated = no
+					}
+					POL = {
+						has_completed_focus = POL_akcja_burza
+					}
+				}
+				94 = {
+					remove_dynamic_modifier = {
+						modifier = POL_war_zone_modifier
+					}
+				}	
+			}
+			if = {
+				limit = {
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = SOV
+							tag = SOV
+						}
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					FROM.FROM = {
+						state = 93
+					}
+					SOV = {
+						has_capitulated = no
+					}
+					POL = {
+						has_completed_focus = POL_akcja_burza
+					}
+				}
+				93 = {
+					remove_dynamic_modifier = {
+						modifier = POL_war_zone_modifier
+					}
+				}	
+			}
+			if = {
+				limit = {
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = SOV
+							tag = SOV
+						}
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					FROM.FROM = {
+						state = 91
+					}
+					SOV = {
+						has_capitulated = no
+					}
+					POL = {
+						has_completed_focus = POL_akcja_burza
+					}
+				}
+				91 = {
+					remove_dynamic_modifier = {
+						modifier = POL_war_zone_modifier
+					}
+				}	
+			}
+			if = {
+				limit = {
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = SOV
+							tag = SOV
+						}
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					FROM.FROM = {
+						state = 89
+					}
+					SOV = {
+						has_capitulated = no
+					}
+					POL = {
+						has_completed_focus = POL_akcja_burza
+					}
+				}
+				89 = {
+					remove_dynamic_modifier = {
+						modifier = POL_war_zone_modifier
+					}
+				}	
+			}
+			if = {
+				limit = {
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = SOV
+							tag = SOV
+						}
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					FROM.FROM = {
+						state = 827
+					}
+					SOV = {
+						has_capitulated = no
+					}
+					POL = {
+						has_completed_focus = POL_akcja_burza
+					}
+				}
+				827 = {
+					remove_dynamic_modifier = {
+						modifier = POL_war_zone_modifier
+					}
+				}	
+			}
+			if = {
+				limit = {
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = SOV
+							tag = SOV
+						}
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					FROM.FROM = {
+						state = 97
+					}
+					SOV = {
+						has_capitulated = no
+					}
+					POL = {
+						has_completed_focus = POL_akcja_burza
+					}
+				}
+				97 = {
+					remove_dynamic_modifier = {
+						modifier = POL_war_zone_modifier
+					}
+				}	
+			}
+			if = {
+				limit = {
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = SOV
+							tag = SOV
+						}
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					FROM.FROM = {
+						state = 88
+					}
+					SOV = {
+						has_capitulated = no
+					}
+					POL = {
+						has_completed_focus = POL_akcja_burza
+					}
+				}
+				88 = {
+					remove_dynamic_modifier = {
+						modifier = POL_war_zone_modifier
+					}
+				}	
+			}
+			if = {
+				limit = {
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = SOV
+							tag = SOV
+						}
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					FROM.FROM = {
+						state = 90
+					}
+					SOV = {
+						has_capitulated = no
+					}
+					POL = {
+						has_completed_focus = POL_akcja_burza
+					}
+				}
+				90 = {
+					remove_dynamic_modifier = {
+						modifier = POL_war_zone_modifier
+					}
+				}	
+			}
+			if = {
+				limit = {
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = SOV
+							tag = SOV
+						}
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					FROM.FROM = {
+						state = 92
+					}
+					SOV = {
+						has_capitulated = no
+					}
+					POL = {
+						has_completed_focus = POL_akcja_burza
+					}
+				}
+				92 = {
+					remove_dynamic_modifier = {
+						modifier = POL_war_zone_modifier
+					}
+				}	
+			}
+			if = {
+				limit = {
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = SOV
+							tag = SOV
+						}
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					FROM.FROM = {
+						state = 10
+					}
+					SOV = {
+						has_capitulated = no
+					}
+					POL = {
+						has_completed_focus = POL_akcja_burza
+					}
+				}
+				10 = {
+					remove_dynamic_modifier = {
+						modifier = POL_war_zone_modifier
+					}
+				}	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = JAP
+							tag = JAP
+						}
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = ENG
+							tag = ENG
+						}
+					}
+					FROM.FROM = {
+						state = 327
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = ENG 
+							tag = ENG
+						}
+					}
+					USA_allies_pacific_war_level_up = yes 
+					country_event = { id = usa.73 }						
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = ENG
+							tag = ENG
+						}
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = JAP
+							tag = JAP
+						}
+					}
+					FROM.FROM = {
+						state = 327
+					}
+				}
+			
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = ENG 
+							tag = ENG
+						}
+					}
+					USA_allies_pacific_war_level_down = yes 				
+				}
+			}
+			#if = {
+				#limit = {
+				#	SOV = {
+					#	NOT = {
+						#	has_country_flag = SOV_stiffening_resistance_flag_1
+					#	}	
+				#	}	
+				#	FROM = {
+					#	tag = SOV
+				#	}
+					#ROOT = { 
+					#	tag = GER
+				#	}
+					#FROM.FROM = {
+					#	OR = {
+						#	state = 187
+						#	state = 11
+						#	state = 784
+						#	state = 95
+						#	state = 94
+						#	state = 93
+						#	state = 198
+						#	state = 199
+						#	state = 192
+						#}
+					#}
+				#}			
+			 	#SOV = {
+					# add_timed_idea = {
+					#	idea = SOV_stiffening_resistance
+					#	days = 220
+					#}
+			 	#	set_country_flag = SOV_stiffening_resistance_flag_1
+			 	#}	
+			#}
+			if = {
+				limit = {
+				
+					FROM = {
+						tag = SPN
+					}
+					ROOT = { 
+						tag = SPR 
+					}
+					FROM.FROM = {
+						state = 165
+					}
+					FRA = { 
+						NOT = { 
+							has_completed_focus = FRA_close_the_corridor
+						}
+						NOT = {
+							has_idea = FRA_rep_refugees
+						}
+					}		
+				}
+			 	FRA = {
+			 		add_ideas = FRA_rep_refugees
+			 	}	
+			}
+		}
+	}
+				
+	#ROOT is winner #FROM gets annexed - For civil wars on_civil_war_end is also fired
+	on_annex = {
+		effect = {
+			#if = {
+			#	limit = {
+			#		ROOT = { tag = ETH }
+			#		FROM = { tag = ITA }
+			#		ITA = { is_ai = no }				
+			#	}
+			#	ETH = { 
+				#	remove_state_core = 271
+			#	}
+			#}
+			
+			if = {
+				limit = {
+					ROOT = { tag = JAP }
+					FROM = { tag = CHI }
+									
+				}
+				USA = {
+					set_country_flag = JAP_victory_over_chinese_the_bruhs
+				}
+			}
+		}
+	}
+	
+	on_unit_leader_created = {
+		effect = {
+		}
+	}
+	
+	on_unit_leader_level_up = {
+		effect = {
+			
+		}
+	}
+	
+	# From is owner country
+	on_army_leader_daily = {
+		
+	}
+	
+	
+	# From is owner country
+	on_army_leader_won_combat = {
+		effect = {
+			if = {
+				limit = {
+					set_temp_variable = { chance = 0.001 }
+					set_temp_variable = { factor = 1.0 }
+					add_to_temp_variable = { factor = leader_modifier@wounded_chance_factor } 
+					multiply_temp_variable = { chance = factor }
+					check_variable = { random < chance }
+					NOT = { has_trait = wounded }
+				}
+				add_timed_unit_leader_trait = {
+					trait = wounded
+					days = 60
+				}
+				unit_leader_event = { id = generic.18 }
+			}
+		}
+	}
+	
+	# From is owner country
+	on_army_leader_lost_combat = {
+		effect = {
+			if = {
+				limit = {
+					set_temp_variable = { chance = 0.005 }
+					set_temp_variable = { factor = 1.0 }
+					add_to_temp_variable = { factor = leader_modifier@wounded_chance_factor } 
+					multiply_temp_variable = { chance = factor }
+					check_variable = { random < chance }
+					NOT = { has_trait = wounded }
+				}
+				add_timed_unit_leader_trait = {
+					trait = wounded
+					days = 60
+				}
+				unit_leader_event = { id = generic.18 }
+			}
+		}
+	}
+	
+	
+	on_army_leader_promoted = {
+		effect = {
+			add_timed_unit_leader_trait = {
+				trait = recently_promoted
+				days = 100
+			}
+		}
+	}
+	# root country that invades
+	# scope state that is invaded
+	# from scope state that the invasion started
+	# on_naval_invasion = {
+	# 	effect = {
+	# 	}
+	# }
+	
+	
+	# root country that paradrops
+	# scope state that is paradroped into
+	# from scope state that the paradrop started
+	on_paradrop = {
+		effect = {
+			set_country_flag = has_paradropped_flag
+		}
+	}
+	on_ruling_party_change = { 
+		# temp var old_ideology_token is available for effects
+		effect = {
+			every_controlled_state = {
+				limit = {
+					has_resistance = yes
+				}
+				set_temp_variable = { new_compliance = compliance }
+				multiply_temp_variable = { new_compliance = 0.5 }
+				set_compliance = new_compliance
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					any_country = {
+						OR = {
+							tag = NZL 
+							tag = RAJ 
+							tag = AST 
+							tag = CAN 
+							tag = SAF 
+							tag = FRA 
+						}
+						has_navy_size = {
+							archetype = ship_hull_carrier
+							size > 3
+						}
+					}
+					NOT = {
+						OR = {
+							has_idea = no_more_carriers
+							has_idea = no_more_carriers2
+							has_idea = no_more_carriers3
+						}
+					}
+				}
+				add_ideas = no_more_carriers
+			}
+			if = {
+				limit = {
+					any_country = {
+						OR = {
+							tag = NZL 
+							tag = RAJ 
+							tag = AST 
+							tag = CAN 
+							tag = SAF 
+							tag = FRA 
+						}
+						has_navy_size = {
+							archetype = ship_hull_carrier
+							size > 4
+						}
+						has_idea = no_more_carriers
+					}
+				}
+				swap_ideas = {
+					remove_idea = no_more_carriers
+					add_idea = no_more_carriers2
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						OR = {
+							tag = NZL 
+							tag = RAJ 
+							tag = AST 
+							tag = CAN 
+							tag = SAF 
+							tag = FRA 
+						}
+						has_navy_size = {
+							archetype = ship_hull_carrier
+							size > 5
+						}
+						has_idea = no_more_carriers2
+					}
+				}
+				swap_ideas = {
+					remove_idea = no_more_carriers2
+					add_idea = no_more_carriers3
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						OR = {
+							tag = NZL 
+							tag = RAJ 
+							tag = AST 
+							tag = CAN 
+							tag = SAF 
+							tag = FRA 
+						}
+						has_navy_size = {
+							archetype = ship_hull_carrier
+							size < 6
+						}
+						has_idea = no_more_carriers3
+					}
+				}
+				swap_ideas = {
+					remove_idea = no_more_carriers3
+					add_idea = no_more_carriers2
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						OR = {
+							tag = NZL 
+							tag = RAJ 
+							tag = AST 
+							tag = CAN 
+							tag = SAF 
+							tag = FRA 
+						}
+						has_navy_size = {
+							archetype = ship_hull_carrier
+							size < 5
+						}
+						has_idea = no_more_carriers2
+					}
+				}
+				swap_ideas = {
+					remove_idea = no_more_carriers2
+					add_idea = no_more_carriers
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						OR = {
+							tag = NZL 
+							tag = RAJ 
+							tag = AST 
+							tag = CAN 
+							tag = SAF 
+							tag = FRA 
+						}
+						has_navy_size = {
+							archetype = ship_hull_carrier
+							size < 4
+						}
+						has_idea = no_more_carriers
+					}
+				}
+				
+				remove_ideas = no_more_carriers
+				
+			}
+			every_state = {
+				limit = {
+					OR = {
+						state = 629
+						state = 631
+						state = 632
+						state = 638
+						state = 646
+						state = 645
+						state = 526
+						state = 524
+						state = 684
+						state = 633
+						state = 639
+						state = 642
+						state = 727
+						state = 630
+						state = 634
+						state = 623
+						state = 327
+						state = 627
+						state = 647
+					}
+					anti_air_building > 4
+				}
+				remove_building = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			
+			
+		}
+		effect = {
+			if = {
+				limit = {
+					GER = {
+						has_war_with = SOV
+					}
+				}
+				every_state = {
+					limit = {
+						AND = { 
+							has_state_flag = SOV_war_zone_flag 
+							OR = {
+								is_fully_controlled_by = GER 
+								is_fully_controlled_by = ITA 
+								is_fully_controlled_by = ROM 
+								is_fully_controlled_by = HUN 
+								is_fully_controlled_by = BUL 
+								is_fully_controlled_by = SLO 
+								is_fully_controlled_by = EFR 
+								is_fully_controlled_by = SPR 
+							}
+							has_dynamic_modifier = { modifier = SOV_war_zone_modifier }
+						}
+					}
+					remove_dynamic_modifier = {
+						 modifier = SOV_war_zone_modifier
+					}
+				}
+				every_state = {
+					limit = {
+						AND = { 
+							has_state_flag = SOV_war_zone_flag 
+							NOT = {
+								OR = {
+									is_fully_controlled_by = GER 
+									is_fully_controlled_by = ITA 
+									is_fully_controlled_by = ROM 
+									is_fully_controlled_by = HUN 
+									is_fully_controlled_by = BUL 
+									is_fully_controlled_by = SLO 
+									is_fully_controlled_by = EFR 
+									is_fully_controlled_by = SPR 
+								}
+								has_dynamic_modifier = { modifier = SOV_war_zone_modifier }
+							}
+							
+						}
+					}
+					add_dynamic_modifier = {
+						 modifier = SOV_war_zone_modifier
+					}
+				}
+				every_state = {
+					limit = {
+						AND = { 
+							has_state_flag = GER_war_zone_flag 
+							is_fully_controlled_by = SOV 
+							has_dynamic_modifier = { modifier = GER_war_zone_modifier }
+						}
+					}
+					remove_dynamic_modifier = {
+						 modifier = GER_war_zone_modifier
+					}
+				}
+				every_state = {
+					limit = {
+						AND = { 
+							has_state_flag = GERE_war_zone_flag 
+							NOT = {
+								NOT = {
+									is_fully_controlled_by = SOV 
+									has_dynamic_modifier = { modifier = GER_war_zone_modifier }
+								}
+							}
+						}
+					}
+					add_dynamic_modifier = {
+						 modifier = GER_war_zone_modifier
+					}
+				}
+			}	
+			
+		}
+	}
+	on_weekly_USA = {
+		effect = {
+			
+			if = {
+				limit = {
+					USA = {
+						has_war = yes 
+					}
+				}
+			
+				USA = {
+					#divide_variable = { casualties_against = 4000 }
+					add_to_variable = {
+						var = USA_popular_support_var
+						value = casualties_against
+					}
+					set_variable = {
+						variable = casualties_against
+						value = 0
+					}
+					
+					while_loop_effect = {
+						limit = {
+							casualties_k > casualties_against
+						}
+						add_to_variable = { casualties_against = 1000 }
+					}
+					if= {
+						limit = {
+
+							casualties_k < casualties_against
+						}
+						add_to_variable = { casualties_against = -1000 }
+					}
+					while_loop_effect = {
+						limit = {
+
+							casualties_k > casualties_against
+						}
+						add_to_variable = { casualties_against = 100 }
+					}
+					if= {
+						limit = {
+
+							casualties_k < casualties_against
+						}
+						add_to_variable = { casualties_against = -100 }
+					}
+					while_loop_effect = {
+						limit = {
+
+							casualties_k > casualties_against
+						}
+						add_to_variable = { casualties_against = 10 }
+					}
+					if= {
+						limit = {
+
+							casualties_k < casualties_against
+						}
+						add_to_variable = { casualties_against = -10}
+					}
+					while_loop_effect = {
+						limit = {
+
+							casualties_k > casualties_against
+						}
+						add_to_variable = { casualties_against = 1 }
+					}
+					if= {
+						limit = {
+
+							casualties_k < casualties_against
+						}
+						#add_to_variable = { casualties_against = -1}
+					}
+
+					divide_variable = { casualties_against = 4000 }
+					subtract_from_variable = {
+						var = USA_popular_support_var
+						value = casualties_against
+					}
+				}
+			
+			}
+		}
+	}
+	on_weekly_SOV = {
+		effect = {
+			if = {
+				limit = {
+					SOV = {
+						NOT = {
+							has_country_flag = SOV_navy_traits5
+						}
+					}
+					OR = {
+						mio:SOV_nevskoye_design_bureau_organization = {
+							has_mio_size > 4
+						}
+						mio:SOV_rubin_design_bureau_organization = {
+							has_mio_size > 4
+						}
+						mio:SOV_black_sea_shipyard_organization = {
+							has_mio_size > 4
+						}
+						mio:SOV_sevastopol_marine_plant_organization = {
+							has_mio_size > 4
+						}
+
+					}
+				}
+				SOV = {
+					set_country_flag = SOV_navy_traits5
+					SOV_convoys_up = yes
+					SOV_convoys_up = yes	
+					SOV_convoys_up = yes
+					SOV_convoys_up = yes
+					SOV_convoys_up = yes
+					SOV_convoys_up = yes
+					
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						NOT = {
+							has_country_flag = SOV_navy_traits6
+						}
+					}
+					OR = {
+						mio:SOV_nevskoye_design_bureau_organization = {
+							has_mio_size > 5
+						}
+						mio:SOV_rubin_design_bureau_organization = {
+							has_mio_size > 5
+						}
+						mio:SOV_black_sea_shipyard_organization = {
+							has_mio_size > 5
+						}
+						mio:SOV_sevastopol_marine_plant_organization = {
+							has_mio_size > 5
+						}
+
+					}
+				}
+				SOV = {
+					set_country_flag = SOV_navy_traits6
+					SOV_convoys_up = yes
+					SOV_convoys_up = yes	
+					SOV_convoys_up = yes
+					SOV_convoys_up = yes
+					SOV_convoys_up = yes
+					SOV_convoys_up = yes
+					
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						NOT = {
+							has_country_flag = SOV_navy_traits7
+						}
+					}
+					OR = {
+						mio:SOV_nevskoye_design_bureau_organization = {
+							has_mio_size > 6
+						}
+						mio:SOV_rubin_design_bureau_organization = {
+							has_mio_size > 6
+						}
+						mio:SOV_black_sea_shipyard_organization = {
+							has_mio_size > 6
+						}
+						mio:SOV_sevastopol_marine_plant_organization = {
+							has_mio_size > 6
+						}
+
+					}
+				}
+				SOV = {
+					set_country_flag = SOV_navy_traits7
+					SOV_convoys_up = yes
+					SOV_convoys_up = yes	
+					SOV_convoys_up = yes
+					SOV_convoys_up = yes
+					SOV_convoys_up = yes
+					SOV_convoys_up = yes
+					
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						NOT = {
+							has_country_flag = SOV_navy_traits8
+						}
+					}
+					OR = {
+						mio:SOV_nevskoye_design_bureau_organization = {
+							has_mio_size > 7
+						}
+						mio:SOV_rubin_design_bureau_organization = {
+							has_mio_size > 7
+						}
+						mio:SOV_black_sea_shipyard_organization = {
+							has_mio_size > 7
+						}
+						mio:SOV_sevastopol_marine_plant_organization = {
+							has_mio_size > 7
+						}
+
+					}
+				}
+				SOV = {
+					set_country_flag = SOV_navy_traits8
+					SOV_convoys_up = yes
+					SOV_convoys_up = yes	
+					SOV_convoys_up = yes
+					SOV_convoys_up = yes
+					SOV_convoys_up = yes
+					SOV_convoys_up = yes
+			
+				}
+				
+			}
+			
+
+			if = {
+				limit = {
+					SOV = {
+						has_war_with = GER 
+					}
+				}
+				every_army_leader = {
+					limit = {
+						AND = {
+							has_trait = sov_skilled_staffer
+							OR = {
+								has_trait  = panzer_leader
+								has_trait  = armor_officer
+								has_trait  = motorized_officer
+								has_trait  = motorized_leader
+							}
+						}
+					}
+					remove_unit_leader_trait = sov_skilled_staffer
+				}
+					
+				every_army_leader = {
+					limit = {
+						AND = {
+							NOT = {
+								has_trait = skilled_staffer
+							}
+							OR = {
+								has_trait  = panzer_leader
+								has_trait  = armor_officer
+								has_trait  = motorized_officer
+								has_trait  = motorized_leader
+							}
+						}
+					}
+					add_unit_leader_trait = skilled_staffer
+				}
+				
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys400_flag
+						has_equipment = {
+							convoy > 400
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 400
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-400}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys450_flag
+						has_equipment = {
+							convoy > 450
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 450
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-450}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys500_flag
+						has_equipment = {
+							convoy > 500
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 500
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-500}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys550_flag
+						has_equipment = {
+							convoy > 550
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 550
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-550}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys600_flag
+						has_equipment = {
+							convoy > 600
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 600
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-600}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys650_flag
+						has_equipment = {
+							convoy > 650
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 650
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-650}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys700_flag
+						has_equipment = {
+							convoy > 700
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 700
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-700}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys750_flag
+						has_equipment = {
+							convoy > 750
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 750
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-750}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys800_flag
+						has_equipment = {
+							convoy > 800
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 800
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-800}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys850_flag
+						has_equipment = {
+							convoy > 850
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 850
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-850}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys900_flag
+						has_equipment = {
+							convoy > 900
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 900
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-900}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys950_flag
+						has_equipment = {
+							convoy > 950
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 950
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-950}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1000_flag
+						has_equipment = {
+							convoy > 1000
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1000
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1000}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1050_flag
+						has_equipment = {
+							convoy > 1050
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1050
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1050}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1100_flag
+						has_equipment = {
+							convoy > 1100
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1100
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1100}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1150_flag
+						has_equipment = {
+							convoy > 1150
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1150
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1150}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1200_flag
+						has_equipment = {
+							convoy > 1200
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1200
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1200}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1250_flag
+						has_equipment = {
+							convoy > 1250
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1250
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1250}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1300_flag
+						has_equipment = {
+							convoy > 1300
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1300
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1300}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1350_flag
+						has_equipment = {
+							convoy > 1350
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1350
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1350}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1400_flag
+						has_equipment = {
+							convoy > 1400
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1400
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1400}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1450_flag
+						has_equipment = {
+							convoy > 1450
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1450
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1450}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1500_flag
+						has_equipment = {
+							convoy > 1500
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1500
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1500}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1550_flag
+						has_equipment = {
+							convoy > 1550
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1550
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1550}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1600_flag
+						has_equipment = {
+							convoy > 1600
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1600
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1600}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1650_flag
+						has_equipment = {
+							convoy > 1650
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1650
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1650}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1700_flag
+						has_equipment = {
+							convoy > 1700
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1700
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1700}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1750_flag
+						has_equipment = {
+							convoy > 1750
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1750
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1750}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1800_flag
+						has_equipment = {
+							convoy > 1800
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1800
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1800}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1850_flag
+						has_equipment = {
+							convoy > 1850
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1850
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1850}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1900_flag
+						has_equipment = {
+							convoy > 1900
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1900
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1900}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys1950_flag
+						has_equipment = {
+							convoy > 1950
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 1950
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-1950}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_country_flag = convoys2000_flag
+						has_equipment = {
+							convoy > 2000
+						}
+					}
+				}
+				set_variable = {
+					counting_convoys = 2000
+				}
+				set_temp_variable={convoy_count=0}
+				while_loop_effect = {
+					limit = {
+
+					has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if= {
+					limit = {
+
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable={convoy_count=-2000}
+				set_temp_variable={convoy_count2=convoy_count}
+				multiply_temp_variable={convoy_count2=-1}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				
+			}
+		}
+	}
+	
+	
+}
+

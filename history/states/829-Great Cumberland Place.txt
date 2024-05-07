@@ -1,0 +1,34 @@
+state={
+	id=829
+	name="STATE_830"
+	
+	history = {
+		owner = GRE
+		victory_points = {
+			4109 20 
+		}
+		#victory_points = {
+		#	3844 1
+		#}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 3
+			4109 = {
+				naval_base = 9
+
+			}
+
+		}
+		add_core_of = GRE
+
+	}
+
+	provinces={
+		4109
+	}
+	manpower=704247
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = city
+}

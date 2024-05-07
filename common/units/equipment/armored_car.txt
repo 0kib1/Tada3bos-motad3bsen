@@ -1,0 +1,173 @@
+# All equipment based on light tank chassis
+
+equipments = {
+
+	armored_cars_equipment = {
+		is_archetype = yes
+		is_buildable = no
+		type = motorized
+		group_by = archetype
+		
+		interface_category = interface_category_armor
+		
+		
+		#Misc Abilities
+		maximum_speed = 8
+		reliability = 0.7
+
+		#Defensive Abilities
+		defense = 12
+		breakthrough = 23
+		armor_value = 20
+		hardness = 0.5
+
+		#Offensive Abilities
+		soft_attack = 19
+		hard_attack = 14
+		ap_attack = 20
+		air_attack = 5
+		fuel_consumption = 2
+		fuel_capacity = -527
+		
+
+		
+		#Space taken in convoy
+		lend_lease_cost = 5.5
+		
+		build_cost_ic = 12
+		resources = {
+			rubber = 3
+			steel = 9
+		}
+	}
+	# pre armored cars 
+	armored_cars_equipment_1 = {
+		archetype = armored_cars_equipment
+		priority = 30
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 8
+		reliability = 0.7
+
+		#Defensive Abilities
+		defense = 12
+		breakthrough = 23
+		armor_value = 20
+		hardness = 0.5
+
+		#Offensive Abilities
+		soft_attack = 21
+		hard_attack = 16
+		ap_attack = 20
+		air_attack = 6
+		
+		build_cost_ic = 12
+	}
+	# early armored cars 
+	armored_cars_equipment_2 = {
+		archetype = armored_cars_equipment
+		parent = armored_cars_equipment_1
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 8
+		reliability = 0.72
+
+		#Defensive Abilities
+		defense = 13
+		breakthrough = 25
+		armor_value = 30
+		hardness = 0.55
+
+		#Offensive Abilities
+		soft_attack = 23
+		hard_attack = 17
+		ap_attack = 25
+		air_attack = 8
+		
+		build_cost_ic = 13
+	}
+	# mid armored cars 
+	armored_cars_equipment_3 = {
+		archetype = armored_cars_equipment
+		parent = armored_cars_equipment_2
+		priority = 30	
+		visual_level = 0
+		
+		maximum_speed = 8
+		reliability = 0.74
+
+		#Defensive Abilities
+		defense = 14
+		breakthrough = 30
+		armor_value = 40
+		hardness = 0.6
+		#Offensive Abilities
+		soft_attack = 28
+		hard_attack = 18
+		ap_attack = 40
+		air_attack = 10
+		build_cost_ic = 14
+		resources = {
+			rubber = 3
+			steel = 10
+		}
+	}
+	# late armored cars 
+	armored_cars_equipment_4 = {
+		archetype = armored_cars_equipment
+		parent = armored_cars_equipment_3
+		priority = 30
+		visual_level = 1
+		
+		hardness = 0.65
+		#Misc Abilities
+		maximum_speed = 8
+
+		reliability = 0.76
+		#Defensive Abilities
+		defense = 14
+		breakthrough = 34
+		
+		armor_value = 50
+		#Offensive Abilities
+		soft_attack = 28
+		hard_attack = 21
+		ap_attack = 60
+		air_attack = 12
+
+		build_cost_ic = 15
+		resources = {
+			rubber = 3
+			steel = 11
+		}
+	}
+	# late armored cars 
+	armored_cars_equipment_5 = {
+		archetype = armored_cars_equipment
+		parent = armored_cars_equipment_4
+		priority = 30
+		visual_level = 1
+		
+		hardness = 0.7
+		
+		#Misc Abilities	
+		maximum_speed = 8
+		reliability = 0.80
+		defense = 16
+		breakthrough = 40
+
+		armor_value = 4
+		soft_attack = 31
+		hard_attack = 25
+		ap_attack = 46
+		air_attack = 14
+
+		build_cost_ic = 16
+		resources = {
+			rubber = 3
+			steel = 11
+		}
+	}
+}

@@ -1,0 +1,1627 @@
+ideas = {
+	hidden_ideas = {
+		USA_reciprocal_trade_1 = { 
+			picture = CAN_agreements
+
+            allowed = {
+				always = no
+			}
+			
+			targeted_modifier = {
+				tag = CAN
+				trade_cost_for_target_factor = -0.4
+			}
+		}
+		CAN_reciprocal_trade_1 = { 
+			picture = CAN_agreements
+
+			allowed = {
+				always = no
+			}
+			
+			targeted_modifier = {
+				tag = USA 
+				trade_cost_for_target_factor = -0.4
+			}
+		}
+		
+		CAN_conscription_question_1 = {
+			picture = tfv_can_conscription_crisis
+
+			allowed = {
+				always = no
+			}
+		}
+		CAN_wartime_industry = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			equipment_bonus = {
+				infantry = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				artillery = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				suicide = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				armor = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				anti_air = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				anti_tank= {
+					build_cost_ic = -0.025 instant = yes
+				}
+				motorized = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				mechanized = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				ship_hull_light = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				ship_hull_heavy = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.025 instant = yes
+				}
+			}
+		}
+
+		CAN_wartime_industry_1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			equipment_bonus = {
+				infantry = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				artillery = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				suicide = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				armor = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				anti_air = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				anti_tank= {
+					build_cost_ic = -0.05 instant = yes
+				}
+				motorized = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				mechanized = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				ship_hull_light = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				ship_hull_heavy = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		CAN_the_breadbasket_of_the_empire = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				convoy = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		CAN_crown_corporations_advisory = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			modifier = {
+				theorist_production_cost_factor = -0.15
+				industrial_concern_cost_factor = -0.15
+				tank_manufacturer_cost_factor = -0.15
+				naval_manufacturer_cost_factor = -0.15
+				aircraft_manufacturer_cost_factor = -0.15
+				materiel_manufacturer_cost_factor = -0.15
+			}
+		}
+		CAN_pacific_focused_deployment = {
+		picture = CAN_conscription_crisis
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+
+		}
+		CAN_the_cmp = {
+		 picture = FRA_motorized_focus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		CAN_volunteers3 = {
+			picture = eng_service_overseas
+			allowed = {
+				original_tag = CAN
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			modifier = {
+				experience_gain_army = 0.07
+				send_volunteers_tension = -0.5
+				send_volunteer_divisions_required = -1
+			}
+		}
+		CAN_firepower_focus_general_staff = {
+		    picture = CAN_general_staff
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			modifier = {
+				conscription = 0.02
+			}
+			equipment_bonus = {
+				artillery_equipment = {
+				 	soft_attack = 0.1 instant = yes 
+				}
+				field_gun_equipment = {
+					soft_attack = 0.05 instant = yes 
+					hard_attack = 0.05 instant = yes 
+				}
+				pack_artillery_equipment = {
+					soft_attack = 0.1 instant = yes 
+				}
+				heavy_artillery_equipment = {
+					soft_attack = 0.1 instant = yes 
+				}
+				rocket_artillery_equipment = {
+				  soft_attack = 0.1 instant = yes 
+				}
+			}
+		}
+	}
+	
+	country = {
+		#########################################################START REWORK###########################################################
+
+		########## Political National Spirits ##########
+		CAN_great_depression = {
+		picture = usa_great_depression_2
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.14
+				production_factory_max_efficiency_factor = -0.08
+				production_speed_buildings_factor = -0.1
+				political_power_gain = -0.5
+			}
+		}
+
+		CAN_great_depression_1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.16
+				production_speed_buildings_factor = -0.1
+				production_factory_max_efficiency_factor = -0.03
+				political_power_gain = -0.5
+			}
+		}
+
+		CAN_great_depression_2 = {
+		picture = usa_great_depression
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.18
+				political_power_gain = -0.3
+				production_speed_buildings_factor = -0.1
+				production_factory_max_efficiency_factor = -0.03
+			}
+		}
+
+		CAN_great_depression_3 = {
+		picture = usa_great_depression
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.12
+				political_power_gain = -0.3
+				production_speed_buildings_factor = -0.1
+				production_factory_max_efficiency_factor = -0.03
+			}
+		}
+
+		CAN_great_depression_4 = {
+		picture = usa_great_depression
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.16
+				production_speed_buildings_factor = -0.05
+				production_factory_max_efficiency_factor = -0.055
+				political_power_gain = -0.5
+			}
+		}
+
+		CAN_great_depression_5 = {
+		picture = usa_great_depression
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.12
+				production_speed_buildings_factor = -0.05
+				production_factory_max_efficiency_factor = -0.055
+				political_power_gain = -0.5
+			}
+		}
+
+		CAN_great_depression_6 = {
+		picture = usa_great_depression
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.12
+				production_factory_max_efficiency_factor = -0.055
+				political_power_gain = -0.5
+			}
+		}
+
+		
+		
+
+		CAN_federal_relief_camps_1 = {
+        picture = generic_democratic_opposition
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_weekly = -0.002
+				stability_factor = -0.1
+				consumer_goods_expected_value = -0.01
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+
+		CAN_peacetime_army_1 = {
+         picture = generic_goods_red_bonus
+			allowed = {
+				always = no
+			}
+
+			modifier = { 
+				conscription_factor = -0.3
+			}
+		}
+
+		CAN_big_cut_1 = {
+		picture = generic_army_problems
+
+			name = CAN_big_cut
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				political_power_factor = 0.1
+				consumer_goods_expected_value = -0.03
+				production_speed_arms_factory_factor = -0.2
+				production_speed_dockyard_factor = -0.2
+			}
+		}
+
+		CAN_big_cut_2 = {
+		picture = generic_army_problems
+			
+			name = CAN_big_cut
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+		}
+
+		CAN_big_cut_3 = {
+		picture = generic_army_problems
+
+			name = CAN_big_cut
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = -0.3
+				production_speed_dockyard_factor = -0.3
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				political_power_factor = 0.1
+				consumer_goods_expected_value = -0.03
+			}
+		}
+
+		CAN_underfunded_airforce_1 = {
+       picture = SPR_relocate_the_gold_reserves
+			allowed = {
+				always = no
+			}
+
+
+			modifier = {
+				air_doctrine_cost_factor = 0.3
+				experience_gain_air_factor = -0.4
+				consumer_goods_expected_value = -0.02
+			}
+
+		}
+
+		
+
+		CAN_unregulated_banking_sector = {
+		picture = spr_seize_the_gold_reserves
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		CAN_recession = {
+		picture = usa_great_depression_3
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+            cancel = {
+				OR = {
+					has_war_with = GER
+					has_war_with = JAP 
+				}
+			}
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.075
+				production_factory_max_efficiency_factor = -0.025
+
+			}
+		}
+
+		CAN_joint_fabben_production = { 
+			picture = usa_great_depression_3
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			removal_cost = -1
+
+			modifier = {
+				production_speed_synthetic_rubber_refinery_factor = 0.2
+				local_resources_factor = 0.1
+			}
+		}
+
+
+		CAN_helping_uk_1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.075
+			}
+		}
+		CAN_helping_uk_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.075
+			}
+		}
+		CAN_helping_uk_3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.025
+			}
+		}
+		CAN_helping_uk_4 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			modifier = {
+				production_factory_efficiency_gain_factor= 0.1
+				line_change_production_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.025
+			}
+
+			removal_cost = -1
+		}
+		########### Army National Spirits ###########
+		CAN_planned_mobilization = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				mobilization_speed = 0.2
+			}
+		}
+
+		CAN_volunteers = {
+			picture = eng_service_overseas
+			allowed = {
+				original_tag = HUN
+				original_tag = CAN
+				original_tag = AST 
+				original_tag = SAF 
+				original_tag = RAJ
+				original_tag = CZE
+				original_tag = SLO
+				original_tag = ROM
+				original_tag = FIN
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			modifier = {
+				experience_gain_army = 0.07
+				send_volunteers_tension = -0.5
+				send_volunteer_divisions_required = -1
+				military_industrial_organization_funds_gain = 0.2
+			}
+		}
+		CAN_volunteers2 = {
+			picture = eng_service_overseas
+			allowed = {
+				original_tag = FIN
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			modifier = {
+				experience_gain_army = 0.1
+				military_industrial_organization_funds_gain = 0.2
+			}
+		}
+
+
+		CAN_war_measures = {
+	    	picture = idea_ast_classify_aliens
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			modifier = {
+				political_power_gain = 0.5
+				stability_weekly = 0.002
+				democratic_drift = 0.2
+			}
+		}
+
+		CAN_war_measures_2 = {
+		picture = eng_service_overseas
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			modifier = {
+				political_power_gain = 0.5
+				stability_weekly = 0.002
+				democratic_drift = 0.2
+				army_core_defence_factor = 0.15
+			}
+		}
+
+		CAN_mobility_focused_general_staff = {
+		picture = eng_service_overseas
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			modifier = {
+				army_org_factor = 0.1
+				army_speed_factor = 0.05
+			}
+		}
+
+	
+
+		CAN_general_staff = {
+		 picture = CAN_general_staff
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			modifier = {
+				max_planning = 0.05
+				max_dig_in = 2
+			}
+		}
+
+		CAN_no_man_gone_to_waste = {
+		picture = CAN_conscription_crisis
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			modifier = {
+				experience_loss_factor = -0.30
+			}
+		}
+
+		CAN_every_man_will_do_his_duty = {
+		picture = CAN_conscription_crisis
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+			}
+
+		}
+		
+	
+		
+		CAN_pacific_focused_deployment_2 = {
+		picture = CAN_conscription_crisis
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+
+			modifier = {
+				air_cas_present_factor = 0.2
+				max_dig_in = 2
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+
+		CAN_francophone_tensions = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			modifier = {
+				stability_factor = -0.15
+				army_org_factor = -0.1
+			}
+		}
+
+		CAN_francophone_tensions_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				army_org_factor = -0.05
+			}
+		}
+
+		CAN_special_training_school_no103 = {
+		picture = generic_spy_intel
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			modifier = {
+				agency_upgrade_time = -0.15
+				operative_slot = 1
+			}	
+		}
+
+		CAN_camp_X = {
+		picture = generic_spy_intel
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			modifier = {
+				agency_upgrade_time = -0.15
+				operative_slot = 1
+				crypto_strength  = 2
+				decryption_power = 30
+			}
+		}
+
+		CAN_women_in_the_factories = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			modifier = {
+				conscription = 0.02
+			}
+		}
+
+		
+		########### Naval National Spirits ###########
+		CAN_shipbuilding_investments = {
+
+			picture = generic_coastal_defense_ships
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+
+			research_bonus = {
+				naval_equipment = 0.25
+			}
+
+			modifier = {
+				industrial_capacity_dockyard = 0.25
+				#consumer_goods_expected_value = 0.02
+			}
+		}
+
+		CAN_rcn_expansion = {
+					
+			allowed = {
+				always = no
+			}
+			picture = escort_effort_focus
+
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.3 instant = yes
+				}
+			}
+		}
+
+		CAN_cruiser_rcn_expansion = {
+					
+			allowed = {
+				always = no
+			}
+			picture = escort_effort_focus
+
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					build_cost_ic = -0.3 instant = yes
+				}
+			}
+		}
+
+		CAN_fleet_modernization = {
+
+			picture = generic_coastal_defense_ships
+			
+			allowed = {
+				always = no
+			}
+						
+			modifier = {
+				refit_ic_cost = -0.4
+				refit_speed = 0.6
+				repair_speed_factor = 0.3
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
+		########## AirForce National Spirits ###########
+		CAN_asw_training = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			modifier = {
+				naval_strike_attack_factor = 0.2
+			}
+		}
+
+		CAN_range_focus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_range = 0.1
+				}
+				medium_plane_fighter_airframe = {
+					air_range = 0.1
+				}
+			}	
+		}
+
+		CAN_combined_bomber_offensive = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			equipment_bonus = {
+				large_plane_airframe = {
+					air_bombing = 0.10
+				}
+			}
+		}
+
+		CAN_clayton_air_training_plan = {
+
+			picture = CommonwealthAirTrainingPlan
+		
+			allowed = {
+				always = no
+			}
+
+			available = {
+				OR = {
+					tag = ENG
+					is_subject_of = ENG
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_air = 0.05
+				experience_gain_air_factor = 0.1
+				air_mission_xp_gain_factor = 0.1
+				air_training_xp_gain_factor = 0.2
+				air_ace_generation_chance_factor = 0.1
+			}
+		}
+		###########################################################END_REWORK##########################################################
+	}	
+	
+
+	theorist_production = {
+        CAN_james_ilsley = {
+
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = CAN
+				has_dlc = "Together for Victory"
+			}
+			
+			traits = { war_industrialist }
+		}
+		
+		CAN_c_d_howe = {
+
+			picture = generic_political_advisor_europe_4
+			
+			cost = 50
+
+			allowed = {
+				original_tag = CAN
+				has_dlc = "Together for Victory"
+			}
+
+			available = {
+			}
+			
+			traits = { captain_of_industry }
+		}
+	}	
+	# TECHNOLOGY
+
+	########## INFANTRY DESIGNERS ##########
+
+	########## TANK DESIGNERS ##########
+	tank_manufacturer = {
+		
+		designer = yes
+		
+#		vickers_armstrong_can = {
+
+#			picture = vickers_armstrong_eng
+
+			
+#			allowed = {
+#				original_tag = CAN
+#			}
+			
+#			traits = { hoi_tank_manufacturer }
+
+			
+			
+			# quite the useless tanks the vickers 6-ton
+#		}
+
+		montreal_locomotive_works_can = {
+
+			name = montreal_locomotive_works
+
+			cost = 150
+			
+			allowed = {
+				original_TAG = CAN
+			}
+
+			available = {
+				CAN = {
+					has_completed_focus = CAN_retool_montreal_locomotive_works
+				}
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+
+			traits = { offensive_trait }
+
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.1
+					breakthrough = 0.1
+					reliability = 0.1	
+				}	
+				light_tank_artillery_chassis = {
+					soft_attack = 0.1
+				}	
+				medium_tank_artillery_chassis = {
+					soft_attack = 0.1
+				}	
+				heavy_tank_artillery_chassis = {
+					soft_attack = 0.1
+				}					
+				mechanized = {
+					soft_attack = 0.8
+					hard_attack = 0.8
+					build_cost_ic = 0.05
+				}
+			}
+			modifier = { tank_manufacturer_cost_factor = -0.5 }
+		}						
+	}
+    tank_research = {
+		
+
+		vickers_armstrong_can_research = {
+
+			picture = generic_tank_manufacturer_1
+
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+			research_bonus = { armor = 0.15 }  traits = { tank_research_trait }		
+
+		}
+
+		CAN_j_h_berry = {
+			allowed = {
+				original_tag = CAN
+			}
+			picture = generic_army_europe_3
+			research_bonus = { armor = 0.05 }  
+			
+			traits = { CAN_director_of_tank_production }
+
+			equipment_bonus = {
+				armor = { 
+					build_cost_ic = -0.03 instant = yes
+				}
+			}
+
+			modifier = {
+			}
+		}
+	}
+
+	industrial_concern = {
+
+		CAN_stelco = {
+
+			picture = generic_industrial_concern_1
+			
+			allowed = {
+				original_TAG = CAN
+			}
+			traits = { industrial_concern }
+			
+			modifier = {
+			}
+		}
+
+		CAN_c_j_stenning = {
+			allowed = {
+				original_tag = CAN
+			}
+
+			picture = generic_political_advisor_europe_2
+
+			research_bonus = {
+				industry = 0.05
+			}
+			available = {
+				has_completed_focus = CAN_dollar_a_year_men_new
+			}
+
+			traits = { CAN_head_of_production }
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.3
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+
+		CAN_general_motors_canada = {
+		    
+			picture = general_motors
+			allowed = {
+				original_tag = CAN
+			}
+
+			available = {
+				has_completed_focus = CAN_a_war_fueled_economy
+			}
+
+			traits = { CAN_head_of_production }
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}		
+	}
+    industrial_research = {
+
+
+		montreal_lab_research = {
+
+			picture = generic_industrial_concern_1
+			
+			allowed = {
+				original_TAG = CAN
+				has_dlc = "Together for Victory"
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+            traits = { industrial_research_trait }		
+			modifier = {
+			}
+		}
+		CAN_northern_electric = {
+
+			picture = generic_electronics_concern_1
+			
+			allowed = {
+				original_TAG = CAN
+			}
+			available = {
+
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+
+		polymer_corporation = {
+					
+			picture = generic_industrial_concern_2
+				
+			allowed = {
+				original_tag = CAN
+			}
+			
+			research_bonus = {
+				synth_resources = 0.1
+				industry = 0.05
+			}
+            traits = { synth_research_trait }		
+		}
+
+		CAN_george_volkoff = {
+					
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = CAN
+				has_dlc = "Together for Victory"
+			}
+			
+			research_bonus = {
+				nuclear = 0.1
+			}
+			
+			traits = { nuclear_scientist }
+		}
+	}
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		inglis_company = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				original_TAG = CAN
+			}
+
+			traits = { support_equipment_manufacturer }
+			modifier = { materiel_manufacturer_cost_factor = -0.5 }
+					
+		}	
+		royal_arsenal_2 = {
+			
+			allowed = {
+				original_TAG = CAN
+			}
+			
+			picture = generic_artillery_manufacturer_2
+
+			traits = { artillery_manufacturer }
+			
+			modifier = { materiel_manufacturer_cost_factor = -0.5 }
+		}
+
+
+		small_arms_limited = {
+
+			picture = generic_infantry_equipment_manufacturer_1
+			
+			allowed = {
+				original_TAG = CAN
+			}
+		
+			traits = { infantry_equipment_manufacturer }
+			modifier = { materiel_manufacturer_cost_factor = -0.5 }
+		}
+		
+	}
+	materiel_research = {
+
+		inglis_company_research = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				original_TAG = CAN
+				has_dlc = "Together for Victory"
+			}
+						
+			research_bonus = {
+				support_tech = 0.10
+			}
+			traits = { materiel_research_trait }
+			modifier = { materiel_manufacturer_cost_factor = -0.5 }
+		}	
+
+		small_arms_limited_research = {
+
+			picture = generic_infantry_equipment_manufacturer_1
+			
+			allowed = {
+				original_TAG = CAN
+				has_dlc = "Together for Victory"
+			}
+					
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			traits = { materiel_research_trait }
+			modifier = { materiel_manufacturer_cost_factor = -0.5}
+		}
+		
+	}
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		kingston_shipbuilding = {
+			picture = generic_naval_manufacturer_2
+
+			
+			allowed = {
+				original_tag = CAN
+			}
+
+			equipment_bonus = {
+				
+			}
+			
+			traits = { pacific_fleet_naval_manufacturer }
+			modifier = { naval_manufacturer_cost_factor = -0.5 }
+		}
+
+		halifax_shipyard_limited = {
+			picture = generic_naval_manufacturer_3
+
+			
+			allowed = {
+				original_tag = CAN
+			}
+
+			equipment_bonus = {
+				# destroyers
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+			modifier = { naval_manufacturer_cost_factor = -0.5 }
+		}
+	}
+	naval_research = { 
+		
+		kingston_shipbuilding_research = {
+			picture = generic_naval_manufacturer_2
+
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+			research_bonus = { naval_equipment = 0.15 } traits = { naval_research_trait }
+			
+			equipment_bonus = {
+				
+			}
+
+		}
+
+	}
+	aircraft_research = { 
+
+		havilland_canada_research = {
+			picture = generic_air_manufacturer_1
+
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+			research_bonus = { air_equipment = 0.15 }
+			traits = { aircraft_research_trait }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CAN_j_p_bickell = {
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+			cost = 150
+
+			picture = generic_air_europe_3
+			
+			research_bonus = {
+				cat_strategic_destruction = 0.10
+			}
+			available = {
+				has_completed_focus = CAN_dollar_a_year_men_new
+			}
+
+			modifier = {
+				air_strategic_bomber_night_penalty = -0.1
+			}
+			traits = { victory_through_airpower }
+		}	
+	}
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		havilland_canada = {
+			picture = generic_air_manufacturer_1
+
+			
+			allowed = {
+				original_tag = CAN
+			}
+
+			traits = { medium_aircraft_manufacturer }
+			
+			# heavy fighters like mosquito
+						
+			ai_will_do = {
+				factor = 1
+			}
+			modifier = { aircraft_manufacturer_cost_factor = -0.5 }
+		}
+
+		canadian_car_foundry = {
+			picture = generic_air_manufacturer_2
+
+			
+			allowed = {
+				original_tag = CAN
+			}
+
+			traits = { light_aircraft_manufacturer }
+			
+			# fighter/interceptors like Hurricane
+						
+			ai_will_do = {
+				factor = 1
+			}
+			modifier = { aircraft_manufacturer_cost_factor = -0.5 }
+		}
+
+		CAN_fairchild_aircraft_ltd = {
+			picture = generic_air_manufacturer_2
+
+			cost = 150
+
+			allowed = {
+				original_tag = CAN
+				has_dlc = "Together for Victory"
+			}
+
+			available = {
+			}
+
+			traits = { naval_aircraft_manufacturer }
+			
+			# fighter/interceptors like Hurricane
+						
+			ai_will_do = {
+				factor = 1
+			}
+			modifier = { aircraft_manufacturer_cost_factor = -0.5 }
+		}
+
+		CAN_handley_page = {
+			picture = generic_air_manufacturer_3
+
+			cost = 150
+
+			allowed = {
+				original_tag = CAN
+				has_dlc = "Together for Victory"
+			}
+
+			available = {
+			}
+
+			traits = { heavy_aircraft_manufacturer }
+			
+			# fighter/interceptors like Hurricane
+						
+			ai_will_do = {
+				factor = 1
+			}
+			modifier = { aircraft_manufacturer_cost_factor = -0.5 }
+		}
+
+		CAN_victory_aircraft_ltd = {
+			picture = generic_air_manufacturer_3
+
+			cost = 150
+
+			allowed = {
+				original_tag = CAN
+				has_dlc = "Together for Victory"
+			}
+
+			available = {
+				has_completed_focus = CAN_victory_aircraft_limited
+			}
+
+			equipment_bonus = {
+			large_plane_airframe = {
+				instant = yes
+				build_cost_ic = -0.05
+				}
+			}
+			modifier = { aircraft_manufacturer_cost_factor = -0.5 }
+			traits = { heavy_aircraft_manufacturer }
+		}
+	}
+}

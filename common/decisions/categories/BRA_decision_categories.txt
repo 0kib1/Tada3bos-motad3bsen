@@ -1,0 +1,14 @@
+################
+##### BRA ######
+################
+
+BRA_house_of_representatives = {
+	available = {
+
+	}
+
+	allowed = {
+		original_tag = BRA
+	}
+	priority = 80
+}

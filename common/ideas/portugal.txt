@@ -1,0 +1,262 @@
+ideas = {
+	country = {
+		POR_german_trading = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = can_wartime_prices_and_trade_board
+			
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -0.75
+				trade_opinion_factor = 0.5
+			}
+			modifier = {
+				lend_lease_tension = 1
+				production_cost_synthetic_rubber_refinery_factor = 10
+				production_cost_synthetic_refinery_factor = 10
+			}	
+		}
+		POR_volunteers_in_the_war_nationalist = {
+			picture = por_volunteers_in_the_war
+			name = POR_volunteers_in_the_war
+			allowed = {
+				original_tag = POR
+			}
+		
+			allowed_civil_war = {
+				tag = POR
+			}
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteer_divisions_required = -1
+				send_volunteer_size = 1
+				send_volunteers_tension = -1
+			} 
+		}
+	}	
+		theorist_production = {
+			POR_fernando_dos_santos_costa = {
+	
+				picture = generic_political_advisor_europe_2
+					
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+	
+				available = {			
+				}
+				
+				traits = { war_industrialist }
+			}
+			POR_duarte_jose_pacheco = {
+	
+				picture = generic_political_advisor_europe_2
+			
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+	
+				available = {
+			
+				}
+				
+				traits = { captain_of_industry }
+				
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		}
+	
+		aircraft_manufacturer = { 
+			
+			designer = yes
+			
+			ogma = {
+				
+				picture = por_ogma
+	
+				
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+	
+	
+				available = { 
+			
+				}
+					
+				
+				research_bonus = {
+					light_air = 0.15
+				}
+				
+				traits = { light_aircraft_manufacturer }
+				
+				equipment_bonus = {
+					# military production didn't really start until 1950
+				}
+				
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		}
+		
+		naval_manufacturer = { 
+			
+			designer = yes
+			
+			arsenal_alfeite = {
+				
+				picture = generic_naval_manufacturer_1
+	
+				
+				allowed = {
+					original_tag = POR
+				}
+				
+				research_bonus = {
+					naval_equipment = 0.15
+				}
+				
+				equipment_bonus = {
+					# need to find information on ships made
+				}
+				
+				traits = { naval_manufacturer }
+				
+				modifier = {
+				}
+			}
+		}
+		
+		materiel_manufacturer = {
+				
+			designer = yes		
+	
+			fnmal = {
+				
+				picture = generic_infantry_equipment_manufacturer_2
+	
+				
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+	
+				research_bonus = {
+					infantry_weapons = 0.15
+				}
+							
+				traits = { infantry_equipment_manufacturer }
+				
+				modifier = {
+				}
+			}
+
+			fabrica_material_guerra = {
+				
+				picture = generic_infantry_equipment_manufacturer_2
+	
+				
+				allowed = {
+					original_tag = POR
+					NOT = { has_dlc = "La Resistance" }
+				}
+				
+				research_bonus = {
+					infantry_weapons = 0.15
+				}
+				
+				equipment_bonus = {
+					# rifles (mauser 98k) and light artillery
+				}
+				
+				traits = { infantry_equipment_manufacturer }
+				
+				modifier = {
+				}
+			}
+	
+			ogme = {
+				
+				picture = por_ogme
+	
+				
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+				available = {
+		
+				}
+	
+				research_bonus = {
+					motorized_equipment = 0.15
+				}
+				
+				equipment_bonus = {
+					# rifles (mauser 98k) and light artillery
+				}
+				
+				traits = { motorized_equipment_manufacturer }
+				
+				modifier = {
+				}
+			}
+	
+			fma = {
+				
+				picture = generic_artillery_manufacturer_2
+	
+				
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+				available = {
+			
+				}
+	
+				research_bonus = {
+					artillery = 0.15
+				}
+				
+				traits = { artillery_manufacturer }
+				
+				modifier = {
+				}
+			}
+		}
+	
+		industrial_concern = {	
+	
+			companhia_uniao_fabril = {
+	
+				picture = generic_industrial_concern_2
+				
+				allowed = {
+					original_tag = POR
+					has_dlc = "La Resistance"
+				}
+				
+				research_bonus = {
+					industry = 0.15
+				}
+				
+				traits = { industrial_concern }
+				
+				modifier = {
+				}
+			}
+		}
+	}

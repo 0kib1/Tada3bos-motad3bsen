@@ -1,0 +1,258 @@
+###"Government Policies" long to complete decisions which require little pp to start but use pp when active. Give rewards/events with choises when complete. Meant to keep player constantly low on pp.
+
+BRA_house_of_representatives = {
+	BRA_incentivise_countryside_colonization = {	
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 505
+			}
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 100
+		modifier = {
+			industrial_capacity_factory = -0.05
+			political_power_factor = -0.25
+		}
+		available = {
+           has_completed_focus = BRA_send_the_japanese_to_brazil
+
+		}
+		remove_effect = {
+            522 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction  = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		complete_effect = {
+			set_country_flag = { flag = BRA_policy_on value = 1 days = 100 }
+		}
+	}
+	BRA_encourage_the_growth_of_military_related_manufacturing = {	
+		available = {
+			has_completed_focus = BRA_send_the_japanese_to_brazil
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 496
+				state = 499
+			}
+		}
+		fire_only_once = yes
+		cost = 75
+		days_remove = 160
+		modifier = {
+			consumer_goods_expected_value = 0.05
+			political_power_factor = -0.25
+		}
+		remove_effect = {
+            496 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction  = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction  = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+            499 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction  = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+	    }
+		complete_effect = {
+			set_country_flag = { flag = BRA_policy_on value = 1 days = 160 }
+		}
+	}
+
+	BRA_reduce_taxation_for_bhp_steel = {	
+		available = {
+			has_completed_focus = BRA_send_the_japanese_to_brazil
+			
+
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 120
+		highlight_states = {
+			highlight_state_targets = {
+				state = 280
+			}
+		}
+		modifier = {
+			consumer_goods_expected_value = 0.05
+			political_power_factor = -0.25
+		}
+		remove_effect = {
+            290 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction  = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = steel 
+				amount = 5
+				state = 280
+			}
+        }
+		complete_effect = {
+			set_country_flag = { flag = BRA_policy_on value = 1 days = 120 }
+		}
+     }
+	BRA_expand_the_housing_scheme = {	
+		fire_only_once = yes
+		cost = 25
+		days_remove = 80
+		highlight_states = {
+			highlight_state_targets = {
+				state = 495
+			}
+		}
+		modifier = {
+			consumer_goods_expected_value = 0.05
+		}
+		available = {
+      	has_completed_focus = BRA_send_the_japanese_to_brazil
+
+
+		}
+		remove_effect = {
+            495 = {
+		      add_extra_state_shared_building_slots = 5
+				add_building_construction  = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			 }
+		 }
+	    }
+		complete_effect = {
+			set_country_flag = { flag = BRA_policy_on value = 1 days = 80 }
+		}
+	}
+###focus industrial resources
+	BRA_focus_labor_on_artillery_production = {	
+		fire_only_once = no
+		cost = 80
+		days_remove = 100
+
+		available = {
+           has_completed_focus = BRA_send_the_japanese_to_brazil
+		}
+		modifier = {
+			industrial_capacity_factory = -0.05
+		}
+		remove_effect = {
+		}
+		complete_effect = {
+			add_timed_idea = { idea = AST_ramp_up_the_artillery_equipment_industry_idea days = 100 }				
+			set_country_flag = { flag = BRA_policy_on value = 1 days = 100 }
+		}
+	}
+	BRA_focus_labor_on_infantry_eq_production = {	
+		fire_only_once = no
+		cost = 80
+		days_remove = 100
+
+		available = {
+           has_completed_focus = BRA_send_the_japanese_to_brazil
+
+		}
+		modifier = {
+			industrial_capacity_factory = -0.05
+		}
+		remove_effect = {
+		}
+		complete_effect = {	
+			add_timed_idea = { idea = AST_ramp_up_the_infantry_equipment_industry_idea days = 100 }				
+			set_country_flag = { flag = BRA_policy_on value = 1 days = 100 }
+		}
+	}
+	BRA_focus_labor_on_tank_production = {	
+		fire_only_once = no
+		cost = 80
+		days_remove = 100
+
+		available = {
+           has_completed_focus =  BRA_send_the_japanese_to_brazil
+
+		}
+		modifier = {
+			industrial_capacity_factory = -0.05
+		}
+		remove_effect = {
+		}
+		complete_effect = {	
+			add_timed_idea = { idea = AST_ramp_up_the_armor_industry_idea days = 100 }				
+			set_country_flag = { flag = BRA_policy_on value = 1 days = 100 }
+		}
+	}
+	BRA_focus_labor_on_motor_production = {	
+		fire_only_once = no
+		cost = 80
+		days_remove = 100
+
+		available = {
+           has_completed_focus = BRA_send_the_japanese_to_brazil
+
+		}
+		modifier = {
+			industrial_capacity_factory = -0.05
+		}
+		remove_effect = {
+		}
+		complete_effect = {
+			add_timed_idea = { idea = AST_ramp_up_the_motor_industry_idea days = 100 }				
+			set_country_flag = { flag = BRA_policy_on value = 1 days = 100 }
+		}
+	}
+	BRA_victory_program_1 = {
+
+		icon = ger_military_buildup
+
+		available = {
+           has_completed_focus = BRA_send_the_japanese_to_brazil
+
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			industrial_capacity_factory = 0.1
+		}
+
+		days_remove = 100
+		days_re_enable = 60
+
+		cost = 100
+
+		complete_effect = {
+			set_country_flag = { flag = BRA_policy_on value = 1 days = 100 }
+		}
+
+		remove_effect = {
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+	}
+ }
+
+

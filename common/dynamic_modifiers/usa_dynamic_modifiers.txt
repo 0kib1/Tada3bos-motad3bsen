@@ -1,0 +1,119 @@
+#	Example:
+# 
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+
+usa_popular_support_dynamic_modifier = {
+	enable = { always = yes } #optional, the modifier won't apply if not enabled
+	
+
+	# list of modifiers
+	war_support_factor = USA_popular_support_var
+}
+
+USA_great_depression_modifier = { #prep for work w/ Vlad 
+    enable = { always = yes }
+
+    icon = GFX_idea_EST_exploit_the_banks
+
+    political_power_factor = USA_political_power_factor_var
+    political_power_cost = USA_political_power_cost_var
+    political_power_gain = USA_political_power_gain_var
+    consumer_goods_expected_value = USA_consumer_goods_factor_var
+    production_factory_efficiency_gain_factor = USA_production_factory_efficiency_gain_factor_var
+    production_factory_max_efficiency_factor = USA_production_factory_max_efficiency_factor_var 
+    research_speed_factor = USA_research_speed_factor_var 
+   
+    industrial_capacity_factory = USA_industrial_capacity_factory_var
+    industrial_capacity_dockyard = USA_industrial_capacity_dockyard_var 
+    conscription_factor = USA_conscription_factor_var
+    local_resources_factor = USA_local_resources_factor_var
+    stability_weekly = USA_stability_gain_factor_var
+    stability_factor = USA_stability_factor_var
+
+    production_speed_arms_factory_factor = USA_production_speed_arms_factory_factor_var
+    production_speed_industrial_complex_factor = USA_production_speed_industrial_complex_factor_var
+    production_speed_dockyard_factor = USA_production_speed_dockyard_factor_var
+    production_speed_infrastructure_factor = USA_production_speed_infrastructure_factor_var
+
+    conversion_cost_civ_to_mil_factor = USA_conversion_speed_civ_to_mil_var
+    conversion_cost_mil_to_civ_factor = USA_conversion_speed_mil_to_civ_var
+
+    production_cost_synthetic_rubber_refinery_factor = USA_production_cost_synthetic_rubber_refinery_factor_var
+    production_cost_synthetic_refinery_factor = USA_production_cost_synthetic_refinery_factor_var
+
+    custom_modifier_tooltip = USA_USA_trade_tt
+    custom_modifier_tooltip = JAP_trade_tt
+    custom_modifier_tooltip = USA_allies_trade_tt
+}
+USA_command_post_modifier = { #prep for work w/ Vlad 
+    enable = { always = yes }
+
+    icon = GFX_idea_USA_us_officer
+
+    conscription_factor = -0.15
+    air_doctrine_cost_factor = USA_air_doctrine_cost_factor_var
+    land_doctrine_cost_factor = USA_land_doctrine_cost_factor_var
+    experience_gain_army_factor = USA_experience_gain_army_factor_var
+    experience_gain_air_factor = USA_experience_gain_air_factor_var
+    experience_gain_navy_factor = USA_experience_gain_navy_factor_var
+    fuel_gain_factor = USA_fuel_gain_factor_var
+    operation_infiltrate_outcome = USA_operation_infiltrate_outcome_var
+    boost_resistance_factor = USA_boost_resistance_factor_var
+    operative_slot = USA_operative_slot_var
+    sortie_efficiency = USA_sortie_efficiency_var
+    naval_strike_attack_factor = USA_naval_strike_attack_factor_var
+    naval_strike_targetting_factor = USA_naval_strike_targetting_factor_var
+    planning_speed = USA_planning_speed_var
+    max_command_power = USA_max_command_power_var
+    paradrop_organization_factor = USA_air_paradrop_attack_factor_var
+    no_supply_grace = USA_no_supply_grace_var
+    spotting_chance = USA_spotting_chance_var
+    navy_intel_factor = USA_navy_intel_factor_var
+
+
+    custom_modifier_tooltip = USA_ger_debuff_tt
+    custom_modifier_tooltip = USA_submarine_modifier_tt
+    custom_modifier_tooltip = USA_ship_cost_tt
+    custom_modifier_tooltip = USA_bb_bonus_tt
+}
+
+USA_bombardment = {
+    enable = {
+        always = yes
+    }
+    icon = GFX_modifiers_SOV_armored_battery
+
+    max_dig_in_factor  = -0.5
+    fortification_damage = 0.4
+}
+USA_bombardment2 = {
+    enable = {
+        always = yes
+    }
+    icon = GFX_modifiers_SOV_armored_battery
+
+    max_dig_in_factor  = -1
+    fortification_damage = 1
+}

@@ -1,0 +1,955 @@
+ideas = {
+
+
+
+	country = {
+		EFR_french_volunteer_army_1 = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				army_org_Factor = 0.05
+				army_morale_factor = 0.05
+				send_volunteer_size = 5
+				send_volunteers_tension = -1
+				send_volunteer_divisions_required = -0.7
+			}
+		}
+
+		EFR_french_volunteer_army_2 = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				army_org_Factor = 0.10
+				army_morale_factor = 0.10
+				send_volunteer_size = 5
+				send_volunteers_tension = -1
+				winter_attrition_factor = -0.1
+				send_volunteer_divisions_required = -0.7
+			}
+		}
+		
+		EFR_french_volunteer_army_3 = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_fortify_the_borders
+
+			
+			targeted_modifier = {
+				tag = SOV
+				defense_bonus_against = 0.05
+			}
+		}
+
+		EFR_war_repairs = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = FRA_factory_strikes
+
+			modifier = {
+				consumer_goods_expected_value = -0.05
+			}
+		}
+
+		EFR_german_war_repairs = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = FRA_factory_strikes
+
+			modifier = {
+				consumer_goods_expected_value = -0.05
+				industry_repair_factor = 0.10
+				
+			}
+		}
+
+		idea_EFR_neutrality = {
+			picture = neutrality_idea
+
+			allowed = {
+				original_tag = EFR
+			}
+
+			cancel = {
+				is_ai = no
+			}			
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			rule = {
+				can_create_factions = no
+				can_join_factions = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				enemy_justify_war_goal_time = 5.0
+				join_faction_tension = 2.00
+				lend_lease_tension = 2
+				send_volunteers_tension = 0.20
+				guarantee_tension = 2.0
+				ai_get_ally_desire_factor = -1000
+			}
+		}
+
+		idea_EFR_chantiers_de_la_jeunesse = {
+
+			picture = ast_all_in
+
+			allowed = {
+				original_tag = EFR
+			}
+			
+			 available = {
+				has_completed_focus = 
+					EFR_secure_the_new_state
+			}
+			
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+				production_speed_industrial_complex_factor = 0.10
+				industry_repair_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		idea_EFR_secret_military_researches = {
+			allowed = {
+				always = no
+				original_research_slots < 5
+			}
+
+			modifier = {
+				research_speed_factor = 0.05
+			}
+
+			removal_cost = -1
+			picture = generic_research_bonus
+		}
+		idea_EFR_STO = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = -0.005
+			}
+		}
+		idea_EFR_STO2 = {
+
+			picture = idea_EFR_STO
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = -0.01
+			}
+		}
+		idea_EFR_STO3 = {
+
+			picture = idea_EFR_STO
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = -0.015
+				equipment_capture_factor = 0.4
+			}
+		}
+		idea_EFR_rationning = {
+
+			picture = generic_agrarian_reform
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = -0.05
+			}
+		}
+		idea_EFR_recycling = {
+
+			picture = generic_flexible_foreign_policy2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = -0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+	 
+		
+		
+		
+		EFR_german_assistance_idea = {
+		
+			picture = generic_production_bonus
+
+			allowed = {
+				original_tag = EFR
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.15 instant = yes 
+				}
+				mechanized = {
+					build_cost_ic = -0.15 instant = yes 
+				}
+				motorized = {
+					build_cost_ic = -0.15 instant = yes 
+				}
+				
+			}
+		}  
+
+		EFR_german_garrisons = {
+		  picture = generic_fascism_drift_2
+		  
+			allowed = {
+				original_tag = EFR
+			}
+				
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				
+				compliance_growth_on_our_occupied_states  = 0.015
+				
+			}
+		}
+		EFR_german_garrisons2 = {
+		  picture = generic_fascism_drift_2
+		  
+			allowed = {
+				original_tag = EFR
+			}
+				
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				consumer_goods_expected_value = -0.05
+				compliance_growth_on_our_occupied_states  = 0.015
+				
+			}
+		}
+		
+		
+		EFR_german_garrisons3 = {
+		  picture = tfv_can_conscription_crisis
+		  
+			allowed = {
+				original_tag = EFR
+			}
+				
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+			surrender_limit = 0.05
+			stability_factor = -0.05
+			compliance_growth_on_our_occupied_states = -0.005
+			repair_speed_arms_factory_factor = -0.15
+				
+				
+			}
+		}
+		
+		EFR_german_garrisons4 = {
+		  picture = tfv_can_conscription_crisis
+		  
+			allowed = {
+				original_tag = EFR
+			}
+				
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+			surrender_limit = 0.1
+			stability_factor = -0.1
+			compliance_growth_on_our_occupied_states = -0.005
+			repair_speed_arms_factory_factor = -0.15
+			industrial_capacity_factory = -0.1
+			production_speed_buildings_factor = -0.1
+			army_core_attack_factor = -0.05
+			army_core_defence_factor = -0.05
+			local_non_core_manpower = -0.1
+				
+				
+			}
+		}
+		
+		
+		
+		
+		
+		 EFR_against_democracy_idea = {
+		  picture = generic_war_preparation
+			   
+			   
+			allowed = {
+			   original_tag = EFR
+			   always = no
+			}   
+			 
+			 available = {
+				has_completed_focus = 
+					EFR_against_democracy
+			}
+				
+			 
+			allowed_civil_war = {
+				always = yes
+			} 
+				removal_cost = -1
+				targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.05
+			 
+			}
+		}
+	
+		EFR_against_communism_idea = {
+		  picture = ger_bulwark_against_bolshevism
+			   
+			   
+			allowed = {
+			   original_tag = EFR
+			   always = no
+			}   
+			 
+			 available = {
+				has_completed_focus = 
+					EFR_vichy_against_communism
+			}
+				
+			 
+			allowed_civil_war = {
+				always = yes
+			} 
+				removal_cost = -1
+				targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.05
+			 
+			}
+		}
+	
+		EFR_moralizing_defeat_idea = {
+		  picture = generic_oppression
+			   
+			   
+			allowed = {
+			   original_tag = EFR
+			   always = no
+			}   
+			 
+			 
+				
+			 
+			allowed_civil_war = {
+				always = yes
+			} 
+				removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05	 
+			}
+			
+		}
+		
+		
+		
+		
+		EFR_waffen_ss_training = {
+		  picture = german_advisors
+			   
+			   
+			allowed = {
+			   original_tag = EFR
+			   always = no
+			}   
+			 
+			 
+				
+			 
+			allowed_civil_war = {
+				always = yes
+			} 
+				removal_cost = -1
+			modifier = {
+			training_time_factor = -0.15
+			 
+			}
+		}
+		
+		EFR_commando_training_idea = {
+		  picture = general_staff
+			   
+			   
+			allowed = {
+			   original_tag = EFR
+			   always = no
+			}   
+			 
+			 
+				
+			 
+			allowed_civil_war = {
+				always = yes
+			} 
+				removal_cost = -1
+			modifier = {
+				amphibious_invasion_defence = 0.1
+			 
+			}
+		}
+		
+		EFR_final_victory = {
+			picture = FRA_army_of_aggression_focus
+			   
+			   
+			allowed = {
+			   original_tag = EFR
+			   always = no
+			}   
+			 
+			 
+				
+			 
+			allowed_civil_war = {
+				always = yes
+			} 
+				removal_cost = -1
+			modifier = {
+			army_defence_factor = 0.1
+			equipment_capture_factor = 0.15
+			 
+			}
+		}	
+		EFR_german_panzer_greander = {
+		  picture = triumphant_will
+			   
+			   
+			allowed = {
+			   original_tag = EFR
+			   always = no
+			}   
+			available = {
+				has_completed_focus = 
+					EFR_follow_the_german_panzergrenadiers
+			}
+				
+				
+			 
+			allowed_civil_war = {
+				always = yes
+			} 
+				removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.1
+				
+			}
+		}
+		EFR_german_mech_SS = {
+		  picture = triumphant_will
+			   
+			   
+			allowed = {
+			   original_tag = EFR
+			   always = no
+			}   
+			available = {
+				has_completed_focus = 
+					EFR_follow_the_mechanized_waffen
+			}
+				
+				
+			 
+			allowed_civil_war = {
+				always = yes
+			} 
+				removal_cost = -1
+			modifier = {
+				army_org_factor = 0.1
+				
+			}
+		}
+		EFR_garrison_defense = {
+		  picture = mex_politicised_army
+			   
+			   
+			allowed = {
+			   original_tag = EFR
+			   always = no
+			}   
+			 
+			 
+				
+			 
+			allowed_civil_war = {
+				always = yes
+			} 
+				removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+			
+			}
+		}
+			EFR_garrison_attack = {
+		  picture = generic_intel_bonus
+			   
+			   
+			allowed = {
+			   original_tag = EFR
+			   always = no
+			}   
+			 
+			 
+				
+			 
+			allowed_civil_war = {
+				always = yes
+			} 
+				removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+			
+			}
+		}	
+		EFR_new_BB = {
+		  picture = liberty_ship_focus
+			   
+			   
+			allowed = {
+			   original_tag = EFR
+			   always = no
+			}   
+			 available = {
+				has_completed_focus = EFR_build_the_richelieu
+			}
+			 
+				
+			 
+			allowed_civil_war = {
+				always = yes
+			} 
+				removal_cost = -1
+			modifier = {
+				industrial_capacity_dockyard = 0.3
+			
+			}
+		}
+		EFR_german_investors = {
+		  picture = generic_foreign_capital
+			   
+			   
+			allowed = {
+			   original_tag = EFR
+			   
+			}   
+			 available = {
+			 OR = {
+				has_completed_focus = EFR_german_investors
+				has_completed_focus = EFR_restore_the_economy
+			}
+			 }
+				
+			 
+			allowed_civil_war = {
+				always = yes
+			} 
+				removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.4
+			
+			}
+		}
+		
+		EFR_research_continued = {
+		 picture = jap_duplicate_research
+			   
+			   
+			allowed = {
+			   original_tag = EFR
+			   
+			}   
+			 available = {
+				has_completed_focus = EFR_collect_our_intelectuals
+			}
+			 
+				
+			 
+			allowed_civil_war = {
+				always = yes
+			} 
+				removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.1
+			
+			}
+		}
+		
+		EFR_pride_in_the_army = {
+		 picture = GFX_idea_FRA_legacy_of_the_grande_armee_spirit
+			   
+			   
+			allowed = {
+			   original_tag = EFR
+			   
+			}   
+			 available = {
+				has_completed_focus = EFR_the_pride_of_our_country_restored
+			}
+			 
+				
+			 
+			allowed_civil_war = {
+				always = yes
+			} 
+				removal_cost = -1
+			modifier = {
+				conscription_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.05
+			}
+		}
+		
+		#EFR_martial_law = {
+		# picture = GFX_SLO_martial_law_idea
+		#	   
+		#	   
+		#	allowed = {
+		#	   original_tag = EFR
+		#	   
+		#	}   
+		#	 available = {
+		#		has_completed_focus = EFR_the_man_in_the_funny_hat
+		#	}
+		#	 
+		#		
+		#	 
+		#	allowed_civil_war = {
+		#		always = yes
+		#	} 
+		#		removal_cost = -1
+		#	modifier = {
+		#	stability_factor = -0.25
+		#	political_power_gain = 0.05
+		#	resistance_target = -0.1
+		#	resistance_damage_to_garrison = -0.35
+		#	production_factory_efficiency_gain_factor = -0.05
+		#	production_factory_max_efficiency_factor = -0.025
+		#	compliance_gain = 0.05
+		#	repair_speed_arms_factory_factor = -0.15
+		#	
+		#	}
+		#}
+		
+		EFR_mandatory_service = {
+		 picture = GFX_GER_infantry_weapons_2
+			   
+			   
+			allowed = {
+			   original_tag = EFR
+			   
+			}   
+			 available = {
+				has_completed_focus = EFR_mandatory_conscription
+			}
+			 
+				
+			 
+			allowed_civil_war = {
+				always = yes
+			} 
+				removal_cost = -1
+			modifier = {
+			stability_factor = -0.1
+			conscription_factor = 0.15	
+			
+			}
+		}
+		
+	#	EFR_camp_than_burger = {
+	#	 picture = GER_arbeitsinsatz 
+	#		   
+	#		   
+	#		allowed = {
+	#		   original_tag = EFR
+	#		   
+	#		}   
+	#		 available = {
+	#			has_completed_focus = EFR_a_camp_than_a_house
+	#		}
+	#		 
+	#			
+	#		 
+	#		allowed_civil_war = {
+	#			always = yes
+	#		} 
+	#			removal_cost = -1
+	#		modifier = {
+	#		stability_factor = -0.1
+	#		industrial_capacity_factory = 0.1
+	#		production_speed_buildings_factor = 0.1
+	#		production_factory_efficiency_gain_factor = 0.1
+	#		conscription_factor = -0.1
+	#		
+	#		}
+	#	}
+	#	
+	#	EFR_burger_training = {
+	#	 picture = GER_aggressive_posture
+	#		   
+	#		   
+	#		allowed = {
+	#		   original_tag = EFR
+	#		   
+	#		}   
+	#		 available = {
+	#			has_completed_focus = EFR_burgendy_ss
+	#		}
+	#		 
+	#			
+	#		 
+	#		allowed_civil_war = {
+	#			always = yes
+	#		} 
+	#			removal_cost = -1
+	#		modifier = {
+	#		army_attack_factor = 0.02
+	#		army_defence_factor = 0.02
+	#		breakthrough_factor = 0.02
+	#		conscription_factor = 0.02
+	#		}
+	#	}
+	#	
+	}
+
+	aircraft_research = {
+		EFR_paul_gastin = {
+
+			picture = generic_air_europe_1
+
+			allowed = {
+				original_tag = EFR
+			}
+			picture = generic_air_europe_3
+
+			traits = { air_warfare_theorist }
+		}
+	}	
+	aircraft_manufacturer = { 
+  
+   EFR_junkers = { 
+			name = junkers 
+			picture = junkers 
+			
+			allowed = {
+					original_tag = EFR
+			}
+
+		
+			available = {
+				has_completed_focus = EFR_junkers
+		  }	
+
+			cost = 150
+
+			equipment_bonus = {
+				small_plane_cas_airframe = {
+					air_ground_attack = 0.10 reliability = -0.1 build_cost_ic = -0.05 
+				}
+			}			
+
+			traits = { GER_junkers_manufacturer }
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	EFR_messerschmitt = {
+			name = messerschmitt 
+			picture = messerschmitt  
+			
+			allowed = {
+					original_tag = EFR
+				}
+
+			available = {
+
+			has_completed_focus = EFR_messerschmitt
+			}	
+			ai_will_do = {
+				factor = 50
+			}			
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = 0.1 air_range = 0.08  
+				}
+				medium_plane_fighter_airframe = {
+					reliability = 0.1 air_range = 0.1  
+				}		
+				jet_fighter_equipment = {
+					air_agility = 0.1 air_range = 0.1  
+				}
+			}
+			
+			traits = { GER_messerschmitt_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		EFR_heinkel = {
+		   name = heinkel
+		   picture = heinkel
+			
+			allowed = {
+					original_tag = EFR
+			}
+			available = {
+			has_completed_focus = EFR_heinkel
+		
+			}
+			equipment_bonus = {
+				medium_plane_airframe = {
+					air_range = 0.1 air_bombing = 0.1  
+				}
+			}			
+
+			traits = { GER_heinkel_manufacturer }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+
+	theorist_production = {
+		EFR_rene_belin = {
+
+			allowed = {
+				original_tag = EFR
+			}
+			picture = generic_political_advisor_europe_2	
+			available = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			traits = { armaments_organizer }
+		}
+		
+		EFR_rene_belin_bruh = {
+
+			allowed = {
+				original_tag = EFR
+			}
+			picture = generic_political_advisor_europe_3	
+			available = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			traits = { captain_of_industry }
+		}
+	}
+}

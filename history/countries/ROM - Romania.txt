@@ -1,0 +1,292 @@
+﻿capital = 46
+
+oob = "ROM_1936"
+starting_train_buffer = 2
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "ROM_1936_naval_mtg"
+	else = {
+		set_naval_oob = "ROM_1936_naval_legacy"
+	}
+}
+set_research_slots = 4
+
+ROM = {
+	#Pick from list of the sane events first
+	random_list = {
+		100 = { country_event = { id = romania.7 days = 2 random_days = 20 } }
+	}
+}
+
+
+
+set_stability = 0.6
+set_war_support = 0.3
+recruit_character = ROM_ion_antonescu
+recruit_character = ROM_leontin_baldescu
+recruit_character = ROM_horia_macellariu
+recruit_character = ROM_gheorghe_avramescu
+recruit_character = ROM_gheorghe_tatarescu
+recruit_character = ROM_constantin_ion_parhon
+recruit_character = ROM_armand_calinescu
+recruit_character = ROM_corneliu_zelea_codreanu
+recruit_character = ROM_petre_dumitrescu
+recruit_character = ROM_ioan_mihail_racovita
+recruit_character = ROM_gheorge_potopeanu
+recruit_character = ROM_gheorghe_potopeanu
+recruit_character = ROM_david_popescu
+recruit_character = ROM_istrate_micescu
+recruit_character = ROM_emanoil_ionescu
+recruit_character = ROM_gheorghe_mihail
+recruit_character = ROM_mihail_moruzov
+recruit_character = ROM_mihai_antonescu
+recruit_character = ROM_ermil_gheorghiu
+recruit_character = ROM_gheorge_dobre
+recruit_character = ROM_nicolae_sova
+recruit_character = ROM_gheorghe_jienescu
+recruit_character = ROM_gheorghe_vasiliu
+recruit_character = ROM_nicolae_titulescu
+recruit_character = ROM_paul_teodorescu
+recruit_character = ROM_gheorghe_arganeseanu
+recruit_character = ROM_ion_gigurtu
+recruit_character = ROM_mihail_sturza
+recruit_character = ROM_constantin_sanatescu
+recruit_character = ROM_constantin_bratianu
+recruit_character = ROM_constantin_papanace
+recruit_character = ROM_constantin_argetoianu
+
+recruit_character = ROM_gheorghe_manoliu
+recruit_character = ROM_vasile_atanasiu
+recruit_character = ROM_constantin_constantinescu
+recruit_character = ROM_corneliu_dragalina
+recruit_character = ROM_corneliu_teodorini
+recruit_character = ROM_dumitru_damaceanu
+recruit_character = ROM_iosif_iacobici
+recruit_character = ROM_Leonard_Mociulschi
+recruit_character = ROM_Ioan_Dumitrache
+
+# Starting tech
+set_technology = { #player
+	basic_train = 1
+	################### infantry ################
+	infantry_weapons = 1  
+	fuel_silos = 1 
+	field_equipment = 1 
+	fuel_refining = 1
+	tech_radio_1 = 1 
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	marines = 1
+	motorised_infantry = 1
+	special_equipment = 1
+	tech_dig_1 = 1
+	################### support ################
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	##################artillery #################
+	artillery1 = 1 
+	artillery2 = 1
+	artillery3 = 1
+	field_gun = 1
+	field_gun2_1 = 1
+	field_gun2_2 = 1
+	field_gun3 = 1
+	gw_pack_artillery = 1
+	pack_artillery_m_1 = 1
+	pack_artillery1 = 1
+	heavy_artillery1 = 1
+	heavy_antiair = 1
+	heavy_antiair_1 = 1
+	heavy_antiair_2 = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+	################# aircraft ###########
+	fighter_1934 = 1
+
+	################# economy #################
+	starting_industry = 1
+	
+}
+
+	################ Armor ###########
+	if = {
+		limit = {
+			 has_dlc = "No Step Back" 
+		}
+		set_technology = {
+		    rom_motorised_infantry = 1
+			rom_tech_armored_cars = 1
+			rom_1934_light_tank_chassis = 1
+			unlock_modules = 1
+			automatic_gun = 1
+			small_gun = 1
+			armour_sloping = 1
+			engine_tech_1 = 1
+			automatic_gun2 = 1
+			turret_basket = 1
+		}
+	}
+
+
+	if = {
+		limit = {
+			not = { has_dlc = "No Step Back" }
+		}
+		set_technology = {
+         	axis_light_tank_1934 = 1 
+        	axis_motorised_infantry = 1
+	        axis_tech_armored_cars = 1
+	        axis_basic_tank_engines = 1
+	        axis_rivetted_armour = 1
+
+		}
+		
+	}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "FT"
+		type = light_tank_chassis_1934
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			armor_sloping_slot = rounded_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 1
+			tank_nsb_armor_upgrade = 1
+		}
+		icon = "gfx/interface/technologies/land/rom/ft.tga"
+	}
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		transport = 1 
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		mtg_transport = 1 
+	}
+}
+add_ideas =	ROM_ger_trade_treaty
+add_ideas = neutrality_idea
+add_ideas = ROM_agrarian_economy 
+add_ideas = ROM_the_resource_curse_1
+add_ideas = ROM_waning_influence_of_democracy
+add_ideas = ROM_romanian_officers
+add_ideas = ROM_iron_guard
+add_ideas = ROM_king_carol_ii_hedonist
+add_ideas = CAN_volunteers
+
+set_convoys = 150
+set_rule = { can_send_volunteers = yes }
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.12.20"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 60
+	fascism = 14
+	communism = 2
+	neutrality = 24
+}
+
+
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+	create_equipment_variant = {
+		name = "Regele Ferdinand Class"
+		type = destroyer_1
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 1
+			ship_ASW_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Delfinul Class"				
+		type = ship_hull_submarine_2
+		name_group = ROM_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Marasti Class"				
+		type = ship_hull_light_1
+		name_group = ROM_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_torpedo_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Regele Ferdinand Class"	
+		type = ship_hull_light_1
+		name_group = ROM_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+}
+
+# 1939 Start #
+1939.1.1 = {
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		# Ship variants #
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+	}
+}

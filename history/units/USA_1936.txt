@@ -1,0 +1,745 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Infantry Division"  	# Standard formation for frontline divisions
+	division_names_group = USA_INF_01
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		
+		artillery_heavy_mot = { x = 3 y = 0 }
+		artillery_heavy_mot = { x = 3 y = 1 }
+		field_gun_brigade_mot = { x = 3 y = 2 }
+		anti_air_heavy_mot = { x = 3 y = 3 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }   
+		recon_ac = { x = 0 y = 2 }
+		maintenance_company = { x = 1 y = 0 }
+		logistics_company_mot = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "National Guard Division"  	# Standard formation for NG divisions through late 1940
+	division_names_group = USA_INF_01
+	regiments = {						
+		truck_infantry = { x = 0 y = 0 }
+		truck_infantry = { x = 0 y = 1 }
+		truck_infantry = { x = 0 y = 2 }
+		
+		truck_infantry = { x = 1 y = 0 }
+		truck_infantry = { x = 1 y = 1 }
+		truck_infantry = { x = 1 y = 2 }
+		
+		truck_infantry = { x = 2 y = 0 }
+		truck_infantry = { x = 2 y = 1 }
+		truck_infantry = { x = 2 y = 2 }
+		
+		truck_infantry = { x = 3 y = 0 }
+		truck_infantry = { x = 3 y = 1 }
+		truck_infantry = { x = 3 y = 2 }
+		
+		field_gun_brigade = { x = 4 y = 0 }
+		field_gun_brigade = { x = 4 y = 1 }
+		field_gun_brigade = { x = 4 y = 2 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }   
+		recon = { x = 0 y = 2 }
+	}
+
+}
+division_template = {
+	name = "Cavalry Division"  		# 1st Cavalry Division only
+	division_names_group = USA_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		
+		armored_car = { x = 2 y = 0 }   # US Cav Recon consisted of 52 ACs, 13 L Arm
+	}
+	
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }  
+		maintenance_company = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Garrison Brigade"  		
+	division_names_group = USA_GAR_01	
+	regiments = {
+		garrison = { x = 0 y = 0 }
+		garrison = { x = 0 y = 1 }
+		garrison = { x = 0 y = 2 }
+		garrison = { x = 1 y = 0 }
+		garrison = { x = 1 y = 1 }
+		garrison = { x = 1 y = 2 }	
+		
+		artillery_heavy = { x = 2 y = 0 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		military_police = { x = 1 y = 0 }			
+	}
+	priority = 0
+}
+division_template = {
+	name = "USMC"		
+	division_names_group = USA_MAR_01	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 2 y = 0 }
+		marine = { x = 2 y = 1 }
+		marine = { x = 2 y = 2 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }   
+		maintenance_company = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
+		pack_artillery = { x = 1 y = 3 }
+		
+	}	
+	priority = 2
+}
+division_template = {
+	name = "MP"			# Garrison
+	division_names_group = USA_GAR_01
+	regiments = {
+		garrison = { x = 0 y = 0 }
+		garrison = { x = 0 y = 1 }
+		garrison = { x = 0 y = 2 }
+		garrison = { x = 0 y = 3 }
+		garrison = { x = 1 y = 0 }
+		garrison = { x = 1 y = 1 }
+		garrison = { x = 1 y = 2 }
+		garrison = { x = 1 y = 3 }
+		garrison = { x = 2 y = 0 }
+		garrison = { x = 2 y = 1 }
+		garrison = { x = 2 y = 2 }
+		garrison = { x = 2 y = 3 }
+		garrison = { x = 3 y = 0 }
+		garrison = { x = 3 y = 1 }
+		garrison = { x = 3 y = 2 }
+		garrison = { x = 3 y = 3 }
+		garrison = { x = 4 y = 0 }
+		garrison = { x = 4 y = 1 }
+		garrison = { x = 4 y = 2 }
+		garrison = { x = 4 y = 3 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }   
+	}
+}
+
+###### OOB ######
+units = {
+	####### CONUS Theater #######
+	### Carribean Forces ###
+	division = {			
+		name = "Puerto Rico Department"
+		location = 9814
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}			
+	division = {			
+		name = "Panama Canal Force"		
+		location = 9814
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}
+
+	### 1st Army -- note: Armies only paper organizations in 1936 ###
+	# I Army Corps #
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 9814
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}			
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
+		location = 9814
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}
+	# II Army Corps #
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9814
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+	}			
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = 9814
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}			
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 9814
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}			
+	# III Army Corps #
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 9814
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}			
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 9814
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}			
+
+
+	### 2nd Army -- note: Armies only paper organizations in 1936 ###
+	# V Army Corps #
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 37
+		}
+		location = 9814
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}			
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 38
+		}
+		location = 9814
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}			
+	# VI Army Corps #
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}
+		location = 9814
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+
+	}			
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 9814
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}			
+
+
+	### 3rd Army -- note: Armies only paper organizations in 1936 ###
+	# IV Army Corps #
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location = 9814
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}			
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = 9814
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}			
+	# VIII Army Corps #
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9814
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+
+	}			
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location = 9814
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}			
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 45
+		}
+		location = 9814
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}			
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9814
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.9
+	}			
+					
+	### 4th Army -- note: Armies only paper organizations in 1936 ###
+	# VII Army Corps (CO: Bishop) #
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = 9814
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}			
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 35
+		}
+		location = 9814
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+
+	}			
+	# IX Army Corps (CO: DeWitt) #
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9814
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}			
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 40
+		}
+		location = 9814
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+
+	}			
+	division = {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 41
+		}
+		location = 9814
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+
+	}			
+					
+
+	####### Pacific Theater	#######
+	### Alaska Defense Command ###
+	division = {			
+		name = "Alaska Defense Command"		
+		location = 9814
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	division = {			
+		name = "Attu Island Garrison"		
+		location = 9814
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+			
+	### Hawaiian Department ###
+	division = {			
+		name = "Hawaiian Division"		
+		location = 9814
+		division_template = "National Guard Division"		# older equipment, less training than NG division
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# North Pacific Defenses #
+	division = {				
+		name = "Midway Island Garrison"			
+		location = 9814
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}				
+	division = {				
+		name = "Wake Island Garrison"			
+		location = 9814
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}				
+	division = {				
+		name = "Guam Garrison"			
+		location = 9814
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}				
+	
+	# South Pacific Defenses #
+	division = {			
+		name = "Christmas Island Garrison"		
+		location = 9814
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}			
+	division = {			
+		name = "Jarvis Island Garrison"		
+		location = 9814
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}			
+	division = {			
+		name = "Palmyra Garrison"		
+		location = 9814
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}			
+	division = {			
+		name = "Phoenix Island Garrison"		
+		location = 9814
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}			
+	division = {			
+		name = "Johnston Island Garrison"		
+		location = 9814
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}			
+
+	### U.S. Army Forces in the Far East ###		
+	division = {										
+		name = "Philippine Division"			
+		location = 9814
+		division_template = "Infantry Division"			# older equipment, less training than NG division
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}				
+}
+#### Air Wings ####
+air_wings = {
+	### 1 USAAF Wing -- Los Angeles
+	378 = {
+		# 7th Bombardment Group 
+		tac_bomber_equipment_1934 = {
+			owner = "USA" 
+			amount = 400
+		}
+		fighter_equipment_1934 = {
+			owner = "USA" 
+			amount = 300
+		}
+		nav_bomber_equipment_1936 = {
+			owner = "USA" 
+			amount = 50
+		}
+	}
+}
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = train_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 5
+		progress = 0.4
+		efficiency = 35
+	}
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "USA"
+		}
+		requested_factories = 4
+		progress = 0.3
+		efficiency = 75
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 4
+		progress = 0.3
+		efficiency = 75
+	}
+	add_equipment_production = {
+		equipment = {
+			type = radio_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 3
+		progress = 0.3
+		efficiency = 75
+	}
+	add_equipment_production = {
+		equipment = {
+			type = special_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 20
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = horse_equipment_0
+			creator = "USA" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 75
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 3
+		progress = 0.3
+		efficiency = 75
+	}
+
+	add_equipment_production = {	
+		equipment = {
+			type = heavy_anti_air_1
+			creator = "USA" 
+		}
+		requested_factories = 3
+		progress = 0.3
+		efficiency = 75
+	}
+	add_equipment_production = {
+		equipment = {
+			type = heavy_artillery_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 3
+		progress = 0.3
+		efficiency = 75
+	}
+	add_equipment_production = {
+		equipment = {
+			type = pack_artillery_equipment_2
+			creator = "USA" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 75
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = anti_tank_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 75
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 75
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_chassis_1936
+			creator = "USA" 
+			version_name = "M1 Combat Car"
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 75
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 4
+		progress = 0.4
+		efficiency = 75
+	}
+	add_equipment_production = {
+		equipment = {
+			type = armored_cars_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 75
+	}
+	add_equipment_to_stockpile = {
+		type = siege_artillery_equipment_1
+			amount = 200
+			producer = USA
+		}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+			amount = 15000
+			producer = USA
+		}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+			amount = 20000
+			producer = USA
+		}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+			amount = 1000
+			producer = USA
+		}
+	add_equipment_to_stockpile = {
+		type = field_gun_equipment_1
+			amount = 1000
+			producer = USA
+		}
+	add_equipment_to_stockpile = {
+		type = special_equipment
+			amount = 1000
+			producer = USA
+		}
+}
+
+#####################

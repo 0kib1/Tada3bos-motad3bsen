@@ -1,0 +1,14 @@
+ideas = {
+	theorist_production = {
+		SWI_roger_masson = {
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = SWI
+			}
+			
+			traits = { captain_of_industry }
+		}	
+	}
+}

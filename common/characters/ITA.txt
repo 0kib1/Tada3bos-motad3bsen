@@ -1,0 +1,1654 @@
+
+characters={
+	ITA_chaos_and_confusion={
+		name="Grand Council of Fascism"
+		portraits={
+			civilian={
+				large="gfx/leaders/ITA/portrait_ITA_grand_council.dds"
+			}
+		}
+		country_leader={
+			#desc="POLITICS_CHAOS_DESC"
+			ideology=fascism_ideology
+			traits={ choas_trait }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ITA_benito_mussolini={
+		name="Benito Mussolini"
+		portraits={
+			civilian={
+				large="gfx/leaders/ITA/Portrait_Benito_Mussolini.dds"
+			}
+		}
+		country_leader={
+			#desc="POLITICS_BENITO_MUSSOLINI_DESC"
+			ideology=fascism_ideology
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	ITA_benito_mussolini2={
+		name="Benito Mussolini"
+		portraits={
+			civilian={
+				large="gfx/leaders/ITA/PortraitMussoliniSalo.tga"
+			}
+		}
+		country_leader={
+			#desc="POLITICS_BENITO_MUSSOLINI_DESC"
+			ideology=fascism_ideology
+			traits = {
+				defeated_and_subjugated 
+			}
+			expire="1965.1.1.1"
+		}
+	}
+	ITA_ferruccio_parri={
+		name="Ferruccio Parri"
+		portraits={
+			civilian={
+				large="GFX_portrait_italy_ferruccio_parri"
+			}
+		}
+		country_leader={
+			desc="POLITICS_BENITO_MUSSOLINI_DESC"
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ITA_palmiro_togliatti={
+		name="Palmiro Togliatti"
+		portraits={
+			civilian={
+				large="GFX_portrait_ita_palmiro_togliatti"
+			}
+		}
+		country_leader={
+			#desc="POLITICS_BENITO_MUSSOLINI_DESC"
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ITA_pietro_badoglio={
+		name="Pietro Badoglio"
+		advisor={
+			slot = army_chief
+			idea_token = pietro_badoglio
+			allowed  = {
+					original_tag  = ITA 
+				}
+				traits  = {
+					army_chief_defensive_3 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_pietro_badoglio"
+			}
+			army={
+				large="gfx/leaders/ITA/portrait_italy_pietro_badoglio.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard inflexible_strategist politically_connected ita_kwantung_veto defensive_doctrine }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ITA_emilio_de_bono={
+		name="Emilio De Bono"
+		advisor={
+			slot = army_chief
+			idea_token = emilio_de_bono
+			allowed  = {
+					original_tag  = ITA 
+				}
+				traits  = {
+					army_chief_offensive_1 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_emilio_de_bono"
+			}
+			army={
+				large="gfx/leaders/ITA/portrait_italy_emilio_de_bono.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard politically_connected ita_kwantung_veto defensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ITA_rodolfo_graziani={
+		name="Rodolfo Graziani"
+		advisor={
+			slot = theorist
+			idea_token = rodolfo_graziani
+			ledger  = army 
+				allowed  = {
+					original_tag  = ITA 
+				}
+				cost  = 250.000
+				traits  = {
+					grand_battle_plan_expert 
+				}
+				ai_will_do  = {
+					factor  = 3.000
+				}
+				
+		}
+		portraits={
+			army={
+				small="GFX_idea_rodolfo_graziani"
+			}
+			army={
+				large="gfx/leaders/ITA/portrait_italy_radolfo_graziani.dds"
+			}
+		}
+		field_marshal={
+			traits={ politically_connected ita_kwantung_veto desert_fox offensive_doctrine }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ITA_ugo_cavallero={
+		name="Ugo Cavallero"
+
+		portraits={
+			army={
+				small="GFX_idea_ugo_cavallero"
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_Italy_Ugo_Cavallero.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard trait_cautious ita_kwantung_veto motorized_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	ITA_ettore_bastico={
+		name="Ettore Bastico"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_Italy_Ettore_Bastico.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious ita_kwantung_veto urban_assault_specialist }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	ITA_sebastiano_visconti_prasca={
+		name="Sebastiano Visconti Prasca"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ITA_sebastiano_visconti_prasca.dds"
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_Italy_Sebastiano_Visconti_Prasca.dds"
+			}
+		}
+		corps_commander={
+			traits={ inflexible_strategist career_officer ita_kwantung_veto }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ITA_giulio_martinat={
+		name="Giulio Martinat"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_Italy_Giulio_Martinat.dds"
+			}
+		}
+		corps_commander={
+			traits={ ita_kwantung_veto winter_specialist trait_mountaineer infantry_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	ITA_giovanni_messe ={
+		name="Giovanni Messe"
+		advisor={
+			slot = theorist
+			idea_token = giovanni_messe_2
+			ledger  = army 
+				allowed  = {
+					original_tag  = ITA 
+				}
+				cost  = 250.000
+
+				traits  = {
+					mobile_warfare_expert 
+				}
+		}
+		advisor={
+			slot = high_command
+			idea_token = giovanni_messe_hc
+			ledger  = army 
+				allowed  = {
+					original_tag  = ITA 
+				}
+				cost = 150
+				available  = {
+					
+				}
+				traits  = {
+					army_armored_2 
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_giovanni_messe_hc"
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_Italy_Giovanni_Messe.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer war_hero ita_kwantung_veto trickster panzer_leader expert_improviser desert_fox }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=100
+		}
+	}
+
+	ITA_vittorio_ambrosio={
+		name="Vittorio Ambrosio"
+		advisor={
+			slot = army_chief
+			idea_token = vittorio_ambrosio
+			allowed  = {
+					original_tag  = ITA 
+				}
+				
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_vittorio_ambrosio"
+			}
+			army={
+				large = GFX_portrait_ITA_vittorio_ambrosio
+			}
+		}
+		corps_commander={
+			traits={ ita_kwantung_veto trait_engineer hill_fighter }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	ITA_ubaldo_soddu={
+		name="Ubaldo Soddu"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ITA_ubaldo_soddu.dds"
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_Italy_Ubaldo_Soddu.dds"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery career_officer ita_kwantung_veto desert_fox }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	ITA_italo_balbo={
+		name="Italo Balbo"
+		advisor={
+			slot = air_chief
+			idea_token = italo_balbo
+			allowed  = {
+					original_tag  = ITA 
+				}
+				available  = {
+					not  = {
+						has_country_flag  = bablo_crash 
+					}
+				}
+				traits  = {
+					air_chief_all_weather_2 
+				}
+				cost = 150
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = italo_balbo_pol
+			allowed  = {
+					original_tag  = ITA 
+				}
+				cost  = 25
+				available  = {
+					not  = {
+						has_country_flag  = bablo_crash 
+					}
+					has_completed_focus  = ITA_ministry_of_italian_africa 
+				}
+				traits  = {
+					hawkish_governor 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_italo_balbo_pol"
+			}
+			army={
+				large="gfx/leaders/ITA/portrait_italy_italo_balbo.dds"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected ita_kwantung_veto trait_engineer organizer }
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=999
+		}
+	}
+	ITA_italo_gariboldi={
+		name="Italo Gariboldi"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_Italy_Italo_Gariboldi.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer ita_kwantung_veto }
+			skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	ITA_pietro_pintor = {
+		name = ITA_pietro_pintor
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_pietro_pintor_small
+				large = GFX_portrait_ITA_pietro_pintor
+			}
+		}
+		
+		corps_commander = {
+			traits = { ita_kwantung_veto old_guard inflexible_strategist }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			visible = { has_government = fascism }
+		}
+	}
+
+	ITA_mario_berti = {
+		name = ITA_mario_berti
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_mario_berti_small
+				large = GFX_portrait_ITA_mario_berti
+			}
+		}
+		
+		corps_commander = {
+			traits = { ita_kwantung_veto old_guard trait_reckless war_hero } #Always sick really need to do something about it
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+	}
+
+	ITA_carlo_geloso = {
+		name = ITA_carlo_geloso
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_carlo_geloso_small
+				large = GFX_portrait_ITA_carlo_geloso
+			}
+		}
+		
+		corps_commander = {
+			traits = { ita_kwantung_veto old_guard trait_engineer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+	}
+
+	ITA_giuseppe_tellera = {
+		name = ITA_giuseppe_tellera
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_giuseppe_tellera_small
+				large = GFX_portrait_ITA_giuseppe_tellera
+			}
+		}
+		
+		corps_commander = {
+			traits = { ita_kwantung_veto armor_officer } #Representing how he died
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			visible = { has_government = fascism }
+		}
+	}
+
+	ITA_francesco_zingales = {
+		name = ITA_francesco_zingales
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_francesco_zingales_small
+				large = GFX_portrait_ITA_francesco_zingales
+			}
+		}
+		
+		corps_commander = {
+			traits = { ita_kwantung_veto cavalry_leader combined_arms_expert } #Motorized
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			visible = { has_government = fascism }
+		}
+	}
+
+	ITA_ezio_rosi = {
+		name = ITA_ezio_rosi
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_ezio_rosi_small
+				large = GFX_portrait_ITA_ezio_rosi
+			}
+		}
+		
+		corps_commander = {
+			traits = { ita_kwantung_veto infantry_officer organizer } #Logistics and Infantry
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+	}
+
+	ITA_mario_vercellino = {
+		name = ITA_mario_vercellino
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_mario_vercellino_small
+				large = GFX_portrait_ITA_mario_vercellino
+			}
+		}
+		
+		corps_commander = {
+			traits = { ita_kwantung_vetoinfantry_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+	}
+
+	ITA_prince_filiberto = {
+		name = ITA_prince_filiberto
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_prince_filiberto_small
+				large = GFX_portrait_ITA_prince_filiberto
+			}
+		}
+		
+		corps_commander = {
+			traits = { ita_kwantung_veto career_officer infantry_officer } # Infantry & Mountaineers (Used for Blackshirts since he also commanded them)
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 0
+			visible = {
+			}
+		}
+	}
+	ITA_prince_amedeo = {
+		name = "Amedeo di Savoia-Aosta"
+		portraits = {
+			army = {
+				small = GFX_portrait_AOI_amedeo_di_savoia_aosta_small
+				large = GFX_portrait_AOI_amedeo_di_savoia_aosta
+			}
+		}
+		
+		corps_commander = {
+			traits = { ita_kwantung_veto trait_mountaineer hill_fighter infantry_officer } # Infantry & Mountaineers (Used for Blackshirts since he also commanded them)
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 5
+			legacy_id = 0
+			visible = {
+			}
+		}
+	}
+
+	ITA_prince_adalberto = {
+		name = ITA_prince_adalberto
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_prince_adalberto_small
+				large = GFX_portrait_ITA_prince_adalberto
+			}
+		}
+		
+		corps_commander = {
+			traits = { ita_kwantung_veto career_officer } # Infantry
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+	}
+
+	ITA_prince_umberto = {
+		name = ITA_prince_umberto
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_prince_umberto_small
+				large = GFX_portrait_ITA_prince_umberto
+			}
+		}
+		
+		corps_commander = {
+			traits = { ita_kwantung_veto career_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+	}
+
+	ITA_alessandro_pirzio_biroli = {
+		name = ITA_alessandro_pirzio_biroli
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_alessandro_pirzio_biroli_small
+				large = GFX_portrait_ITA_alessandro_pirzio_biroli
+			}
+		}
+		
+		corps_commander = {
+			traits = { ita_kwantung_veto harsh_leader } #Resistance stuff if anything
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			visible = { has_government = fascism }
+		}
+	}
+
+	ITA_carlo_vecchiarelli = {
+		name = ITA_carlo_vecchiarelli
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_carlo_vecchiarelli_small
+				large = GFX_portrait_ITA_carlo_vecchiarelli
+			}
+		}
+		
+		corps_commander = {
+			traits = { ita_kwantung_veto trait_mountaineer } # Infantry, Mountaneers, Armor
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+	}
+
+	ITA_mario_robotti = {
+		name = ITA_mario_robotti
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_mario_robotti_small
+				large = GFX_portrait_ITA_mario_robotti
+			}
+		}
+		
+		corps_commander = {
+			traits = { ita_kwantung_veto infantry_officer } # Infantry
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+	}
+
+	ITA_ettore_baldassarre = {
+		name = ITA_ettore_baldassarre
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_ettore_baldasarre_small
+				large = GFX_portrait_ITA_ettore_baldasarre
+			}
+		}
+		
+		corps_commander = {
+			traits = { ita_kwantung_veto old_guard trait_engineer fortress_buster trait_reckless } # Infantry
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+			visible = { has_government = fascism }
+		}
+	}
+
+
+	ITA_annibale_bergonzoli = {
+		name = ITA_annibale_bergonzoli
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_annibale_bergonzoli_small
+				large = GFX_portrait_ITA_annibale_bergonzoli
+			}
+		}
+		
+		corps_commander = {
+			traits = { ita_kwantung_veto old_guard infantry_officer commando }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 0
+			visible = {
+			}
+		}
+	}
+
+	ITA_gamel_abdel_nasser = {
+		name = "Gamel Abdel Nasser"
+		portraits = {
+			army = {
+				large="gfx/leaders/ITA/portrait_italy_gamal_abdel_nasser.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = { ita_kwantung_veto infantry_officer desert_fox } # Ascari
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 0
+			visible = { has_completed_focus = ITA_the_king_of_egypt }
+		}
+	}
+
+
+
+
+
+	ITA_junio_valerio_borghese={
+		name = "Junio Valerio Borghese"
+		portraits = {
+			navy = {
+				small = GFX_portrait_ITA_junio_valerio_borghese_small
+				large = GFX_portrait_ITA_junio_valerio_borghese
+			}
+			army = {
+				small = GFX_portrait_ITA_junio_valerio_borghese_small
+				large = GFX_portrait_ITA_junio_valerio_borghese
+			}
+		}
+
+		corps_commander = {
+			traits = { ita_kwantung_veto naval_invader desert_fox } # Ascari, Nval Infantry
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 0
+			visible = {
+				has_completed_focus = ITA_decima_flottiglia_mas
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = junio_valerio_borghese
+			ledger  = army 
+			allowed  = {
+				original_tag  = ITA 
+			}
+			cost = 150
+			available  = {
+				has_completed_focus  = ITA_decima_flottiglia_mas 
+			}
+			traits  = {
+				the_black_prince 
+				army_commando_3
+			}
+		}
+		name="junio_valerio_borghese"
+		portraits={
+			army={
+				small="GFX_idea_junio_valerio_borghese"
+			}
+		}
+	}
+
+
+	############## NAVY LEADERS ###########################################
+
+	ITA_inigo_campioni={
+		name="Inigo Campioni"
+		advisor={
+			slot = navy_chief
+			idea_token = inigo_campioni
+			allowed  = {
+					original_tag  = ITA 
+				}
+				cost = 150
+				traits  = {
+					navy_chief_decisive_battle_2 
+				}
+				available  = {
+					has_completed_focus = ITA_retire_cavagnari
+				}	
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ITA_inigo_campioni.dds"
+			}
+			navy={
+				small="GFX_idea_inigo_campioni"
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_Italy_Inigo_Campioni.dds"
+			}
+		}
+		navy_leader={
+			traits={ battleship_adherent superior_tactician spotter green_water_expert}
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+
+	ITA_alberto_da_zara={
+		name="Alberto Da Zara"
+		advisor={
+			slot = high_command
+			idea_token = alberto_da_zara
+			ledger  = navy 
+				allowed  = {
+					original_tag  = ITA 
+				}
+				cost = 150
+				traits  = {
+					air_naval_strike_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ITA_alberto_da_zara.dds"
+			}
+			navy={
+				small="GFX_idea_alberto_da_zara"
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_Italy_Alberto_Da_Zara.dds"
+			}
+		}
+		navy_leader={
+			traits={ gentlemanly superior_tactician air_controller green_water_expert }
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=5
+			legacy_id=-1
+		}
+	}
+
+	ITA_giuseppe_fioravanzo={
+		name="Giuseppe Fioravanzo"
+		portraits = {
+			army = {
+				large = GFX_portrait_ITA_giuseppe_fioravanzo
+				small = GFX_portrait_ITA_giuseppe_fioravanzo_small
+			}
+		}
+		navy_leader={
+			traits={ aviation_enthusiast blockade_runner green_water_expert}
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+
+	ITA_carlo_bergamini={
+		name="Carlo Bergamini"
+		advisor={
+			slot = high_command
+			idea_token = carlo_bergamini
+			ledger  = navy 
+				allowed  = {
+					original_tag  = ITA 
+				}
+				cost = 150
+				traits  = {
+					navy_chief_maneuver_1 
+				}
+				cost = 150
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ITA_carlo_bergamini.dds"
+			}
+			navy={
+				small="GFX_idea_carlo_bergamini"
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_Italy_Carlo_Bergamini.dds"
+			}
+		}
+		navy_leader={
+			traits={ gunnery_expert battleship_adherent ironside superior_tactician green_water_expert}
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=4
+			coordination_skill=3
+			legacy_id=-1
+		}
+	}
+
+	ITA_angelo_iachino={
+		name="Angelo Iachino"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ITA_angelo_iachino.dds"
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_Italy_Angelo_Iachino.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold navy_career_officer superior_tactician spotter fly_swatter green_water_expert}
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=-1
+		}
+	}
+
+	### NO MORE NAVY #### 
+
+	ITA_prospero_ramorino={
+		name="Prospero Ramorino"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Europe_Generic_3"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ SOV_ambassador_to_the_british captain_of_industry }
+			expire="1946.1.1.12"
+			id=-1
+		}
+	}
+
+	### INDUSTRIAL THEORISTS ### 
+
+
+	###### EO theorist_production ### 
+
+	ITA_alfredo_guzzoni = {
+		name = ITA_alfredo_guzzoni
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_alfredo_guzzoni_small
+				large = GFX_portrait_ITA_alfredo_guzzoni
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = alfredo_guzzoni
+			ledger = army
+			allowed = {
+				tag = ITA
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				base = 2.000
+			}
+		}
+		
+		corps_commander = {
+			traits = { old_guard }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			visible = { has_government = fascism }
+		}
+	}
+	ITA_achille_starace = {
+		name = ITA_achille_starace
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_achille_starace_small
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = ITA_achille_starace
+			ledger = army
+			allowed = {
+				tag = ITA
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				army_logistics_1 # Blackshirt related trait instead?
+			}
+			cost = 50
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+	ITA_francesco_pricolo={
+		advisor={
+			slot = air_chief
+			idea_token = francesco_pricolo
+			allowed  = {
+					original_tag  = ITA 
+				}
+				cost = 150
+				traits  = {
+					air_chief_night_operations_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="francesco_pricolo"
+		portraits={
+			army={
+				small="GFX_idea_francesco_pricolo"
+			}
+		}
+	}
+	ITA_silvio_scaroni={
+		advisor={
+			slot = high_command
+			idea_token = silvio_scaroni
+			ledger  = air 
+				allowed  = {
+					original_tag  = ITA 
+				}
+				cost = 150
+				traits  = {
+					navy_carrier_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="silvio_scaroni"
+		portraits={
+			army={
+				small="GFX_idea_silvio_scaroni"
+			}
+		}
+	}
+	ITA_arturo_riccardi={
+		advisor={
+			slot = navy_chief
+			idea_token = arturo_riccardi
+			allowed  = {
+					original_tag  = ITA 
+				}
+				traits  = {
+					navy_chief_naval_aviation_2 
+				}
+				available  = {
+					has_completed_focus = ITA_retire_cavagnari
+				}	
+				ai_will_do  = {
+					factor  = 1.000
+				}
+				cost = 150
+		}
+		name="arturo_riccardi"
+		portraits={
+			army={
+				small="GFX_idea_arturo_riccardi"
+			}
+		}
+	}
+	ITA_ettore_muti={
+		advisor={
+			slot = high_command
+			idea_token = ettore_muti
+			ledger  = air 
+				allowed  = {
+					original_tag  = ITA 
+				}
+				cost = 150
+				traits  = {
+					air_tactical_bombing_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ettore_muti"
+		portraits={
+			army={
+				small="GFX_idea_ettore_muti"
+			}
+		}
+	}
+	ITA_luigi_mascherpa={
+		advisor={
+			slot = high_command
+			idea_token = luigi_mascherpa
+			ledger  = navy 
+				allowed  = {
+					original_tag  = ITA 
+				}
+				cost = 150
+				traits  = {
+					navy_naval_air_defense_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="luigi_mascherpa"
+		portraits={
+			army={
+				small="GFX_idea_luigi_mascherpa"
+			}
+		}
+	}
+	ITA_domenico_cavagnari={
+		advisor={
+			slot = navy_chief
+			idea_token = domenico_cavagnari
+			allowed  = {
+					original_tag  = ITA 
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				available  = {
+					NOT = { has_completed_focus = ITA_retire_cavagnari }
+				}	
+				cost = 150
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="domenico_cavagnari"
+		portraits={
+			army={
+				small="GFX_idea_domenico_cavagnari"
+			}
+		}
+	}
+
+	ITA_marziale_cerutti={
+		advisor={
+			slot = high_command
+			idea_token = marziale_cerutti
+			ledger  = air 
+				allowed  = {
+					original_tag  = ITA 
+				}
+				cost = 150
+				traits  = {
+					air_bomber_interception_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="marziale_cerutti"
+		portraits={
+			army={
+				small="GFX_idea_marziale_cerutti"
+			}
+		}
+	}
+	ITA_rino_corso_fougier={
+		advisor={
+			slot = air_chief
+			idea_token = rino_corso_fougier
+			allowed  = {
+					original_tag  = ITA 
+				}
+				cost = 150
+				traits  = {
+					air_air_superiority_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="rino_corso_fougier"
+		portraits={
+			army={
+				small="GFX_idea_rino_corso_fougier"
+			}
+		}
+	}
+
+	#Political Advisors# 
+
+	ITA_gian_galeazzo_ciano = {
+		name = ITA_gian_galeazzo_ciano
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_gian_galeazzo_ciano_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_gian_galeazzo_ciano
+			allowed = {
+				original_tag = ITA 
+			}
+			available = {
+			}
+			cost = 75
+			traits = {
+				hierarch_minister_of_foreign_affairs
+			}
+		}
+	}
+
+	ITA_dino_grandi = {
+		name = ITA_dino_grandi
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_dino_grandi_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_dino_grandi
+
+			allowed = {
+				original_tag = ITA 
+			}
+
+			available = {
+			}
+			
+			cost = 75
+			traits = {
+				hierarch_minister_of_justice 
+			}
+		}
+	}
+
+	ITA_giuseppe_bottai = {
+		name = ITA_giuseppe_bottai
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_giuseppe_botai_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_giuseppe_bottai
+			allowed = {
+				original_tag = ITA 
+			}
+			available = {
+             has_completed_focus = ITA_culto_del_duce
+			}
+			cost = 75
+			traits = {
+				hierarch_minister_of_education # Hierarch / Minister of Education
+			}
+		}
+	}
+
+	ITA_renato_ricci = {
+		name = ITA_renato_ricci
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_renato_ricci_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_renato_ricci
+			allowed = {
+				original_tag = ITA 
+			}
+			available = {
+			has_completed_focus = ITA_iri_ente_permanente
+			}
+			cost = 75
+			traits = {
+				hierarch_minister_of_corporations # Leader of Blackshirts and Military Police
+			}
+		}
+	}
+
+	ITA_mario_roatta = {
+		name = ITA_mario_roatta
+		portraits = {
+			army = {
+				small = GFX_idea_mario_roatta
+				large = GFX_portrait_ITA_mario_roatta
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mario_roatta_political_advisor
+			allowed = {
+				original_tag = ITA
+				has_dlc = "La Resistance"
+			}
+			available = {
+				has_intelligence_agency = yes
+			}
+			traits = {
+				head_of_intelligence 
+			}
+			ai_will_do = {
+				base = 1.000
+				modifier = {
+					factor = 0
+				}
+			}
+		}
+
+		corps_commander = {
+			traits = { politically_connected }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			visible = { }
+		}
+	}
+
+	ITA_giovanni_marinelli = {
+		name = ITA_giovanni_marinelli
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_giovanni_marinelli_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_giovanni_marinelli
+			allowed = {
+				original_tag = ITA 
+			}
+			available = {
+			}
+			traits = {
+				prince_of_terror
+			}
+			ai_will_do = {
+				base = 1.000
+				modifier = {
+					factor = 0
+				}
+			}
+		}		
+	}
+	
+	#ITA_paolo_thaon_di_revel = {
+		#name = ITA_paolo_thaon_di_revel
+		#portraits = {
+		#	army = {
+			#	small = GFX_portrait_ITA_paolo_thaon_di_revel_small
+			#}
+	#	}
+
+		#advisor = {
+			#slot = political_advisor
+			#idea_token = ITA_paolo_thaon_di_revel
+			#allowed = {
+			#	original_tag = ITA 
+			#}
+			#available = {
+			##}
+			#traits = {
+			#	quartermaster_general 
+			#}
+
+			#ai_will_do = {
+			#	base = 0.300
+			#	modifier = {
+				#	factor = 0
+			#	}
+			#}
+		#}
+	#}
+
+	ITA_guido_jung = {
+		name = ITA_guido_jung
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_guido_jung_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_guido_jung
+			allowed = {
+				original_tag = ITA 
+			}
+			available = {
+				has_completed_focus = ITA_privatize_iri
+			}
+			traits = {
+				hierarch_sidelined_minister_of_finance
+			}
+
+			ai_will_do = {
+				base = 0.300
+				modifier = {
+				}
+			}
+		}
+	}
+
+	ITA_adelchi_serena = {
+		name = ITA_adelchi_serena
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_adelchi_serena_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_adelchi_serena
+			allowed = {
+				original_tag = ITA 
+			}
+			available = {
+			}
+			traits = {
+				silent_workhorse
+			}
+
+			ai_will_do = {
+				base = 0.300
+				modifier = {
+					factor = 0
+				}
+			}
+		}
+	}
+
+	ITA_serafino_mazzolini = {
+		name = ITA_serafino_mazzolini
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_serafino_mazzolini_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_serafino_mazzolini
+			allowed = {
+				original_tag = ITA 
+			}
+			available = {
+			}
+			traits = {
+				#ideological_crusader
+				corrupt_kleptocrat 
+			}
+			on_add = {
+			}
+			ai_will_do = {
+			}
+		}
+	}
+
+	ITA_roberto_farinacci = {
+		name = ITA_roberto_farinacci
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_roberto_farinacci_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_roberto_farinacci
+			allowed = {
+				original_tag = ITA 
+			}
+			available = {
+			}
+			traits = {
+				backroom_backstabber 
+			}
+			ai_will_do = {
+				base = 0.000
+				modifier = {
+					factor = 0
+				}
+			}
+		}
+	}
+
+	ITA_carlo_scorza = {
+		name = ITA_carlo_scorza
+		portraits = {
+			army = {
+				small = GFX_idea_carlo_scorza
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = carlo_scorza
+			allowed = {
+				original_tag = ITA 
+			}
+			available = {
+			}
+			traits = {
+				fascist_demagogue 
+			}
+			do_effect = {
+			}
+			ai_will_do = {
+				base = 0.000
+				modifier = {
+					factor = 0
+				}
+			}
+		}		
+	}
+
+	ITA_alberto_pariani = {
+		name = ITA_alberto_pariani
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_alberto_pariani_small
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = ITA_alberto_pariani
+			allowed = {
+				#ITA_is_italian_tag = yes
+				original_tag = ITA 
+			}
+			available = {
+				has_completed_focus = ITA_guerra_a_rapido_corso
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+			cost = 150
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}	
+}

@@ -1,0 +1,3564 @@
+﻿focus_tree = {
+	id = brazil_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BRA
+		
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 1090 y = 2800}
+
+	focus = {
+		id = BRA_brazils_legacy
+		icon = GFX_goal_generic_demand_territory
+		x = 9
+		y = -9
+		
+		
+		
+		
+		cost = 10
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+		}
+		
+		ai_will_do = {
+            factor = 5 
+        }
+	}	
+	 
+	focus = {
+		id = BRA_brazilian_industry
+		icon = GFX_focus_mex_privatisation
+		x = 5
+		y = 1
+		relative_position_id = BRA_brazils_legacy
+		
+	
+		cost = 10
+		prerequisite = {focus = BRA_brazils_legacy }
+		
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = industry }
+		}
+		
+	
+		
+		ai_will_do = { 
+			factor = 100 
+		}
+
+	}
+	
+    
+	 focus = {
+		id = BRA_brazilian_military
+		icon = GFX_focus_generic_military_mission
+		x = 0
+		y = 2
+		relative_position_id = BRA_brazils_legacy
+		
+		
+		
+		cost = 5
+		prerequisite = {focus = BRA_the_international_stage }
+		
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience= 50
+		}	
+		ai_will_do = {
+			factor = 100 
+		}
+	}	
+		
+		
+	
+     focus = {
+		id = BRA_the_international_stage
+		icon = GFX_goal_generic_attack_allies
+		x = 9
+		y = -8
+		#relative_position_id = BRA_brazils_legacy
+		
+		
+		
+		
+		
+		cost = 10
+		prerequisite = { focus = BRA_brazils_legacy}
+		
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+		}	
+		ai_will_do = { 
+			factor = 100 
+		}
+		
+		
+    } 	
+	focus = {
+		id = BRA_might
+		icon = GFX_goal_generic_small_arms
+		x = -5
+		y = 0
+		relative_position_id = BRA_the_international_stage
+		
+		
+
+		
+		
+		cost = 5
+		prerequisite = { focus = BRA_brazils_legacy}
+		
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+		}	
+		ai_will_do = { 
+			factor = 100 
+		}
+	}	
+		
+		
+		
+  focus = {
+		id = BRA_establish_national_mine
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -5
+		y = 1
+		relative_position_id = BRA_might
+		
+		
+
+		
+		
+		cost = 5
+		prerequisite = { focus = BRA_might}
+
+		available = {
+			NOT = {
+				has_idea = RA_send_the_japs
+			}
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = excavation_tech
+			}
+		}
+		ai_will_do = { factor = 100 
+		}
+		
+		
+	}	
+		
+		focus = {
+		id = BRA_construct_bahia
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 1
+		relative_position_id = BRA_establish_national_mine
+		
+		
+
+		
+		
+		cost = 5
+		prerequisite = { focus = BRA_establish_national_mine}
+		
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			499 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100 
+		}
+		
+		
+	}	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	focus = {
+		id = BRA_southern_mines
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = BRA_construct_bahia }
+		x = 0
+		y = 1
+		relative_position_id = BRA_construct_bahia
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			499 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 4
+				}
+			}
+			496 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 4
+				}
+			
+			}
+		}
+			
+	}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	focus = {
+		id = BRA_autarky
+		icon = GFX_USA_quality_saves_lives
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = BRA_southern_mines }
+		
+		
+		relative_position_id = BRA_southern_mines
+		
+		
+		
+		
+		
+		cost = 10
+		ai_will_do = {
+			factor = 9
+		}
+		
+		completion_reward = {
+	
+			add_tech_bonus = {
+				name = GER_autarky
+				bonus = 0.5
+				uses = 1
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}
+			
+
+			every_owned_state = {
+				limit = {
+					has_resources_amount = {
+					    resource = steel
+					    amount > 3
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1 
+					instant_build = yes 
+				}
+				add_resource = {
+				    type = steel
+				    amount = 10
+				}
+			}
+		}
+	}
+			
+ focus = {
+		id = BRA_air
+		icon = GFX_goal_generic_air_production
+		x = 0
+		y = 1
+		relative_position_id = BRA_might
+		
+		
+	}	
+	 focus = {
+		id = BRA_establish_national_armys_depo
+		icon = GFX_goal_generic_axis_build_infantry
+		x = -15
+		y = 1
+		relative_position_id = BRA_might
+		
+		
+
+		
+		
+		cost = 5
+		prerequisite = { focus = BRA_might}
+		
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+		}	
+		ai_will_do = { 
+			factor = 100 
+		}
+		
+		
+		
+	}	
+		
+		
+		
+		
+		
+	 focus = {
+		id = BRA_fund_new
+		icon = GFX_focus_secret_rearmament
+		x = 0
+		y = 1
+		relative_position_id = BRA_establish_national_armys_depo
+		
+		
+
+		
+		
+		cost = 5
+		prerequisite = { focus = BRA_establish_national_armys_depo}
+		
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+	
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+
+
+	}
+	
+			
+		ai_will_do = { 
+			factor = 100 
+		}	
+		
+		
+		
+	}	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	focus = {
+		id = BRA_foreign_investments
+		icon = GFX_USA_revive_core_industry
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = BRA_fund_new }
+		relative_position_id = BRA_fund_new
+		ai_will_do = {
+			factor = 100 
+		}
+		
+		completion_reward = {
+			
+			add_timed_idea = {
+				idea = BRA_construction_investment
+				days = 180
+			}
+		}
+	}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		focus = {
+		id = BRA_for_war
+		icon = GFX_USA_well_supplied_and_motivated
+		x = 0
+		y = 1
+		relative_position_id = BRA_foreign_investments
+		
+		
+		cost = 10
+		prerequisite = { focus = BRA_foreign_investments}
+		
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+	
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+		
+
+		}
+	
+			
+		ai_will_do = { 
+			factor = 100 
+		
+		}
+		
+		
+	}
+	
+		focus = {
+		id = BRA_kick_start
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 2
+		relative_position_id = BRA_brazilian_industry
+		
+	
+		
+		
+		cost = 10
+		prerequisite = { focus = BRA_fund_universities}
+		
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+			
+			ai_will_do = {
+				factor = 100 
+			}
+	
+	
+	
+			bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}			
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = BRA_new_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0
+		y = 1
+		relative_position_id = BRA_kick_start
+	
+	
+		
+		
+		cost = 10
+		prerequisite = { focus = BRA_kick_start}
+		
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+			
+			ai_will_do = {factor = 100 }
+    
+	
+	bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}			
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = BRA_investments
+		icon = GFX_USA_war_powers_act
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = BRA_new_industry }
+		relative_position_id = BRA_new_industry
+		ai_will_do = {
+			factor = 100 
+		}
+		
+		completion_reward = {
+			
+			add_timed_idea = {
+				idea = BRA_investment
+				days = 160
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = BRA_foreign_exports
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = BRA_more_funding }
+		prerequisite = { focus = BRA_investments}
+		relative_position_id = BRA_investments
+		x = 1
+		y = 1
+		cost = 15
+		ai_will_do = {
+			factor = 100 
+		}
+		available_if_capitulated = yes		
+		
+		available = { has_war = yes
+		has_completed_focus = BRA_consider_our_options
+		}
+
+		
+		
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_core_of = BRA  
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes 
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = BRA  
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes 
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = BRA
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes 
+				}
+			}
+			
+		}
+	}		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+	focus = {
+		id = BRA_fund_the_railroad_companies
+		icon = GFX_GOAL_infrastructure_projects
+		x = -2
+		y = 1
+		relative_position_id = BRA_brazilian_industry
+		
+		
+		
+		cost = 5
+		prerequisite = { focus = BRA_brazilian_industry}
+		
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { 
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry 
+			}
+			
+	    }
+		ai_will_do = { 
+			factor = 100 
+
+		}
+
+
+
+
+	}	
+	
+	
+	
+	
+		
+		focus = {
+		id = BRA_tame_the_coast
+		icon = GFX_goal_generic_construction2
+		x = 1
+		y = 1
+		relative_position_id = BRA_fund_the_railroad_companies
+		
+	
+		
+		
+		cost = 5
+		prerequisite = { focus = BRA_fund_the_railroad_companies }
+		
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			499 = {
+				if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}		
+				}	
+			}
+			
+			496 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+				
+			
+						}
+     
+				}	
+			
+			}
+		}	
+			
+			
+			
+		ai_will_do = {
+			factor = 100 
+		}
+			
+			
+        
+    
+	}
+
+		
+	focus = {
+		id = BRA_tame_the_amazon
+		icon = GFX_goal_generic_construction2
+		x = -1
+		y = 1
+		relative_position_id = BRA_fund_the_railroad_companies
+		
+	
+		
+		
+		cost = 5
+		prerequisite = { focus = BRA_fund_the_railroad_companies }
+		
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			505 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}	
+			}
+		504 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+			}
+		}
+      
+
+	
+			
+			
+        
+    
+
+
+	}
+
+		ai_will_do = {	
+			factor = 100 
+		}
+	
+	
+	
+	}	
+
+	focus = {
+		id = BRA_fund_amazon
+		icon = GFX_focus_generic_industry_2
+		x = 0
+		y = 1
+		relative_position_id = BRA_tame_the_amazon
+		
+	
+		
+		
+		cost = 10
+		prerequisite = { focus = BRA_tame_the_amazon }
+		
+		mutually_exclusive = { focus = BRA_fund_capital}
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+		505 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+		
+			}
+		}	
+	
+	
+	
+	
+		504 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}	
+		
+
+
+
+			}
+		}	
+				497 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+							add_building_construction = {
+								type = infrastructure
+								level = 4
+								instant_build = yes
+			
+							}	
+
+					}	
+			
+				}    
+    
+		
+
+			
+	
+	}		
+
+	
+		ai_will_do = {	
+			factor = 100 
+		}
+		
+	
+	}
+
+
+focus = {
+		id = BRA_fund_capital
+		icon = GFX_focus_generic_industry_2
+		x = 0
+		y = 1
+		relative_position_id = BRA_tame_the_coast
+		
+	
+		
+		
+		cost = 10
+		prerequisite = { focus = BRA_tame_the_coast }
+		
+		mutually_exclusive = { focus = BRA_fund_amazon}
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+		500 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}	
+		
+			}
+		}
+
+
+
+
+
+
+
+
+
+	501 = {
+		if = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = infrastructure
+				level = 4
+				instant_build = yes
+			
+			}
+		}	
+			
+	}		
+			
+			
+			
+		503 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+			
+				}
+
+			}	
+			
+		}    
+    
+
+
+	
+	}
+		
+
+		ai_will_do = {
+			factor = 100 
+		}
+
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+    focus = {
+		id = BRA_fund_universities 
+		icon = GFX_goal_generic_scientific_exchange
+		x = 2
+		y = 1
+		relative_position_id = BRA_brazilian_industry
+		
+		
+		
+		cost = 5
+		prerequisite = { focus = BRA_brazilian_industry }
+		
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_research_slot = 1
+		}	
+		ai_will_do = { 
+			factor = 100 
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+		focus = {
+		id = BRA_engineers
+		icon = GFX_goal_generic_production
+		x = 2
+		y = 1
+		relative_position_id = BRA_fund_universities
+		
+		
+		
+		cost = 5
+		prerequisite = { focus = BRA_fund_universities}
+		
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { 
+	      add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+		
+	    
+		}
+		ai_will_do = { 
+			factor = 100 
+		} 
+		
+		
+	}	
+		
+		
+		
+		
+		
+		
+	focus = {
+		id = BRA_more_schools
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 0
+		y = 1
+		relative_position_id = BRA_engineers
+		
+		
+		
+		cost = 10
+		prerequisite = { focus = BRA_engineers}
+		
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { 
+	      add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+		  
+		  503 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+		}
+		  
+		  
+		  
+		  
+		  
+		 
+		
+	    }
+		ai_will_do = { 
+			factor = 100 
+		} 
+		
+		
+		
+		
+	}	
+		
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		focus = {
+		id = BRA_more_funding
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 1
+		relative_position_id = BRA_more_schools
+		
+		
+		
+		cost = 5
+		prerequisite = { focus = BRA_more_schools}
+		
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { 
+	      add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = electronics
+    
+			}
+		}
+		ai_will_do = { 
+			factor = 100 
+		} 
+		
+		
+		
+	}	
+		
+		
+		
+	
+		
+		
+	focus = {
+		id = BRA_lessons_of_the_civil_war 
+		icon = GFX_USA_reorganize_the_army_departments
+		x = 0
+		y = 1
+		relative_position_id = BRA_brazilian_military
+	
+		
+		
+		cost = 5
+		prerequisite = { focus = BRA_brazilian_military }
+		
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = land_doctrine 
+			
+			}	
+		}
+		ai_will_do = { 
+			factor = 100 
+		}
+		
+		
+		
+		
+	}	
+	
+	
+	
+	
+
+	focus = {
+		id = BRA_world_wide_intervention
+		icon = GFX_goal_generic_political_pressure
+		x = -10
+		y = 1
+		relative_position_id = BRA_might
+		prerequisite = { focus = BRA_might }
+
+		available = { 
+			ENG = { has_war_with = GER }
+		}
+
+		cost = 5
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = ROM_expand_the_army 
+		}
+	}
+
+	focus = {
+		id = BRA_join_the_allies
+		icon = GFX_focus_chi_british_cooperation
+		x = 0
+		y = 1
+		relative_position_id = BRA_world_wide_intervention
+		
+		
+		cost = 5
+		prerequisite = { focus = BRA_world_wide_intervention }
+		
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		 ENG = { add_to_faction = BRA}
+		}	
+		ai_will_do = {
+            factor = 5 
+        }
+		
+	}	
+		
+	
+
+	focus = {
+		id = BRA_consider_our_options
+		icon = GFX_goal_generic_military_deal
+		x = 0
+		y = 1
+		relative_position_id = BRA_join_the_allies
+		
+		available = { has_war = yes
+		
+		}
+	
+		cost = 10
+		prerequisite = { focus = BRA_join_the_allies }
+		
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		ai_will_do = { factor = 100 
+		}
+
+		completion_reward = {
+			add_research_slot = 1 
+		}
+		
+	}
+	
+	
+	
+	
+	
+	
+		focus = {
+		id = BRA_send_the_japanese_to_brazil
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = -2
+		y = 1
+		relative_position_id = BRA_consider_our_options 
+		cost = 10
+		prerequisite = { focus = BRA_consider_our_options }
+		
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { 
+			factor = 100 
+		}
+		completion_reward = {
+			add_ideas = BRA_send_the_japs 
+		}
+	}	
+			
+		
+		
+	focus = {
+		id = BRA_learn_from_the_war
+		icon = GFX_goal_generic_production2
+		x = 23
+		y = -4
+		#relative_position_id =  BRA_invite_ambassadors_to_brazil 
+		
+		
+		available = {
+			has_war = yes
+			has_completed_focus = BRA_consider_our_options
+		    
+			
+		}
+		
+		cost = 10
+		#prerequisite = { focus = BRA_consider_our_options}
+						
+						
+	   
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = BRA_shadow_civil_war
+		}	
+		ai_will_do = {
+			factor = 100 
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+   focus = {
+		id = BRA_learn_the_enemy
+		icon = GFX_goal_ger_heer
+		x = 0
+		y = 1
+     	relative_position_id =  BRA_learn_from_the_war
+		
+		
+		cost = 5
+	    prerequisite = { focus = BRA_learn_from_the_war }
+	   
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+			add_tech_bonus = {	
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+				
+			}
+	    }
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 focus = {
+		id = BRA_captured_arty
+		icon = GFX_GER_artillery_expansion
+		x = 0
+		y = 1
+     	relative_position_id =  BRA_learn_the_enemy
+		
+		
+		cost = 5
+	    prerequisite = { focus = BRA_learn_the_enemy }
+	   
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+			add_tech_bonus = {	
+				bonus = 1
+				uses = 1
+				category = artillery
+				
+			}
+	    }
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = BRA_new_arty
+		icon = GFX_goal_generic_army_artillery2
+		x = 1
+		y = 1
+     	relative_position_id =  BRA_captured_arty
+		
+		mutually_exclusive = { focus = BRA_new_guns }
+		cost = 10
+	    prerequisite = { focus = BRA_captured_arty}
+	   
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+			add_tech_bonus = {	
+				bonus = 1
+				uses = 1
+				category = artillery
+				
+			}
+			
+			
+			add_ideas = BRA_arty
+			
+			
+	    }
+		
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = BRA_new_guns
+		icon = GFX_USA_new_service_rifle
+		x = -1
+		y = 1
+     	relative_position_id =  BRA_captured_arty
+		
+		mutually_exclusive = { focus = BRA_new_arty }
+		
+		cost = 10
+	    prerequisite = { focus = BRA_captured_arty}
+	   
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+			add_tech_bonus = {	
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+				
+			}
+			add_ideas = BRA_guns
+			
+			
+	    }
+		
+	
+	}
+	
+	
+	
+    focus = {
+		id = BRA_adapt_from_the_jungle
+		icon = GFX_focus_por_luso_tropicalism
+		x = 0
+		y = 1
+     	relative_position_id =  BRA_lessons_of_the_civil_war
+		
+		
+		cost = 5
+	    prerequisite = { focus = BRA_lessons_of_the_civil_war }
+	   
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_army_leader = {
+				add_logistics = 1
+			}
+
+			
+			add_tech_bonus = {	
+				bonus = 1
+				uses = 1
+				ahead_reduction = 1
+				category = support_tech
+				
+			}
+	    }
+	}
+
+	 focus = {
+		id = BRA_adopt_kirt_ideas
+		icon = GFX_goal_generic_military_sphere
+		x = 0
+		y = 1
+     	relative_position_id =  BRA_adapt_from_the_jungle
+		
+		cost = 5
+	    prerequisite = { focus = BRA_adapt_from_the_jungle }
+	   
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		ai_will_do = {
+			factor = 100 
+		}	
+
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1 
+		}
+	}	
+	
+	focus = {
+		id = BRA_modernize_tradition
+		icon = GFX_ITA_The_Old_guard
+		x = 3
+		y = 1
+     	relative_position_id =  BRA_adopt_kirt_ideas
+		
+		mutually_exclusive = { focus = BRA_adopt_global_machine }
+		
+		cost = 10
+	    prerequisite = { focus = BRA_adopt_kirt_ideas }
+	   
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = BRA_modernize
+		}
+		
+		
+		
+		ai_will_do = { 
+			factor = 100 
+		
+		
+		}	
+	}	
+
+
+
+
+
+
+
+	 focus = {
+		id = BRA_adopt_global_machine
+		icon = GFX_ITA_Innovative_theories
+		x = -3
+		y = 1
+     	relative_position_id =  BRA_adopt_kirt_ideas
+		
+		mutually_exclusive = { focus = BRA_modernize_tradition }
+		
+		
+		cost = 10
+	    prerequisite = { focus = BRA_adopt_kirt_ideas }
+	   
+
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = BRA_machine
+		}	
+		ai_will_do = { 
+			factor = 100 
+		}		
+	 	
+	}
+	
+	
+	
+	focus = {
+		id = BRA_appoint_morais
+		icon = GFX_goal_generic_forceful_treaty
+		x = -5
+		y = 3.5
+     	relative_position_id =  BRA_adapt_from_the_jungle
+		
+		
+		
+		
+		cost = 10
+	    prerequisite = { focus = BRA_adapt_from_the_jungle }
+	   
+		mutually_exclusive = { focus = BRA_appoint_dutra }
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_army_leader = {
+				add_attack = 1
+			}
+			add_ideas =  BRA_adhere_to_morais 
+		}	
+			
+		ai_will_do = { 
+			factor = 100 
+		}		
+		
+	
+	}
+	focus = {
+		id = BRA_appoint_dutra
+		icon = GFX_goal_generic_forceful_treaty
+		x = 5
+		y = 3
+     	relative_position_id = BRA_adapt_from_the_jungle
+		
+		
+		
+		
+		cost = 10
+	    prerequisite = { focus = BRA_adapt_from_the_jungle }
+	   
+		mutually_exclusive = { focus = BRA_appoint_morais }
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_army_leader = {
+				add_logistics = 1
+			}
+			add_ideas = { BRA_adhere_to_dutra }
+		}	
+		ai_will_do = { 
+			factor = 100
+		}
+	
+	
+	
+	
+	
+	
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = BRA_the_coffe_question
+		icon = GFX_goal_generic_Coffee_Plantations
+		x = 10
+		y = 0
+     	#relative_position_id = BRA_adapt_from_the_jungle
+		
+		
+		
+		
+		cost = 10
+	    #prerequisite = { focus = BRA_adapt_from_the_jungle }
+	   
+		available = {
+			has_completed_focus = BRA_foreign_exports
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = industry 
+				uses = 1 
+				bonus = 1 
+				name = BRA_the_coffe_question
+			}
+			add_political_power = 50 
+			
+		}	
+		ai_will_do = { 
+			factor = 100
+		}
+	}	
+	
+	
+	########nationalize####
+	
+	
+	
+	
+	focus = {
+		id = BRA_nationalize_the_coffe
+		icon = GFX_GOAL_nationalization
+		x = 5
+		y = 1
+     	relative_position_id = BRA_the_coffe_question
+	
+		
+		mutually_exclusive = { focus = BRA_coffe_industry_dominance }
+		mutually_exclusive = { focus = BRA_guide_the_coff }
+		
+		cost = 10
+	    prerequisite = { focus = BRA_the_coffe_question }
+	   
+		
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = BRA_the_coffee_companies
+				add_idea = BRA_the_coffee_companies_8
+			
+			}
+			
+		}	
+		ai_will_do = { 
+			factor = 100
+		}
+	
+	
+	
+	
+	
+	
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = BRA_control_the_plantations
+		icon = GFX_goal_generic_ban_aristocrats
+		x = 0
+		y = 3
+     	relative_position_id = BRA_nationalize_the_coffe
+	
+		
+		cost = 10
+	    prerequisite = { focus = BRA_nationalize_the_coffe}
+	   
+		
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = BRA_the_coffee_companies_8
+				add_idea = BRA_the_coffee_companies_9
+			
+			}
+			
+		}	
+		ai_will_do = { 
+			factor = 100
+		}
+	
+	
+	
+	
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = BRA_tax_for_the_coffe
+		icon = GFX_goal_generic_gun_purchase
+		x = -2
+		y = 2
+     	relative_position_id = BRA_control_the_plantations
+	
+		
+		cost = 10
+	    prerequisite = { focus = BRA_control_the_plantations}
+	   
+		
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = BRA_the_coffee_companies_9
+				add_idea = BRA_the_coffee_companies_10
+			
+			}
+			
+		}	
+		ai_will_do = { 
+			factor = 100
+		}
+	
+	
+	
+	
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	########guidee####
+	
+	focus = {
+		id = BRA_guide_the_coff
+		icon = GFX_goal_generic_aristocratic_cooperation
+		x = 0
+		y = 1
+     	relative_position_id = BRA_the_coffe_question
+		
+		
+		mutually_exclusive = { focus = BRA_coffe_industry_dominance }
+		mutually_exclusive = { focus = BRA_nationalize_the_coffe }
+		
+		cost = 10
+	    prerequisite = { focus = BRA_the_coffe_question }
+	   
+		
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = BRA_the_coffee_companies
+				add_idea = BRA_the_coffee_companies_5
+			
+			}
+			
+		}	
+		ai_will_do = { 
+			factor = 100
+		}
+	
+	
+	
+	
+	
+	
+	}	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = BRA_support_infastructure_for_cofffe
+		icon = GFX_goal_generic_road
+		x = 0
+		y = 3
+     	relative_position_id = BRA_guide_the_coff
+		
+		
+		
+		
+		cost = 10
+	    prerequisite = { focus = BRA_guide_the_coff }
+	   
+		
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = BRA_the_coffee_companies_5
+				add_idea = BRA_the_coffee_companies_6
+			
+			}
+			
+		}	
+		ai_will_do = { 
+			factor = 100
+		}
+	
+	
+	
+	
+	
+	
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = BRA_support_coffe_investors
+		icon = GFX_goal_generic_business_bills
+		x = 0
+		y = 2
+     	relative_position_id = BRA_support_infastructure_for_cofffe
+		
+		
+		
+		
+		cost = 10
+	    prerequisite = { focus = BRA_support_infastructure_for_cofffe }
+	   
+		
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = BRA_the_coffee_companies_6
+				add_idea = BRA_the_coffee_companies_7
+			
+			}
+			
+		}	
+		ai_will_do = { 
+			factor = 100
+		}
+	
+	
+	
+	
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	########dominace####
+	
+	
+	focus = {
+		id = BRA_coffe_industry_dominance
+		icon = GFX_goal_generic_economics_reform
+		x = -5
+		y = 1
+     	relative_position_id = BRA_the_coffe_question
+		
+		mutually_exclusive = { focus = BRA_guide_the_coff }
+		mutually_exclusive = { focus = BRA_nationalize_the_coffe }
+		
+		cost = 10
+	    prerequisite = { focus = BRA_the_coffe_question }
+	   
+		
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = BRA_the_coffee_companies
+				add_idea = BRA_the_coffee_companies_2
+			
+			}
+		}	
+		ai_will_do = { 
+			factor = 100
+		}
+	
+	
+	
+	
+	
+	
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = BRA_coffe_industry_free_laws
+		icon = GFX_goal_constitution
+		x = 0
+		y = 3
+     	relative_position_id = BRA_coffe_industry_dominance
+		
+
+		
+		cost = 10
+	    prerequisite = { focus = BRA_coffe_industry_dominance }
+	   
+		
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = BRA_the_coffee_companies_2
+				add_idea = BRA_the_coffee_companies_3
+			
+			}
+			
+		}	
+		ai_will_do = { 
+			factor = 100
+		}
+	
+	
+	
+	
+	
+	
+	}	
+	
+	
+	
+	
+	
+	focus = {
+		id = BRA_coffe_above_all
+		icon = GFX_goal_agrarian_reform
+		x = 2
+		y = 2
+     	relative_position_id = BRA_coffe_industry_free_laws
+		
+
+		
+		cost = 10
+	    prerequisite = { focus = BRA_coffe_industry_free_laws }
+	   
+		
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = BRA_the_coffee_companies_3
+				add_idea = BRA_the_coffee_companies_4
+		
+			}
+			
+		}	
+		ai_will_do = { 
+			factor = 100
+		}
+	
+	
+	
+	
+	
+	
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = BRA_ensure_the_best
+		icon = GFX_eye_focus_agriculture
+		x = 3
+		y = 2
+     	relative_position_id = BRA_coffe_above_all
+		
+
+		
+		cost = 10
+	    prerequisite = { focus = BRA_coffe_above_all focus = BRA_support_coffe_investors focus = BRA_tax_for_the_coffe }
+	   
+		
+
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = BRA_the_coffee_companies_11
+			
+		}	
+		ai_will_do = { 
+			factor = 100
+		}
+	
+	
+	
+	}
+		focus = {
+		id = BRA_national_resources_mobilization_act
+		icon = GFX_goal_manpower
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = BRA_send_the_japanese_to_brazil
+		}
+		relative_position_id = BRA_send_the_japanese_to_brazil
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.05
+			random_owned_controlled_state= {
+				prioritize = { 276 }
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			
+		}
+	}
+
+	
+
+	focus = {
+		id = BRA_mechanize_the_cavalry
+		icon = GFX_goal_BRA_RCAC
+		x = -7
+		y = 1
+
+		prerequisite = { focus = BRA_national_resources_mobilization_act}
+		relative_position_id = BRA_national_resources_mobilization_act
+		mutually_exclusive = { focus = BRA_mobile_artillery }
+		mutually_exclusive = { focus = BRA_send_in_the_zombies }
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_adopt_the_war_of_movement
+		icon = GFX_mobility
+		x = 4
+		y = 1
+
+		prerequisite = { focus = BRA_mechanize_the_cavalry focus = BRA_mobile_artillery}
+		relative_position_id = BRA_mechanize_the_cavalry
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 250	producer = BRA }
+		}
+	}
+
+	focus = {
+		id = BRA_retool_montreal_locomotive_works
+		icon = GFX_goal_r56_BRA_industry
+		x = 0
+		y = 1
+
+		prerequisite = { focus = BRA_adopt_the_war_of_movement}
+		relative_position_id = BRA_adopt_the_war_of_movement
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		   # custom_effect_tooltip = available_designer
+			#show_ideas_tooltip = montreal_locomotive_works_BRA
+
+			500 = {
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}	
+				
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+		}
+		}
+	}
+
+	focus = {
+		id = BRA_the_CMP
+		icon = GFX_goal_BRA_truck
+		x = 0
+		y = 1
+
+		prerequisite = { focus = BRA_retool_montreal_locomotive_works}
+		relative_position_id = BRA_retool_montreal_locomotive_works
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_equipment_to_stockpile = { type = transport_plane_equipment amount = 150 producer = USA }
+		}
+	}
+
+	focus = {
+		id = BRA_a_BRAadian_cruiser
+		icon = GFX_goal_BRA_ram_tank
+		x = -2
+		y = 1
+
+		prerequisite = {focus = BRA_mechanize_the_cavalry}
+		mutually_exclusive = {focus = BRA_infantry_tank_production}
+		relative_position_id = BRA_mechanize_the_cavalry
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+		   add_tech_bonus = {
+				category = cat_medium_armor
+				uses = 2
+				bonus = 0.75
+				name = ENG_mobile_fortresses 
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_infantry_tank_production
+		icon = GFX_goal_generic_heavy_armour_british
+		x = 2
+		y = 1
+
+		prerequisite = {focus = BRA_mechanize_the_cavalry}
+		mutually_exclusive = {focus = BRA_a_BRAadian_cruiser}
+		relative_position_id = BRA_mechanize_the_cavalry
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_tech_bonus = {
+				name = BRA_heavy_tank_bonus
+				bonus = 0.75
+				uses = 2
+				category = cat_heavy_armor
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_heavy_recon
+		icon = GFX_goal_generic_armored_car_offensive
+		x = 0
+		y = 2
+
+		prerequisite = {focus = BRA_infantry_tank_production focus = BRA_a_BRAadian_cruiser}
+		relative_position_id = BRA_mechanize_the_cavalry
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_tech_bonus = {
+				name = BRA_armored_car_bonus
+				bonus = 0.5
+				uses = 2
+				technology = BRA_tech_armored_cars 
+				technology = BRA_nsb_tech_armored_cars2
+				technology = BRA_nsb_tech_armored_cars3
+				technology = BRA_nsb_tech_armored_cars4
+			}
+			add_tech_bonus = {
+				name = BRA_light_tank_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_light_armor
+			}
+
+			add_tech_bonus = {
+				name = BRA_recon_bonus
+				bonus = 1
+				uses = 2
+				category = recon_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_armoured_carrier_mass_production
+		icon = GFX_goal_BRA_kangaroo
+		x = 0
+		y = 1
+
+		prerequisite = {focus = BRA_heavy_recon}
+		relative_position_id = BRA_heavy_recon
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {				
+				bonus = 2
+				uses = 1
+				technology = BRA_mechanised_infantry1
+				technology = BRA_nsb_mechanised_infantry2
+				name = BRA_mech
+			}
+			
+		}
+	}
+
+	focus = {
+		id = BRA_sharpen_the_spearhead
+		icon = GFX_USA_improve_teething
+		x = 0
+		y = 1
+
+		prerequisite = {focus = BRA_armoured_carrier_mass_production}
+		relative_position_id = BRA_armoured_carrier_mass_production
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_tech_bonus = {
+				name = BRA_tank_upgrades
+				bonus = 0.5
+				uses = 2
+				category = tank_upgrade
+			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			random_owned_controlled_state= {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_mobile_artillery
+		icon = GFX_ROM_mountain_artillery
+		x = 0
+		y = 1
+
+		prerequisite = { focus = BRA_national_resources_mobilization_act}
+		relative_position_id = BRA_national_resources_mobilization_act
+		mutually_exclusive = { focus = BRA_mechanize_the_cavalry }
+		mutually_exclusive = { focus = BRA_send_in_the_zombies }
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BRA_shadow_civil_war
+				add_idea = BRA_shadow_civil_war_SF 
+			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+
+		}
+	}
+
+	focus = {
+		id = BRA_replace_the_ross
+		icon = GFX_goal_generic_gun_purchase
+		x = 3
+		y = 1
+
+		prerequisite = { focus = BRA_mobile_artillery focus = BRA_send_in_the_zombies}
+		relative_position_id = BRA_mobile_artillery
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = BRA_infantry_equipment_bonus
+				uses = 2
+				bonus = 0.5
+				category = infantry_weapons
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = BRA }
+		}
+	}
+
+	focus = {
+		id = BRA_construct_the_long_branch_arsenal
+		icon = GFX_goal_proving_grounds
+		x = 0
+		y = 1
+
+		prerequisite = { focus = BRA_replace_the_ross}
+		relative_position_id = BRA_replace_the_ross
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = BRA_construction_bonus
+				uses = 1
+				bonus = 1
+				category = construction_tech
+			}
+			random_owned_controlled_state= {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_red_deer_training_camp_new
+		icon = GFX_goal_generic_army
+		x = 0
+		y = 1
+
+		prerequisite = { focus =BRA_construct_the_long_branch_arsenal}
+		relative_position_id = BRA_construct_the_long_branch_arsenal
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_who_sees_first_kills_first
+		icon = GFX_USA_fight_fascist_with_fire
+		x = -1
+		y = 1
+
+		prerequisite = { focus = BRA_mobile_artillery}
+		relative_position_id = BRA_mobile_artillery
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BRA_shadow_civil_war_SF
+				add_idea = BRA_shadow_civil_war_SF_left 
+			}
+		    add_tech_bonus = {
+				name = BRA_recon_bonus
+				bonus = 1
+				uses = 2
+				category = recon_tech
+			}
+
+			add_tech_bonus = {
+				name = BRA_artillery_radio_bonus
+				bonus = 1.5
+				uses = 2
+				technology = artillery_radio
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_walkie_talkie_new
+		icon = GFX_goal_generic_radio_development
+		x = 0
+		y = 1
+
+		prerequisite = { focus = BRA_who_sees_first_kills_first}
+		relative_position_id = BRA_who_sees_first_kills_first
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				custom_effect_tooltip = to_hell_and_back_tt
+				hidden_effect = {
+					set_technology = { to_hell_and_back = 1 }
+				}
+				hidden_effect = {
+					set_technology = { USA_artillery_radio_2 = 1 }
+				}
+		}
+	}
+
+	focus = {
+		id = BRA_the_best_of_both_worlds
+		icon = GFX_goal_generic_army_artillery
+		x = 1
+		y = 1
+
+		prerequisite = { focus = BRA_mobile_artillery}
+		relative_position_id = BRA_mobile_artillery
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BRA_shadow_civil_war_SF
+				add_idea = BRA_shadow_civil_war_SF_right 
+			}
+		    add_tech_bonus = {
+				name = BRA_artillery_bonus
+				uses = 2
+				bonus = 0.5
+				category = artillery 
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_the_sexton
+		icon = GFX_goal_generic_army_tanks
+		x = 0
+		y = 1
+
+		prerequisite = { focus = BRA_the_best_of_both_worlds}
+		relative_position_id = BRA_the_best_of_both_worlds
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			has_tech = advanced_machine_tools
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_technology = { 
+		paratroopers = 1
+		paratroopers2 = 1
+		marines = 1
+		marines2 = 1
+		tech_mountaineers = 1
+		tech_mountaineers2 = 1
+		tech_light_infantry = 1
+		tech_light_infantry2 = 1
+	   } 
+		}
+	}
+
+	focus = {
+		id = BRA_no_man_gone_to_waste
+		icon = GFX_goal_generic_democratic_army
+		x = 0
+		y = 3
+
+		prerequisite = { focus = BRA_the_sexton}
+		prerequisite = { focus = BRA_walkie_talkie_new}
+		relative_position_id = BRA_mobile_artillery
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = AST_orc_tt1
+			hidden_effect = {
+				set_technology = { AST_orkbonus = 1 }
+			}	
+		}
+	}
+
+	focus = {
+		id = BRA_send_in_the_zombies
+		icon = GFX_goal_generic_into_fire
+		x = 6
+		y = 1
+
+		prerequisite = { focus = BRA_national_resources_mobilization_act }
+		relative_position_id = BRA_national_resources_mobilization_act
+		mutually_exclusive = { focus = BRA_mobile_artillery }
+		mutually_exclusive = { focus = BRA_mechanize_the_cavalry }
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			army_experience = 25
+			
+		}
+	}
+
+	focus = {
+		id = BRA_a_call_for_total_war
+		icon = GFX_goal_generic_red_freedom
+		x = 0
+		y = 1
+
+		prerequisite = { focus = BRA_send_in_the_zombies}
+		relative_position_id = BRA_send_in_the_zombies
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BRA_take_over_the_pacific_defenses
+		icon = GFX_goal_generic_multinational_army
+		x = -1
+		y = 1
+
+		prerequisite = { focus = BRA_a_call_for_total_war}
+		relative_position_id = BRA_a_call_for_total_war
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	
+	focus = {
+		id = BRA_logistics_effort
+		icon = GFX_USA_well_supplied_and_motivated
+		x = 0
+		y = 1
+
+		prerequisite = { focus = BRA_take_over_the_pacific_defenses}
+		relative_position_id = BRA_take_over_the_pacific_defenses
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_tech_bonus = {
+				name = BRA_logistics_bonus
+				bonus = 1.5
+				uses = 2
+				category = support_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_the_CRMC
+		icon = GFX_goal_BRA_special_branch
+		x = 1
+		y = 1
+
+		prerequisite = { focus = BRA_a_call_for_total_war}
+		relative_position_id = BRA_a_call_for_total_war
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_tech_bonus = {
+				name = BRA_special_forces_bonus
+				bonus = 1
+				uses = 3
+				category = special_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_adopt_us_armor
+		icon = GFX_goal_BRA_grizzly
+		x = 0
+		y = 1
+
+		prerequisite = { focus = BRA_the_CRMC}
+		relative_position_id = BRA_the_CRMC
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+		has_tech = advanced_machine_tools
+		date > 1940.1.1
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = BRA_stop_the_jap
+		icon = GFX_GOAL_litsuwu_line
+		x = 0
+		y = 4
+
+		prerequisite = { focus = BRA_adopt_us_armor}
+		prerequisite = { focus = BRA_logistics_effort}
+
+		relative_position_id = BRA_send_in_the_zombies
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		## = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	
+	}

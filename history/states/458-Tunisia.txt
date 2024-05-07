@@ -1,0 +1,42 @@
+
+state = {
+	id = 458
+	name = "STATE_458"
+	manpower = 1982940
+	state_category = town
+	resources = {
+		chromium = 10
+		oil = 12
+		tungsten = 16
+	}
+
+	history = {
+		owner = FRA
+		add_core_of = SEN
+		set_state_flag = ENG_africa_controls
+		victory_points = {
+			11969 14 
+		}
+		victory_points = {
+			9994 6
+		}
+		victory_points = {
+			11921 6
+		}
+		victory_points = {
+			4061 12
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 1
+			9994 = {
+				naval_base = 8
+			}
+		}
+	}
+
+	provinces = {
+		1037 1046 4061 4129 4163 7077 7162 7180 9994 10091 11921 11969 
+	}
+}

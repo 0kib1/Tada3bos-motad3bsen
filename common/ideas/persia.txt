@@ -1,0 +1,16 @@
+ideas = {
+	# MILITARY
+
+	theorist_production = {
+		PER_ali_zohayli = {
+
+			picture = generic_political_advisor_arab_3
+
+			allowed = {
+				original_tag = PER
+			}
+			
+			traits = { captain_of_industry }
+		}
+	}
+}

@@ -1,0 +1,116 @@
+SpriteTypes = {
+
+
+  #(PRC missile#
+  
+    #(PRC missile#	
+	SpriteType = {
+		name = "GFX_PRC_guided_missile_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/prc_guided_missile_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRC_guided_missile_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/prc_guided_missile_3.dds"
+	}
+	#)#
+	
+  #)# 
+
+
+ #(Manchukuo#
+ 
+  
+    #(Manchukuo amphibious tank#		
+		SpriteType = {
+		    name = "GFX_MAN_amphibious_tank_medium"
+		    texturefile = "gfx/interface/technologies/man_amphibious_tank_1.dds"
+	    }
+	
+	    SpriteType = {
+		    name = "GFX_MAN_amphibious_tank_2_medium"
+		    texturefile = "gfx/interface/technologies/man_amphibious_tank_2.dds"
+	    }
+	#)#
+	
+  #)#
+
+  #(Manchukuo aircraft#
+  
+  
+	
+	#(Manchukuo rocket interceptor#
+        SpriteType = {
+            name = "GFX_MAN_rocket_interceptor_equipment_1_medium"
+            texturefile = "gfx/interface/technologies/jap_rocket_interceptor_1.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_rocket_interceptor_equipment_2_medium"
+            texturefile = "gfx/interface/technologies/jap_rocket_interceptor_2.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_MAN_rocket_interceptor_equipment_3_medium"
+            texturefile = "gfx/interface/technologies/jap_rocket_interceptor_3.dds"
+        }
+	#)#	    
+			
+   
+	#)#	
+	
+	#(Manchukuo transport plane#	
+	    SpriteType = {
+		    name = "GFX_MAN_transport_plane_equipment_medium"
+		    texturefile = "gfx/interface/technologies/man_transport_plane_equipment.dds"
+	    }
+	#)#	    
+
+    #(Manchukuo scout plane#
+	    SpriteType = {
+		    name = "GFX_MAN_scout_plane1_medium"
+		    texturefile = "gfx/interface/technologies/jap_scout_plane_1.dds"
+	    }
+
+	    SpriteType = {
+		    name = "GFX_MAN_scout_plane2_medium"
+		    texturefile = "gfx/interface/technologies/jap_scout_plane_2.dds"
+	    }
+ 
+
+	#(Manchukuo amphibious vehicle#
+		SpriteType = {
+		    name = "GFX_MAN_amphibious_mechanized_infantry_medium"
+		    texturefile = "gfx/interface/technologies/jap_amphibious_mech_1.dds"
+	    }
+		
+	    SpriteType = {
+		    name = "GFX_MAN_amphibious_mechanized_infantry_2_medium"
+		    texturefile = "gfx/interface/technologies/jap_amphibious_mech_2.dds"
+	    }
+	
+		
+	
+
+    #(Manchu rocket artillery#
+        SpriteType = {
+            name = "GFX_MAN_rocket_artillery_medium"
+            texturefile = "gfx/interface/technologies/JAP_Rocket_Art_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_MAN_rocket_artillery4_medium"
+            texturefile = "gfx/interface/technologies/JAP_Rocket_Art_2.dds"
+        }
+		
+        SpriteType = {
+            name = "GFX_MAN_motorized_rocket_unit_medium"
+            texturefile = "gfx/interface/technologies/JAP_motorized_rocket_unit.dds"
+        }
+    #)#
+	
+  #)#
+ 
+  #)#
+			
+}

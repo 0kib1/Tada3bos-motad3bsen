@@ -1,0 +1,988 @@
+ideas = {
+	hidden_ideas = {
+		SLO_vig_mil_idea = {
+			name = SLO_lol_name
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			 picture = SLO_slovak_koruna 
+			
+			modifier = {
+				industrial_capacity_factory = -0.1
+
+			}
+		
+		}
+		SLO_vig_mil_idea2 = {
+			name = SLO_lol_name
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			 picture = SLO_slovak_koruna 
+			
+			modifier = {
+				industrial_capacity_factory = -0.04
+
+			}
+		
+		}
+		SLO_vig_mil_idea3 = {
+			name = SLO_lol_name
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			 picture = SLO_slovak_koruna 
+			
+			modifier = {
+				industrial_capacity_factory = 0.02
+
+			}
+		
+		}
+		SLO_vig_mil_idea4 = {
+			name = SLO_lol_name
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			 picture = SLO_slovak_koruna 
+			
+			modifier = {
+				industrial_capacity_factory = 0.08
+
+			}
+		
+		}
+		SLO_vig_mil_idea5 = {
+			name = SLO_lol_name
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			 picture = SLO_slovak_koruna 
+			
+			modifier = {
+				industrial_capacity_factory = 0.14
+
+			}
+		
+		}
+		SLO_vig_mil_idea6 = {
+			name = SLO_lol_name
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			 picture = SLO_slovak_koruna 
+			
+			modifier = {
+				industrial_capacity_factory = 0.2
+
+			}
+		
+		}
+		SLO_vig_mil_idea7 = {
+			name = SLO_lol_name
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			 picture = SLO_slovak_koruna 
+			
+			modifier = {
+				industrial_capacity_factory = 0.26
+
+			}
+		
+		}
+		SLO_vig_mil_idea8 = {
+			name = SLO_lol_name
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			 picture = SLO_slovak_koruna 
+			
+			modifier = {
+				industrial_capacity_factory = 0.32
+
+			}
+		
+		}
+		SLO_vig_mil_idea9 = {
+			name = SLO_lol_name
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			 picture = SLO_slovak_koruna 
+			
+			modifier = {
+				industrial_capacity_factory = 0.38
+
+			}
+		
+		}
+		SLO_vig_mil_idea10 = {
+			name = SLO_lol_name
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			 picture = SLO_slovak_koruna 
+			
+			modifier = {
+				industrial_capacity_factory = 0.64
+
+			}
+		
+		}
+
+		
+	}
+	theorist_production = {
+		SLO_imrich_karvas = {
+
+			picture = generic_political_advisor_europe_2
+			allowed = {
+				original_tag = SLO
+			}
+			available = {
+				has_completed_focus = SLO_appoint_competent_economists
+			}
+			
+			traits = { SLO_karvas_trait }
+
+			ai_will_do = {
+			factor = 100
+			}
+		}		
+	}
+
+	#INDUSTRY
+	industrial_research = {	
+	dynamitka_designer = {
+	allowed = {
+				original_tag = SLO
+			}
+	available = {
+	has_completed_focus = SLO_dynamitka	}	
+			
+			research_bonus = { industry = 0.20 }  traits = { industrial_research_trait }
+			picture = generic_industrial_concern_1
+		  }
+		}
+
+	
+	#Concern 
+	  industrial_concern = {
+		dynamitka_designer_2 = {
+	allowed = {
+				original_tag = SLO
+			}
+	available = {
+	has_completed_focus = SLO_dynamitka	}	
+			
+			 traits = { trait_industrial_concern }
+			picture = generic_industrial_concern_1
+			modifier = {	
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+		   }
+		}
+	   }
+
+	#Air Manufacturer
+   aircraft_manufacturer = { 
+  
+   SLO_junkers = { 
+			name = junkers 
+			picture = junkers 
+			
+			allowed = {
+					original_tag = SLO
+			}
+
+		
+			available = {
+				has_completed_focus = SLO_junkers
+		  }	
+
+			cost = 150
+
+			equipment_bonus = {
+				small_plane_cas_airframe = {
+					air_ground_attack = 0.10 reliability = -0.1 build_cost_ic = -0.1
+				}
+			}
+			modifier = { aircraft_manufacturer_cost_factor = -0.5 }	
+
+			traits = { GER_junkers_manufacturer }
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	SLO_messerschmitt = {
+			name = messerschmitt 
+			picture = messerschmitt  
+			
+			allowed = {
+					original_tag = SLO
+				}
+
+			available = {
+
+			has_completed_focus = SLO_messerschmitt
+			}	
+			ai_will_do = {
+				factor = 50
+			}			
+			modifier = { aircraft_manufacturer_cost_factor = -0.5 }
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = 0.1 air_range = 0.08  
+				}
+				medium_plane_fighter_airframe = {
+					reliability = 0.1 air_range = 0.1  
+				}		
+			}
+			
+			traits = { GER_messerschmitt_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		SLO_heinkel = {
+		   name = heinkel
+		   picture = heinkel
+			
+			allowed = {
+					original_tag = SLO
+			}
+			available = {
+				has_completed_focus = SLO_heinkel
+				
+			}
+			
+			equipment_bonus = {
+				medium_plane_airframe = {
+					air_range = 0.1 air_bombing = 0.1  
+				}
+			}
+			modifier = { aircraft_manufacturer_cost_factor = -0.5 }			
+
+			traits = { GER_heinkel_manufacturer }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}	
+		
+	materiel_manufacturer = {
+		
+		designer = yes
+
+		SLO_hanomag = {
+		picture = hanomag
+		name = hanomag
+			
+			allowed = {
+					original_tag = SLO
+			}
+
+			ai_will_do = {
+				factor = 50
+			}			
+
+			available = {
+				SLO = {
+					has_completed_focus = SLO_mechanization
+				}
+			}
+
+			equipment_bonus = {
+				mechanized = {
+					soft_attack = 0.25 hardness = 0.1
+				}
+				armored_cars_equipment = {
+					soft_attack = 0.1 hardness = 0.05 
+				}
+			}
+			
+			traits = { GER_mechanized_equipment_manufacturer }
+			modifier = { materiel_manufacturer_cost_factor = -0.5 }
+		}
+	}
+
+	tank_manufacturer = { 
+		
+		designer = yes	
+
+		SLO_ckd = {
+		name = CKD
+		picture = generic_tank_manufacturer_1
+			
+			allowed = {
+				original_tag = SLO
+			}
+
+			available = {
+					has_completed_focus = SLO_light_tank
+			}	
+
+			traits = { hoi_tank_manufacturer }
+		
+			equipment_bonus = {
+				armor = {
+					reliability = 0.1
+					build_cost_ic = -0.1 
+				}
+				light_tank_chassis = {
+					hard_attack = 0.1
+				}
+				light_tank_destroyer_chassis = {
+					hard_attack = 0.15
+				}
+				light_tank_artillery_chassis = {
+					soft_attack = 0.15
+				} 
+				light_tank_rocket_chassis = {
+					hard_attack = 0.1 soft_attack = 0.1
+				}
+				light_tank_aa_chassis = {
+					air_attack = 0.1
+				}
+				armored_cars_equipment = {
+					hard_attack = 0.1 soft_attack = 0.1
+				}
+				mechanized = {
+					maximum_speed = 0.1
+					hardness = 0.1
+					build_cost_ic = 0.05
+				}
+			}
+			modifier = { tank_manufacturer_cost_factor = -0.5 }
+		}	
+	}	
+
+  country = {
+		#Strong currency
+		SLO_currency = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			 picture = SLO_slovak_koruna 
+			
+			modifier = {
+		stability_weekly = 0.001
+		consumer_goods_expected_value = -0.05
+
+	   }
+		
+	}
+		#German occupation
+		SLO_german_occupation = {
+		 removal_cost = -1 
+
+		  allowed = {
+		   	always = no # Added via focus	
+		   	}
+
+		   	picture = GFX_idea_ROM_corruption_in_the_army
+
+			modifier = {
+			industrial_capacity_factory = -0.10
+			
+			}
+		}
+		 #German occupation 2
+		SLO_german_occupation_2 = {
+		 removal_cost = -1 
+
+		  allowed = {
+		   	always = no # Added via focus	
+		   	}
+
+		   	picture = GFX_idea_ROM_corruption_in_the_army
+
+			modifier = {
+			industrial_capacity_factory = -0.15
+			
+			}
+		}
+		
+		#Prospering industry 1
+		SLO_prospering_industry_1 = {
+		removal_cost = -1 
+
+		  allowed = {
+		   	always = no # Added via focus	
+		   	}
+		  picture = GFX_SLO_slovak_industry
+		  modifier = {
+			consumer_goods_expected_value = -0.05
+			
+			}
+		}
+	   #Prospering industry 2 
+		SLO_prospering_industry_2 = {
+		removal_cost = -1 
+
+		  allowed = {
+		   	always = no # Added via focus	
+		   	}
+		  picture = GFX_SLO_slovak_industry
+		  modifier = {
+			production_factory_max_efficiency_factor = 0.05
+			consumer_goods_expected_value = -0.05
+			}
+		}	
+	  #Prospering industry 3
+		SLO_prospering_industry_3 = {
+		removal_cost = -1 
+
+		  allowed = {
+		   	always = no # Added via focus	
+		   	}
+		  picture = GFX_SLO_slovak_industry
+		  modifier = {
+			production_factory_max_efficiency_factor = 0.05
+			consumer_goods_expected_value = -0.05
+			political_power_gain = 0.25
+
+			}
+		}
+		#Durcanskys ideas 
+		SLO_durcanskys_ideas = {
+		
+			picture = GFX_SLO_durcanskys_ideas
+
+			allowed = {
+				original_tag = SLO
+			}
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.1
+				autonomy_gain = 0.3  
+			}
+		}	
+		#Durcanskys ideas 2
+		SLO_durcanskys_ideas_2 = {
+		
+			picture = GFX_SLO_durcanskys_ideas
+
+			allowed = {
+				original_tag = SLO
+			}
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.2
+				autonomy_gain = 0.3 
+			}
+		}	
+		
+		SLO_life_in_new_slovakia = {
+		
+			picture = GFX_SLO_durcanskys_ideas
+
+			allowed = {
+				original_tag = SLO
+			}
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 500
+				MONTHLY_POPULATION = 1
+				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.25
+			}
+		}
+		SLO_jewish_codex = {
+		
+			picture = GFX_SLO_deport_undesirables
+
+			allowed = {
+				original_tag = SLO
+			}
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+
+
+		  }
+		}
+		SLO_jewish_codex_2 = {
+		
+			picture = GFX_SLO_deport_undesirables
+
+			allowed = {
+				original_tag = SLO
+			}
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+
+
+		  }
+		}
+		SLO_jewish_codex_3 = {
+		
+			picture = GFX_SLO_deport_undesirables
+
+			allowed = {
+				original_tag = SLO
+			}
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.10
+				
+				production_factory_max_efficiency_factor = 0.05
+		   }
+		}
+		SLO_jewish_codex_4 = {
+		
+			picture = GFX_SLO_deport_undesirables
+
+			allowed = {
+				original_tag = SLO
+			}
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.1
+				political_power_cost = 0.25
+				production_factory_max_efficiency_factor = 0.05
+
+		  }
+		}
+		SLO_jewish_codex_5 = {
+		
+			picture = GFX_SLO_deport_undesirables
+
+			allowed = {
+				original_tag = SLO
+			}
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.1
+				political_power_cost = 0.25
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_expected_value = -0.05
+		  }
+		}
+		SLO_jewish_codex_6 = {
+		
+			picture = GFX_SLO_deport_undesirables
+
+			allowed = {
+				original_tag = SLO
+			}
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.1
+				political_power_cost = 0.25
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_expected_value = -0.05
+
+	   }
+	 }
+	 SLO_cas_production_idea = {
+		
+			picture = GFX_idea_generic_air_bonus
+
+			allowed = {
+				original_tag = SLO
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.08 instant = yes
+				}
+
+	 }
+	 }
+	 SLO_fighter_production_idea = {
+		
+			picture = GFX_idea_generic_air_bonus
+
+			allowed = {
+				original_tag = SLO
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.08 instant = yes
+				}
+
+	 }
+	 }
+	  SLO_bomber_production_idea = {
+		
+			picture = GFX_idea_generic_air_bonus
+
+			allowed = {
+				original_tag = SLO
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				medium_plane_airframe = {
+					build_cost_ic = -0.08 instant = yes
+				}
+
+	 }
+	 }
+	  SLO_german_favorites = {
+		
+			picture = GFX_idea_german_pilot_training
+
+			allowed = {
+				original_tag = SLO
+			}
+			removal_cost = -1
+
+			modifier = {
+			experience_gain_air = 0.05
+				experience_gain_air_factor = 0.1
+				air_mission_xp_gain_factor = 0.1
+				air_training_xp_gain_factor = 0.2
+				army_bonus_air_superiority_factor = 0.10
+				air_superiority_efficiency = 0.10
+				air_ace_generation_chance_factor = 0.3
+				ground_attack_factor = 0.15	
+		}		
+	 }
+	 SLO_german_assistance_idea = {
+		
+			picture = GFX_idea_generic_production_bonus
+
+			allowed = {
+				original_tag = SLO
+			}
+
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.1 instant = yes 
+				}
+				mechanized = {
+					build_cost_ic = -0.1 instant = yes 
+				}
+				motorized = {
+					build_cost_ic = -0.1 instant = yes 
+				}
+
+
+		}
+   }  
+	  SLO_moto_mech_idea = {
+		
+			picture = GFX_idea_generic_production_bonus
+
+			allowed = {
+				original_tag = SLO
+			}
+
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+			 motorized_equipment = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				amphibious_mechanized_equipment = {
+					build_cost_ic = -0.15 instant = yes
+				}
+
+
+	}
+   }  
+	SLO_expand_centre_idea = {
+		
+			picture = generic_naval_manufacturer_1
+
+			allowed = {
+				original_tag = SLO
+			}
+
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+
+			modifier = {
+				amphibious_invasion_defence = 0.15
+			}
+
+	}
+	 SLO_gun_mass_production_idea = {
+		
+			picture = GFX_idea_MEX_politicised_army_2
+
+			allowed = {
+				original_tag = SLO
+			}
+
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+			equipment_bonus = {
+			 infantry_equipment = {
+					build_cost_ic = -0.15 instant = yes
+				}
+
+
+	}  
+
+  }
+  SLO_soviet_war_idea = {
+  picture = GFX_SLO_destroy_bolshevism
+
+			allowed = {
+				original_tag = SLO
+			}
+
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+		targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.05
+			}
+
+	}  
+	SLO_hlinka_chad_idea = {
+  picture = GFX_SLO_hejho
+
+			allowed = {
+				original_tag = SLO
+			}
+
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+		modifier = {
+				mobilization_speed = 0.2 	
+				minimum_training_level = -0.2 
+			}
+
+	}	
+  SLO_hlinka_chad_idea_2 = {
+  picture = GFX_SLO_hejho
+
+			allowed = {
+				original_tag = SLO
+			}
+
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+		modifier = {
+				mobilization_speed = 0.2 	
+				minimum_training_level = -0.2 
+				conscription = 0.02
+				experience_loss_factor = -0.10
+			}
+
+	}  
+   SLO_hlinka_chad_idea_3 = {
+  picture = GFX_SLO_hejho
+
+			allowed = {
+				original_tag = SLO
+			}
+
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+		modifier = {
+				mobilization_speed = 0.2 	
+				minimum_training_level = -0.2 
+				conscription = 0.02
+				army_org_factor = 0.05
+				experience_loss_factor = -0.10
+			}
+
+	}	 
+   SLO_hlinka_chad_idea_4 = {
+  picture = GFX_SLO_hejho
+
+			allowed = {
+				original_tag = SLO
+			}
+
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+		modifier = {
+				mobilization_speed = 0.2 	
+				minimum_training_level = -0.2 
+				conscription = 0.03
+				army_org_factor = 0.05
+				experience_loss_factor = -0.20
+			}
+
+	} 
+	 SLO_hlinka_chad_idea_5 = {
+  picture = GFX_SLO_hejho
+
+			allowed = {
+				original_tag = SLO
+			}
+
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+		modifier = {
+				mobilization_speed = 0.2 	
+				minimum_training_level = -0.2 
+				conscription = 0.08
+				army_org_factor = 0.05
+				experience_loss_factor = -0.20
+			}
+
+	}
+ SLO_martial_law_bonus_idea = {
+  picture = GFX_SLO_martial_law_idea
+
+			allowed = {
+				original_tag = SLO
+			}
+
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+		modifier = {
+			stability_factor = -0.1
+			production_factory_efficiency_gain_factor = 0.15
+			production_factory_max_efficiency_factor = 0.025
+			compliance_gain = 0.075
+			resistance_target = -0.1
+			resistance_damage_to_garrison = -0.35
+
+			}
+
+	} 
+	SLO_SS_idea = {
+  picture = GFX_idea_ROM_corruption_in_the_army
+
+			allowed = {
+				original_tag = SLO
+			}
+
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+		modifier = {
+			custom_modifier_tooltip = SLO_general_staff_tt
+			army_attack_factor = 0.05
+			army_org_factor = 0.075
+			army_morale_factor = 0.05
+
+			}
+
+	}
+	SLO_general_staff = {
+			
+			allowed = {
+				original_tag = SLO
+			}			
+
+			picture = general_staff
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = 0.1
+				command_power_gain = 0.1
+				planning_speed = 0.15
+			}
+		}
+	SLO_partisans = {
+			
+			allowed = {
+				original_tag = SLO
+			}			
+
+			picture = general_staff
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.05
+				
+			}
+		} 	 
+	}	
+}

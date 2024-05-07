@@ -1,0 +1,28 @@
+
+state = {
+	id = 449
+	name = "STATE_449" # El Agheila
+	manpower = 40431
+	
+	state_category = enclave
+
+	history = {
+		set_state_flag = GER_africa_controls
+		add_core_of = SEN
+		owner = ITA
+		victory_points = {
+			4057 6
+		}
+		buildings = {
+			infrastructure = 4
+			4057 = {
+				bunker = 3
+				naval_base = 2
+			}			
+		}
+	}
+
+	provinces = {
+		1041 1198 4047 4057 10046 10117 12088 
+	}
+}

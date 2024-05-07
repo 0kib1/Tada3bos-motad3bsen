@@ -1,0 +1,68 @@
+ideas = {
+	country = {
+
+		GRE_spirit_of_spartans = {
+
+			allowed = {
+				original_tag = GRE
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.15
+			}
+		}
+	}
+	theorist_production = {
+		GRE_evripidis_bakirtris = {
+
+		picture = generic_political_advisor_europe_3
+		
+		allowed = {
+			original_tag = GRE
+		}
+		
+		traits = { war_industrialist }
+		}
+
+	}
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		gnaf = {
+			
+			picture = generic_air_manufacturer_3
+
+			
+			allowed = {
+				original_tag = GRE
+			}
+
+			traits = { light_aircraft_manufacturer }
+			
+			# trainers for RAF, great handling
+				
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	naval_manufacturer = { 
+			
+		designer = yes
+		
+		royal_hellenic_naval_shipyard = {
+			
+			picture = generic_naval_manufacturer_1
+
+			
+			allowed = {
+				original_tag = GRE
+			}
+
+			traits = { naval_manufacturer }
+		}
+	}
+}

@@ -1,0 +1,199 @@
+﻿division_template = {
+	name = "Alfurqat Almasha"			# Infantry Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		military_police = { x = 0 y = 3 }
+		maintenance_company = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Alfurqat Aljabalia"				# Mountain Division
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+		
+	  	mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+
+		pack_artillery_brigade = { x = 3 y = 0 }
+		pack_artillery_brigade = { x = 3 y = 1 }
+		pack_artillery_brigade = { x = 3 y = 2 }
+		pack_artillery_brigade = { x = 3 y = 3 }
+	}
+	
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		maintenance_company = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
+	}
+}
+
+#### OOB ####
+#units = {
+#	division = {
+#		name = "1 Alfurqat"
+#		location = 2097
+#		division_template = "Alfurqat Almasha"	
+#		start_experience_factor = 0.2
+#		start_equipment_factor = 0.0
+#		
+#	}
+#	division = {
+#		name = "2 Alfurqat"
+#		location = 2097
+#		division_template = "Alfurqat Almasha"	
+#		start_experience_factor = 0.2
+#		start_equipment_factor = 0.0
+#		
+#	}
+#	division = {
+#		name = "3 Alfurqat"
+#		location = 2097
+#		division_template = "Alfurqat Almasha"	
+#		start_experience_factor = 0.2
+#		start_equipment_factor = 0.0
+#		
+#	}
+#	division = {
+#		name = "4 Alfurqat"
+#		location = 2097
+#		division_template = "Alfurqat Almasha"	
+#		start_experience_factor = 0.2
+#		start_equipment_factor = 0.0
+#		
+#	}
+#	division = {
+#		name = "5 Alfurqat"
+#		location = 10106
+#		division_template = "Alfurqat Aljabalia"	
+#		start_experience_factor = 0.2
+#		start_equipment_factor = 0.0
+#		
+#	}
+#	division = {
+#		name = "6 Alfurqat"
+#		location = 10106
+#		division_template = "Alfurqat Aljabalia"	
+#		start_experience_factor = 0.2
+#		start_equipment_factor = 0.0
+#		
+#	}
+#	division = {
+#		name = "7 Alfurqat"
+#		location = 10106
+#		division_template = "Alfurqat Aljabalia"	
+#		start_experience_factor = 0.2
+#		start_equipment_factor = 0.0
+#		
+#	}
+#	division = {
+#		name = "8 Alfurqat"
+#		location = 2097
+#		division_template = "Alfurqat Almasha"	
+#		start_experience_factor = 0.2
+#		start_equipment_factor = 0.0
+#		
+#	}
+#}
+#### Air Wings ####
+# air_wings = {
+# 	### Royal Iraqi Air Force (RIrAF)
+# 	291 = {
+# 		# 1st Squadron -- Hawker Audax
+# 		tac_bomber_equipment_1934 = {
+# 			owner = "IRQ" 
+# 			amount = 25
+# 		}
+# 	}
+# }
+#### Production ####
+instant_effect = {
+	#add_equipment_production = {
+	#	equipment = {
+	#		type = infantry_equipment_0
+	#		creator = "IRQ"
+	#	}
+	#	requested_factories = 1
+	#	progress = 0.22
+	#	efficiency = 100
+	#}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+			amount = 18000
+			producer = ENG
+		}
+	add_equipment_to_stockpile = {
+		type = special_equipment_1
+			amount = 1500
+			producer = ENG
+		}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+			amount = 2600
+			producer = ENG
+		}
+	add_equipment_to_stockpile = {
+		type = radio_equipment_1
+			amount = 400
+			producer = ENG
+		}
+	add_equipment_to_stockpile = {
+		type = horse_equipment_0
+			amount = 4700
+			producer = ENG
+		}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+			amount = 930
+			producer = ENG
+		}
+
+	add_equipment_to_stockpile = {
+		type = pack_artillery_equipment_1
+			amount = 300
+			producer = ENG
+		}	
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+			amount = 800
+			producer = ENG
+		}	
+}

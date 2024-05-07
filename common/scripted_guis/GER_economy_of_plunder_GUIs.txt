@@ -1,0 +1,568 @@
+scripted_gui = {
+
+	GER_economy_of_plunder_GUI = {
+		context_type = decision_category
+		window_name = "GER_economy_of_plunder_GUI"
+
+		triggers = {
+			GER_economy_close_visible = {
+				has_country_flag = GER_economy_of_plunder_GUI_visible_flag
+			}
+
+			GER_Poland_icon_button_visible = {
+				NOT = {
+					has_country_flag = GER_country_info_window_open_flag
+				}
+				any_country = {
+					OR = {
+						tag = GER
+						is_in_faction_with = GER
+					}
+					has_full_control_of_state = 10 
+				}
+			}
+			GER_Slovakia_icon_button_visible = {
+				NOT = {
+					has_country_flag = GER_country_info_window_open_flag
+				}
+				any_country = {
+					OR = {
+						tag = GER
+						is_in_faction_with = GER
+					}
+					has_full_control_of_state = 70 
+				}
+			}
+			GER_Bohemia_icon_button_visible = {
+				NOT = {
+					has_country_flag = GER_country_info_window_open_flag
+				}
+				any_country = {
+					OR = {
+						tag = GER
+						is_in_faction_with = GER
+					}
+					has_full_control_of_state = 9 
+				}
+
+			}
+			GER_Switzerland_icon_button_visible = {
+				NOT = {
+					has_country_flag = GER_country_info_window_open_flag
+				}
+				any_country = {
+					OR = {
+						tag = GER
+						is_in_faction_with = GER
+					}
+					has_full_control_of_state = 3 
+				}
+
+			}
+			GER_Hungary_icon_button_visible = {
+				NOT = {
+					has_country_flag = GER_country_info_window_open_flag
+				}
+				any_country = {
+					OR = {
+						tag = GER
+						is_in_faction_with = GER
+					}
+					has_full_control_of_state = 43 
+				}
+
+			}
+			GER_Romania_icon_button_visible = {
+				NOT = {
+					has_country_flag = GER_country_info_window_open_flag
+				}
+				any_country = {
+					OR = {
+						tag = GER
+						is_in_faction_with = GER
+					}
+					has_full_control_of_state = 46 
+				}
+			}
+		}
+
+		effects = {
+			GER_economy_close_click = {
+				clr_country_flag = GER_economy_of_plunder_GUI_visible_flag			
+				GERcleareconvariables = yes				
+			}
+			GER_Poland_icon_button_click = {
+				GERcleareconvariables = yes				
+
+				set_country_flag = GER_country_info_window_open_flag	
+				set_variable = { var = EOP_POL value = 1 }		
+			}
+			GER_Slovakia_icon_button_click = {
+				GERcleareconvariables = yes				
+
+				set_country_flag = GER_country_info_window_open_flag	
+				set_variable = { var = EOP_SLO value = 1 }		
+			}
+			GER_Bohemia_icon_button_click = {
+				GERcleareconvariables = yes				
+
+				set_country_flag = GER_country_info_window_open_flag	
+				set_variable = { var = EOP_CZE value = 1 }		
+			}
+			GER_Switzerland_icon_button_click = {
+				GERcleareconvariables = yes				
+
+				set_country_flag = GER_country_info_window_open_flag	
+				set_variable = { var = EOP_SWI value = 1 }		
+			}
+			GER_Hungary_icon_button_click = {
+				GERcleareconvariables = yes				
+
+				set_country_flag = GER_country_info_window_open_flag	
+				set_variable = { var = EOP_HUN value = 1 }		
+			}
+		}
+		
+		properties = {
+		}
+
+		ai_enabled = { original_tag = GER }
+
+		ai_check = {
+		}
+
+		ai_weights = {
+		}
+	}
+
+	GER_country_info_window_open = {
+		context_type = player_context
+		window_name = "GER_eop_country_info_GUI"
+
+		visible = {
+			has_country_flag = GER_country_info_window_open_flag
+		}
+
+		properties = {
+			GER_eop_plunder_level_POL = {
+				image = "[getEOPplunderlevel_POL]"
+			}
+			GER_eop_plunder_level_CZE = {
+				image = "[getEOPplunderlevel_CZE]"
+			}
+			GER_eop_plunder_level_SLO = {
+				image = "[getEOPplunderlevel_SLO]"
+			}
+			GER_eop_plunder_level_SWI = {
+				image = "[getEOPplunderlevel_SWI]"
+			}
+			GER_eop_plunder_level_HUN = {
+				image = "[getEOPplunderlevel_HUN]"
+			}
+			GER_eop_plunder_level_ROM = {
+				image = "[getEOPplunderlevel_ROM]"
+			}
+		}
+
+		triggers = {
+			GER_eop_plunder_level_POL_visible = {
+				check_variable = { var = EOP_POL value = 1 }
+			}
+			GER_eop_plunder_level_CZE_visible = {
+				check_variable = { var = EOP_CZE value = 1 }
+			}
+			GER_eop_plunder_level_SLO_visible = {
+				check_variable = { var = EOP_POL value = 1 }
+			}
+			GER_eop_plunder_level_SWI_visible = {
+				check_variable = { var = EOP_SWI value = 1 }
+			}
+			GER_eop_plunder_level_HUN_visible = {
+				check_variable = { var = EOP_HUN value = 1 }
+			}
+			GER_eop_plunder_level_ROM_visible = {
+				check_variable = { var = EOP_ROM value = 1 }
+			}
+
+			GER_country_info_window_button_1_visible = {
+				OR = {
+					AND = {
+						NOT = {
+							has_country_flag = GER_pol_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_POL 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_slo_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_SLO 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_rom_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_ROM 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_hun_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_HUN 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_bul_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_BUL 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_cze_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_CZE 
+							value = 1 
+						}
+					}
+				}
+			}
+			GER_country_info_window_button_2_visible = {
+				OR = {
+					AND = {
+						NOT = {
+							has_country_flag = GER_pol_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_POL 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_slo_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_SLO 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_rom_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_ROM 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_hun_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_HUN 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_bul_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_BUL 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_cze_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_CZE 
+							value = 1 
+						}
+					}
+				}
+			}
+			GER_country_info_window_button_3_visible = {
+				OR = {
+					AND = {
+						NOT = {
+							has_country_flag = GER_pol_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_POL 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_slo_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_SLO 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_rom_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_ROM 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_hun_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_HUN 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_bul_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_BUL 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_cze_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_CZE 
+							value = 1 
+						}
+					}
+				}
+			}
+			GER_country_info_window_button_4_visible = {
+				OR = {
+					AND = {
+						NOT = {
+							has_country_flag = GER_pol_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_POL 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_slo_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_SLO 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_rom_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_ROM 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_hun_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_HUN 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_bul_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_BUL 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_cze_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_CZE 
+							value = 1 
+						}
+					}
+				}
+			}
+			GER_country_info_window_button_5_visible = {
+				OR = {
+					AND = {
+						NOT = {
+							has_country_flag = GER_pol_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_POL 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_slo_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_SLO 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_rom_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_ROM 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_hun_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_HUN 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_bul_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_BUL 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_cze_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_CZE 
+							value = 1 
+						}
+					}
+				}
+			}
+			GER_country_info_window_button_6_visible = {
+				OR = {
+					AND = {
+						NOT = {
+							has_country_flag = GER_pol_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_POL 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_slo_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_SLO 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_rom_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_ROM 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_hun_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_HUN 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_bul_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_BUL 
+							value = 1 
+						}
+					}
+					AND = {
+						NOT = {
+							has_country_flag = GER_cze_plunder_block_flag
+						}
+						check_variable = {
+							var = EOP_CZE 
+							value = 1 
+						}
+					}
+				}
+			}
+		}
+
+		effects = {
+			GER_country_info_close_button_click = {
+				GERcleareconvariables = yes				
+				clr_country_flag = GER_country_info_window_open_flag
+			}
+			GER_country_info_window_button_1_click = {
+				clr_country_flag = GER_country_info_window_open_flag		
+				GER_seize_industry_effect = yes 
+			}
+			GER_country_info_window_button_2_click = {
+				clr_country_flag = GER_country_info_window_open_flag		
+				GER_arbeitseinsatz_effect = yes 
+			}
+			GER_country_info_window_button_3_click = {
+				clr_country_flag = GER_country_info_window_open_flag		
+				GER_increase_quotas_effect = yes 
+			}
+			GER_country_info_window_button_4_click = {
+				clr_country_flag = GER_country_info_window_open_flag		
+				GER_forced_conscription_effect = yes 
+			}
+			GER_country_info_window_button_5_click = {
+				clr_country_flag = GER_country_info_window_open_flag		
+				GER_bandenbekampfung_effect = yes 
+			}
+			GER_country_info_window_button_6_click = {
+				clr_country_flag = GER_country_info_window_open_flag		
+				GER_pacification_effect = yes 
+			}
+		}
+	}
+}

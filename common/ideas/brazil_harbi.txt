@@ -1,0 +1,754 @@
+ideas = {
+	
+		brazil_infantry_industry1 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = brazil_infantry_industry
+
+			name = brazil_infantry_industry_name 
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.2 instant = yes
+				}
+
+				artillery_equipment = {
+					build_cost_ic = 0.2 instant = yes
+				}
+				field_gun_equipment = {
+						build_cost_ic = 0.2  instant = yes
+				}
+
+				heavy_artillery_equipment = {
+					build_cost_ic = 0.2 instant = yes
+				}
+
+				pack_artillery_equipment = {
+					build_cost_ic = 0.2 instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = 0.2 instant = yes
+				}
+
+				anti_air_equipment = {
+					build_cost_ic = 0.2 instant = yes
+				}
+				
+				anti_tank_equipment = {
+					build_cost_ic = 0.2 instant = yes
+				}
+				motorized = {
+					build_cost_ic = 0.2 instant = yes
+				}
+
+				mechanized = {
+					build_cost_ic = 0.2 instant = yes
+				}
+			}
+		}	
+
+		brazil_infantry_industry2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+	
+			picture = brazil_infantry_industry
+
+			name = brazil_infantry_industry_name 
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.18 instant = yes
+				}
+
+				artillery_equipment = {
+					build_cost_ic = 0.18 instant = yes
+				}
+				field_gun_equipment = {
+						build_cost_ic = 0.18 instant = yes
+				}
+
+				heavy_artillery_equipment = {
+					build_cost_ic = 0.18 instant = yes
+				}
+
+				pack_artillery_equipment = {
+					build_cost_ic = 0.18 instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = 0.18 instant = yes
+				}
+
+				anti_air_equipment = {
+					build_cost_ic = 0.18 instant = yes
+				}
+				
+				anti_tank_equipment = {
+					build_cost_ic = 0.18 instant = yes
+				}
+				motorized = {
+					build_cost_ic = 0.18 instant = yes
+				}
+
+				mechanized = {
+					build_cost_ic = 0.18 instant = yes
+				}
+			}
+		}		
+		brazil_infantry_industry3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = brazil_infantry_industry
+
+			name = brazil_infantry_industry_name 
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.16 instant = yes
+				}
+
+				artillery_equipment = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				field_gun_equipment = {
+						build_cost_ic = 0.16 instant = yes
+				}
+
+				heavy_artillery_equipment = {
+					build_cost_ic = 0.16  instant = yes
+				}
+
+				pack_artillery_equipment = {
+					build_cost_ic = 0.16  instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = 0.16 instant = yes
+				}
+
+				anti_air_equipment = {
+					build_cost_ic = 0.16  instant = yes
+				}
+				
+				anti_tank_equipment = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				motorized = {
+					build_cost_ic = 0.16  instant = yes
+				}
+
+				mechanized = {
+					build_cost_ic = 0.16  instant = yes
+				}
+			}
+		}		
+		brazil_infantry_industry4 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+	
+			picture = brazil_infantry_industry
+
+			name = brazil_infantry_industry_name 
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.14 instant = yes
+				}
+
+				artillery_equipment = {
+					build_cost_ic = 0.14 instant = yes
+				}
+				field_gun_equipment = {
+					build_cost_ic = 0.14 instant = yes
+				}
+
+				heavy_artillery_equipment = {
+					build_cost_ic = 0.14 instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = 0.14 instant = yes
+				}
+
+
+				pack_artillery_equipment = {
+					build_cost_ic = 0.14 instant = yes
+				}
+
+				anti_air_equipment = {
+					build_cost_ic = 0.14 instant = yes
+				}
+				
+				anti_tank_equipment = {
+					build_cost_ic = 0.14 instant = yes
+				}
+				motorized = {
+					build_cost_ic = 0.14 instant = yes
+				}
+
+				mechanized = {
+					build_cost_ic = 0.14 instant = yes
+				}
+			}
+		}		
+		brazil_infantry_industry5 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+	
+			picture = brazil_infantry_industry
+
+			name = brazil_infantry_industry_name 
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.12 instant = yes
+				}
+
+				artillery_equipment = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				field_gun_equipment = {
+					build_cost_ic = 0.12  instant = yes
+				}
+
+				heavy_artillery_equipment = {
+					build_cost_ic = 0.12 instant = yes
+				}
+
+				pack_artillery_equipment = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = 0.12 instant = yes
+				}
+
+				anti_air_equipment = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				
+				anti_tank_equipment = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				motorized = {
+					build_cost_ic = 0.12 instant = yes
+				}
+
+				mechanized = {
+					build_cost_ic = 0.12 instant = yes
+				}
+			}
+		}		
+		brazil_infantry_industry6 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = brazil_infantry_industry
+
+			name = brazil_infantry_industry_name 
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.1 instant = yes
+				}
+
+				artillery_equipment = {
+					build_cost_ic = 0.1 instant = yes
+				}
+				field_gun_equipment = {
+						build_cost_ic = 0.1 instant = yes
+				}
+
+				heavy_artillery_equipment = {
+					build_cost_ic = 0.1 instant = yes
+				}
+
+				pack_artillery_equipment = {
+					build_cost_ic = 0.1 instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = 0.1 instant = yes
+				}
+
+				anti_air_equipment = {
+					build_cost_ic = 0.1 instant = yes
+				}
+				
+				anti_tank_equipment = {
+					build_cost_ic = 0.1 instant = yes
+				}
+				motorized = {
+					build_cost_ic = 0.1 instant = yes
+				}
+
+				mechanized = {
+					build_cost_ic = 0.1 instant = yes
+				}
+			}
+		}		
+		brazil_infantry_industry7 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = brazil_infantry_industry
+
+			name = brazil_infantry_industry_name 
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.08 instant = yes
+				}
+
+				artillery_equipment = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				field_gun_equipment = {
+						build_cost_ic = 0.08 instant = yes
+				}
+
+				heavy_artillery_equipment = {
+					build_cost_ic = 0.08 instant = yes
+				}
+
+				pack_artillery_equipment = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = 0.08 instant = yes
+				}
+
+				anti_air_equipment = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				
+				anti_tank_equipment = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				motorized = {
+					build_cost_ic = 0.08 instant = yes
+				}
+
+				mechanized = {
+					build_cost_ic = 0.08 instant = yes
+				}
+			}
+			
+		}		
+		brazil_infantry_industry8 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = brazil_infantry_industry
+
+			name = brazil_infantry_industry_name 
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.06 instant = yes
+				}
+
+				artillery_equipment = {
+					build_cost_ic = 0.06 instant = yes
+				}
+				
+				field_gun_equipment = {
+						build_cost_ic = 0.06  instant = yes
+				}
+
+				heavy_artillery_equipment = {
+					build_cost_ic = 0.06 instant = yes
+				}
+
+				pack_artillery_equipment = {
+					build_cost_ic = 0.06 instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = 0.06 instant = yes
+				}
+
+				anti_air_equipment = {
+					build_cost_ic = 0.06 instant = yes
+				}
+				
+				anti_tank_equipment = {
+					build_cost_ic = 0.06 instant = yes
+				}
+				motorized = {
+					build_cost_ic = 0.06 instant = yes
+				}
+
+				mechanized = {
+					build_cost_ic = 0.06 instant = yes
+				}
+			}
+		}		
+		brazil_infantry_industry9 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = brazil_infantry_industry
+
+			name = brazil_infantry_industry_name 
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.04 instant = yes
+				}
+
+				artillery_equipment = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				field_gun_equipment = {
+						build_cost_ic = 0.04  instant = yes
+				}
+
+				heavy_artillery_equipment = {
+					build_cost_ic = 0.04 instant = yes
+				}
+
+				pack_artillery_equipment = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = 0.04 instant = yes
+				}
+
+				anti_air_equipment = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				
+				anti_tank_equipment = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				motorized = {
+					build_cost_ic = 0.04 instant = yes
+				}
+
+				mechanized = {
+					build_cost_ic = 0.04 instant = yes
+				}
+			}
+		}		
+		brazil_infantry_industry10 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = brazil_infantry_industry
+
+			name = brazil_infantry_industry_name 
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.02 instant = yes
+				}
+
+				artillery_equipment = {
+					build_cost_ic = 0.02 instant = yes
+				}
+				field_gun_equipment = {
+						build_cost_ic =0.02 instant = yes
+				}
+
+				heavy_artillery_equipment = {
+					build_cost_ic = 0.02 instant = yes
+				}
+
+				pack_artillery_equipment = {
+					build_cost_ic = 0.02 instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = 0.02 instant = yes
+				}
+
+				anti_air_equipment = {
+					build_cost_ic = 0.02 instant = yes
+				}
+				
+				anti_tank_equipment = {
+					build_cost_ic = 0.02 instant = yes
+				}
+				motorized = {
+					build_cost_ic = 0.02 instant = yes
+				}
+
+				mechanized = {
+					build_cost_ic = 0.02 instant = yes
+				}
+			}
+		}	
+		brazil_infantry_industry11 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = brazil_infantry_industry
+
+			name = brazil_infantry_industry_name 
+
+			
+		}
+		brazil_infantry_industry12 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = brazil_infantry_industry
+
+			name = brazil_infantry_industry_name 
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.02 instant = yes
+				}
+
+				artillery_equipment = {
+					build_cost_ic = -0.02 instant = yes
+				}
+				field_gun_equipment = {
+						build_cost_ic =-0.02 instant = yes
+				}
+
+				heavy_artillery_equipment = {
+					build_cost_ic = -0.02 instant = yes
+				}
+
+				pack_artillery_equipment = {
+					build_cost_ic = -0.02 instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = -0.02 instant = yes
+				}
+
+				anti_air_equipment = {
+					build_cost_ic = -0.02 instant = yes
+				}
+				
+				anti_tank_equipment = {
+					build_cost_ic = -0.02 instant = yes
+				}
+				motorized = {
+					build_cost_ic = -0.02 instant = yes
+				}
+
+				mechanized = {
+					build_cost_ic = -0.02 instant = yes
+				}
+			}
+		}
+		brazil_infantry_industry13 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = brazil_infantry_industry
+
+			name = brazil_infantry_industry_name 
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.04 instant = yes
+				}
+
+				artillery_equipment = {
+					build_cost_ic = -0.04 instant = yes
+				}
+				field_gun_equipment = {
+						build_cost_ic =-0.04 instant = yes
+				}
+
+				heavy_artillery_equipment = {
+					build_cost_ic = -0.04 instant = yes
+				}
+
+				pack_artillery_equipment = {
+					build_cost_ic = -0.04 instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = -0.04 instant = yes
+				}
+
+				anti_air_equipment = {
+					build_cost_ic = -0.04 instant = yes
+				}
+				
+				anti_tank_equipment = {
+					build_cost_ic = -0.04 instant = yes
+				}
+				motorized = {
+					build_cost_ic = -0.04 instant = yes
+				}
+
+				mechanized = {
+					build_cost_ic = -0.04 instant = yes
+				}
+			}
+		}
+		brazil_infantry_industry14 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = brazil_infantry_industry
+
+			name = brazil_infantry_industry_name 
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.06 instant = yes
+				}
+
+				artillery_equipment = {
+					build_cost_ic =  -0.06 instant = yes
+				}
+				field_gun_equipment = {
+						build_cost_ic = -0.06 instant = yes
+				}
+
+				heavy_artillery_equipment = {
+					build_cost_ic =  -0.06 instant = yes
+				}
+
+				pack_artillery_equipment = {
+					build_cost_ic =  -0.06 instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic =  -0.06 instant = yes
+				}
+
+				anti_air_equipment = {
+					build_cost_ic =  -0.06 instant = yes
+				}
+				
+				anti_tank_equipment = {
+					build_cost_ic =  -0.06 instant = yes
+				}
+				motorized = {
+					build_cost_ic = -0.06 instant = yes
+				}
+
+				mechanized = {
+					build_cost_ic =  -0.06 instant = yes
+				}
+			}
+		}
+
+		brazil_infantry_industry15 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = brazil_infantry_industry
+
+			name = brazil_infantry_industry_name 
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.08 instant = yes
+				}
+
+				artillery_equipment = {
+					build_cost_ic = -0.08 instant = yes
+				}
+				field_gun_equipment = {
+						build_cost_ic = -0.08 instant = yes
+				}
+
+				heavy_artillery_equipment = {
+					build_cost_ic = -0.08 instant = yes
+				}
+
+				pack_artillery_equipment = {
+					build_cost_ic = -0.08 instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic =  -0.08 instant = yes
+				}
+
+				anti_air_equipment = {
+					build_cost_ic = -0.08 instant = yes
+				}
+				
+				anti_tank_equipment = {
+					build_cost_ic = -0.08 instant = yes
+				}
+				motorized = {
+					build_cost_ic = -0.08 instant = yes
+				}
+
+				mechanized = {
+					build_cost_ic = -0.08 instant = yes
+				}
+			}
+		}
+		brazil_infantry_industry16 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = brazil_infantry_industry
+
+			name = brazil_infantry_industry_name 
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+
+				artillery_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				field_gun_equipment = {
+						build_cost_ic =-0.1 instant = yes
+				}
+
+				heavy_artillery_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+
+				pack_artillery_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic =  -0.1 instant = yes
+				}
+
+				anti_air_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				
+				anti_tank_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				motorized = {
+					build_cost_ic = -0.1 instant = yes
+				}
+
+				mechanized = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+}

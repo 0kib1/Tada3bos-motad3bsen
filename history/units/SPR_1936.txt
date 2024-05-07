@@ -1,0 +1,108 @@
+﻿##### Division Templates #####
+
+### Air Wings ###
+air_wings = {
+	
+	# Arma de Aviación -- Madrid (Getafe)
+	41 = { 
+		# Grupo n.1 de Caza FARE 'Alas Rojas'
+		fighter_equipment_1934 = {
+			owner = "SPR" 
+			amount = 25
+		}
+	}
+	# Arma de Aviación -- Sevilla (and Barcelona)
+	175 = {
+		# Grupo n.3 de Caza FARE 'Malraux'
+		fighter_equipment_1934 = {
+			owner = "SPR" 
+			amount = 25
+		}
+	}
+	# Aeronáutica Naval -- Murcia
+	168 = {
+		nav_bomber_equipment_1936 = {
+			owner = "SPR" 
+			amount = 30
+		}
+	}
+}
+### Production ###
+instant_effect = { #player
+	add_equipment_to_stockpile = {
+		type = train_equipment_1
+			amount = 50
+			producer = SPR
+	}
+	add_equipment_to_stockpile = {
+		type = anti_air_equipment_1
+		amount = 200
+		producer = SPR
+	}
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SPR"
+		}
+		requested_factories = 8
+		progress = 0.66
+		efficiency = 20
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SPR"
+		}
+		requested_factories = 1
+		progress = 0.35
+		efficiency = 15
+	}
+	add_equipment_production = {
+		equipment = {
+			type = radio_equipment_1
+			creator = "SPR" 
+		}
+		requested_factories = 3
+		progress = 0.4
+		efficiency = 75
+	}
+	add_equipment_production = {
+		equipment = {
+			type = horse_equipment_0
+			creator = "SPR"
+		}
+		requested_factories = 1
+		progress = 0.35
+		efficiency = 15
+	}
+	add_equipment_production = {
+		equipment = {
+			type = pack_artillery_equipment_1
+			creator = "SPR" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 75
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "SPR" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 75
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "SPR" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 75
+	}
+}
+
+

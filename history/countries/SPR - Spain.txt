@@ -1,0 +1,312 @@
+﻿
+capital = 169
+add_political_power = 100
+oob = "SPR_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "SPR_1936_naval_mtg"
+	else = {
+		set_naval_oob = "SPR_1936_naval_legacy"
+	}
+}
+set_rule = {
+	can_access_market = no
+}
+complete_national_focus = SPA_a_great_spain
+set_country_flag = SPR_spanish_elections_flag
+set_country_flag = SPR_no_grinding_flag
+recruit_character = SPR_jose_sanjurjo
+recruit_character = SPR_francisco_franco
+recruit_character = SPR_antonio_ortega_gutierrez
+recruit_character = SPR_josé_díaz
+recruit_character = SPR_niceto_alcalázamora
+recruit_character = SPR_josé_antonio_primo_de_rivera
+recruit_character = SPR_manuel_fal_conde
+recruit_character = SPR_antonio_cordón_garcía
+recruit_character = SPR_jános_gálicz
+recruit_character = SPR_mohamed_meziane
+recruit_character = SPR_gonzalo_queipo_de_llano
+recruit_character = SPR_emilio_mola
+recruit_character = SPR_juan_yagüe
+recruit_character = SPR_agustín_muñoz_grandes
+recruit_character = SPR_josé_enrique_varela
+recruit_character = SPR_miguel_cabanellas
+recruit_character = SPR_josé_millán_astray
+recruit_character = SPR_miguel_buiza_fernándezpalacios
+recruit_character = SPR_luis_carrero_blanco
+
+set_research_slots = 4
+add_ideas = {
+	limited_exports
+	limited_conscription
+}
+starting_train_buffer = 4
+set_technology = { #player 
+	basic_train = 1
+	############### infantry #############
+	infantry_weapons = 1  
+	fuel_silos = 1
+	field_equipment = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_mountaineers = 1
+	special_equipment = 1
+	tech_radio_1 = 1 
+	############### supports ############
+	tech_recon = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	############### artillery ##############
+	artillery1 = 1 
+	artillery2 = 1
+	field_gun = 1
+	field_gun2_1 = 1
+	gw_pack_artillery = 1
+	pack_artillery_m_1 = 1
+	pack_artillery1 = 1
+	heavy_artillery1 = 1
+	heavy_antiair = 1
+	heavy_antiair_1 = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+
+	############## aircraft ##############
+	fighter_1934 = 1
+	tactical_bomber_1934 = 1
+	naval_bomber_1936 = 1
+	
+	################# economy ############
+	starting_industry = 1
+	
+}
+	################ Armor ###########
+	if = {
+		limit = {
+			 has_dlc = "No Step Back" 
+		}
+		set_technology = {
+			ger_nsb_motorised_infantry = 1
+			ger_nsb_tech_armored_cars = 1
+			ger_nsb_tech_armored_cars2 = 1
+			ger_1934_light_tank_chassis = 1
+			ger_1936_light_tank_chassis = 1
+			ger_1936_medium_tank_chassis = 1
+			unlock_modules = 1
+			automatic_gun = 1
+			small_gun = 1
+			support_gun = 1
+			armour_sloping = 1
+			engine_tech_1 = 1
+			turret_basket = 1
+			early_cupola = 1
+			cupola = 1
+			automatic_gun2 = 1
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		create_equipment_variant = {
+		name = "Panzer II Ausf.a"
+		type = light_tank_chassis_1936
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_auto_cannon
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_welded_armor
+			armor_sloping_slot = unsloped_armor
+			engine_type_slot = tank_gasoline_engine
+		    radio_slot = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 3
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "gfx/interface/technologies/land/ger/pz_ii_a.tga"
+		}
+		create_equipment_variant = {
+		name = "Panzer I Ausf. A"
+		type = light_tank_chassis_1934
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_welded_armor
+			armor_sloping_slot = unsloped_armor
+			engine_type_slot = tank_gasoline_engine
+		    radio_slot = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 1
+			tank_nsb_armor_upgrade = 1
+		}
+			icon = "gfx/interface/technologies/land/ger/pz_i.tga"
+			obsolete = yes
+		}
+	}
+
+
+	if = {
+		limit = {
+			not = { has_dlc = "No Step Back" }
+		}
+		set_technology = {
+			ger_motorised_infantry = 1
+			ger_tech_armored_cars = 1
+			ger_tech_armored_cars2 = 1
+			ger_light_tank_1934 = 1 
+			ger_light_tank_1936 = 1
+			ger_medium_tank_1936 = 1 
+			ger_heavy_tank_1934 = 1
+			ger_basic_tank_engines = 1
+			ger_rivetted_armour = 1
+		}
+		
+	}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+
+		
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_medium_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+	}
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1933.2.16"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "La Resistance"
+		}
+	}
+	set_popularities = {
+		democratic = 25
+		fascism = 68
+		neutrality = 7
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = SPR
+				is_core_of = SPN
+			}
+			
+			NOT = {
+				state = 177
+				state = 178
+				state = 290
+				state = 699
+				state = 783
+				state = 297
+				
+			}
+		}
+		set_variable = { var = SPA_garrison_control value = 1 }
+		SPA_garrison_control_cost_calculation = yes
+	}
+
+	set_popularities = {
+		democratic = 25
+		fascism = 68
+		neutrality = 7
+	}
+	create_dynamic_country = {
+		original_tag = SPR
+		set_country_flag = SPR_nationalist_spain_flag
+		set_politics = {
+			ruling_party = neutrality
+		}
+		set_cosmetic_tag = SPR_nationalist_spain
+		set_research_slots = 3
+		reserve_dynamic_country = yes
+	}
+	create_dynamic_country = {
+		original_tag = SPR
+		set_country_flag = SPR_carlist_spain_flag
+		set_politics = {
+			ruling_party = neutrality
+		}
+		set_cosmetic_tag = SPR_carlist_spain
+		set_research_slots = 3
+		reserve_dynamic_country = yes
+	}
+	create_dynamic_country = {
+		original_tag = SPR
+		set_country_flag = SPR_anarchist_spain_flag
+		set_politics = {
+			ruling_party = neutrality
+		}
+		set_cosmetic_tag = SPR_anarchist_spain
+		set_research_slots = 3
+		reserve_dynamic_country = yes
+	}
+	SPR = {
+		set_variable = { var = spa_civil_war_divisions_counter_var value = 48 }
+		set_variable = { var = spr_civil_war_divisions_counter_var value = 37 }
+	}
+	for_each_scope_loop = {
+		array = core_states
+		
+		set_state_flag = SPR_original_core
+	}
+	add_ideas = {
+		SPR_fuck_joining
+		SPR_national_strikes_3
+		SPA_carlism_1
+		SPR_military_disloyalty
+		SPR_political_violence
+		
+		SPR_no_navy
+	}
+	165 = {
+		add_dynamic_modifier = { modifier = autonomous_state }
+	}
+	
+	792 = {
+		add_dynamic_modifier = { modifier = autonomous_state }
+	}
+}
+
+set_convoys = 500
+set_stability = 0.7

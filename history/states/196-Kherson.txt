@@ -1,0 +1,31 @@
+
+state = {
+	id = 196
+	name = "STATE_196"
+	manpower = 728363
+	
+	state_category = rural
+	
+	resources = {
+		chromium = 8 # was: 22
+	}
+
+	history = {
+		set_state_flag = SOV_UKR
+		victory_points = {
+			11715 1
+		}
+		owner = SOV
+		buildings = {
+			infrastructure = 7
+			air_base = 4
+			arms_factory = 2
+		}
+		add_core_of = SOV
+		
+	}
+
+	provinces = {
+		568 721 737 767 3573 6771 9712 11715 
+	}
+}

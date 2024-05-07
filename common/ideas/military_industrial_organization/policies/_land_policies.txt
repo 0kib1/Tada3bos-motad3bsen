@@ -1,0 +1,95 @@
+mio_policy_land_armor_welding_specialists = {
+	icon = GFX_mio_policy_welding_specialists
+	allowed = {
+			has_mio_equipment_type = armor
+
+	}
+	available = { has_mio_size > 0}
+	equipment_bonus = {
+		same_as_mio = {
+			hardness = -0.04
+		}
+	}
+}
+mio_policy_land_aircraft_engines = {
+	icon = GFX_mio_policy_propulsion_experimenters
+	allowed = {
+			has_mio_equipment_type = armor
+	}
+	available = { has_mio_size > 2}
+	equipment_bonus = {
+		same_as_mio = {
+			maximum_speed = 0.1
+			reliability = -0.1
+		}
+	}
+}
+
+
+mio_policy_land_casting_specialists = {
+	icon = GFX_mio_policy_casting_specialists
+	allowed = { 
+			has_mio_equipment_type = armor
+	}
+	available = { has_mio_size > 5}
+	equipment_bonus = {
+		same_as_mio = {
+			hardness = 0.03	
+		}
+	}
+}
+
+mio_policy_land_heavy_gantry_cranes = {
+	icon = GFX_mio_policy_heavy_gantry_cranes_land
+	allowed = { 
+		OR = {
+			has_mio_equipment_type = armor
+		} 
+	 }
+	available = { has_mio_size > 5}
+	production_bonus = {
+		#heavy_tank_chassis = {
+		#	production_efficiency_cap_factor = 0.05
+		#}
+		same_as_mio = {
+			production_capacity_factor = 0.06
+			production_resource_need_factor = 0.1
+		}
+	}
+}
+
+mio_policy_land_factory_applied_camouflage  = {
+	icon = GFX_mio_policy_factory_applied_camouflage
+	allowed = { 
+			has_mio_equipment_type = armor
+	 }
+	available = { has_mio_size > 5}
+	equipment_bonus = {
+		same_as_mio = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+	}
+}
+
+mio_policy_land_cutting_corners  = {
+	icon = GFX_mio_policy_cutting_corners
+	allowed = { 
+		OR = {
+			has_mio_equipment_type = armor
+		} 
+	 }
+	available = { has_mio_size > 3}
+	organization_modifier = {
+		military_industrial_organization_funds_gain = 0.5
+		military_industrial_organization_research_bonus = -1
+	}
+	equipment_bonus = {
+		same_as_mio = {
+			reliability = -0.1
+			soft_attack = -0.05
+			hard_attack = -0.05
+			armor_value = -0.2
+		}
+	}
+}
