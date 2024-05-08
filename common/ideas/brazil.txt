@@ -811,60 +811,59 @@ ideas = {
 			}
 			equipment_bonus = {
 
-				infantry_equipment = {
-					build_cost_ic = 0.15 instant = yes
-				}
-				support_equipment = {
-					build_cost_ic = 0.1 instant = yes
-				}
-				radio_equipment = {
-					build_cost_ic = 0.15 instant = yes
-				}
-				special_equipment = {
-					build_cost_ic = 0.25 instant = yes
-				}
-				artillery_equipment = {
-					build_cost_ic = 0.15 instant = yes
-				}
-				heavy_artillery_equipment = {
-					build_cost_ic = 0.20 instant = yes
-				}
-
-				field_gun_equipment = {
-					build_cost_ic = 0.15 instant = yes
-				}
-				pack_artillery_equipment = {
-					build_cost_ic = 0.08 instant = yes
-				}
-				rocket_artillery_equipment = {
-					build_cost_ic = 0.15 instant = yes
-				}
-	
-
-				anti_tank_equipment = {
-					build_cost_ic = 0.15 instant = yes
-				}
-				anti_air_equipment = {
-					build_cost_ic = 0.08 instant = yes
-				}
-				heavy_anti_air_equipment = {
-					build_cost_ic = 0.15 instant = yes
-				}
-
-				armor = {
-					build_cost_ic = 0.30 instant = yes 
-				}
-				mechanized = {
-					build_cost_ic = 0.20 instant = yes 
-				}
-				amphibious_mechanized_equipment = {
-					build_cost_ic = 0.15 instant = yes 
-				}
-				motorized = {
-					build_cost_ic = 0.15 instant = yes 
-				}
+			infantry_equipment = {
+				build_cost_ic = 0.25 instant = yes
+			}
+			support_equipment = {
+				build_cost_ic = 0.1 instant = yes
+			}
+			radio_equipment = {
+				build_cost_ic = 0.10 instant = yes
+			}
+			special_equipment = {
+				build_cost_ic = 0.40 instant = yes
+			}
+			artillery_equipment = {
+				build_cost_ic = 0.25 instant = yes
+			}
+			heavy_artillery_equipment = {
+				build_cost_ic = 0.20 instant = yes
 			}
 
+			field_gun_equipment = {
+				build_cost_ic = 0.15 instant = yes
+			}
+			pack_artillery_equipment = {
+				build_cost_ic = 0.08 instant = yes
+			}
+			rocket_artillery_equipment = {
+				build_cost_ic = 0.15 instant = yes
+			}
+
+			anti_tank_equipment = {
+				build_cost_ic = 0.15 instant = yes
+			}
+			anti_air_equipment = {
+				build_cost_ic = 0.08 instant = yes
+			}
+			heavy_anti_air_equipment = {
+				build_cost_ic = 0.15 instant = yes
+			}
+
+
+			armor = {
+				build_cost_ic = 0.15 instant = yes 
+			}
+			mechanized = {
+				build_cost_ic = 0.10 instant = yes 
+			}
+			amphibious_mechanized_equipment = {
+				build_cost_ic = 0.10 instant = yes 
+			}
+			motorized = {
+				build_cost_ic = 0.10 instant = yes 
+			}
+	 	}
 		
 			
 	}
@@ -891,146 +890,60 @@ ideas = {
 		  }
 		  equipment_bonus = {
 
-			infantry_equipment = {
-				build_cost_ic = 0.15 instant = yes
-			}
-			support_equipment = {
-				build_cost_ic = 0.1 instant = yes
-			}
-			radio_equipment = {
-				build_cost_ic = 0.05 instant = yes
-			}
-			special_equipment = {
-				build_cost_ic = 0.40 instant = yes
-			}
-			artillery_equipment = {
-				build_cost_ic = 0.25 instant = yes
-			}
-			heavy_artillery_equipment = {
-				build_cost_ic = 0.20 instant = yes
-			}
-
-
-
-
-			field_gun_equipment = {
-				build_cost_ic = 0.15 instant = yes
-			}
-			pack_artillery_equipment = {
-				build_cost_ic = 0.08 instant = yes
-			}
-			rocket_artillery_equipment = {
-				build_cost_ic = 0.15 instant = yes
-			}
-
-
-
-
-			anti_tank_equipment = {
-				build_cost_ic = 0.15 instant = yes
-			}
-			anti_air_equipment = {
-				build_cost_ic = 0.08 instant = yes
-			}
-			heavy_anti_air_equipment = {
-				build_cost_ic = 0.15 instant = yes
-			}
-
-			armor = {
-				build_cost_ic = 0.05 instant = yes 
-			}
-			mechanized = {
-				build_cost_ic = 0.05 instant = yes 
-			}
-			amphibious_mechanized_equipment = {
-				build_cost_ic = 0.05 instant = yes 
-			}
-			motorized = {
-				build_cost_ic = 0.05 instant = yes 
-			}
-	}
-	BRA_shadow_civil_war_Tank_1 = {
-		picture = chi_army_corruption
-			 
-			 
-		  allowed = {
-			 original_tag = BRA
-		  }   
-		   
-		  allowed_civil_war = {
-			  always = yes
-		  } 
-		  removal_cost = -1
-		  
-		   modifier = {
-		   political_power_gain = -0.05
-		   production_speed_infrastructure_factor = -0.20
-		   supply_consumption_factor = 0.10
-		   army_morale_factor = -0.1
-		   army_org_factor = -0.05
-		   
+		  infantry_equipment = {
+			  build_cost_ic = 0.25 instant = yes
 		  }
-		  equipment_bonus = {
+		  support_equipment = {
+			  build_cost_ic = 0.06 instant = yes
+		  }
+		  radio_equipment = {
+			  build_cost_ic = 0.05 instant = yes
+		  }
+		  special_equipment = {
+			  build_cost_ic = 0.40 instant = yes
+		  }
+		  artillery_equipment = {
+			  build_cost_ic = 0.25 instant = yes
+		  }
+		  heavy_artillery_equipment = {
+			  build_cost_ic = 0.20 instant = yes
+		  }
 
-			infantry_equipment = {
-				build_cost_ic = 0.15 instant = yes
-			}
-			support_equipment = {
-				build_cost_ic = 0.1 instant = yes
-			}
-			radio_equipment = {
-				build_cost_ic = 0.05 instant = yes
-			}
-			special_equipment = {
-				build_cost_ic = 0.40 instant = yes
-			}
-			artillery_equipment = {
-				build_cost_ic = 0.25 instant = yes
-			}
-			heavy_artillery_equipment = {
-				build_cost_ic = 0.20 instant = yes
-			}
+		  field_gun_equipment = {
+			  build_cost_ic = 0.15 instant = yes
+		  }
+		  pack_artillery_equipment = {
+			  build_cost_ic = 0.08 instant = yes
+		  }
+		  rocket_artillery_equipment = {
+			  build_cost_ic = 0.15 instant = yes
+		  }
+
+		  anti_tank_equipment = {
+			  build_cost_ic = 0.15 instant = yes
+		  }
+		  anti_air_equipment = {
+			  build_cost_ic = 0.08 instant = yes
+		  }
+		  heavy_anti_air_equipment = {
+			  build_cost_ic = 0.15 instant = yes
+		  }
 
 
-
-
-			field_gun_equipment = {
-				build_cost_ic = 0.15 instant = yes
-			}
-			pack_artillery_equipment = {
-				build_cost_ic = 0.08 instant = yes
-			}
-			rocket_artillery_equipment = {
-				build_cost_ic = 0.15 instant = yes
-			}
-
-
-
-
-			anti_tank_equipment = {
-				build_cost_ic = 0.15 instant = yes
-			}
-			anti_air_equipment = {
-				build_cost_ic = 0.08 instant = yes
-			}
-			heavy_anti_air_equipment = {
-				build_cost_ic = 0.15 instant = yes
-			}
-
-			armor = {
-				build_cost_ic = 0.0 instant = yes 
-			}
-			mechanized = {
-				build_cost_ic = 0.00 instant = yes 
-			}
-			amphibious_mechanized_equipment = {
-				build_cost_ic = 0.00 instant = yes 
-			}
-			motorized = {
-				build_cost_ic = 0.00 instant = yes 
-			}
-	}
-  
+		  armor = {
+			  build_cost_ic = 0.05 instant = yes 
+		  }
+		  mechanized = {
+			  build_cost_ic = 0.05 instant = yes 
+		  }
+		  amphibious_mechanized_equipment = {
+			  build_cost_ic = 0.05 instant = yes 
+		  }
+		  motorized = {
+			  build_cost_ic = 0.05 instant = yes 
+		  }
+	   }
+	  
 		  
   	}
 
@@ -1057,68 +970,54 @@ ideas = {
 		  }
 		  equipment_bonus = {
 
-			infantry_equipment = {
-				build_cost_ic = 0.07 instant = yes
-			}
-			support_equipment = {
-				build_cost_ic = 0.05 instant = yes
-			}
-			radio_equipment = {
-				build_cost_ic = 0.10 instant = yes
-			}
-			special_equipment = {
-				build_cost_ic = 0.25 instant = yes
-			}
-			artillery_equipment = {
-				build_cost_ic = 0.10 instant = yes
-			}
-			heavy_artillery_equipment = {
-				build_cost_ic = 0.10 instant = yes
-			}
+		  infantry_equipment = {
+			  build_cost_ic = 0.25 instant = yes
+		  }
+		  support_equipment = {
+			  build_cost_ic = 0.10 instant = yes
+		  }
+		  radio_equipment = {
+			  build_cost_ic = 0.10 instant = yes
+		  }
+		  special_equipment = {
+			  build_cost_ic = 0.000 instant = yes
+		  }
+		  artillery_equipment = {
+			  build_cost_ic = 0.00 instant = yes
+		  }
+		  heavy_artillery_equipment = {
+			  build_cost_ic = 0.000 instant = yes
+		  }
+
+		  field_gun_equipment = {
+			  build_cost_ic = 0.000 instant = yes
+		  }
+		  pack_artillery_equipment = {
+			  build_cost_ic = 0.000 instant = yes
+		  }
+		  rocket_artillery_equipment = {
+			  build_cost_ic = 0.000 instant = yes
+		  }
+
+		  anti_tank_equipment = {
+			  build_cost_ic = 0.000 instant = yes
+		  }
+		  anti_air_equipment = {
+			  build_cost_ic = 0.000 instant = yes
+		  }
+		  heavy_anti_air_equipment = {
+			  build_cost_ic = 0.000 instant = yes
+		  }
 
 
-
-
-			field_gun_equipment = {
-				build_cost_ic = 0.07 instant = yes
-			}
-			pack_artillery_equipment = {
-				build_cost_ic = 0.04 instant = yes
-			}
-			rocket_artillery_equipment = {
-				build_cost_ic = 0.15 instant = yes
-			}
-
-
-
-
-			anti_tank_equipment = {
-				build_cost_ic = 0.07 instant = yes
-			}
-			anti_air_equipment = {
-				build_cost_ic = 0.04 instant = yes
-			}
-			heavy_anti_air_equipment = {
-				build_cost_ic = 0.07 instant = yes
-			}
-
-
-
-
-			armor = {
-				build_cost_ic = 0.30 instant = yes 
-			}
-			mechanized = {
-				build_cost_ic = 0.20 instant = yes 
-			}
-			amphibious_mechanized_equipment = {
-				build_cost_ic = 0.15 instant = yes 
-			}
-			motorized = {
-				build_cost_ic = 0.10 instant = yes 
-			}
-	 
-		}
+		  armor = {
+			  build_cost_ic = 0.15 instant = yes 
+		  }
+		  mechanized = {
+			  build_cost_ic = 0.10 instant = yes 
+		  }
+		  amphibious_mechanized_equipment = {
+			  build_cost_ic = 0.10 instant = yes 
 	  
 		  
   	}
@@ -1188,22 +1087,28 @@ ideas = {
 			heavy_anti_air_equipment = {
 				build_cost_ic = -0.05 instant = yes
 			}
+		  }
+		  anti_air_equipment = {
+			  build_cost_ic = -0.04 instant = yes
+		  }
+		  heavy_anti_air_equipment = {
+			  build_cost_ic = -0.04 instant = yes
+		  }
 
 
-			armor = {
-				build_cost_ic = 0.30 instant = yes 
-			}
-			mechanized = {
-				build_cost_ic = 0.20 instant = yes 
-			}
-			amphibious_mechanized_equipment = {
-				build_cost_ic = 0.15 instant = yes 
-			}
-			motorized = {
-				build_cost_ic = 0.0 instant = yes 
-			}
-	 
-		}
+		  armor = {
+			  build_cost_ic = 0.15 instant = yes 
+		  }
+		  mechanized = {
+			  build_cost_ic = 0.10 instant = yes 
+		  }
+		  amphibious_mechanized_equipment = {
+			  build_cost_ic = 0.10 instant = yes 
+		  }
+		  motorized = {
+			  build_cost_ic = 0.05 instant = yes 
+		  }
+	   }
 	  
 		  
   	}
@@ -1231,78 +1136,69 @@ ideas = {
 		  }
 		  targeted_modifier = {
 			tag = MAN
-			attack_bonus_against = 0.075
-			defense_bonus_against = 0.05
+			attack_bonus_against = 0.125
+			defense_bonus_against = 0.125
 		}
 		targeted_modifier = {
 			tag = JAP
-			attack_bonus_against = 0.075
-			defense_bonus_against = 0.05
+			attack_bonus_against = 0.125
+			defense_bonus_against = 0.125
 		}
-		equipment_bonus = {
+		  equipment_bonus = {
+
 			infantry_equipment = {
-				build_cost_ic = 0.125 instant = yes
+				build_cost_ic = 0.175 instant = yes
 			}
 			support_equipment = {
-				build_cost_ic = 0.075 instant = yes
+				build_cost_ic = 0.05 instant = yes
 			}
 			radio_equipment = {
-				build_cost_ic = 0.075 instant = yes
+				build_cost_ic = 0.05 instant = yes
 			}
 			special_equipment = {
-				build_cost_ic = 0.125 instant = yes
-			}
-			artillery_equipment = {
 				build_cost_ic = 0.075 instant = yes
 			}
-			heavy_artillery_equipment = {
-				build_cost_ic = 0.15 instant = yes
+			artillery_equipment = {
+				build_cost_ic = 0.08 instant = yes
 			}
-	
-	
-	
-	
+			heavy_artillery_equipment = {
+				build_cost_ic = 0.08 instant = yes
+			}
+  
 			field_gun_equipment = {
-				build_cost_ic = 0.10 instant = yes
+				build_cost_ic = 0.08 instant = yes
 			}
 			pack_artillery_equipment = {
-				build_cost_ic = 0.04 instant = yes
+				build_cost_ic = 0.08 instant = yes
 			}
 			rocket_artillery_equipment = {
-				build_cost_ic = 0.045 instant = yes
+				build_cost_ic = 0.08 instant = yes
 			}
-	
-	
-	
-	
+  
 			anti_tank_equipment = {
-				build_cost_ic = 0.1 instant = yes
+				build_cost_ic = 0.08 instant = yes
 			}
 			anti_air_equipment = {
 				build_cost_ic = 0.08 instant = yes
 			}
 			heavy_anti_air_equipment = {
-				build_cost_ic = 0.15 instant = yes
+				build_cost_ic = 0.08 instant = yes
 			}
-	
-	
-	
-	
-	
+  
+  
 			armor = {
-				build_cost_ic = 0.30 instant = yes 
-			}
-			mechanized = {
-				build_cost_ic = 0.20 instant = yes 
-			}
-			amphibious_mechanized_equipment = {
 				build_cost_ic = 0.15 instant = yes 
 			}
-			motorized = {
-				build_cost_ic = 0.075 instant = yes 
+			mechanized = {
+				build_cost_ic = 0.10 instant = yes 
 			}
-	 
-		}
+			amphibious_mechanized_equipment = {
+				build_cost_ic = 0.10 instant = yes 
+			}
+			motorized = {
+				build_cost_ic = 0.05 instant = yes 
+			}
+		 }
 	  
 		  
   	}
@@ -1356,11 +1252,7 @@ ideas = {
 			
 			targeted_modifier = {
 				tag = JAP
-				attack_bonus_against = 0.05
-			}
-			targeted_modifier = {
-				tag = MAN
-				attack_bonus_against = 0.05
+				attack_bonus_against = 0.1
 			}
 	}
 	
@@ -1411,9 +1303,15 @@ ideas = {
 			} 
 			removal_cost = -1
 			
+			 equipment_bonus = {
+			armor = {
+				build_cost_ic = -0.1 instant = yes 
+			  
+			}
+			}
 		      modifier = {
 				breakthrough_factor = 0.05
-				army_org_factor = 0.075
+				army_org_factor = 0.05
 			}
 	}
 	BRA_adhere_to_dutra = {
@@ -1641,8 +1539,5 @@ ideas = {
 		
 		
 		
-		}
 	}
-}
-
 	
