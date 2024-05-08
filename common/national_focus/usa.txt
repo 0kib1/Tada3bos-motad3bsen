@@ -168,7 +168,7 @@ focus_tree = {
 			}
 			add_days_mission_timeout = {
 				mission = USA_federal_housing_act_mission
-				days = -75
+				days = -175
 			}
 			custom_effect_tooltip = USA_4_tt
 		}
@@ -203,7 +203,7 @@ focus_tree = {
 			}
 			add_days_mission_timeout = {
 				mission = USA_federal_housing_act_mission
-				days = -125
+				days = -175
 			}
 			custom_effect_tooltip = USA_infra_tt
 		}
@@ -299,7 +299,7 @@ focus_tree = {
 			}
 			add_days_mission_timeout = {
 				mission = USA_federal_housing_act_mission
-				days = -50
+				days = -200
 			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = USA_henry_stimson
@@ -382,7 +382,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = USA_federal_housing_act_mission
-					days = -50
+					days = -200
 				}
 			}
 			if = {
@@ -404,7 +404,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = USA_federal_housing_act_mission
-					days = -50
+					days = -200
 				}
 			}
 			
@@ -444,7 +444,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = USA_federal_housing_act_mission
-					days = -100
+					days = -200
 				}
 			}
 			if = {
@@ -466,7 +466,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = USA_federal_housing_act_mission
-					days = -50
+					days = -100
 				}
 			}
 			if = {
@@ -496,7 +496,7 @@ focus_tree = {
 			}
 			add_days_mission_timeout = {
 				mission = USA_federal_housing_act_mission
-				days = -75
+				days = -225
 			}
 			add_tech_bonus = {
 				name = USA_8
