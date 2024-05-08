@@ -20,7 +20,6 @@ replace_path="common/military_industrial_organization/policies"
 tags={
 	"Balance"
 }
-name="Hearts of Oak: yalla habibi version 21"
+name="Hearts of Oak: yalla habibi version 31"
 picture="thumbnail.png"
-name="HYHV1"
 supported_version="1.14.5"

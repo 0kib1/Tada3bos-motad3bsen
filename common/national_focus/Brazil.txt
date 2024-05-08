@@ -164,7 +164,7 @@
   focus = {
 		id = BRA_establish_national_mine
 		icon = GFX_goal_generic_construct_infrastructure
-		x = -5
+		x = -2
 		y = 1
 		relative_position_id = BRA_might
 		
@@ -395,7 +395,7 @@
 	 focus = {
 		id = BRA_establish_national_armys_depo
 		icon = GFX_goal_generic_axis_build_infantry
-		x = -15
+		x = -23
 		y = 1
 		relative_position_id = BRA_might
 		
@@ -1490,338 +1490,11 @@ focus = {
 		
 	}	
 	
-	
-	
-	
 
-	focus = {
-		id = BRA_world_wide_intervention
-		icon = GFX_goal_generic_political_pressure
-		x = -10
-		y = 1
-		relative_position_id = BRA_might
-		prerequisite = { focus = BRA_might }
-
-		available = { 
-			ENG = { has_war_with = GER }
-		}
-
-		cost = 5
-		## = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		completion_reward = {
-			add_ideas = ROM_expand_the_army 
-		}
-	}
-
-	focus = {
-		id = BRA_join_the_allies
-		icon = GFX_focus_chi_british_cooperation
-		x = 0
-		y = 1
-		relative_position_id = BRA_world_wide_intervention
-		
-		
-		cost = 5
-		prerequisite = { focus = BRA_world_wide_intervention }
-		
-
-
-
-		## = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		 ENG = { add_to_faction = BRA}
-		}	
-		ai_will_do = {
-            factor = 5 
-        }
-		
-	}	
-		
-	
-
-	focus = {
-		id = BRA_consider_our_options
-		icon = GFX_goal_generic_military_deal
-		x = 0
-		y = 1
-		relative_position_id = BRA_join_the_allies
-		
-		available = { has_war = yes
-		
-		}
-	
-		cost = 10
-		prerequisite = { focus = BRA_join_the_allies }
-		
-
-
-
-		## = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-		ai_will_do = { factor = 100 
-		}
-
-		completion_reward = {
-			add_research_slot = 1 
-		}
-		
-	}
-	
-	
-	
-	
-	
-	
-		focus = {
-		id = BRA_send_the_japanese_to_brazil
-		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
-		x = -2
-		y = 1
-		relative_position_id = BRA_consider_our_options 
-		cost = 10
-		prerequisite = { focus = BRA_consider_our_options }
-		
-		## = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		ai_will_do = { 
-			factor = 100 
-		}
-		completion_reward = {
-			add_ideas = BRA_send_the_japs 
-		}
-	}	
-			
-		
-		
-	focus = {
-		id = BRA_learn_from_the_war
-		icon = GFX_goal_generic_production2
-		x = 23
-		y = -4
-		#relative_position_id =  BRA_invite_ambassadors_to_brazil 
-		
-		
-		available = {
-			has_war = yes
-			has_completed_focus = BRA_consider_our_options
-		    
-			
-		}
-		
-		cost = 10
-		#prerequisite = { focus = BRA_consider_our_options}
-						
-						
-	   
-
-
-
-		## = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			remove_ideas = BRA_shadow_civil_war
-		}	
-		ai_will_do = {
-			factor = 100 
-		}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-   focus = {
-		id = BRA_learn_the_enemy
-		icon = GFX_goal_ger_heer
-		x = 0
-		y = 1
-     	relative_position_id =  BRA_learn_from_the_war
-		
-		
-		cost = 5
-	    prerequisite = { focus = BRA_learn_from_the_war }
-	   
-
-
-		## = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		
-			add_tech_bonus = {	
-				bonus = 1
-				uses = 1
-				category = infantry_weapons
-				
-			}
-	    }
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	 focus = {
-		id = BRA_captured_arty
-		icon = GFX_GER_artillery_expansion
-		x = 0
-		y = 1
-     	relative_position_id =  BRA_learn_the_enemy
-		
-		
-		cost = 5
-	    prerequisite = { focus = BRA_learn_the_enemy }
-	   
-
-
-		## = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		
-			add_tech_bonus = {	
-				bonus = 1
-				uses = 1
-				category = artillery
-				
-			}
-	    }
-	
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	focus = {
-		id = BRA_new_arty
-		icon = GFX_goal_generic_army_artillery2
-		x = 1
-		y = 1
-     	relative_position_id =  BRA_captured_arty
-		
-		mutually_exclusive = { focus = BRA_new_guns }
-		cost = 10
-	    prerequisite = { focus = BRA_captured_arty}
-	   
-
-
-		## = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		
-			add_tech_bonus = {	
-				bonus = 1
-				uses = 1
-				category = artillery
-				
-			}
-			
-			
-			add_ideas = BRA_arty
-			
-			
-	    }
-		
-	
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	focus = {
-		id = BRA_new_guns
-		icon = GFX_USA_new_service_rifle
-		x = -1
-		y = 1
-     	relative_position_id =  BRA_captured_arty
-		
-		mutually_exclusive = { focus = BRA_new_arty }
-		
-		cost = 10
-	    prerequisite = { focus = BRA_captured_arty}
-	   
-
-
-		## = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		
-			add_tech_bonus = {	
-				bonus = 1
-				uses = 1
-				category = infantry_weapons
-				
-			}
-			add_ideas = BRA_guns
-			
-			
-	    }
-		
-	
-	}
-	
-	
-	
     focus = {
 		id = BRA_adapt_from_the_jungle
 		icon = GFX_focus_por_luso_tropicalism
-		x = 0
+		x = -2
 		y = 1
      	relative_position_id =  BRA_lessons_of_the_civil_war
 		
@@ -2556,13 +2229,13 @@ focus = {
 		focus = {
 		id = BRA_national_resources_mobilization_act
 		icon = GFX_goal_manpower
-		x = 2
+		x = -11
 		y = 1
 
 		prerequisite = {
-			focus = BRA_send_the_japanese_to_brazil
+			focus = BRA_might
 		}
-		relative_position_id = BRA_send_the_japanese_to_brazil
+		relative_position_id = BRA_might
 		cost = 5
 
 		ai_will_do = {
@@ -2782,7 +2455,7 @@ focus = {
 				category = cat_medium_armor
 				uses = 2
 				bonus = 0.75
-				name = ENG_mobile_fortresses 
+				name = USA_mobile_fortresses 
 			}
 		}
 	}
@@ -2903,14 +2576,6 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {				
-				bonus = 2
-				uses = 1
-				technology = BRA_mechanised_infantry1
-				technology = BRA_nsb_mechanised_infantry2
-				name = BRA_mech
-			}
-			
 		}
 	}
 
@@ -3040,6 +2705,12 @@ focus = {
 				bonus = 0.5
 				category = infantry_weapons
 			}
+			add_tech_bonus = {
+				name = SOV_tank_upgrades
+				bonus = 0.5
+				uses = 2
+				category = tank_upgrade
+			}
 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = BRA }
 		}
 	}
@@ -3132,6 +2803,7 @@ focus = {
 
 		prerequisite = { focus = BRA_mobile_artillery}
 		relative_position_id = BRA_mobile_artillery
+		mutually_exclusive = { focus = BRA_the_best_of_both_worlds }
 		cost = 5
 
 		ai_will_do = {
@@ -3202,6 +2874,7 @@ focus = {
 				hidden_effect = {
 					set_technology = { to_hell_and_back = 1 }
 				}
+				custom_effect_tooltip = CAN_infantry_radio_2_tech_tt
 				hidden_effect = {
 					set_technology = { USA_artillery_radio_2 = 1 }
 				}
@@ -3215,6 +2888,7 @@ focus = {
 		y = 1
 
 		prerequisite = { focus = BRA_mobile_artillery}
+		mutually_exclusive = { focus = BRA_who_sees_first_kills_first }
 		relative_position_id = BRA_mobile_artillery
 		cost = 5
 
@@ -3235,6 +2909,21 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = USA 
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 4000
+				producer = USA 
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 400
+				producer = USA 
+			}
 			swap_ideas = {
 				remove_idea = BRA_shadow_civil_war_SF
 				add_idea = BRA_shadow_civil_war_SF_right 
@@ -3391,7 +3080,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			set_technology = { landing_craft  = 1 }
 		}
 	}
 
@@ -3408,9 +3097,6 @@ focus = {
 		ai_will_do = {
 			factor = 3
 		}
-
-		available = {
-		}
 		
 		bypass = {
 
@@ -3420,7 +3106,17 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
+		available = {
+		}
+		
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				technology = amphibious_tank_chassis
+				technology = amphibious_drive_usa
+				technology = fording_equipment_usa
+			}
 		}
 	}
 
@@ -3490,8 +3186,8 @@ focus = {
 		completion_reward = {
 		    add_tech_bonus = {
 				name = BRA_special_forces_bonus
-				bonus = 1
-				uses = 3
+				bonus = 0.5
+				uses = 2
 				category = special_tech
 			}
 		}
@@ -3514,6 +3210,7 @@ focus = {
 		available = {
 		has_tech = advanced_machine_tools
 		date > 1940.1.1
+		has_tech = marines3
 		}
 		
 		bypass = {
@@ -3525,6 +3222,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			set_technology = { usa_1942_medium_tank_chassis  = 1  }
 		}
 	}
 
@@ -3557,7 +3255,12 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		}
+			swap_ideas = { 
+				remove_idea = BRA_shadow_civil_war
+				add_idea = BRA_shadow_civil_war_Tank
+			
+			}
+		}	
 	}
 	
 	
