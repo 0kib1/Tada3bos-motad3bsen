@@ -17,7 +17,7 @@
 
 	focus = {
 		id = BRA_brazils_legacy
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_bra_estado_novo
 		x = 9
 		y = -9
 		
@@ -41,7 +41,7 @@
 	 
 	focus = {
 		id = BRA_brazilian_industry
-		icon = GFX_focus_mex_privatisation
+		icon = GFX_focus_BRA_banco_do_brasil
 		x = 5
 		y = 1
 		relative_position_id = BRA_brazils_legacy
@@ -102,7 +102,7 @@
 	
      focus = {
 		id = BRA_the_international_stage
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_BRA_ethical_internationalism
 		x = 9
 		y = -8
 		#relative_position_id = BRA_brazils_legacy
@@ -132,7 +132,7 @@
     } 	
 	focus = {
 		id = BRA_might
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_BRA_anaue
 		x = -5
 		y = 0
 		relative_position_id = BRA_the_international_stage
@@ -261,7 +261,7 @@
 		
 	focus = {
 		id = BRA_southern_mines
-		icon = GFX_focus_generic_steel
+		icon = GFX_focus_BRA_national_steel_company
 		prerequisite = { focus = BRA_construct_bahia }
 		x = 0
 		y = 1
@@ -331,7 +331,7 @@
 		
 	focus = {
 		id = BRA_autarky
-		icon = GFX_USA_quality_saves_lives
+		icon = GFX_focus_BRA_autarky
 		x = 0
 		y = 1
 		
@@ -394,7 +394,7 @@
 	}	
 	 focus = {
 		id = BRA_establish_national_armys_depo
-		icon = GFX_goal_generic_axis_build_infantry
+		icon = GFX_focus_BRA_work_with_the_integralists
 		x = -23
 		y = 1
 		relative_position_id = BRA_might
@@ -430,7 +430,7 @@
 		
 	 focus = {
 		id = BRA_fund_new
-		icon = GFX_focus_secret_rearmament
+		icon = GFX_focus_BRA_deal_with_the_cangaco
 		x = 0
 		y = 1
 		relative_position_id = BRA_establish_national_armys_depo
@@ -519,7 +519,7 @@
 		
 	focus = {
 		id = BRA_foreign_investments
-		icon = GFX_USA_revive_core_industry
+		icon = GFX_focus_BRA_good_neighbor_policy
 		x = 0
 		y = 1
 		cost = 10
@@ -552,7 +552,7 @@
 		
 		focus = {
 		id = BRA_for_war
-		icon = GFX_USA_well_supplied_and_motivated
+		icon = GFX_focus_generic_attack_brazil
 		x = 0
 		y = 1
 		relative_position_id = BRA_foreign_investments
@@ -835,7 +835,7 @@
 	
 	focus = {
 		id = BRA_investments
-		icon = GFX_USA_war_powers_act
+		icon = GFX_focus_BRA_growth
 		x = 0
 		y = 1
 		cost = 10
@@ -877,7 +877,7 @@
 	
 	focus = {
 		id = BRA_foreign_exports
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_focus_BRA_international_crisis
 		prerequisite = { focus = BRA_more_funding }
 		prerequisite = { focus = BRA_investments}
 		relative_position_id = BRA_investments
@@ -1279,7 +1279,7 @@ focus = {
 
     focus = {
 		id = BRA_fund_universities 
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_focus_BRA_university_of_sao_paulo
 		x = 2
 		y = 1
 		relative_position_id = BRA_brazilian_industry
@@ -1591,7 +1591,7 @@ focus = {
 
 	 focus = {
 		id = BRA_adopt_global_machine
-		icon = GFX_ITA_Innovative_theories
+		icon = GFX_focus_BRA_acquire_german_tanks
 		x = -3
 		y = 1
      	relative_position_id =  BRA_adopt_kirt_ideas
@@ -1622,7 +1622,7 @@ focus = {
 	
 	focus = {
 		id = BRA_appoint_morais
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_BRA_pedro_henrique
 		x = -5
 		y = 3.5
      	relative_position_id =  BRA_adapt_from_the_jungle
@@ -1655,7 +1655,7 @@ focus = {
 	}
 	focus = {
 		id = BRA_appoint_dutra
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_BRA_pedro_de_alcantara
 		x = 5
 		y = 3
      	relative_position_id = BRA_adapt_from_the_jungle
@@ -1895,7 +1895,7 @@ focus = {
 	
 	focus = {
 		id = BRA_guide_the_coff
-		icon = GFX_goal_generic_aristocratic_cooperation
+		icon = GFX_focus_BRA_cafe_com_leite_politics
 		x = 0
 		y = 1
      	relative_position_id = BRA_the_coffe_question
@@ -2199,7 +2199,7 @@ focus = {
 	
 	focus = {
 		id = BRA_ensure_the_best
-		icon = GFX_eye_focus_agriculture
+		icon = GFX_focus_BRA_fabrica_national_de_motores
 		x = 3
 		y = 2
      	relative_position_id = BRA_coffe_above_all
@@ -2229,7 +2229,7 @@ focus = {
 	}
 		focus = {
 		id = BRA_national_resources_mobilization_act
-		icon = GFX_goal_manpower
+		icon = GFX_focus_BRA_national_guard
 		x = -11
 		y = 1
 
@@ -2275,7 +2275,7 @@ focus = {
 
 	focus = {
 		id = BRA_mechanize_the_cavalry
-		icon = GFX_goal_BRA_RCAC
+		icon = GFX_focus_BRA_father_of_the_poor
 		x = -7
 		y = 1
 
@@ -2350,7 +2350,7 @@ focus = {
 
 	focus = {
 		id = BRA_retool_montreal_locomotive_works
-		icon = GFX_goal_r56_BRA_industry
+		icon = GFX_focus_BRA_expand_bolivar
 		x = 0
 		y = 1
 
@@ -2396,7 +2396,7 @@ focus = {
 
 	focus = {
 		id = BRA_the_CMP
-		icon = GFX_goal_BRA_truck
+		icon = GFX_focus_BRA_converted_carriers
 		x = 0
 		y = 1
 
@@ -2427,7 +2427,7 @@ focus = {
 
 	focus = {
 		id = BRA_a_BRAadian_cruiser
-		icon = GFX_goal_BRA_ram_tank
+		icon = GFX_goal_generic_army_tanks
 		x = -2
 		y = 1
 
@@ -2552,7 +2552,7 @@ focus = {
 
 	focus = {
 		id = BRA_armoured_carrier_mass_production
-		icon = GFX_goal_BRA_kangaroo
+		icon = GFX_focus_BRA_dec
 		x = 0
 		y = 1
 
@@ -2638,7 +2638,7 @@ focus = {
 
 	focus = {
 		id = BRA_mobile_artillery
-		icon = GFX_ROM_mountain_artillery
+		icon = GFX_focus_BRA_army
 		x = 0
 		y = 1
 
@@ -2724,7 +2724,7 @@ focus = {
 
 	focus = {
 		id = BRA_construct_the_long_branch_arsenal
-		icon = GFX_goal_proving_grounds
+		icon = GFX_focus_BRA_new_capital
 		x = 0
 		y = 1
 
@@ -2946,7 +2946,7 @@ focus = {
 
 	focus = {
 		id = BRA_the_sexton
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_focus_BRA_amazon_colonization
 		x = 0
 		y = 1
 
@@ -3166,7 +3166,7 @@ focus = {
 
 	focus = {
 		id = BRA_the_CRMC
-		icon = GFX_goal_BRA_special_branch
+		icon = GFX_goal_proving_grounds
 		x = 1
 		y = 1
 
@@ -3202,8 +3202,7 @@ focus = {
 
 	focus = {
 		id = BRA_adopt_us_armor
-		icon = GFX_goal_BRA_grizzly
-		x = 0
+		icon = GFX_focus_BRA_north_and_south_america
 		y = 1
 
 		prerequisite = { focus = BRA_the_CRMC}
