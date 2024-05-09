@@ -21,8 +21,7 @@ characters={
 			modifier = {
 				war_support_factor = 0.05				
 				supply_consumption_factor = -0.025
-			}
-
+		}
       }
 	}
 	BRA_ernest_bevin = {
@@ -95,6 +94,88 @@ characters={
 			planning_skill=3
 			logistics_skill=3
 			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = eurico_gaspar
+			ledger = army
+			allowed = {
+				original_tag = BRA
+			}
+			
+			cost = 150
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	BRA_Mascarenhas_de_Morais1={
+		name="Yato"
+		portraits={
+			army={
+				portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer organizer jungle_rat }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = eurico_gaspar
+			ledger = army
+			allowed = {
+				original_tag = BRA
+			}
+			
+			cost = 150
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	BRA_Mascarenhas_de_Morais2={
+		name="D3bos"
+		portraits={
+			army={
+				portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer organizer jungle_rat }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = eurico_gaspar
+			ledger = army
+			allowed = {
+				original_tag = BRA
+			}
+			
+			cost = 150
+			
+			traits = {  }
+			
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
 }
