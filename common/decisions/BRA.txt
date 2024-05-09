@@ -16,7 +16,7 @@ BRA_house_of_representatives = {
 			political_power_factor = -0.25
 		}
 		available = {
-           has_completed_focus = BRA_send_the_japanese_to_brazil
+           has_completed_focus = BRA_national_resources_mobilization_act
 
 		}
 		remove_effect = {
@@ -35,7 +35,7 @@ BRA_house_of_representatives = {
 	}
 	BRA_encourage_the_growth_of_military_related_manufacturing = {	
 		available = {
-			has_completed_focus = BRA_send_the_japanese_to_brazil
+			has_completed_focus = BRA_national_resources_mobilization_act
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -80,7 +80,7 @@ BRA_house_of_representatives = {
 
 	BRA_reduce_taxation_for_bhp_steel = {	
 		available = {
-			has_completed_focus = BRA_send_the_japanese_to_brazil
+			has_completed_focus = BRA_national_resources_mobilization_act
 			
 
 		}
@@ -128,7 +128,7 @@ BRA_house_of_representatives = {
 			consumer_goods_expected_value = 0.05
 		}
 		available = {
-      	has_completed_focus = BRA_send_the_japanese_to_brazil
+      	has_completed_focus = BRA_national_resources_mobilization_act
 
 
 		}
@@ -153,7 +153,7 @@ BRA_house_of_representatives = {
 		days_remove = 100
 
 		available = {
-           has_completed_focus = BRA_send_the_japanese_to_brazil
+           has_completed_focus = BRA_national_resources_mobilization_act
 		}
 		modifier = {
 			industrial_capacity_factory = -0.05
@@ -171,7 +171,7 @@ BRA_house_of_representatives = {
 		days_remove = 100
 
 		available = {
-           has_completed_focus = BRA_send_the_japanese_to_brazil
+           has_completed_focus = BRA_national_resources_mobilization_act
 
 		}
 		modifier = {
@@ -190,7 +190,7 @@ BRA_house_of_representatives = {
 		days_remove = 100
 
 		available = {
-           has_completed_focus =  BRA_send_the_japanese_to_brazil
+           has_completed_focus =  BRA_national_resources_mobilization_act
 
 		}
 		modifier = {
@@ -209,7 +209,7 @@ BRA_house_of_representatives = {
 		days_remove = 100
 
 		available = {
-           has_completed_focus = BRA_send_the_japanese_to_brazil
+           has_completed_focus = BRA_national_resources_mobilization_act
 
 		}
 		modifier = {
@@ -227,7 +227,7 @@ BRA_house_of_representatives = {
 		icon = ger_military_buildup
 
 		available = {
-           has_completed_focus = BRA_send_the_japanese_to_brazil
+           has_completed_focus = BRA_for_war
 
 		}
 

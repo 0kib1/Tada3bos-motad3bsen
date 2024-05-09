@@ -562,7 +562,9 @@
 		prerequisite = { focus = BRA_foreign_investments}
 		
 
-
+        available = {
+			date > 1940.6.1
+		}
 
 		## = yes
 		continue_if_invalid = no
@@ -2528,10 +2530,10 @@ focus = {
 				name = BRA_armored_car_bonus
 				bonus = 0.5
 				uses = 2
-				technology = BRA_tech_armored_cars 
-				technology = BRA_nsb_tech_armored_cars2
-				technology = BRA_nsb_tech_armored_cars3
-				technology = BRA_nsb_tech_armored_cars4
+				technology = USA_tech_armored_cars 
+				technology = USA_nsb_tech_armored_cars2
+				technology = USA_nsb_tech_armored_cars3
+				technology = USA_nsb_tech_armored_cars4
 			}
 			add_tech_bonus = {
 				name = BRA_light_tank_bonus
@@ -2564,7 +2566,13 @@ focus = {
 		}
 
 		available = {
-
+		add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			army_experience = 25
 		}
 		
 		bypass = {

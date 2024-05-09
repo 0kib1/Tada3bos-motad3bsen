@@ -1398,6 +1398,13 @@ JAP_pacific_war_explanation_category = {
 						complete_national_focus = USA_pacific_war
 					}
 				}
+				ENG = { add_to_faction = BRA }
+				BRA = { 
+					add_to_war = { 
+						targeted_alliance = ENG
+						enemy = JAP
+					}
+				}
 				if = {
 					limit = {
 						country_exists = BEL
@@ -1481,19 +1488,6 @@ JAP_pacific_war_explanation_category = {
 					MEX = { 
 						add_to_war = { 
 							targeted_alliance = ENG
-							enemy = JAP
-						}
-					}
-				}
-				if = {
-					limit = {
-						BRA = {
-							is_in_faction_with = ENG
-						}	
-					}
-					BRA = { 
-						add_to_war = { 
-							targeted_alliance = BRA
 							enemy = JAP
 						}
 					}

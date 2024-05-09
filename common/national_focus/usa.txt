@@ -203,7 +203,7 @@ focus_tree = {
 			}
 			add_days_mission_timeout = {
 				mission = USA_federal_housing_act_mission
-				days = -175
+				days = -275
 			}
 			custom_effect_tooltip = USA_infra_tt
 		}
