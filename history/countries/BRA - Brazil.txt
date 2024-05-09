@@ -176,7 +176,7 @@ create_equipment_variant = {
 }
 create_equipment_variant = {
 	name = "Tribal Class"
-	type = ship_hull_light_2
+	type = ship_hull_light_1
 	name_group = ENG_DD_HISTORICAL
 	modules = {
 		fixed_ship_battery_slot = ship_light_battery_2
@@ -195,5 +195,4 @@ recruit_character = BRA_ernest_bevin
 recruit_character = BRA_eurico_gaspar_dutra
 recruit_character = BRA_Mascarenhas_de_Morais
 recruit_character = BRA_Mascarenhas_de_Morais2
-
 recruit_character = BRA_Mascarenhas_de_Morais1

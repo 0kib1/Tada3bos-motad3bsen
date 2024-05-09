@@ -175,11 +175,6 @@
 		cost = 5
 		prerequisite = { focus = BRA_might}
 
-		available = {
-			NOT = {
-				has_idea = RA_send_the_japs
-			}
-		}
 
 		## = yes
 		continue_if_invalid = no
@@ -3274,7 +3269,7 @@ focus = {
 		x = -10
 		y = 0
 
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -3325,7 +3320,7 @@ focus = {
 		prerequisite = { focus = BRA_set_the_canadian_shipyards_on_war_footing }
 		mutually_exclusive = { focus = BRA_focus_on_countering_surface_raiders }
 		relative_position_id = BRA_set_the_canadian_shipyards_on_war_footing
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -3361,7 +3356,7 @@ focus = {
 
 		prerequisite = { focus = BRA_focus_on_antisubmarine_warfare }
 		relative_position_id = BRA_focus_on_antisubmarine_warfare
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -3418,7 +3413,7 @@ focus = {
 
 		prerequisite = { focus = BRA_destroyer_mass_production }
 		relative_position_id = BRA_destroyer_mass_production
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -3454,7 +3449,7 @@ focus = {
 
 		prerequisite = { focus = BRA_focus_on_antisubmarine_warfare }
 		relative_position_id = BRA_focus_on_antisubmarine_warfare
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -3520,7 +3515,7 @@ focus = {
 
 		prerequisite = { focus = BRA_escort_carriers }
 		relative_position_id = BRA_escort_carriers
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -3571,7 +3566,7 @@ focus = {
 
 		prerequisite = { focus = BRA_focus_on_antisubmarine_warfare focus = BRA_focus_on_countering_surface_raiders }
 		relative_position_id = BRA_set_the_canadian_shipyards_on_war_footing
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -3634,39 +3629,6 @@ focus = {
 				progress = 0.75
 				amount = 1
 			}
-
-			add_equipment_production = {
-				equipment = {
-					type = ship_hull_light_2
-					creator = "CAN"
-					version_name = "Tribal Class"
-				}
-				requested_factories = 1
-				progress = 0.75
-				amount = 1
-			}
-
-			add_equipment_production = {
-				equipment = {
-					type = ship_hull_light_2
-					creator = "CAN"
-					version_name = "Tribal Class"
-				}
-				requested_factories = 1
-				progress = 0.75
-				amount = 1
-			}
-
-			add_equipment_production = {
-				equipment = {
-					type = ship_hull_light_2
-					creator = "CAN"
-					version_name = "Tribal Class"
-				}
-				requested_factories = 1
-				progress = 0.75
-				amount = 1
-			}
 		}
 	}
 
@@ -3679,7 +3641,7 @@ focus = {
 		prerequisite = { focus = BRA_the_tribal_class }
 		prerequisite = { focus = BRA_transfer_british_light_cruisers focus = BRA_modernize_older_british_vessels}
 		relative_position_id = BRA_the_tribal_class
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -3737,7 +3699,7 @@ focus = {
 		prerequisite = { focus = BRA_set_the_canadian_shipyards_on_war_footing }
 		relative_position_id = BRA_set_the_canadian_shipyards_on_war_footing
 		mutually_exclusive = { focus = BRA_focus_on_antisubmarine_warfare }
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -3773,7 +3735,7 @@ focus = {
 
 		prerequisite = { focus = BRA_focus_on_countering_surface_raiders }
 		relative_position_id = BRA_focus_on_countering_surface_raiders
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -3818,7 +3780,7 @@ focus = {
 
 		prerequisite = { focus = BRA_pacific_naval_responsibilities }
 		relative_position_id = BRA_pacific_naval_responsibilities
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -3963,7 +3925,7 @@ focus = {
 
 		prerequisite = { focus = BRA_focus_on_countering_surface_raiders }
 		relative_position_id = BRA_focus_on_countering_surface_raiders
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -4003,7 +3965,7 @@ focus = {
 
 		prerequisite = { focus = BRA_commandeer_a_battlecruiser }
 		relative_position_id = BRA_commandeer_a_battlecruiser
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 3

@@ -12,7 +12,6 @@ characters={
 					original_tag  = BRA
 				}
 			available = {
-				has_completed_focus = ast_war_council
 			}
 				cost  = 150.000
 				traits  = {
@@ -22,6 +21,46 @@ characters={
 				war_support_factor = 0.05				
 				supply_consumption_factor = -0.025
 		}
+      }
+	}
+	BRA_frederick_stewart={
+		name="Frederick Stewart"
+		portraits={
+			army={
+				small="gfx/interface/ideas/AST/idea_AST_frederick_stewart.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = BRA
+				}
+			available = {
+			}
+				cost  = 150.000
+				traits  = {
+					
+				}
+      }
+	}
+	BRA_frederick_stewart={
+		name="Dabola"
+		portraits={
+			army={
+				small="gfx/interface/ideas/AST/idea_AST_frederick_stewart.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = BRA
+				}
+			available = {
+			}
+				cost  = 150.000
+				traits  = {
+					CAN_bank_president
+				}
       }
 	}
 	BRA_ernest_bevin = {
@@ -86,15 +125,6 @@ characters={
 				portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
 			}
 		}
-		corps_commander={
-			traits={ infantry_officer organizer jungle_rat }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
-		}
 		advisor={
 			slot = high_command
 			idea_token = eurico_gaspar
@@ -119,15 +149,6 @@ characters={
 				portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
 			}
 		}
-		corps_commander={
-			traits={ infantry_officer organizer jungle_rat }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
-		}
 		advisor={
 			slot = high_command
 			idea_token = eurico_gaspar
@@ -138,7 +159,7 @@ characters={
 			
 			cost = 150
 			
-			traits = { army_infantry_2 }
+			traits = { army_chief_reform_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -152,15 +173,6 @@ characters={
 				portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
 			}
 		}
-		corps_commander={
-			traits={ infantry_officer organizer jungle_rat }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
-		}
 		advisor={
 			slot = high_command
 			idea_token = eurico_gaspar
@@ -172,6 +184,22 @@ characters={
 			cost = 150
 			
 			traits = {  }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = eurico_gaspar
+			ledger = army
+			allowed = {
+				original_tag = BRA
+			}
+			
+			cost = 150
+			
+			traits = { army_chief_organizational_2 }
 			
 			ai_will_do = {
 				factor = 1
