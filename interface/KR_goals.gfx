@@ -1,4 +1,5 @@
 spriteTypes = {
+	
 	SpriteType = {
 		name = "GFX_focus_gazala"
 		texturefile = "gfx/interface/goals/ita/gazala.dds"
@@ -12229,5 +12230,321 @@ SpriteType = {
 	SpriteType = {
 		name = "GFX_means_of_production"
 		texturefile = "gfx/interface/goals/jap/means_of_production.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_acquire_german_tanks"
+		texturefile = "gfx/interface/goals/focus_BRA_acquire_german_tanks.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_amazon_colonization"
+		texturefile = "gfx/interface/goals/focus_BRA_amazon_colonization.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_anaue"
+		texturefile = "gfx/interface/goals/focus_BRA_anaue.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_autarky"
+		texturefile = "gfx/interface/goals/focus_BRA_autarky.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_banco_do_brasil"
+		texturefile = "gfx/interface/goals/focus_BRA_banco_do_brasil.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_ban_communist_party"
+		texturefile = "gfx/interface/goals/focus_BRA_ban_communist_party.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_brazil_integral"
+		texturefile = "gfx/interface/goals/focus_BRA_brazil_integral.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_cafe_com_leite_politics"
+		texturefile = "gfx/interface/goals/focus_BRA_cafe_com_leite_politics.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_centralization"
+		texturefile = "gfx/interface/goals/focus_BRA_centralization.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_cobras_fumantes"
+		texturefile = "gfx/interface/goals/focus_BRA_cobras_fumantes.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_coffee_crisis"
+		texturefile = "gfx/interface/goals/focus_BRA_coffee_crisis.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_cohen_plan"
+		texturefile = "gfx/interface/goals/focus_BRA_cohen_plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_constitutional_monarchy"
+		texturefile = "gfx/interface/goals/focus_BRA_constitutional_monarchy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_converted_carriers"
+		texturefile = "gfx/interface/goals/focus_BRA_converted_carriers.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_create_faction"
+		texturefile = "gfx/interface/goals/focus_BRA_create_faction.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_deal_with_the_cangaco"
+		texturefile = "gfx/interface/goals/focus_BRA_deal_with_the_cangaco.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_decree_number_37"
+		texturefile = "gfx/interface/goals/focus_BRA_decree_number_37.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_defense_of_the_fatherland"
+		texturefile = "gfx/interface/goals/focus_BRA_defense_of_the_fatherland.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_democratic_socialism"
+		texturefile = "gfx/interface/goals/focus_BRA_democratic_socialism.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_department_of_propaganda"
+		texturefile = "gfx/interface/goals/focus_BRA_department_of_propaganda.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_disrupt_bolivar"
+		texturefile = "gfx/interface/goals/focus_BRA_disrupt_bolivar.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_empire_of_brazil"
+		texturefile = "gfx/interface/goals/focus_BRA_empire_of_brazil.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_end_the_state_of_emergency"
+		texturefile = "gfx/interface/goals/focus_BRA_end_the_state_of_emergency.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_estado_moderno"
+		texturefile = "gfx/interface/goals/focus_BRA_estado_moderno.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_estado_novo"
+		texturefile = "gfx/interface/goals/focus_BRA_estado_novo.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_ethical_internationalism"
+		texturefile = "gfx/interface/goals/focus_BRA_ethical_internationalism.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_expand_bolivar"
+		texturefile = "gfx/interface/goals/focus_BRA_expand_bolivar.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_fabrica_national_de_motores"
+		texturefile = "gfx/interface/goals/focus_BRA_fabrica_national_de_motores.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_father_of_the_poor"
+		texturefile = "gfx/interface/goals/focus_BRA_father_of_the_poor.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_form_mercosul"
+		texturefile = "gfx/interface/goals/focus_BRA_form_mercosul.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_for_the_fatherland"
+		texturefile = "gfx/interface/goals/focus_BRA_for_the_fatherland.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_german_submarine_development"
+		texturefile = "gfx/interface/goals/focus_BRA_german_submarine_development.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_greater_federalism"
+		texturefile = "gfx/interface/goals/focus_BRA_greater_federalism.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_growth"
+		texturefile = "gfx/interface/goals/focus_BRA_growth.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_international_crisis"
+		texturefile = "gfx/interface/goals/focus_BRA_international_crisis.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_italian_aircraft_development"
+		texturefile = "gfx/interface/goals/focus_BRA_italian_aircraft_development.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_joint_italian_motor_development"
+		texturefile = "gfx/interface/goals/focus_BRA_joint_italian_motor_development.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_kgbrazil"
+		texturefile = "gfx/interface/goals/focus_BRA_kgbrazil.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_nationalize_banks"
+		texturefile = "gfx/interface/goals/focus_BRA_nationalize_banks.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_national_guard"
+		texturefile = "gfx/interface/goals/focus_BRA_national_guard.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_national_steel_company"
+		texturefile = "gfx/interface/goals/focus_BRA_national_steel_company.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_new_capital"
+		texturefile = "gfx/interface/goals/focus_BRA_new_capital.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_north_and_south_america"
+		texturefile = "gfx/interface/goals/focus_BRA_north_and_south_america.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_pact_of_silence_allies"
+		texturefile = "gfx/interface/goals/focus_BRA_pact_of_silence_allies.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_pact_of_silence_axis"
+		texturefile = "gfx/interface/goals/focus_BRA_pact_of_silence_axis.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_pact_of_silence_comintern"
+		texturefile = "gfx/interface/goals/focus_BRA_pact_of_silence_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_pedro_de_alcantara"
+		texturefile = "gfx/interface/goals/focus_BRA_pedro_de_alcantara.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_pedro_henrique"
+		texturefile = "gfx/interface/goals/focus_BRA_pedro_henrique.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_pro_business_taxes"
+		texturefile = "gfx/interface/goals/focus_BRA_pro_business_taxes.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_purchase_soviet_equipment"
+		texturefile = "gfx/interface/goals/focus_BRA_purchase_soviet_equipment.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_reach_out_to_military_dem"
+		texturefile = "gfx/interface/goals/focus_BRA_reach_out_to_military_dem.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_reject_cosmopolitanism"
+		texturefile = "gfx/interface/goals/focus_BRA_reject_cosmopolitanism.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_repeale_national_security_law"
+		texturefile = "gfx/interface/goals/focus_BRA_repeale_national_security_law.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_restore_brazilian_honor"
+		texturefile = "gfx/interface/goals/focus_BRA_restore_brazilian_honor.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_rubber_war"
+		texturefile = "gfx/interface/goals/focus_BRA_rubber_war.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_secure_our_borders"
+		texturefile = "gfx/interface/goals/focus_BRA_secure_our_borders.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_seek_soviet_support"
+		texturefile = "gfx/interface/goals/focus_BRA_seek_soviet_support.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_senta_a_pua"
+		texturefile = "gfx/interface/goals/focus_BRA_senta_a_pua.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_support_sugar_barons"
+		texturefile = "gfx/interface/goals/focus_BRA_support_sugar_barons.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_sway_the_neighbors"
+		texturefile = "gfx/interface/goals/focus_BRA_sway_the_neighbors.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_the_polaca"
+		texturefile = "gfx/interface/goals/focus_BRA_the_polaca.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_third_republic"
+		texturefile = "gfx/interface/goals/focus_BRA_third_republic.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_tribunal"
+		texturefile = "gfx/interface/goals/focus_BRA_tribunal.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_ulasr"
+		texturefile = "gfx/interface/goals/focus_BRA_ulasr.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_university_of_sao_paulo"
+		texturefile = "gfx/interface/goals/focus_BRA_university_of_sao_paulo.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_us_of_brazil"
+		texturefile = "gfx/interface/goals/focus_BRA_us_of_brazil.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_us_of_south_america"
+		texturefile = "gfx/interface/goals/focus_BRA_us_of_south_america.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_utilize_security_law"
+		texturefile = "gfx/interface/goals/focus_BRA_utilize_security_law.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_work_with_the_integralists"
+		texturefile = "gfx/interface/goals/focus_BRA_work_with_the_integralists.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_promote_SA_immigration"
+		texturefile = "gfx/interface/goals/focus_generic_promote_SA_immigration.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_resource_extraction"
+		texturefile = "gfx/interface/goals/focus_generic_resource_extraction.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_road_investment"
+		texturefile = "gfx/interface/goals/focus_generic_road_investment.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_south_america"
+		texturefile = "gfx/interface/goals/focus_generic_south_america.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_rio_protocol"
+		texturefile = "gfx/interface/goals/focus_BRA_rio_protocol.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_free_prestes"
+		texturefile = "gfx/interface/goals/focus_BRA_free_prestes.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_good_neighbor_policy"
+		texturefile = "gfx/interface/goals/focus_BRA_good_neighbor_policy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_jaguar_diplomacy"
+		texturefile = "gfx/interface/goals/focus_BRA_jaguar_diplomacy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_socialist_theologians"
+		texturefile = "gfx/interface/goals/focus_BRA_socialist_theologians.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRA_state_atheism"
+		texturefile = "gfx/interface/goals/focus_BRA_state_atheism.dds"
 	}
 }
