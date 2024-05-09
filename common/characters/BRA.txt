@@ -1,0 +1,100 @@
+characters={
+	BRA_frederick_stewart={
+		name="Frederick Stewart"
+		portraits={
+			army={
+				small="gfx/interface/ideas/AST/idea_AST_frederick_stewart.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = BRA
+				}
+			available = {
+				has_completed_focus = ast_war_council
+			}
+				cost  = 150.000
+				traits  = {
+					AST_Minister_for_Supply_and_Development
+				}
+			modifier = {
+				war_support_factor = 0.05				
+				supply_consumption_factor = -0.025
+			}
+
+      }
+	}
+	BRA_ernest_bevin = {
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_eng_ernest_bevin.dds"
+			}
+		}
+		name="Ernest Bevin"
+		advisor={
+			slot = political_advisor
+			idea_token = Ernest_Bevin
+			allowed = {
+				original_tag = BRA 
+			}
+			available = {
+				has_completed_focus = BRA_national_resources_mobilization_act
+
+			}
+
+			traits = { ENG_minister_of_labour }
+			
+		}
+	}
+	BRA_eurico_gaspar_dutra={
+		name="Eurico Gaspar Dutra"
+		portraits = {
+			army = {
+				large = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader infantry_officer war_hero ranger  panzer_leader trait_engineer }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=2
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = eurico_gaspar
+			ledger = army
+			allowed = {
+				original_tag = BRA
+			}
+			
+			cost = 150
+			
+			traits = { army_cavalry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	BRA_Mascarenhas_de_Morais={
+		name="Mascarenhas de Morais"
+		portraits={
+			army={
+				portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer organizer jungle_rat }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+}

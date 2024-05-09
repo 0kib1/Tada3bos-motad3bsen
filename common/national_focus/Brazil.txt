@@ -890,7 +890,6 @@
 		available_if_capitulated = yes		
 		
 		available = { has_war = yes
-		has_completed_focus = BRA_consider_our_options
 		}
 
 		
@@ -3269,6 +3268,775 @@ focus = {
 			
 			}
 		}	
+	}
+	focus = {
+		id = BRA_set_the_canadian_shipyards_on_war_footing
+		icon = GFX_goal_navy_funding
+		x = -10
+		y = 0
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+			
+			465 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			466 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			add_timed_idea = { idea = CAN_shipbuilding_investments days = 180 }
+		}
+	}
+
+	focus = {
+		id = BRA_focus_on_antisubmarine_warfare
+		icon = GFX_ROM_coastal_defense_navy
+		x = -3
+		y = 1
+
+		prerequisite = { focus = BRA_set_the_canadian_shipyards_on_war_footing }
+		mutually_exclusive = { focus = BRA_focus_on_countering_surface_raiders }
+		relative_position_id = BRA_set_the_canadian_shipyards_on_war_footing
+		cost = 3
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAN_antisubmarine_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_destroyer_mass_production
+		icon = GFX_BEL_Battleship_Investements
+		x = -1
+		y = 1
+
+		prerequisite = { focus = BRA_focus_on_antisubmarine_warfare }
+		relative_position_id = BRA_focus_on_antisubmarine_warfare
+		cost = 3
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			465 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			464 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				category = dd_tech
+				name = BRA_destroyer_mass_production
+			}
+			add_timed_idea = {
+				idea = CAN_rcn_expansion
+				days = 180
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_advanced_anti_submarine_measures
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 0
+		y = 1
+
+		prerequisite = { focus = BRA_destroyer_mass_production }
+		relative_position_id = BRA_destroyer_mass_production
+		cost = 3
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_tech_bonus = {
+					bonus = 1.0
+					uses = 3
+					category = asw_tech
+					name = CAN_advanced_anti_submarine_measures
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_escort_carriers
+		icon = GFX_goal_generic_navy_carrier
+		x = 1
+		y = 1
+
+		prerequisite = { focus = BRA_focus_on_antisubmarine_warfare }
+		relative_position_id = BRA_focus_on_antisubmarine_warfare
+		cost = 3
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_equipment_variant = {
+				name = "Ruler Class"
+				type = ship_hull_carrier_conversion_bb
+				name_group = CAN_CV_HISTORICAL
+				allow_without_tech = yes
+				parent_version = 0
+				modules = {
+					fixed_ship_engine_slot = carrier_ship_engine_2
+					fixed_ship_radar_slot = ship_radar_2
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_secondaries_slot = dp_ship_secondaries_2
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+				}
+			}
+		    add_equipment_production = {
+				equipment = {
+					type = ship_hull_carrier_conversion_bb
+					creator = "CAN"
+					version_name = "Ruler Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_carrier_conversion_bb
+					creator = "CAN"
+					version_name = "Ruler Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_transfer_british_light_cruisers
+		icon = GFX_focus_generic_navy_battleship2
+		x = 0
+		y = 1
+
+		prerequisite = { focus = BRA_escort_carriers }
+		relative_position_id = BRA_escort_carriers
+		cost = 3
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_2
+					creator = "CAN"
+					version_name = "Crown Colony Class"
+				}
+				requested_factories = 1
+				progress = 0.5
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_2
+					creator = "CAN"
+					version_name = "Crown Colony Class"
+				}
+				requested_factories = 1
+				progress = 0.5
+				amount = 1
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_the_tribal_class
+		icon = GFX_ROM_coastal_defense_ships
+		x = 0
+		y = 2
+
+		prerequisite = { focus = BRA_focus_on_antisubmarine_warfare focus = BRA_focus_on_countering_surface_raiders }
+		relative_position_id = BRA_set_the_canadian_shipyards_on_war_footing
+		cost = 3
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_stability = 0.05
+		    add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_2
+					creator = "CAN"
+					version_name = "Tribal Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_2
+					creator = "CAN"
+					version_name = "Tribal Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_2
+					creator = "CAN"
+					version_name = "Tribal Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_2
+					creator = "CAN"
+					version_name = "Tribal Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_2
+					creator = "CAN"
+					version_name = "Tribal Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_2
+					creator = "CAN"
+					version_name = "Tribal Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_2
+					creator = "CAN"
+					version_name = "Tribal Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_a_fleet_carrier_of_our_own
+		icon = GFX_goal_carrier
+		x = 0
+		y = 2
+
+		prerequisite = { focus = BRA_the_tribal_class }
+		prerequisite = { focus = BRA_transfer_british_light_cruisers focus = BRA_modernize_older_british_vessels}
+		relative_position_id = BRA_the_tribal_class
+		cost = 3
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			has_tech = improved_ship_hull_carrier 
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_equipment_variant = {
+				name = "Majestic Class"
+				type = ship_hull_carrier_2
+				allow_without_tech = yes
+				name_group = CAN_CV_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_engine_slot = carrier_ship_engine_3
+					fixed_ship_radar_slot = ship_radar_3
+					fixed_ship_anti_air_slot = ship_anti_air_3
+					fixed_ship_secondaries_slot = dp_ship_secondaries_2
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+					front_1_custom_slot = ship_deck_space
+					mid_1_custom_slot = ship_deck_space
+				}
+			}
+		    add_equipment_production = {
+				equipment = {
+					type = ship_hull_carrier_2
+					creator = "CAN"
+					version_name = "Majestic Class"
+				}
+				requested_factories = 1
+				progress = 0.5
+				amount = 1
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_focus_on_countering_surface_raiders
+		icon = GFX_generic_sea_focused_navy2
+		x = 3
+		y = 1
+
+		prerequisite = { focus = BRA_set_the_canadian_shipyards_on_war_footing }
+		relative_position_id = BRA_set_the_canadian_shipyards_on_war_footing
+		mutually_exclusive = { focus = BRA_focus_on_antisubmarine_warfare }
+		cost = 3
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAN_anti_surfaceraiders
+				cost_reduction = 0.5
+				uses = 2
+				category = trade_interdiction_tree
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_pacific_naval_responsibilities
+		icon = GFX_focus_usa_focus_on_asia
+		x = -1
+		y = 1
+
+		prerequisite = { focus = BRA_focus_on_countering_surface_raiders }
+		relative_position_id = BRA_focus_on_countering_surface_raiders
+		cost = 3
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state= {
+				prioritize = {473}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
+			add_timed_idea = {
+				idea = CAN_cruiser_rcn_expansion
+				days = 180
+			}
+
+			
+		}
+	}
+
+	focus = {
+		id = BRA_modernize_older_british_vessels
+		icon = GFX_goal_generic_expand_the_naval_industry
+		x = 0
+		y = 1
+
+		prerequisite = { focus = BRA_pacific_naval_responsibilities }
+		relative_position_id = BRA_pacific_naval_responsibilities
+		cost = 3
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			add_timed_idea = {
+         		idea = CAN_fleet_modernization
+         		days = 365
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_2
+					creator = "CAN"
+					version_name = "E/F/G/H Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_2
+					creator = "CAN"
+					version_name = "E/F/G/H Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_2
+					creator = "CAN"
+					version_name = "E/F/G/H Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_2
+					creator = "CAN"
+					version_name = "E/F/G/H Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_2
+					creator = "CAN"
+					version_name = "E/F/G/H Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_2
+					creator = "CAN"
+					version_name = "E/F/G/H Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_2
+					creator = "CAN"
+					version_name = "E/F/G/H Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_2
+					creator = "CAN"
+					version_name = "E/F/G/H Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_2
+					creator = "CAN"
+					version_name = "E/F/G/H Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_2
+					creator = "CAN"
+					version_name = "E/F/G/H Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_commandeer_a_battlecruiser
+		icon = GFX_goal_generic_admirality
+		x = 1
+		y = 1
+
+		prerequisite = { focus = BRA_focus_on_countering_surface_raiders }
+		relative_position_id = BRA_focus_on_countering_surface_raiders
+		cost = 3
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_2
+					creator = "CAN"
+					version_name = "Repulse Class"
+				}
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_a_canadian_town_class
+		icon = GFX_focus_generic_navy_battleship2
+		x = 0
+		y = 1
+
+		prerequisite = { focus = BRA_commandeer_a_battlecruiser }
+		relative_position_id = BRA_commandeer_a_battlecruiser
+		cost = 3
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_cruiser_bonus
+				bonus = 1
+				uses = 2
+				category = cl_tech
+			}
+
+			add_tech_bonus = {
+				name = CAN_naval_equipment_bonus
+				bonus = 1
+				uses = 2
+				category = naval_equipment
+			}
+		}
 	}
 	
 	

@@ -1,1 +1,26 @@
-﻿
+﻿units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Armada"
+		naval_base = 5112 # Veracruz
+		task_force = {				
+			name = "Armada"
+			location = 5112 # Veracruz
+			
+			ship = { name = "HMS Ashanti" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BRA version_name = "Tribal Class" } } }
+			ship = { name = "HMS Mashona" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BRA version_name = "Tribal Class" } } }
+			ship = { name = "HMS Matabele" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BRA version_name = "Tribal Class" } } }
+			ship = { name = "HMS Somali" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BRA version_name = "Tribal Class" } } }
+			ship = { name = "HMS YATO" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BRA version_name = "Tribal Class" } } }
+			ship = { name = "HMS Da3bose" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BRA version_name = "Tribal Class" } } }
+			# Destroyer Division 12
+			ship = { name = "HMS Bedouin" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BRA version_name = "Tribal Class" } } }
+			ship = { name = "HMS Eskimo" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BRA version_name = "Tribal Class" } } }
+			ship = { name = "HMS Punjabi" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BRA version_name = "Tribal Class" } } }
+			ship = { name = "HMS Tartar" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BRA version_name = "Tribal Class" } } }
+			ship = { name = "HMS Nelson" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BRA version_name = "Nelson Class" } } }
+			ship = { name = "HMS Rodney" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BRA version_name = "Nelson Class" } } }
+		}
+	}
+}

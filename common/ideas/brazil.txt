@@ -884,20 +884,30 @@ ideas = {
 		   political_power_gain = -0.05
 		   production_speed_infrastructure_factor = -0.20
 		   supply_consumption_factor = 0.10
-		   army_morale_factor = -0.1
-		   army_org_factor = -0.05
+		   army_morale_factor = 0.0
+		   army_org_factor = 0.00
 		   
 		  }
+		  targeted_modifier = {
+			tag = MAN
+			attack_bonus_against = 0.075
+			defense_bonus_against = 0.075
+		}
+		targeted_modifier = {
+			tag = JAP
+			attack_bonus_against = 0.075
+			defense_bonus_against = 0.075
+		}
 		  equipment_bonus = {
 
 		  infantry_equipment = {
-			  build_cost_ic = 0.25 instant = yes
+			  build_cost_ic = 0.2 instant = yes
 		  }
 		  support_equipment = {
-			  build_cost_ic = 0.06 instant = yes
+			  build_cost_ic = 0.00 instant = yes
 		  }
 		  radio_equipment = {
-			  build_cost_ic = 0.05 instant = yes
+			  build_cost_ic = 0.00 instant = yes
 		  }
 		  special_equipment = {
 			  build_cost_ic = 0.40 instant = yes
@@ -931,16 +941,16 @@ ideas = {
 
 
 		  armor = {
-			  build_cost_ic = 0.05 instant = yes 
+			  build_cost_ic = 0.00 instant = yes 
 		  }
 		  mechanized = {
-			  build_cost_ic = 0.05 instant = yes 
+			  build_cost_ic = 0.00 instant = yes 
 		  }
 		  amphibious_mechanized_equipment = {
-			  build_cost_ic = 0.05 instant = yes 
+			  build_cost_ic = 0.00 instant = yes 
 		  }
 		  motorized = {
-			  build_cost_ic = 0.05 instant = yes 
+			  build_cost_ic = 0.00 instant = yes 
 		  }
 	   }
 	  
