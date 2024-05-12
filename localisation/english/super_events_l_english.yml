@@ -76,8 +76,13 @@
 
   super_event_picture_16:0 "GFX_superevent_pray_time"
   super_event_title_16:0 "Yalla Salat Ya muslimin"
-  super_event_text_16:0 "15Min Break For Pray. \n- §Okib1§"
+  super_event_text_16:0 "15Min Break For Pray. \n- §YOkib1§"
   super_event_button_text_16:0 "God bless you."
+
+  super_event_picture_17:0 "GFX_superevent_iraq_10"
+  super_event_title_17:0 "Iraq enters the war"
+  super_event_text_17:0 "When will the mustaches shake, if I know?. \n- §YSaddam Hussein§"
+  super_event_button_text_17:0 "Yakhrashi."
 
 
 

@@ -46,6 +46,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			hidden_effect = {
+				every_country = {
+					set_variable = { var = super_event value = 17 }
+				}
+					scoped_sound_effect = "se_iraq_10"
+			}
+			
 			ITA = {
 				set_autonomy = {
 					target = IRQ

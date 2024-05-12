@@ -96,4 +96,16 @@ soundeffect = {
 		sound = se_usa_out_of_war
 	}
 }
+soundeffect = {
+	name = "se_iraq_10"
+	sounds = {
+		sound = se_iraq_10
+	}
+}
+soundeffect = {
+	name = "se_salat"
+	sounds = {
+		sound = se_salat
+	}
+}
 

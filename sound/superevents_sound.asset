@@ -82,3 +82,13 @@ sound = {
 	file = "superevent/se_usa_out_of_war.wav"
 	always_load = no
 }
+sound = {
+	name = "se_salat"
+	file = "superevent/se_salat.wav"
+	always_load = no
+}
+sound = {
+	name = "se_iraq_10"
+	file = "superevent/se_iraq_10.wav"
+	always_load = no
+}

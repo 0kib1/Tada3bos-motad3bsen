@@ -807,6 +807,8 @@ ideas = {
 			 supply_consumption_factor = 0.10
 			 army_morale_factor = -0.1
 			 army_org_factor = -0.05
+			 send_volunteers_tension = -0.5
+			send_volunteer_divisions_required = -1
 			 
 			}
 			equipment_bonus = {
@@ -886,17 +888,19 @@ ideas = {
 		   supply_consumption_factor = 0.10
 		   army_morale_factor = 0.0
 		   army_org_factor = 0.00
+		   send_volunteers_tension = -0.5
+				send_volunteer_divisions_required = -1
 		   
 		  }
 		  targeted_modifier = {
 			tag = MAN
-			attack_bonus_against = 0.075
-			defense_bonus_against = 0.075
+			attack_bonus_against = 0.075 # 0.075
+			defense_bonus_against = 0.075 # 0.075
 		}
 		targeted_modifier = {
 			tag = JAP
-			attack_bonus_against = 0.075
-			defense_bonus_against = 0.075
+			attack_bonus_against = 0.075 # 0.075
+			defense_bonus_against = 0.075 # 0.075
 		}
 		  equipment_bonus = {
 
@@ -976,6 +980,8 @@ ideas = {
 		   supply_consumption_factor = 0.10
 		   army_morale_factor = -0.1
 		   army_org_factor = -0.05
+		   send_volunteers_tension = -0.5
+				send_volunteer_divisions_required = -1
 		   
 		  }
 		  equipment_bonus = {
@@ -1055,6 +1061,8 @@ ideas = {
 		   supply_consumption_factor = 0.10
 		   army_morale_factor = -0.1
 		   army_org_factor = -0.05
+		   send_volunteers_tension = -0.5
+				send_volunteer_divisions_required = -1
 		   
 		  }
 		  equipment_bonus = {
@@ -1134,18 +1142,19 @@ ideas = {
 		   supply_consumption_factor = 0.05
 		   army_morale_factor = 0.05
 		   army_org_factor = 0.075
-		   
+		   send_volunteers_tension = -0.5
+			send_volunteer_divisions_required = -1
 		   
 		  }
 		  targeted_modifier = {
 			tag = MAN
-			attack_bonus_against = 0.125
-			defense_bonus_against = 0.125
+			attack_bonus_against = 0.075 # 0.125
+			defense_bonus_against = 0.075 # 0.125
 		}
 		targeted_modifier = {
 			tag = JAP
-			attack_bonus_against = 0.125
-			defense_bonus_against = 0.125
+			attack_bonus_against = 0.075 # 0.075
+			defense_bonus_against = 0.075 # 0.125
 		}
 		  equipment_bonus = {
 
@@ -1226,7 +1235,7 @@ ideas = {
 				removal_cost = -1
 				targeted_modifier = {
 				tag = GER
-				attack_bonus_against = 0.1
+				attack_bonus_against = 0.075 # 0.1
 			 
 			}
 
@@ -1255,7 +1264,7 @@ ideas = {
 			
 			targeted_modifier = {
 				tag = JAP
-				attack_bonus_against = 0.1
+				attack_bonus_against = 0.075 # 0.1
 			}
 	}
 	

@@ -104,4 +104,9 @@ spriteTypes = { ##### THIS FILE DEFINES THE PICTURE FOR EACH SUPER EVENT
 		textureFile = "gfx//superevent_pictures//pray_time.tga"
 
 	}
+	spriteType = {
+		name = "GFX_superevent_iraq_10"
+		textureFile = "gfx//superevent_pictures//Iraq_10.tga"
+
+	}
 }
