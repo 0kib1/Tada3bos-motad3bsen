@@ -4965,7 +4965,6 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
-			add_ideas = BRA_presidential_republic
 		}
 	}
 
