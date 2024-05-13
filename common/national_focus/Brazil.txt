@@ -3266,7 +3266,7 @@ focus = {
 	focus = {
 		id = BRA_set_the_canadian_shipyards_on_war_footing
 		icon = GFX_goal_navy_funding
-		x = -10
+		x = -2
 		y = 0
 
 		cost = 10
@@ -4000,5 +4000,1200 @@ focus = {
 		}
 	}
 	
-	
+		focus = {
+		id = BRA_coffee_crisis_aftermath
+		icon = GFX_focus_BRA_coffee_crisis
+		x = -13
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+		
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			custom_effect_tooltip = BRA_modify_economy_intro
+			add_to_variable = {
+				BRA_economy_industrial_capacity_factor = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				BRA_economy_production_efficiency_gain_factor = 0.05
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				BRA_economy_production_max_efficiency_factor = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = BRA_departamento_nacional_do_cafe_idea	
+		}
+	}
+
+	focus = {
+		id = BRA_radio_nacional
+		icon = GFX_focus_SWE_radiotjanst
+		prerequisite = { focus = BRA_coffee_crisis_aftermath  }
+		x = -1
+		y = 1
+		relative_position_id = BRA_end_the_state_of_emergency
+		relative_position_id = BRA_coffee_crisis_aftermath
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+			add_ideas = BRA_radio_nacional_idea
+		}
+	}
+
+	focus = {
+		id = BRA_desenvolvimentismo
+		icon = GFX_focus_ETH_adopt_the_lira
+		prerequisite = { focus = BRA_coffee_crisis_aftermath  }
+		x = 1
+		y = 1
+		relative_position_id = BRA_end_the_state_of_emergency
+		relative_position_id = BRA_coffee_crisis_aftermath
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			custom_effect_tooltip = BRA_modify_economy_intro
+			add_to_variable = {
+				BRA_economy_production_efficiency_gain_factor = 0.1
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				BRA_economy_production_max_efficiency_factor = 0.1
+				tooltip = production_factory_max_efficiency_factor_tt
+			}	
+			BRA_remove_economy_modifier = yes	
+			add_tech_bonus = {
+				name = BRA_electronics_bonus
+				bonus = 0.4
+				uses = 2
+				category = electronics
+			}			
+		}
+	}
+
+	focus = {
+		id = BRA_promote_resource_extraction
+		icon = GFX_focus_generic_resource_extraction
+		prerequisite = { focus = BRA_radio_nacional focus = BRA_desenvolvimentismo }
+		x = 0
+		y = 1
+		relative_position_id = BRA_radio_nacional
+		cost = 10
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					OR = {
+						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }	
+						has_dynamic_modifier = { modifier = BRA_growing_state_dynamic_modifier }
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				custom_effect_tooltip = BRA_modify_neglected_state
+				add_to_variable = {
+					BRA_state_development_state_resources_factor = 0.05
+					tooltip = MODIFIER_STATE_RESOURCES_FACTOR_tt
+				}
+			}
+			add_tech_bonus = {
+				name = BRA_resource_extraction_bonus
+				bonus = 0.75
+				uses = 2
+				category = excavation_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_companhia_siderurgica_nacional
+		icon = GFX_focus_BRA_national_steel_company
+		prerequisite = { focus = BRA_desenvolvimentismo focus = BRA_radio_nacional  }
+		x = 0
+		y = 1
+		relative_position_id = BRA_desenvolvimentismo
+		cost = 10
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			capital_scope = {
+				add_resource = {
+					type = steel
+					amount = 240
+					#state = 662
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_stimulate_the_civilian_economy
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BRA_desenvolvimentismo  }
+		x = 4
+		y = 1
+		relative_position_id = BRA_desenvolvimentismo
+		cost = 10
+		ai_will_do = {
+			factor = 18
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			random_core_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						state = 961
+						state = 962
+						state = 963
+						state = 964
+						state = 965
+						state = 966
+						state = 967
+						state = 968
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = BRA_industry_bonus
+				bonus = 0.4
+				uses = 2
+				category = industry
+			}			
+		}
+	}
+
+	focus = {
+		id = BRA_domestic_arms_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = BRA_stimulate_the_civilian_economy  }
+		x = 0
+		y = 1
+		relative_position_id = BRA_stimulate_the_civilian_economy
+		cost = 10
+		ai_will_do = {
+			factor = 16
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			random_core_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						state = 961
+						state = 962
+						state = 963
+						state = 964
+						state = 965
+						state = 966
+						state = 967
+						state = 968
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_war_production
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = BRA_domestic_arms_industry  }
+		x = 0
+		y = 1
+		relative_position_id = BRA_domestic_arms_industry
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			custom_effect_tooltip = BRA_modify_economy_intro
+			add_to_variable = {
+				BRA_economy_industrial_capacity_factor = 0.1
+				tooltip = industrial_capacity_factory_tt
+			}	
+			BRA_remove_economy_modifier = yes
+			random_core_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						state = 961
+						state = 962
+						state = 963
+						state = 964
+						state = 965
+						state = 966
+						state = 967
+						state = 968
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = BRA_deal_with_the_cangaceiro
+		icon = GFX_focus_BRA_deal_with_the_cangaco
+		prerequisite = { focus = BRA_radio_nacional  }
+		x = -2
+		y = 1
+		relative_position_id = BRA_radio_nacional
+		cost = 5
+		available = {
+			NOT = {
+				has_completed_focus = BRA_sway_the_cangaco
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = BRA_deal_with_the_cangaceiro_tt
+		}
+	}
+
+	focus = {
+		id = BRA_promote_immigration_to_brazil
+		icon = GFX_focus_generic_promote_SA_immigration
+		prerequisite = { focus = BRA_desenvolvimentismo  }
+		x = 2
+		y = 1
+		relative_position_id = BRA_desenvolvimentismo
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+
+		search_filters = { }
+
+		completion_reward = {
+			set_country_flag = JUNO_promote_immigration_flag
+			custom_effect_tooltip = BRA_promote_immigration_to_brazil_tt
+		}
+	}
+
+	focus = {
+		id = BRA_invest_in_railways
+		icon = GFX_focus_generic_railroad
+		prerequisite = { focus = BRA_promote_resource_extraction focus = BRA_companhia_siderurgica_nacional }
+		x = -2
+		y = 1
+		relative_position_id = BRA_promote_resource_extraction
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					OR = {
+						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }	
+						has_dynamic_modifier = { modifier = BRA_growing_state_dynamic_modifier }
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				custom_effect_tooltip = BRA_modify_neglected_state
+				add_to_variable = {
+					BRA_state_development_production_speed = 0.1
+					tooltip = MODIFIER_STATE_PRODUCTION_SPEED_BUILDINGS_FACTOR_tt
+				}
+				add_to_variable = {
+					BRA_state_development_local_factories = 0.1
+					tooltip = local_factories_tt
+				}
+			}
+			add_tech_bonus = {
+				name = BRA_invest_in_railways_bonus
+				bonus = 0.50
+				uses = 1
+				category = train_tech
+			}
+			add_timed_idea = {
+				idea = BRA_rail_investment
+				days = 730
+			}
+			IF = {
+				limit = {
+					495 = { is_owned_and_controlled_by = ROOT }
+				}
+				495 = {
+					add_building_construction = {
+						type = supply_node
+						province = 1979
+						level = 1
+						instant_build = yes
+					}
+				}
+				build_railway = {
+					level = 1
+					build_only_on_allied = yes
+					fallback = yes
+					start_province = 8189
+					target_province = 1979
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_national_petroleum_council
+		icon = GFX_focus_generic_stockpile_fuel
+		prerequisite = { focus = BRA_invest_in_railways }
+		x = 0
+		y = 1
+		relative_position_id = BRA_invest_in_railways
+		cost = 10
+		ai_will_do = {
+			factor = 19
+		}
+		available = {
+			499 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			499 = {
+				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = oil
+					amount = 160
+				}	
+				add_to_variable = {
+					BRA_state_development_local_building_slots_factor = 0.2
+					tooltip = MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR_tt
+				}
+				add_to_variable = {
+					BRA_state_development_state_resources_factor = 0.1
+					tooltip = MODIFIER_STATE_RESOURCES_FACTOR_tt
+				}
+				set_state_flag = BRA_resource_boost
+			}
+			add_tech_bonus = {
+				name = BRA_oil_industry_bonus
+				bonus = 0.25
+				uses = 1
+				category = synth_resources
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_batalha_do_borracha
+		icon = GFX_focus_BRA_rubber_war
+		prerequisite = { focus = BRA_companhia_siderurgica_nacional focus = BRA_promote_resource_extraction }
+		x = 2
+		y = 1
+		relative_position_id = BRA_companhia_siderurgica_nacional
+		cost = 10
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 497
+						state = 495						
+					}	
+				}
+				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = rubber
+					amount = 200
+				}
+				add_to_variable = {
+					BRA_state_development_local_building_slots_factor = 0.1
+					tooltip = MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR_tt
+				}
+				add_to_variable = {
+					BRA_state_development_state_resources_factor = 0.1
+					tooltip = MODIFIER_STATE_RESOURCES_FACTOR_tt
+				}
+				set_state_flag = BRA_resource_boost
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_invest_in_road_infrastructure
+		icon = GFX_focus_generic_road_investment
+		prerequisite = { 
+			focus = BRA_batalha_do_borracha 
+			focus = BRA_invest_in_railways }
+		x = 3
+		y = 1
+		relative_position_id = BRA_invest_in_railways
+		cost = 5
+		ai_will_do = {
+			factor = 8
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					OR = {
+						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }	
+						has_dynamic_modifier = { modifier = BRA_growing_state_dynamic_modifier }
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				custom_effect_tooltip = BRA_modify_neglected_state
+				add_to_variable = {
+					BRA_state_development_production_speed = 0.1
+					tooltip = MODIFIER_STATE_PRODUCTION_SPEED_BUILDINGS_FACTOR_tt
+				}
+				add_to_variable = {
+					BRA_state_development_local_factories = 0.1
+					tooltip = local_factories_tt
+				}
+			}
+			add_timed_idea = {
+				idea = BRA_road_investment
+				days = 730
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_invest_in_ports
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		prerequisite = { focus = BRA_national_petroleum_council  }
+		x = 0
+		y = 1
+		relative_position_id = BRA_national_petroleum_council
+		cost = 5
+		ai_will_do = {
+			factor = 9
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					OR = {
+						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }	
+						has_dynamic_modifier = { modifier = BRA_growing_state_dynamic_modifier }
+					}
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				custom_effect_tooltip = BRA_modify_neglected_state
+				add_to_variable = {
+					BRA_state_development_production_speed = 0.1
+					tooltip = MODIFIER_STATE_PRODUCTION_SPEED_BUILDINGS_FACTOR_tt
+				}
+				add_to_variable = {
+					BRA_state_development_local_factories = 0.1
+					tooltip = local_factories_tt
+				}
+			}
+			add_timed_idea = {
+				idea = BRA_port_investment
+				days = 730
+			}
+		}
+	}
+	focus = {
+		id = BRA_fabrica_nacional_de_motores
+		icon = GFX_focus_BRA_fabrica_national_de_motores
+		prerequisite = { focus = BRA_invest_in_road_infrastructure  }
+		x = -1
+		y = 2
+		relative_position_id = BRA_invest_in_road_infrastructure
+		mutually_exclusive = { focus = BRA_expand_fordlandia }
+		cost = 10
+		ai_will_do = {
+			factor = 4
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				IF = {
+					limit = {
+						NOT = { has_completed_focus = SMB_motorized }
+					}
+					custom_effect_tooltip = available_mio_tt
+					show_mio_tooltip = BRA_fnm_organization
+				}
+				mio:BRA_fnm_organization = {
+					add_mio_size = 3
+				}
+
+			}
+			ELSE = {
+				add_tech_bonus = {
+					name = BRA_nacional_de_motores_bonus
+					bonus = 0.75
+					uses = 2
+					category = motorized_equipment
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_expand_fordlandia
+		icon = GFX_focus_SWE_lynx_armored_car
+		prerequisite = { focus = BRA_invest_in_road_infrastructure  }
+		x = 1
+		y = 2
+		relative_position_id = BRA_invest_in_road_infrastructure
+		mutually_exclusive = { focus = BRA_fabrica_nacional_de_motores }
+		cost = 10
+		ai_will_do = {
+			factor = 4
+		}
+		available = {
+			USA = {
+				NOT = { 
+					has_government = communism
+				}
+			}
+			NOT = {
+				#OR = {
+					has_government = communism
+					has_war_with = USA
+				#}
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			938 = {
+				add_resource = {
+					type = rubber
+					amount = 100
+				}
+				add_extra_state_shared_building_slots = 1
+				add_victory_points = {
+					province = 2035
+					value = 1
+				}
+			}
+			hidden_effect = {
+				set_province_name = {
+					id = 2035
+					name = BRA_fordlandia_name
+				}
+			}
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = USA_ford_motor_company_organization
+				mio:USA_ford_motor_company_organization = {
+					add_mio_size = 2
+				}
+			}
+			ELSE = {
+				add_tech_bonus = {
+					name = BRA_nacional_de_motores_bonus
+					bonus = 0.75
+					uses = 1
+					category = motorized_equipment
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_bonus_tech_slot
+		icon = GFX_focus_research
+		prerequisite = { focus = BRA_invest_in_road_infrastructure  }
+		x = 0
+		y = 1
+		relative_position_id = BRA_invest_in_road_infrastructure
+		cost = 10
+		ai_will_do = {
+			factor = 4
+		}
+		available = {
+			#num_of_factories > 50
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = BRA_banco_do_brasil
+		icon = GFX_focus_BRA_banco_do_brasil
+		prerequisite = { focus = BRA_batalha_do_borracha 
+		}
+		x = 0
+		y = 1
+		relative_position_id = BRA_batalha_do_borracha
+		cost = 5
+		ai_will_do = {
+			factor = 7
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			custom_effect_tooltip = BRA_modify_economy_intro
+			add_to_variable = {
+				BRA_economy_industrial_capacity_factor = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				BRA_economy_production_efficiency_gain_factor = 0.05
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				BRA_economy_production_max_efficiency_factor = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = BRA_banco_do_brasil_idea			
+		}
+	}
+
+	focus = {
+		id = BRA_federal_development
+		icon = GFX_focus_generic_agricultural_subsidies
+		prerequisite = { focus = BRA_banco_do_brasil  }
+		x = -1
+		y = 1
+		relative_position_id = BRA_banco_do_brasil
+		#mutually_exclusive = { focus = BRA_centralize_development }
+		cost = 5
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					OR = {
+						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }	
+						has_dynamic_modifier = { modifier = BRA_growing_state_dynamic_modifier }
+					}
+				}
+				custom_effect_tooltip = BRA_modify_neglected_state
+				add_to_variable = {
+					BRA_state_development_production_speed = 0.1
+					tooltip = MODIFIER_STATE_PRODUCTION_SPEED_BUILDINGS_FACTOR_tt
+				}
+				add_to_variable = {
+					BRA_state_development_local_factories = 0.1
+					tooltip = local_factories_tt
+				}
+				add_to_variable = {
+					BRA_state_development_local_building_slots_factor = 0.1
+					tooltip = MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR_tt
+				}
+				add_to_variable = {
+					BRA_state_development_state_resources_factor = 0.1
+					tooltip = MODIFIER_STATE_RESOURCES_FACTOR_tt
+				}
+			}
+			BRA_remove_economy_modifier = yes
+		}
+	}
+
+	focus = {
+		id = BRA_centralize_development
+		icon = GFX_focus_BRA_new_capital
+		prerequisite = { focus = BRA_banco_do_brasil  }
+		x = 1
+		y = 1
+		relative_position_id = BRA_banco_do_brasil
+		#mutually_exclusive = { focus = BRA_federal_development }
+		cost = 5
+		ai_will_do = {
+			factor = 4
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = BRA_centralize_development_tt
+			set_capital = {
+				state = 505
+				remember_old_capital = no
+			}
+			505 = {
+				add_victory_points = {
+					province = 8140
+					value = 10
+				}
+				add_dynamic_modifier = { modifier = BRA_new_capital_modifier }
+				add_building_construction = {
+					type = supply_node
+					province = 8140
+					level = 1
+					instant_build = yes
+				}	
+				build_railway = {
+					level = 1
+					build_only_on_allied = yes
+					fallback = yes
+					start_province = 12977
+					target_province = 8140
+				}			
+			}
+			hidden_effect = {
+				set_province_name = { id = 8140 name = BRA_new_capital }
+			}
+			#500 = {
+			#	add_victory_points = {
+			#		province = 10980
+			#		value = -5
+			#	}
+			#}
+		}
+	}
+
+	focus = {
+		id = BRA_financial_stimulation
+		icon = GFX_focus_BRA_growth
+		prerequisite = { focus = BRA_centralize_development focus = BRA_federal_development  }
+		x = 0
+		y = 2
+		relative_position_id = BRA_banco_do_brasil
+		cost = 5
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			unlock_decision_tooltip = BRA_federal_investment_in_rural_state
+			custom_effect_tooltip = BRA_financial_stimulation_tt
+		}
+	}
+	focus = {
+		id = BRA_end_the_state_of_emergency
+		icon = GFX_focus_BRA_end_the_state_of_emergency
+		x = -15
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = BRA_repeal_the_national_security_law
+		icon = GFX_focus_BRA_repeale_national_security_law
+		x = -4
+		y = 1
+		relative_position_id = BRA_end_the_state_of_emergency
+		relative_position_id = BRA_coffee_crisis_aftermath
+		prerequisite = { focus = BRA_end_the_state_of_emergency }
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			#add_stability = 0.05
+			#add_war_support = -0.1
+			#retire_country_leader = yes
+			BRA_armando_de_sales_oliveira = {
+				#add_country_leader_role = {
+				#	country_leader = {
+				#		ideology = liberalism
+				#		expire = "1965.1.1.1"
+				#		traits = { democratic_reformer }
+				#	}
+				#} 
+				promote_leader = yes
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_greater_federalism
+		icon = GFX_focus_BRA_greater_federalism
+		x = -1
+		y = 1
+		relative_position_id = BRA_repeal_the_national_security_law
+		prerequisite = { focus = BRA_repeal_the_national_security_law }
+		mutually_exclusive = { focus = BRA_continue_centralization } 
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+			add_ideas = BRA_federal_republic
+		}
+	}
+	focus = {
+		id = BRA_continue_centralization
+		icon = GFX_focus_BRA_centralization
+		x = 1
+		y = 1
+		relative_position_id = BRA_repeal_the_national_security_law
+		prerequisite = { focus = BRA_repeal_the_national_security_law }
+		mutually_exclusive = { focus = BRA_greater_federalism }
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+			add_ideas = BRA_presidential_republic
+		}
+	}
+
+	focus = {
+		id = BRA_court_the_military
+		icon = GFX_focus_BRA_reach_out_to_military_dem
+		x = 0
+		y = 2
+		relative_position_id = BRA_continue_centralization
+		prerequisite = { focus = BRA_continue_centralization }
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+			add_ideas = BRA_court_the_military_idea
+		}
+	}
+
+
+	focus = {
+		id = BRA_implement_a_national_guard
+		icon = GFX_focus_BRA_national_guard
+		x = 0
+		y = 2
+		relative_position_id = BRA_greater_federalism
+		prerequisite = { focus = BRA_greater_federalism }
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = BRA_implement_a_national_guard_tt
+			IF = {
+				limit = {
+					NOT = {
+						has_tech = tech_military_police
+					}
+				}
+				set_technology = { tech_military_police = 1 }
+			}
+			ELSE = {
+				army_experience = 20
+			}
+			hidden_effect = {
+				division_template = {
+					name = "Guarda Nacional"
+					#division_names_group = 
+					is_locked = no
+					force_allow_recruiting = yes
+					override_model = BRA_militia_entity
+					#division_cap = 6
+					template_counter = 06
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						military_police = { x = 0 y = 1 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "division_template = \"Guarda Nacional\" start_experience_factor = 0 start_equipment_factor = 1.0"
+						OWNER = ROOT
+					}
+					create_unit = {
+						division = "division_template = \"Guarda Nacional\" start_experience_factor = 0 start_equipment_factor = 1.0"
+						OWNER = ROOT
+					}
+					create_unit = {
+						division = "division_template = \"Guarda Nacional\" start_experience_factor = 0 start_equipment_factor = 1.0"
+						OWNER = ROOT
+					}
+					create_unit = {
+						division = "division_template = \"Guarda Nacional\" start_experience_factor = 0 start_equipment_factor = 1.0"
+						OWNER = ROOT
+					}
+					create_unit = {
+						division = "division_template = \"Guarda Nacional\" start_experience_factor = 0 start_equipment_factor = 1.0"
+						OWNER = ROOT
+					}
+					create_unit = {
+						division = "division_template = \"Guarda Nacional\" start_experience_factor = 0 start_equipment_factor = 1.0"
+						OWNER = ROOT
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_nationalize_the_banks
+		icon = GFX_focus_BRA_nationalize_banks
+		x = 0
+		y = 1
+		relative_position_id = BRA_implement_a_national_guard
+		prerequisite = { focus = BRA_implement_a_national_guard }
+		#mutually_exclusive = { focus = BRA_establish_the_brazilian_investment_bank }
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+			add_ideas = BRA_nationalized_banks
+		}
+	}
+
+	focus = {
+		id = BRA_establish_the_brazilian_investment_bank
+		icon = GFX_focus_BRA_pro_business_taxes
+		x = 0
+		y = 1
+		relative_position_id = BRA_court_the_military
+		prerequisite = { 
+			focus = BRA_court_the_military 
+		#	focus = BRA_constitutional_monarchy
+		}
+		#mutually_exclusive = { focus = BRA_nationalize_the_banks }
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = BRA_tax_haven
+		}
+	}
+
+	focus = {
+		id = BRA_church
+		icon = GFX_focus_por_concordat
+		x = 0
+		y = 1
+		relative_position_id = BRA_establish_the_brazilian_investment_bank
+		prerequisite = { focus = BRA_establish_the_brazilian_investment_bank }
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+			add_ideas = BRA_collaboration_with_the_church
+		}
+	}
+
+	focus = {
+		id = BRA_implement_article_138
+		icon = GFX_focus_generic_population_growth
+		x = 0
+		y = 1
+		relative_position_id = BRA_nationalize_the_banks
+		prerequisite = { focus = BRA_nationalize_the_banks }
+		cost = 10
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+			add_ideas = BRA_article_138
+		}
+	}
+
+	focus = {
+		id = BRA_tech_slot_2
+		icon = GFX_focus_BRA_university_of_sao_paulo
+		x = 1
+		y = 1
+		relative_position_id = BRA_implement_article_138
+		prerequisite = { focus = BRA_implement_article_138 focus = BRA_church }
+		cost = 10
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+
 	}

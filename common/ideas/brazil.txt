@@ -1390,35 +1390,124 @@ ideas = {
 		
 		
 		
-		BRA_arty = {
-	      picture = MEX_politicised_army
-		       
-			   
-		    allowed = {
-			   original_tag = BRA
-			   always = no
-			}   
-			 
-			 available = {
-			 has_completed_focus = 
-				BRA_new_arty
-		    }
+			BRA_Corruption = {
+			picture = MEX_politicised_army
 				
-			 
-			allowed_civil_war = {
-			    always = yes
-			} 
-			removal_cost = -1
-			
-			 equipment_bonus = {
-			artillery = {
-				build_cost_ic = -0.1 instant = yes 
-			  
+				
+				allowed = {
+				original_tag = BRA
+				}   
+				
+				available = {
+				}
+					
+				
+				allowed_civil_war = {
+					always = yes
+				} 
+				removal_cost = -1
+				
+				modifier = {
+					stability_weekly = -0.04
+					supply_consumption_factor = 0.25
+					production_factory_max_efficiency_factor = -0.15
+					industrial_capacity_factory = -0.15
+				}
+				equipment_bonus = {
+					railway_gun_equipment = {
+						build_cost_ic = 0.75 instant = yes
+				}
 			}
+					
+		}
+		BRA_Corruption_2 = {
+			picture = MEX_politicised_army
+				
+				
+				allowed = {
+				original_tag = BRA
+				}   
+				
+				available = {
+				}
+					
+				
+				allowed_civil_war = {
+					always = yes
+				} 
+				removal_cost = -1
+				
+				modifier = {
+					stability_weekly = -0.03
+					supply_consumption_factor = 0.20
+					production_factory_max_efficiency_factor = -0.125
+					industrial_capacity_factory = -0.125
+				}
+				equipment_bonus = {
+					railway_gun_equipment = {
+						build_cost_ic = 0.75 instant = yes
+				}
 			}
-		     
-			
-	}
+					
+		}
+		BRA_Corruption_3 = {
+			picture = MEX_politicised_army
+				
+				
+				allowed = {
+				original_tag = BRA
+				}   
+				
+				available = {
+				}
+					
+				
+				allowed_civil_war = {
+					always = yes
+				} 
+				removal_cost = -1
+				
+				modifier = {
+					stability_weekly = -0.02
+					supply_consumption_factor = 0.15
+					production_factory_max_efficiency_factor = -0.075
+					industrial_capacity_factory = -0.08
+				}
+				equipment_bonus = {
+					railway_gun_equipment = {
+						build_cost_ic = 0.75 instant = yes
+				}
+			}
+					
+		}
+		BRA_Corruption_4 = {
+			picture = MEX_politicised_army
+				
+				
+				allowed = {
+				original_tag = BRA
+				}   
+				
+				available = {
+				}
+					
+				
+				allowed_civil_war = {
+					always = yes
+				} 
+				removal_cost = -1
+				
+				modifier = {
+					supply_consumption_factor = 0.06
+					production_factory_max_efficiency_factor = -0.025
+					industrial_capacity_factory = -0.02
+				}
+				equipment_bonus = {
+					railway_gun_equipment = {
+						build_cost_ic = 0.25 instant = yes
+					}
+			}		
+		}
 		
 		
 		
