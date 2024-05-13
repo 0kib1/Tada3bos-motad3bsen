@@ -6,6 +6,27 @@ oob = "BRA_1936"
 set_stability = 0.4
 starting_train_buffer = 2
 set_research_slots = 4
+add_dynamic_modifier = {
+    modifier = BRA_economy_modifier
+}
+set_variable = { BRA_political_power_gain_var = 0 }
+set_variable = { BRA_stability_factor_var = -0.2 }
+set_variable = { BRA_stability_gain_factor_var = -0.004 }
+
+set_variable = { BRA_political_power_factor_var = -0.1 }
+set_variable = { BRA_political_power_cost_var = 0.5 }
+set_variable = { BRA_consumer_goods_factor_var = 0.05 }
+
+set_variable = { BRA_production_factory_max_efficiency_factor_var = -0.20 }
+set_variable = { BRA_production_factory_efficiency_gain_factor_var = -0.25 }
+set_variable = { BRA_research_speed_factor_var = -0.1 }
+
+set_variable = { BRA_industrial_capacity_factory_var = -0.175 }
+
+set_variable = { BRA_local_resources_factor_var = -0.25 }
+
+
+
 # Starting tech
 set_technology = {	
 	basic_train = 1
@@ -113,7 +134,6 @@ add_ideas = {
 	BRA_shadow_civil_war
 	ENG_commonwealth_trading_idea
 	GER_aatlantic_wall_4
-	BRA_Corruption
 }
 
 create_country_leader = {
@@ -197,3 +217,4 @@ recruit_character = BRA_eurico_gaspar_dutra
 recruit_character = BRA_Mascarenhas_de_Morais
 recruit_character = BRA_Mascarenhas_de_Morais2
 recruit_character = BRA_Mascarenhas_de_Morais1
+

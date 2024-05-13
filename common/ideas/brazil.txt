@@ -1408,8 +1408,7 @@ ideas = {
 				removal_cost = -1
 				
 				modifier = {
-					stability_weekly = -0.04
-					supply_consumption_factor = 0.25
+					stability_weekly = -0.005
 					production_factory_max_efficiency_factor = -0.15
 					industrial_capacity_factory = -0.15
 				}

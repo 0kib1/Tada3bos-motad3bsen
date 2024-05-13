@@ -2374,3 +2374,5 @@ AST_uni_carrier_for_free_tt:0 "Gives §YUniversal Carrier§! if you already have
  Dabolacon_tt:0 "§GWill Give You §YMilitary Factory§! construction speed: §G+20%§! $RIGHT|+=%$ For 600 Days And "Consumer Goods Factories: §Y-4.0%§! !§!"
  japwar1_tt:0 "§GYou can declare war early as embargo japan or 1940.10.1: §Y§! !§!"
  japwar_tt:0 "§GYou can declare war early as 1941.1.1: §Y§! !§!"
+
+ BRA_1tt:0 "Modify §YEconomy of Brazil§! by\nStability: §G+10.00%§!\nDaily Political Power Cost: §G-0.05§!\nPolitical Power Gain: §G+20%§!"
