@@ -5,6 +5,10 @@ state = {
 	manpower = 2959600
 	
 	state_category = town
+		resources = {
+		aluminium = 10 # was: 4
+		chromium = 10
+	}
 
 	history = {
 		owner = BRA

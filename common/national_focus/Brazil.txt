@@ -2292,6 +2292,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 75
 		    add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -2442,6 +2443,7 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
+			army_experience = 75
 		   add_tech_bonus = {
 				category = cat_medium_armor
 				uses = 2
@@ -2479,6 +2481,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 75
 		    add_tech_bonus = {
 				name = BRA_heavy_tank_bonus
 				bonus = 0.75
@@ -2515,6 +2518,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 75
 		    add_tech_bonus = {
 				name = BRA_armored_car_bonus
 				bonus = 0.5
@@ -2555,13 +2559,14 @@ focus = {
 		}
 
 		available = {
+		army_experience = 75
 		add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
-			army_experience = 25
+			army_experience = 75
 		}
 		
 		bypass = {
@@ -2603,6 +2608,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 155
 		    add_tech_bonus = {
 				name = BRA_tank_upgrades
 				bonus = 0.5
@@ -2655,6 +2661,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 75
 			swap_ideas = {
 				remove_idea = BRA_shadow_civil_war
 				add_idea = BRA_shadow_civil_war_SF 
@@ -2820,6 +2827,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 75
 			swap_ideas = {
 				remove_idea = BRA_shadow_civil_war_SF
 				add_idea = BRA_shadow_civil_war_SF_left 
@@ -2867,6 +2875,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 75
 				custom_effect_tooltip = to_hell_and_back_tt
 				hidden_effect = {
 					set_technology = { to_hell_and_back = 1 }
@@ -2906,6 +2915,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 75
 			add_equipment_to_stockpile = {
 				type = support_equipment
 				amount = 400
@@ -2962,6 +2972,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 75
 			set_technology = { 
 		paratroopers = 1
 		paratroopers2 = 1
@@ -3003,6 +3014,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 155
 			custom_effect_tooltip = AST_orc_tt1
 			hidden_effect = {
 				set_technology = { AST_orkbonus = 1 }
@@ -3045,7 +3057,7 @@ focus = {
 				uses = 1
 				category = land_doctrine
 			}
-			army_experience = 25
+			army_experience = 75
 			
 		}
 	}
@@ -3181,6 +3193,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 75
 		    add_tech_bonus = {
 				name = BRA_special_forces_bonus
 				bonus = 0.5
@@ -3218,6 +3231,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 75
 			set_technology = { usa_1942_medium_tank_chassis  = 1  }
 		}
 	}
@@ -3251,6 +3265,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 155
 			swap_ideas = { 
 				remove_idea = BRA_shadow_civil_war
 				add_idea = BRA_shadow_civil_war_Tank

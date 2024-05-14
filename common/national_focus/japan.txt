@@ -65,6 +65,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = japwar_tt	
 			add_political_power = 50
+			add_ideas = JAP_attecak_1
 			swap_ideas = {
 				remove_idea = JAP_zaibatsus
 				add_idea = JAP_zaibatsus_dominance				
@@ -483,7 +484,6 @@ focus_tree = {
 
 
 		completion_reward = {
-			
 			#JAP_gain_overextension = yes 
 			add_tech_bonus = {
 				name = JAP_zaibatsus_dominance_corperate_merger
