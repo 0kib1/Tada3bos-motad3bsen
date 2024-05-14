@@ -23,8 +23,38 @@ characters={
 		}
       }
 	}
-	BRA_frederick_stewart={
-		name="Frederick Stewart"
+	BRA_henry_morgenthau={
+		advisor={
+			slot = political_advisor
+			idea_token = USA_henry_morgenthau_jr_1
+				available  = {
+					
+				}
+				on_remove  = {
+				}
+				cost  = 150
+				visible  = {
+					
+				}
+				allowed  = {
+					original_tag  = BRA
+				}
+				traits  = {
+					USA_secretary_of_the_treasure 
+				}
+				ai_will_do  = {
+					factor  = 100
+				}
+		}
+		name="USA_henry_morgenthau_jr_1"
+		portraits={
+			army={
+				small="GFX_idea_USA_henry_morgenthau_jr_1"
+			}
+		}
+	}
+	BRA_frederick_stewart2={
+		name="Fabrizio Romano"
 		portraits={
 			army={
 				small="gfx/interface/ideas/AST/idea_AST_frederick_stewart.dds"
@@ -39,19 +69,11 @@ characters={
 			}
 				cost  = 150.000
 				traits  = {
-					
+					silent_workhorse
 				}
-      }
-	}
-	BRA_frederick_stewart={
-		name="Dabola"
-		portraits={
-			army={
-				small="gfx/interface/ideas/AST/idea_AST_frederick_stewart.dds"
-			}
-		}
-		advisor={
-			slot = political_advisor
+	  }
+	dvisor={
+			slot = war_
 			allowed  = {
 					original_tag  = BRA
 				}
@@ -63,6 +85,8 @@ characters={
 				}
       }
 	}
+
+
 	BRA_ernest_bevin = {
 		portraits={
 			army={
@@ -93,17 +117,17 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ harsh_leader infantry_officer war_hero ranger  panzer_leader trait_engineer }
+			traits={ armor_officer urban_assault_specialist panzer_leader trait_engineer }
 			skill=4
 			attack_skill=4
 			defense_skill=2
-			planning_skill=5
+			planning_skill=2
 			logistics_skill=2
 			legacy_id=-1
 		}
 		advisor={
 			slot = high_command
-			idea_token = eurico_gaspar
+			idea_token = BRA_eurico_gaspar_dutra
 			ledger = army
 			allowed = {
 				original_tag = BRA
@@ -111,13 +135,63 @@ characters={
 			
 			cost = 150
 			
-			traits = { army_cavalry_2 }
+			traits = { army_armored_2 }
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
+	BRA_Mascarenhas_de_KaZoYa={
+		name="KaZoYa"
+		portraits = {
+			army = {
+				large = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader brilliant_strategist infantry_officer bearer_of_artillery naval_invader ita_kwantung_veto }
+			skill=6
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = Mascarenhas_de_KaZoYa
+			ledger = army
+			allowed = {
+				original_tag = BRA
+			}
+			
+			cost = 150
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = BRA_Mascarenhas_de_KaZoYa1
+			ledger = army
+			allowed = {
+				original_tag = BRA
+			}
+			
+			cost = 50
+			
+			traits = { superior_firepower_expert  }
+			
+			ai_will_do = {
+				factor = 1
+			} 	
+		}
+	}
+	          
 	BRA_Mascarenhas_de_Morais={
 		name="Mascarenhas de Morais"
 		portraits={
@@ -125,9 +199,18 @@ characters={
 				portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
 			}
 		}
+		corps_commander={
+			traits={inflexible_strategist infantry_officer  }
+			skill=3
+			attack_skill=2
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
 		advisor={
 			slot = high_command
-			idea_token = eurico_gaspar
+			idea_token = Mascarenhas_de_Morais
 			ledger = army
 			allowed = {
 				original_tag = BRA
@@ -142,16 +225,25 @@ characters={
 			}
 		}
 	}
-	BRA_Mascarenhas_de_Morais1={
+	BRA_Mascarenhas_de_yato={
 		name="Yato"
 		portraits={
 			army={
 				portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
 			}
 		}
+		corps_commander={
+			traits={ infantry_officer naval_invader}
+			skill=3
+			attack_skill=2
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
 		advisor={
 			slot = high_command
-			idea_token = eurico_gaspar
+			idea_token = BRA_Mascarenhas_de_yato
 			ledger = army
 			allowed = {
 				original_tag = BRA
@@ -166,8 +258,8 @@ characters={
 			}
 		}
 	}
-	BRA_Mascarenhas_de_Morais2={
-		name="D3bos"
+	BRA_Mascarenhas_de_okib={
+		name="Juan"
 		portraits={
 			army={
 				portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
@@ -175,7 +267,7 @@ characters={
 		}
 		advisor={
 			slot = high_command
-			idea_token = eurico_gaspar
+			idea_token = Mascarenhas_de_okib
 			ledger = army
 			allowed = {
 				original_tag = BRA
@@ -183,7 +275,7 @@ characters={
 			
 			cost = 150
 			
-			traits = {  }
+			traits = { army_chief_defensive_2}
 			
 			ai_will_do = {
 				factor = 1
@@ -191,7 +283,7 @@ characters={
 		}
 		advisor={
 			slot = army_chief
-			idea_token = eurico_gaspar
+			idea_token = BRA_Mascarenhas_de_okib1
 			ledger = army
 			allowed = {
 				original_tag = BRA
@@ -200,6 +292,49 @@ characters={
 			cost = 150
 			
 			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+			advisor={
+			slot = air_chief
+			idea_token = BRA_Mascarenhas_de_okib1
+			ledger = army
+			allowed = {
+				original_tag = BRA
+			}
+			cost = 150
+			traits = { air_chief_all_weather_3 }
+		}
+	} 
+	}
+		BRA_Mascarenhas_de_casper={
+		name="Casper"
+		portraits = {
+			army = {
+				large = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
+			}
+		}
+	       navy_leader={
+			traits={bold seawolf}
+			skill=3
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		   }
+		advisor={
+			slot = navy_chief
+			idea_token = Mascarenhas_de_casper
+			ledger = navy
+			allowed = {
+				original_tag = BRA
+			}
+			
+			cost = 75
+			
+			traits = { navy_chief_decisive_battle_3 }
 			
 			ai_will_do = {
 				factor = 1

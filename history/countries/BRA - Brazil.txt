@@ -216,6 +216,13 @@ recruit_character = BRA_frederick_stewart
 recruit_character = BRA_ernest_bevin
 recruit_character = BRA_eurico_gaspar_dutra
 recruit_character = BRA_Mascarenhas_de_Morais
-recruit_character = BRA_Mascarenhas_de_Morais2
-recruit_character = BRA_Mascarenhas_de_Morais1
+recruit_character = BRA_Mascarenhas_de_KaZoYa
+recruit_character = BRA_Mascarenhas_de_KaZoYa1
+recruit_character = BRA_Mascarenhas_de_okib
+recruit_character = BRA_Mascarenhas_de_yato
+recruit_character = BRA_Mascarenhas_de_casper
+recruit_character = BRA_Mascarenhas_de_okib1
+recruit_character = BRA_frederick_stewart2
+recruit_character = BRA_borman23
+recruit_character = BRA_henry_morgenthau
 

@@ -1,4 +1,4 @@
-version="1.0"
+version="1"
 replace_path="history/countries"
 replace_path="common/units/names_divisions"
 replace_path="history/states"
@@ -19,7 +19,8 @@ replace_path="common/military_industrial_organization/organizations"
 replace_path="common/military_industrial_organization/policies"
 tags={
 	"Balance"
+	"Graphics"
 }
-name="Hearts of Oak: yalla habibi version 31"
+name="hearts of modding"
 picture="thumbnail.png"
 supported_version="1.14.5"
