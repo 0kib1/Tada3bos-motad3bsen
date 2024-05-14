@@ -2380,24 +2380,26 @@ BRA_2tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+5.0
 BRA_3tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+17.50%§!\nFactory Output: §G+8.00%§!\nConsumer Goods: §R-5.0%§!" #CAP
 BRA_4tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+17.50%§!\nFactory Output: §G+8.00%§!\nConsumer Goods: §R-2.5%§!"  #CAP
 BRA_5tt:0 "Modify §YEconomy of Brazil§! by\nStability: §G+20.00%§!\nDaily Political Power Cost: §G0.25§!\nPolitical Power Gain: §G+15%§!"
-BRA_6tt:0 "Modify §YEconomy of Brazil§! by\nDaily Political Power Cost: §G0.25§!\nPolitical Power Gain: §G+15%§!"
+BRA_6tt:0 "Modify §YEconomy of Brazil§! by\nDaily Political Power Cost: §G0.30§!\nPolitical Power Gain: §G+15%§!"
+BRA_7tt:0 "Modify §YEconomy of Brazil§! by\nStability: §G+10.0%§!\nDaily Political Power Cost: §G-0.25§!"
+BRA_8tt:0 "Modify §YEconomy of Brazil§! by\nWeekly Stability: §G+0.2%§!\nDaily Political Power Cost: §G-0.20§!"
+BRA_9tt:0 "Modify §YEconomy of Brazil§! by\n§YInfrastructure§! construction speed: §G+25.00%§!"
 
 
-BRA_M1tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+5.00%§!\nFactory Output: §G+20.00%§!\nConsumer Goods: §R5.0%§!\nProduction Efficiency Growth: §G+25.00%§!" #output
-BRA_M2tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+5.00%§!\nFactory Output: §G+25.00%§!\nConsumer Goods: §R2.5%§!\nProduction Efficiency Growth: §G+25.00%§!" #out
-BRA_M3tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+2.50%§!\nFactory Output: §G+10.00%§!\nConsumer Goods: §R2.5%§!\nProduction Efficiency Growth: §G+10.00%§!" #output
+BRA_M1tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+5.00%§!\nFactory Output: §G+20.00%§!\nConsumer Goods: §G-5.0%§!\nProduction Efficiency Growth: §G+25.00%§!" #output
+BRA_M2tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+5.00%§!\nFactory Output: §G+25.00%§!\nConsumer Goods: §G-2.5%§!\nProduction Efficiency Growth: §G+25.00%§!" #out
+BRA_M3tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+2.50%§!\nFactory Output: §G+10.00%§!\nConsumer Goods: §G-2.5%§!\nProduction Efficiency Growth: §G+10.00%§!" #output
 
 BRA_researchtt:0 "Modify §YEconomy of Brazil§! by\nResearch Speed: §G+12.5%§!" 
 BRA_resourtt2:0 "Modify §YEconomy of Brazil§! by\nResource Gain Efficiency: §G+20%§!"
 BRA_resourtt1:0 "Modify §YEconomy of Brazil§! by\nResource Gain Efficiency: §G+10%§!" 
 BRA_Stab2:0 "Modify §YEconomy of Brazil§! by\nWeekly Stability: §G+0.2%§!"
 
-BRA_6tt:0 "Modify §YEconomy of Brazil§! by\nWeekly Stability: §G+0.2%§!\nDaily Political Power Cost: §G0.50§!"
-BRA_7tt:0 "Modify §YEconomy of Brazil§! by\nStability: §G+10.0%§!\nDaily Political Power Cost: §G0.25§!"
 
-BRA_consumer1tt:0 "Modify §YEconomy of Brazil§! "by\nConsumer Goods: §Y-5.0%§!"
-BRA_Con1tt:0 "Modify §YEconomy of Brazil§! "by\by\nConstruction Speed: §G10.0%§!"
-BRA_Con2tt:0 "Modify §YEconomy of Brazil§! "by\by\nConstruction Speed: §G5.0%§!"
-BRA_consumer2tt:0 "Modify §YEconomy of Brazil§! "by\nConsumer Goods: §Y-2.5%§!"
+
+BRA_consumer1tt:0 "Modify §YEconomy of Brazil§! by\nConsumer Goods: §Y-5.0%§!"
+BRA_Con1tt:0 "Modify §YEconomy of Brazil§! by\by\nConstruction Speed: §G10.0%§!"
+BRA_Con2tt:0 "Modify §YEconomy of Brazil§! by\by\nConstruction Speed: §G5.0%§!"
+BRA_consumer2tt:0 "Modify §YEconomy of Brazil§! by\nConsumer Goods: §Y-2.5%§!"
 
 

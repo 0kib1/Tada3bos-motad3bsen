@@ -8,10 +8,12 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
+			idea_token = BRA_frederick_stewart
 			allowed  = {
 					original_tag  = BRA
 				}
 			available = {
+				has_completed_focus = BRA_establish_national_armys_depo
 			}
 				cost  = 150.000
 				traits  = {
@@ -101,7 +103,7 @@ characters={
 				original_tag = BRA 
 			}
 			available = {
-				has_completed_focus = BRA_national_resources_mobilization_act
+				has_completed_focus = BRA_foreign_exports
 
 			}
 

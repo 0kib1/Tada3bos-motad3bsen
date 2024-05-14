@@ -39,6 +39,7 @@ BRA_economy_modifier = { #prep for work w/ Vlad
     production_factory_max_efficiency_factor = BRA_production_factory_max_efficiency_factor_var 
     research_speed_factor =  BRA_research_speed_factor_var
     production_speed_buildings_factor   = BRA_production_speed_buildings_factor_var
+    production_speed_infrastructure_factor = BRA_production_speed_infrastructure_factor_var
    
     industrial_capacity_factory = BRA_industrial_capacity_factory_var
     industrial_capacity_dockyard = BRA_industrial_capacity_dockyard_var 
