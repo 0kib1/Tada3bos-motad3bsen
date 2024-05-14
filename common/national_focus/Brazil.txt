@@ -1115,7 +1115,6 @@
 		cost = 5
 		prerequisite = { focus = BRA_tame_the_amazon }
 		
-		mutually_exclusive = { focus = BRA_fund_capital}
 
 
 		## = yes
@@ -1128,7 +1127,7 @@
 				limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 4
+						level = 2
 						instant_build = yes
 					}
 		
@@ -1143,7 +1142,7 @@
 				limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 4
+						level = 2
 						instant_build = yes
 					}	
 		
@@ -1157,7 +1156,7 @@
 						limit = { is_controlled_by = ROOT }
 							add_building_construction = {
 								type = infrastructure
-								level = 4
+								level = 2
 								instant_build = yes
 			
 							}	
@@ -1194,7 +1193,6 @@ focus = {
 		cost = 5
 		prerequisite = { focus = BRA_tame_the_coast }
 		
-		mutually_exclusive = { focus = BRA_fund_amazon}
 
 
 		## = yes
@@ -1207,7 +1205,7 @@ focus = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
 					type = infrastructure
-					level = 4
+					level = 2
 					instant_build = yes
 				}	
 		
@@ -1227,7 +1225,7 @@ focus = {
 			limit = { is_controlled_by = ROOT }
 			add_building_construction = {
 				type = infrastructure
-				level = 4
+				level = 2
 				instant_build = yes
 			
 			}
@@ -1242,7 +1240,7 @@ focus = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
 					type = infrastructure
-					level = 4
+					level = 2
 					instant_build = yes
 			
 				}
@@ -4026,6 +4024,19 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			add_to_variable = {
+				var = BRA_political_power_cost_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = BRA_production_factory_max_efficiency_factor_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = BRA_industrial_capacity_factory_var
+				value = 0.05
+			}
+			custom_effect_tooltip = BRA_2tt
 		}
 	}
 
@@ -4047,7 +4058,18 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL}
 
 		completion_reward = {
-			add_ideas = BRA_radio_nacional_idea
+			add_to_variable = {
+				var = BRA_research_speed_factor_var
+				value = 0.0125
+			}
+			add_tech_bonus = {
+				category = industry
+				uses = 1
+				bonus = 1
+				name = USA_45
+			}
+			 
+			custom_effect_tooltip = BRA_researchtt
 		}
 	}
 
@@ -4069,7 +4091,18 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-		
+			add_to_variable = {
+				var = BRA_research_speed_factor_var
+				value = 0.0125
+			}
+			add_tech_bonus = {
+				category = electronics
+				uses = 1
+				bonus = 1
+				name = USA_45
+			}
+			 
+			custom_effect_tooltip = BRA_researchtt
 		}
 	}
 
@@ -4087,7 +4120,19 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-
+			capital_scope = {
+				add_resource = {
+					type = Tungesten
+					amount = 3
+					#state = 662
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -4111,7 +4156,7 @@ focus = {
 			capital_scope = {
 				add_resource = {
 					type = steel
-					amount = 240
+					amount = 5
 					#state = 662
 				}
 				add_extra_state_shared_building_slots = 1
@@ -4215,22 +4260,6 @@ focus = {
 	}
 
 
-	focus = {
-		id = BRA_deal_with_the_cangaceiro
-		icon = GFX_focus_BRA_deal_with_the_cangaco
-		prerequisite = { focus = BRA_radio_nacional  }
-		x = -2
-		y = 1
-		relative_position_id = BRA_radio_nacional
-		cost = 5
-		available = {
-		}
-
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-		}
-	}
 
 	focus = {
 		id = BRA_promote_immigration_to_brazil
@@ -4249,6 +4278,11 @@ focus = {
 		search_filters = { }
 
 		completion_reward = {
+			add_to_variable = {
+				var = BRA_local_resources_factor_var
+				value = 0.2
+			}
+			custom_effect_tooltip = BRA_resourtt2
 		}
 	}
 
@@ -4269,32 +4303,18 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = BRA_national_petroleum_council
-		icon = GFX_focus_generic_stockpile_fuel
-		prerequisite = { focus = BRA_invest_in_railways }
-		x = 0
-		y = 1
-		relative_position_id = BRA_invest_in_railways
-		cost = 5
-		ai_will_do = {
-			factor = 19
-		}
-		available = {
-			499 = {
-				is_owned_and_controlled_by = ROOT
+			add_to_variable = {
+				var = BRA_political_power_cost_var
+				value = 0.25
 			}
-		}
-
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-
+			add_to_variable = {
+				var = BRA_stability_factor_var
+				value = 0.10
+			}
+			custom_effect_tooltip = BRA_7tt
 		}
 	}
+
 
 	focus = {
 		id = BRA_batalha_do_borracha
@@ -4310,19 +4330,24 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+			add_to_variable = {
+				var = BRA_local_resources_factor_var
+				value = 0.1
+			}
 			every_owned_state = {
 				limit = {
 					OR = {
-						state = 497
-						state = 495						
+						state = 500
+						state = 501						
 					}	
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_resource = {
 					type = rubber
-					amount = 10
+					amount = 2
 				}
 			}
+			custom_effect_tooltip = BRA_resourtt1
 		}
 	}
 
@@ -4345,32 +4370,11 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			every_owned_state = {
-			}
 			
+		
 		}
 	}
 
-	focus = {
-		id = BRA_invest_in_ports
-		icon = GFX_focus_POL_develop_polish_shipbuilding
-		prerequisite = { focus = BRA_national_petroleum_council  }
-		x = 0
-		y = 1
-		relative_position_id = BRA_national_petroleum_council
-		cost = 5
-		ai_will_do = {
-			factor = 9
-		}
-		available = {
-		}
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-
-		}
-	}
 	focus = {
 		id = BRA_fabrica_nacional_de_motores
 		icon = GFX_focus_BRA_fabrica_national_de_motores
@@ -4389,7 +4393,9 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			
+			mio:USA_springfield_armory_organization = {
+				add_mio_funds = 1800
+			}
 		}
 	}
 
@@ -4413,7 +4419,9 @@ focus = {
 
 		completion_reward = {
 			
-		
+		mio:USA_army_ordnance_department_organization = {
+				add_mio_funds = 1200
+			}
 		
 		}
 	}
@@ -4437,7 +4445,11 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			
+			add_to_variable = {
+				var = BRA_stability_gain_factor_var
+				value = 0.002
+			}
+			custom_effect_tooltip = BRA_Stab2
 		}
 	}
 
@@ -4459,6 +4471,11 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			add_to_variable = {
+				var = BRA_consumer_goods_factor_var
+				value = -0.05
+			}
+			custom_effect_tooltip = BRA_consumer1tt
 		}
 	}
 
@@ -4480,7 +4497,11 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-	
+			add_to_variable = {
+				var = BRA_production_speed_buildings_factor_var
+				value = 0.10
+			}
+			custom_effect_tooltip = BRA_Con1tt
 		}
 	}
 
@@ -4498,8 +4519,16 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			unlock_decision_tooltip = BRA_federal_investment_in_rural_state
-			custom_effect_tooltip = BRA_financial_stimulation_tt
+			add_to_variable = {
+				var = BRA_production_speed_buildings_factor_var
+				value = 0.05
+			}
+			custom_effect_tooltip = BRA_Con2tt
+			add_to_variable = {
+				var = BRA_consumer_goods_factor_var
+				value = -0.025
+			}
+			custom_effect_tooltip = BRA_consumer2tt
 		}
 	}
 	focus = {
@@ -4517,11 +4546,11 @@ focus = {
 		completion_reward = {
 			add_to_variable = {
 				var = BRA_stability_factor_var
-				value = 0.2
+				value = 0.1
 			}
 			add_to_variable = {
 				var = BRA_political_power_factor_var
-				value = 0.2
+				value = 0.1
 			}
 			add_to_variable = {
 				var = BRA_political_power_cost_var
@@ -4549,7 +4578,18 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			add_to_variable = {
+				var = BRA_political_power_cost_var
+				value = 0.25
+			}
 
+			custom_effect_tooltip = BRA_Stab2
+
+			add_to_variable = {
+				var = BRA_political_power_gain_var
+				value = 0.15
+			}
+			custom_effect_tooltip = BRA_6tt
 		}
 	}
 
@@ -4569,8 +4609,21 @@ focus = {
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
-
+		#Cap
 		completion_reward = {
+			add_to_variable = {
+				var = BRA_consumer_goods_factor_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = BRA_production_factory_max_efficiency_factor_var
+				value = 0.175
+			}
+			add_to_variable = {
+				var = BRA_industrial_capacity_factory_var
+				value = 0.08
+			}
+			custom_effect_tooltip = BRA_3tt
 		}
 	}
 	focus = {
@@ -4589,8 +4642,25 @@ focus = {
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
-
+		#output
 		completion_reward = {
+				add_to_variable = {
+					var = BRA_consumer_goods_factor_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = BRA_production_factory_max_efficiency_factor_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = BRA_industrial_capacity_factory_var
+					value = 0.2
+				}
+				add_to_variable = {
+					var = BRA_production_factory_efficiency_gain_factor_var
+					value = 0.25
+				}
+				custom_effect_tooltip = BRA_M1tt
 		}
 	}
 
@@ -4611,8 +4681,24 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
-
-		}
+			add_to_variable = {
+				var = BRA_consumer_goods_factor_var
+				value = 0.025
+			}
+			add_to_variable = {
+				var = BRA_production_factory_max_efficiency_factor_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = BRA_industrial_capacity_factory_var
+				value = 0.25
+			}
+			add_to_variable = {
+				var = BRA_production_factory_efficiency_gain_factor_var
+				value = 0.25
+			}
+			custom_effect_tooltip = BRA_M2tt
+	}
 	}
 
 
@@ -4632,7 +4718,20 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		completion_reward = {			
+		completion_reward = {
+			add_to_variable = {
+				var = BRA_consumer_goods_factor_var
+				value = 0.025
+			}
+			add_to_variable = {
+				var = BRA_production_factory_max_efficiency_factor_var
+				value = 0.175
+			}
+			add_to_variable = {
+				var = BRA_industrial_capacity_factory_var
+				value = 0.08
+			}
+			custom_effect_tooltip = BRA_4tt
 		}
 	}
 
@@ -4654,7 +4753,15 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
-			add_ideas = BRA_nationalized_banks
+			add_to_variable = {
+				var = BRA_political_power_cost_var
+				value = 0.50
+			}
+			add_to_variable = {
+				var = BRA_stability_gain_factor_var
+				value = 0.02
+			}
+			custom_effect_tooltip = BRA_6tt
 		}
 	}
 
@@ -4679,7 +4786,24 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-		}
+			add_to_variable = {
+				var = BRA_consumer_goods_factor_var
+				value = 0.025
+			}
+			add_to_variable = {
+				var = BRA_production_factory_max_efficiency_factor_var
+				value = 0.025
+			}
+			add_to_variable = {
+				var = BRA_industrial_capacity_factory_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = BRA_production_factory_efficiency_gain_factor_var
+				value = 0.10
+			}
+			custom_effect_tooltip = BRA_M3tt
+	}
 	}
 
 	focus = {
@@ -4699,6 +4823,19 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
+				add_to_variable = {
+					var = BRA_stability_factor_var
+					value = 0.2
+				}
+				add_to_variable = {
+					var = BRA_political_power_factor_var
+					value = 0.15
+				}
+				add_to_variable = {
+					var = BRA_political_power_cost_var
+					value = 0.25
+				}
+				custom_effect_tooltip = BRA_5tt
 		}
 	}
 
@@ -4719,6 +4856,19 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
+				add_to_variable = {
+					var = BRA_stability_factor_var
+					value = 0.2
+				}
+				add_to_variable = {
+					var = BRA_political_power_factor_var
+					value = 0.15
+				}
+				add_to_variable = {
+					var = BRA_political_power_cost_var
+					value = 0.25
+				}
+				custom_effect_tooltip = BRA_5tt
 		}
 	}
 

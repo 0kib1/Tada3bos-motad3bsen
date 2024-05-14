@@ -16,6 +16,7 @@ set_variable = { BRA_stability_gain_factor_var = -0.004 }
 set_variable = { BRA_political_power_factor_var = -0.1 }
 set_variable = { BRA_political_power_cost_var = 0.5 }
 set_variable = { BRA_consumer_goods_factor_var = 0.05 }
+set_variable = { var = BRA_production_speed_buildings_factor_var value  = -0.05 }
 
 set_variable = { BRA_production_factory_max_efficiency_factor_var = -0.20 }
 set_variable = { BRA_production_factory_efficiency_gain_factor_var = -0.25 }
