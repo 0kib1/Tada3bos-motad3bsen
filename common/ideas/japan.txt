@@ -1039,6 +1039,10 @@ ideas = {
 				
 				operative_slot = 1
 			}
+		targeted_modifier = {
+			tag = CHI
+			attack_bonus_against = 0.100 # 0.100
+		}
 			research_bonus = {
 				industry = 0.1
 				electronics = 0.1
@@ -1072,6 +1076,10 @@ ideas = {
 				
 				operative_slot = 1
 			}
+		targeted_modifier = {
+			tag = CHI
+			attack_bonus_against = 0.100 # 0.100
+		}
 			research_bonus = {
 				industry = 0.1
 				electronics = 0.1
@@ -1107,6 +1115,10 @@ ideas = {
 				
 				operative_slot = 1
 			}
+		targeted_modifier = {
+			tag = CHI
+			attack_bonus_against = 0.100 # 0.100
+		}
 			research_bonus = {
 				industry = 0.1
 				electronics = 0.1
@@ -1153,6 +1165,10 @@ ideas = {
 				
 				operative_slot = 1
 			}
+			targeted_modifier = {
+			tag = CHI
+			attack_bonus_against = 0.100 # 0.100
+		}
 			research_bonus = {
 				industry = 0.1
 				electronics = 0.1
@@ -1200,6 +1216,10 @@ ideas = {
 				
 				operative_slot = 1
 			}
+		targeted_modifier = {
+			tag = CHI
+			attack_bonus_against = 0.100 # 0.100
+		}
 			research_bonus = {
 				industry = 0.1
 				electronics = 0.1
@@ -3507,26 +3527,7 @@ ideas = {
 				}
 			}
 		}
-				
-		JAP_attecak_1 = {
-			allowed = {
-				always = no
-			}	
-			
-			allowed = {
-				always = no
-			}
-			picture = jap_ichi_go
-			removal_cost = -1
-			modifier = {
-			}
-			targeted_modifier = {
-			tag = CHI
-			attack_bonus_against = 0.100 # 0.100
-		}
-	 }
 
-		
 		JAP_interservice_rivalry_navy_strengthened2 = {
 			allowed = {
 				always = no
