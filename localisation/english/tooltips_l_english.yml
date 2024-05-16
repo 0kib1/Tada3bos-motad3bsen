@@ -46,8 +46,8 @@ JAP_larger_airfields_tt:0 "Decision to build up §YIsland Defences§! upgrades a
 USA_infra_shipbuilding_tt:0 "§YNew England, New York, New Jersey, Pennsylvania, Virginia, Maryland, North Carolina, South Carolina, Georgia, Florida§! and §YCalifornia:§!\n   Add §G2§! §YInfrastructure§!."
 USA_infra_arsenal_tt:0 "§YMinnesota, Iowa, Wisconsin, Indiana, Ohio§! and §YMichigan:§! Set §YInfrastructure§! to level §Y10§!."
 ENG_compass_remove_tt:0 "§RIs removed after battle of France unless you hold Tobruk§!"
-UK_battle_axe_remove_tt:0 "Division Attack and Defense against all Axis members: §G+12.5%§!\n§YAll major ports in Africa are set to lvl 5§!\n§RIs removed at the start of operation Barbarossa§!"
-ITA_battle_of_gazala_tt:0 "Division Attack and Defense against all Allies: §G+12.5%§!"
+UK_battle_axe_remove_tt:0 "Division Attack and Defense against all Axis members: §G+20.0%§!\n§YAll major ports in Africa are set to lvl 5§!\n§RIs removed at the start of operation Barbarossa§!"
+ITA_battle_of_gazala_tt:0 "Division Attack and Defense against all Allies: §G+20.0%§!"
 ENG_dig_in_Tobruk:0 "Fortify Tobruk"
 ENG_spawn_tobruk_forts_tt:0 "If you control §YTobruk§!, §Glvl 8 forts§! will spawn in and around Tobruk."
 tank_manufacturer_cost_factor_MIO: "Tank §YMilitary Industrial Organization§! cost"
@@ -2370,15 +2370,15 @@ FRA_core2_tt:0 "Modify §YThe French Armed Forces§! by\nDivision Attack on Core
  ast_diversify_australian_electronics_production_tt:0 "If you have researched §YSupport Company Radios§! before completing this focus, you will gain §YArtillery Radios§!"
 AST_uni_carrier_for_free_tt:0 "Gives §YUniversal Carrier§! if you already have §YBren Carrier§!"
 
- Dabolaapp_tt:0 "§GWill Give You §YMilitary Factory§! construction speed: §G+20%§! $RIGHT|+=%$ For 750 Days And "Consumer Goods Factories in Long term Rearm Decision: §Y-4.0%§!"
- Dabolacon_tt:0 "§GWill Give You §YMilitary Factory§! construction speed: §G+20%§! $RIGHT|+=%$ For 600 Days And "Consumer Goods Factories in Long term Rearm Decision: §Y-4.0%§!"
- japwar1_tt:0 "§RYou can declare war early as embargo japan or 1940.10.1:"
- japwar_tt:0 "§RYou can declare war early as 1941.1.1:"
+ Dabolaapp_tt:0 "§GWill Give You §YMilitary Factory§! construction speed: §G+20%§! $RIGHT|+=%$ For 750 Days And "Consumer Goods Factories: §Y-4.0%§! !§!"
+ Dabolacon_tt:0 "§GWill Give You §YMilitary Factory§! construction speed: §G+20%§! $RIGHT|+=%$ For 600 Days And "Consumer Goods Factories: §Y-4.0%§! !§!"
+ japwar1_tt:0 "§GYou can declare war early as embargo japan or 1940.10.1: §Y§! !§!"
+ japwar_tt:0 "§GYou can declare war early as 1941.1.1: §Y§! !§!"
 
 BRA_1tt:0 "Modify §YEconomy of Brazil§! by\nStability: §G+10.00%§!\nDaily Political Power Cost: §G-0.05§!\nPolitical Power Gain: §G+10%§!"
 BRA_2tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+5.0%§!\nFactory Output: §G+5.0%§!\nPolitical Power Cost: §R+5.0%§!"
-BRA_3tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+17.50%§!\nFactory Output: §G+8.00%§!\nConsumer Goods: §Y-5.0%§!" #CAP
-BRA_4tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+17.50%§!\nFactory Output: §G+8.00%§!\nConsumer Goods: §Y-2.5%§!"  #CAP
+BRA_3tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+17.50%§!\nFactory Output: §G+8.00%§!\nConsumer Goods: §R-5.0%§!" #CAP
+BRA_4tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+17.50%§!\nFactory Output: §G+8.00%§!\nConsumer Goods: §R-2.5%§!"  #CAP
 BRA_5tt:0 "Modify §YEconomy of Brazil§! by\nStability: §G+20.00%§!\nDaily Political Power Cost: §G0.25§!\nPolitical Power Gain: §G+15%§!"
 BRA_6tt:0 "Modify §YEconomy of Brazil§! by\nDaily Political Power Cost: §G0.30§!\nPolitical Power Gain: §G+15%§!"
 BRA_7tt:0 "Modify §YEconomy of Brazil§! by\nStability: §G+10.0%§!\nDaily Political Power Cost: §G-0.25§!"
@@ -2386,9 +2386,9 @@ BRA_8tt:0 "Modify §YEconomy of Brazil§! by\nWeekly Stability: §G+0.2%§!\nDai
 BRA_9tt:0 "Modify §YEconomy of Brazil§! by\n§YInfrastructure§! construction speed: §G+25.00%§!"
 
 
-BRA_M1tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+5.00%§!\nFactory Output: §G+20.00%§!\nConsumer Goods: §Y-5.0%§!\nProduction Efficiency Growth: §G+25.00%§!" #output
-BRA_M2tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+5.00%§!\nFactory Output: §G+25.00%§!\nConsumer Goods: §Y-2.5%§!\nProduction Efficiency Growth: §G+25.00%§!" #out
-BRA_M3tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+2.50%§!\nFactory Output: §G+10.00%§!\nConsumer Goods: §Y-2.5%§!\nProduction Efficiency Growth: §G+10.00%§!" #output
+BRA_M1tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+5.00%§!\nFactory Output: §G+20.00%§!\nConsumer Goods: §G-5.0%§!\nProduction Efficiency Growth: §G+25.00%§!" #output
+BRA_M2tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+5.00%§!\nFactory Output: §G+25.00%§!\nConsumer Goods: §G-2.5%§!\nProduction Efficiency Growth: §G+25.00%§!" #out
+BRA_M3tt:0 "Modify §YEconomy of Brazil§! by\nProduction Efficiency Cap: §G+2.50%§!\nFactory Output: §G+10.00%§!\nConsumer Goods: §G-2.5%§!\nProduction Efficiency Growth: §G+10.00%§!" #output
 
 BRA_researchtt:0 "Modify §YEconomy of Brazil§! by\nResearch Speed: §G+12.5%§!" 
 BRA_resourtt2:0 "Modify §YEconomy of Brazil§! by\nResource Gain Efficiency: §G+20%§!"
