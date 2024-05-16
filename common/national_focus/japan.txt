@@ -63,13 +63,14 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = japwar_tt	
+			
 			add_political_power = 50
 			add_ideas = JAP_attecak_1
 			swap_ideas = {
 				remove_idea = JAP_zaibatsus
 				add_idea = JAP_zaibatsus_dominance				
 			}	
+			custom_effect_tooltip = japwar_tt	
 			#JAP_gain_overextension = yes 
 
 		}
@@ -1552,12 +1553,13 @@ focus_tree = {
 
 
 		completion_reward = {
-			custom_effect_tooltip = japwar1_tt	
+			
 			add_political_power = 50
 			swap_ideas = {
 				remove_idea = JAP_zaibatsus
 				add_idea = JAP_zaibatsus_challenged
 			}
+			custom_effect_tooltip = japwar1_tt	
 		}
 	}
 	focus = {

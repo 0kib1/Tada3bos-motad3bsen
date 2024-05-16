@@ -749,8 +749,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			custom_effect_tooltip = ENG_containment_tt
-			custom_effect_tooltip =	Dabolacon_tt
+			
 			
 			if = {
 				limit = {
@@ -770,6 +769,8 @@ focus_tree = {
 			add_to_variable = {
 				ENG_political_power_cost_var = -0.1
 			}
+			custom_effect_tooltip = ENG_containment_tt
+			custom_effect_tooltip =	Dabolacon_tt
 		}
 	}
 	focus = {
@@ -1035,8 +1036,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			custom_effect_tooltip = Dabolaapp_tt
-			custom_effect_tooltip = ENG_appeasement_tt
+			
 
 			add_to_variable = {
 				ENG_political_power_factor_var = 0.2
@@ -1044,7 +1044,8 @@ focus_tree = {
 			add_to_variable = {
 				ENG_political_power_cost_var = -0.1
 			}
-			
+			custom_effect_tooltip = ENG_appeasement_tt
+			custom_effect_tooltip = Dabolaapp_tt
 		}
 	}
 	focus = {
