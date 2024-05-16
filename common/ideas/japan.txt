@@ -3524,9 +3524,9 @@ ideas = {
 			tag = CHI
 			attack_bonus_against = 0.100 # 0.100
 		}
-	}
+	 }
 
-		}
+		
 		JAP_interservice_rivalry_navy_strengthened2 = {
 			allowed = {
 				always = no
