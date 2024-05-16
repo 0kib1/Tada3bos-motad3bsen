@@ -46,6 +46,26 @@ ideas = {
 			
 			traits = { armaments_organizer }
 		}
+		BRA_maxwell_aitken = {
+			
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { war_industrialist }
+		}
+		BRA_frederick_marquis = {
+		
+			picture = generic_political_advisor_europe_4
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { captain_of_industry }
+		}
 	}
 	theorist = {
 
@@ -560,9 +580,9 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.10
-				local_resources_factor = -0.2	 
-				production_speed_buildings_factor = 0.45
-				local_building_slots_factor = 0.1
+				local_resources_factor = -0.25	 
+				production_speed_buildings_factor = 0.4
+				local_building_slots_factor = 0.125
 				
 			}
 	    } 
@@ -588,7 +608,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.08
-				local_resources_factor = -0.1	 
+				local_resources_factor = 0.00	 
 				production_speed_buildings_factor = 0.24
 				local_building_slots_factor = 0.1
 				
@@ -625,7 +645,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.07
-				local_resources_factor = 0.1
+				local_resources_factor = 0.05
 				production_speed_buildings_factor = 0.27
 				local_building_slots_factor = 0.12
 				
@@ -656,7 +676,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.05
-				local_resources_factor = 0.11
+				local_resources_factor = 0.125
 				production_speed_buildings_factor = 0.29
 				local_building_slots_factor = 0.14
 				
@@ -688,7 +708,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = 0.07
+				consumer_goods_factor = 0.08
 				local_resources_factor = -0.15	 
 				production_speed_buildings_factor = 0.18
 				local_building_slots_factor = 0.08
@@ -710,7 +730,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.05
-				local_resources_factor = -0.13 
+				local_resources_factor = -0.15 
 				production_speed_buildings_factor = 0.16
 				local_building_slots_factor = 0.05
 				
@@ -733,7 +753,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = 0.00
 				local_resources_factor = -0.15
 				production_speed_buildings_factor = 0.14
 				local_building_slots_factor = 0.03
@@ -802,8 +822,6 @@ ideas = {
 			removal_cost = -1
 			
 			 modifier = {
-			 political_power_gain = -0.05
-			 production_speed_infrastructure_factor = -0.20
 			 supply_consumption_factor = 0.10
 			 army_morale_factor = -0.1
 			 army_org_factor = -0.05
@@ -814,7 +832,7 @@ ideas = {
 			equipment_bonus = {
 
 			infantry_equipment = {
-				build_cost_ic = 0.25 instant = yes
+				build_cost_ic = 0.2 instant = yes
 			}
 			support_equipment = {
 				build_cost_ic = 0.1 instant = yes
@@ -823,33 +841,33 @@ ideas = {
 				build_cost_ic = 0.10 instant = yes
 			}
 			special_equipment = {
-				build_cost_ic = 0.40 instant = yes
+				build_cost_ic = 0.30 instant = yes
 			}
 			artillery_equipment = {
-				build_cost_ic = 0.25 instant = yes
+				build_cost_ic = 0.15 instant = yes
 			}
 			heavy_artillery_equipment = {
-				build_cost_ic = 0.20 instant = yes
+				build_cost_ic = 0.10 instant = yes
 			}
 
 			field_gun_equipment = {
-				build_cost_ic = 0.15 instant = yes
+				build_cost_ic = 0.1 instant = yes
 			}
 			pack_artillery_equipment = {
 				build_cost_ic = 0.08 instant = yes
 			}
 			rocket_artillery_equipment = {
-				build_cost_ic = 0.15 instant = yes
+				build_cost_ic = 0.1 instant = yes
 			}
 
 			anti_tank_equipment = {
-				build_cost_ic = 0.15 instant = yes
+				build_cost_ic = 0.1 instant = yes
 			}
 			anti_air_equipment = {
 				build_cost_ic = 0.08 instant = yes
 			}
 			heavy_anti_air_equipment = {
-				build_cost_ic = 0.15 instant = yes
+				build_cost_ic = 0.1 instant = yes
 			}
 
 
@@ -882,14 +900,12 @@ ideas = {
 		  } 
 		  removal_cost = -1
 		  
-		   modifier = {
-		   political_power_gain = -0.05
-		   production_speed_infrastructure_factor = -0.20
-		   supply_consumption_factor = 0.10
+		   modifier = 
+		   supply_consumption_factor = 0.075
 		   army_morale_factor = 0.0
 		   army_org_factor = 0.00
 		   send_volunteers_tension = -0.5
-				send_volunteer_divisions_required = -1
+			send_volunteer_divisions_required = -1
 		   
 		  }
 		  targeted_modifier = {
@@ -905,7 +921,7 @@ ideas = {
 		  equipment_bonus = {
 
 		  infantry_equipment = {
-			  build_cost_ic = 0.2 instant = yes
+			  build_cost_ic = 0.15 instant = yes
 		  }
 		  support_equipment = {
 			  build_cost_ic = 0.00 instant = yes
@@ -914,23 +930,23 @@ ideas = {
 			  build_cost_ic = 0.00 instant = yes
 		  }
 		  special_equipment = {
-			  build_cost_ic = 0.40 instant = yes
+			  build_cost_ic = 0.20 instant = yes
 		  }
 		  artillery_equipment = {
-			  build_cost_ic = 0.25 instant = yes
+			  build_cost_ic = 0.1 instant = yes
 		  }
 		  heavy_artillery_equipment = {
-			  build_cost_ic = 0.20 instant = yes
+			  build_cost_ic = 0.10 instant = yes
 		  }
 
 		  field_gun_equipment = {
-			  build_cost_ic = 0.15 instant = yes
+			  build_cost_ic = 0.1 instant = yes
 		  }
 		  pack_artillery_equipment = {
 			  build_cost_ic = 0.08 instant = yes
 		  }
 		  rocket_artillery_equipment = {
-			  build_cost_ic = 0.15 instant = yes
+			  build_cost_ic = 0.1 instant = yes
 		  }
 
 		  anti_tank_equipment = {
@@ -974,12 +990,10 @@ ideas = {
 		  } 
 		  removal_cost = -1
 		  
-		   modifier = {
-		   political_power_gain = -0.05
-		   production_speed_infrastructure_factor = -0.20
-		   supply_consumption_factor = 0.10
-		   army_morale_factor = -0.1
-		   army_org_factor = -0.05
+		   modifier = 
+		   supply_consumption_factor = 0.075
+		   army_morale_factor = 0.0
+		   army_org_factor = 0.00
 		   send_volunteers_tension = -0.5
 				send_volunteer_divisions_required = -1
 		   
@@ -987,13 +1001,13 @@ ideas = {
 		  equipment_bonus = {
 
 		  infantry_equipment = {
-			  build_cost_ic = 0.25 instant = yes
+			  build_cost_ic = 0.2 instant = yes
 		  }
 		  support_equipment = {
-			  build_cost_ic = 0.10 instant = yes
+			  build_cost_ic = 0.05 instant = yes
 		  }
 		  radio_equipment = {
-			  build_cost_ic = 0.10 instant = yes
+			  build_cost_ic = 0.075 instant = yes
 		  }
 		  special_equipment = {
 			  build_cost_ic = 0.000 instant = yes
@@ -1055,12 +1069,10 @@ ideas = {
 		  } 
 		  removal_cost = -1
 		  
-		   modifier = {
-		   political_power_gain = -0.05
-		   production_speed_infrastructure_factor = -0.20
-		   supply_consumption_factor = 0.10
-		   army_morale_factor = -0.1
-		   army_org_factor = -0.05
+		   modifier = 
+		   supply_consumption_factor = 0.075
+		   army_morale_factor = 0.0
+		   army_org_factor = 0.00
 		   send_volunteers_tension = -0.5
 				send_volunteer_divisions_required = -1
 		   
@@ -1068,16 +1080,16 @@ ideas = {
 		  equipment_bonus = {
 
 		  infantry_equipment = {
-			  build_cost_ic = 0.15 instant = yes
+			  build_cost_ic = 0.00 instant = yes
 		  }
 		  support_equipment = {
-			  build_cost_ic = 0.10 instant = yes
+			  build_cost_ic = 0.00 instant = yes
 		  }
 		  radio_equipment = {
-			  build_cost_ic = 0.10 instant = yes
+			  build_cost_ic = 0.000 instant = yes
 		  }
 		  special_equipment = {
-			  build_cost_ic = -0.075 instant = yes
+			  build_cost_ic = -0.025 instant = yes
 		  }
 		  artillery_equipment = {
 			  build_cost_ic = -0.04 instant = yes
@@ -1136,10 +1148,8 @@ ideas = {
 		  } 
 		  removal_cost = -1
 		  
-		   modifier = {
-		    political_power_gain = -0.05
-		   production_speed_infrastructure_factor = -0.20
-		   supply_consumption_factor = 0.05
+		   modifier = 
+		   supply_consumption_factor = -0.05
 		   army_morale_factor = 0.05
 		   army_org_factor = 0.075
 		   send_volunteers_tension = -0.5
@@ -1159,7 +1169,7 @@ ideas = {
 		  equipment_bonus = {
 
 			infantry_equipment = {
-				build_cost_ic = 0.175 instant = yes
+				build_cost_ic = 0.1 instant = yes
 			}
 			support_equipment = {
 				build_cost_ic = 0.05 instant = yes
@@ -1168,33 +1178,33 @@ ideas = {
 				build_cost_ic = 0.05 instant = yes
 			}
 			special_equipment = {
-				build_cost_ic = 0.075 instant = yes
+				build_cost_ic = 0.04 instant = yes
 			}
 			artillery_equipment = {
-				build_cost_ic = 0.08 instant = yes
+				build_cost_ic = 0.04 instant = yes
 			}
 			heavy_artillery_equipment = {
-				build_cost_ic = 0.08 instant = yes
+				build_cost_ic = 0.04 instant = yes
 			}
   
 			field_gun_equipment = {
-				build_cost_ic = 0.08 instant = yes
+				build_cost_ic = 0.04 instant = yes
 			}
 			pack_artillery_equipment = {
-				build_cost_ic = 0.08 instant = yes
+				build_cost_ic = 0.04 instant = yes
 			}
 			rocket_artillery_equipment = {
-				build_cost_ic = 0.08 instant = yes
+				build_cost_ic = 0.04 instant = yes
 			}
   
 			anti_tank_equipment = {
-				build_cost_ic = 0.08 instant = yes
+				build_cost_ic = 0.04 instant = yes
 			}
 			anti_air_equipment = {
-				build_cost_ic = 0.08 instant = yes
+				build_cost_ic = 0.04 instant = yes
 			}
 			heavy_anti_air_equipment = {
-				build_cost_ic = 0.08 instant = yes
+				build_cost_ic = 0.04 instant = yes
 			}
   
   
@@ -1208,7 +1218,7 @@ ideas = {
 				build_cost_ic = 0.10 instant = yes 
 			}
 			motorized = {
-				build_cost_ic = 0.05 instant = yes 
+				build_cost_ic = 0.04 instant = yes 
 			}
 		 }
 	  

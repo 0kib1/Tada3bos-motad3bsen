@@ -1014,6 +1014,7 @@ JAP_pacific_war_explanation_category = {
                     }
                 }
                 date > 1941.1.1 
+				has_war_with = CHI
 			}
 			if = {
 				limit = {
@@ -1021,7 +1022,7 @@ JAP_pacific_war_explanation_category = {
 						is_ai = no
 					}
 					  JAP = {
-                            has_completed_focus = JAP_challenge_the_zaibatsus
+                         has_completed_focus = JAP_challenge_the_zaibatsus
 					  }
 
 				}
@@ -1035,6 +1036,7 @@ JAP_pacific_war_explanation_category = {
 					
 					date > 1940.10.1
 				}
+			has_war_with = CHI
 			}
 		}
 		
@@ -1389,6 +1391,7 @@ JAP_pacific_war_explanation_category = {
 					}
 				}
 				ENG = { add_to_faction = USA }
+				ENG = { add_to_faction = BRA }
 				USA = { 
 					add_to_war = { 
 						targeted_alliance = ENG
@@ -1396,6 +1399,12 @@ JAP_pacific_war_explanation_category = {
 					}
 					hidden_effect = {
 						complete_national_focus = USA_pacific_war
+					}
+				}
+				BRA = { 
+					add_to_war = { 
+						targeted_alliance = ENG
+						enemy = JAP
 					}
 				}
 				ENG = { add_to_faction = BRA }
