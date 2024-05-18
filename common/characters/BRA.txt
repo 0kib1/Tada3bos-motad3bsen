@@ -64,7 +64,7 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			allowed  = {
+				allowed  = {
 					original_tag  = BRA
 				}
 			available = {
@@ -73,19 +73,7 @@ characters={
 				traits  = {
 					silent_workhorse
 				}
-	  }
-	dvisor={
-			slot = war_
-			allowed  = {
-					original_tag  = BRA
-				}
-			available = {
-			}
-				cost  = 150.000
-				traits  = {
-					CAN_bank_president
-				}
-      }
+	  	}
 	}
 
 
@@ -307,10 +295,11 @@ characters={
 			}
 			cost = 150
 			traits = { air_chief_all_weather_3 }
-		}
-	} 
+			}
+		} 
 	}
-		BRA_Mascarenhas_de_casper={
+
+	BRA_Mascarenhas_de_casper={
 		name="Casper"
 		portraits = {
 			army = {

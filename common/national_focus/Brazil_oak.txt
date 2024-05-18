@@ -2940,7 +2940,6 @@ focus = {
 		}
 
 		available = {
-			has_tech = advanced_machine_tools
 
 		}
 		
