@@ -2535,14 +2535,7 @@ focus = {
 		}
 
 		available = {
-		army_experience = 75
-		add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = land_doctrine
-			}
-			army_experience = 75
+		
 		}
 		
 		bypass = {
@@ -2554,6 +2547,13 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			army_experience = 75
 		}
 	}
 
