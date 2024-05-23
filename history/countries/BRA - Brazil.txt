@@ -5,7 +5,7 @@ oob = "BRA_1936"
 
 set_stability = 0.4
 starting_train_buffer = 2
-set_research_slots = 4
+set_research_slots = 3
 add_dynamic_modifier = {
     modifier = BRA_economy_modifier
 }
@@ -57,6 +57,23 @@ set_technology = {
 	tactical_bomber_1934 = 1
 	starting_industry = 1
 }
+if = {
+		limit = {
+			 has_dlc = "No Step Back" 
+		}
+		set_technology = {
+			usa_1934_light_tank_chassis = 1
+			usa_1936_light_tank_chassis = 1
+			unlock_modules = 1
+			automatic_gun = 1
+			small_gun = 1
+			small_gun2 = 1
+			armour_sloping = 1
+			engine_tech_1 = 1
+			automatic_gun2 = 1
+			early_cupola = 1
+		}
+	}
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -149,7 +166,7 @@ create_country_leader = {
 		#
 	}
 }
-set_convoys = 140
+set_convoys = 280
 
 create_equipment_variant = {
 	name = "Tribal Class"

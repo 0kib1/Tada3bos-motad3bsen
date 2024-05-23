@@ -5,18 +5,21 @@ on_actions = {
 			
 			if = {
 				limit = {
-					
-					HUN = {
-						has_capitulated = no 
-					}
-					SLO = {
-						has_capitulated = no 
-					}
-					BUL = {
-						has_capitulated = no 
-					}
-					ROM = {
-						has_capitulated = no 
+					SOV = {
+						OR = {
+							NOT = {
+								controls_state = 212
+								controls_state = 806
+								controls_state = 46
+								controls_state = 84
+								controls_state = 83
+								controls_state = 807
+								controls_state = 43
+								controls_state = 70
+								controls_state = 75
+
+							}
+						}
 					}			
 					SOV = {
 						OR = {
@@ -337,6 +340,20 @@ on_actions = {
 					add_building_construction = {
 						type = industrial_complex
 						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			
+				}
+				500 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
 						instant_build = yes
 					}
 					add_building_construction = {
@@ -2740,8 +2757,17 @@ on_actions = {
 				FROM = { tag = GER }
 				ROOT = { tag = POL }
 			}
-			FRA = {
-				complete_national_focus = FRA_phoney_war
+			if = {
+				limit = {
+					FRA = {
+						NOT = {
+							has_completed_focus = FRA_phoney_war
+						}
+					}
+				}
+				FRA = {
+					complete_national_focus = FRA_phoney_war
+				}
 			}	
 		} 
 		if = {
@@ -2754,11 +2780,31 @@ on_actions = {
 				}
 				ROOT = { tag = NOR }
 			}
-			FRA = {
-				add_to_variable = { var = FRA_initial_war_euthasium_army_core_attack_factor_modifier value = -0.075 }
-				add_to_variable = { var = FRA_initial_war_euthasium_army_core_defence_factor_modifier value = -0.075 }
-				add_to_variable = { var = FRA_initial_war_euthasium_air_ground_attack_modifier value = -0.075 }
-			}	
+			if = {
+				limit = {
+					FRA = {
+						check_variable = {
+							var = FRA_initial_war_euthasium_army_core_attack_factor_modifier
+							value = 0
+							compare = greater_than
+						}
+					}
+				}
+				FRA = {
+					add_to_variable = { var = FRA_initial_war_euthasium_army_core_attack_factor_modifier value = -0.075 }
+					add_to_variable = { var = FRA_initial_war_euthasium_army_core_defence_factor_modifier value = -0.075 }
+					add_to_variable = { var = FRA_initial_war_euthasium_air_ground_attack_modifier value = -0.075 }
+				}
+				
+			}
+			
+			else = {
+				FRA = {
+					add_to_variable = { var = FRA_initial_war_euthasium_army_attack_factor_modifier value = -0.075 }
+					add_to_variable = { var = FRA_initial_war_euthasium_army_defence_factor_modifier value = -0.075 }
+					add_to_variable = { var = FRA_initial_war_euthasium_air_ground_attack_modifier value = -0.075 }
+				}
+			}
 		}
 		 if = {
 			limit = {
@@ -2770,10 +2816,30 @@ on_actions = {
 				}
 				ROOT = { tag = DEN }
 			}
-			FRA = {
-				add_to_variable = { var = FRA_initial_war_euthasium_army_core_attack_factor_modifier value = -0.05 }
-				add_to_variable = { var = FRA_initial_war_euthasium_army_core_defence_factor_modifier value = -0.05 }
-				add_to_variable = { var = FRA_initial_war_euthasium_air_ground_attack_modifier value = -0.05 }
+			if = {
+				limit = {
+					FRA = {
+						check_variable = {
+							var = FRA_initial_war_euthasium_army_core_attack_factor_modifier
+							value = 0
+							compare = greater_than
+						}
+					}
+				}
+				FRA = {
+					add_to_variable = { var = FRA_initial_war_euthasium_army_core_attack_factor_modifier value = -0.05 }
+					add_to_variable = { var = FRA_initial_war_euthasium_army_core_defence_factor_modifier value = -0.05 }
+					add_to_variable = { var = FRA_initial_war_euthasium_air_ground_attack_modifier value = -0.05 }
+				}
+				
+			}
+			
+			else = {
+				FRA = {
+					add_to_variable = { var = FRA_initial_war_euthasium_army_attack_factor_modifier value = -0.05 }
+					add_to_variable = { var = FRA_initial_war_euthasium_army_defence_factor_modifier value = -0.05 }
+					add_to_variable = { var = FRA_initial_war_euthasium_air_ground_attack_modifier value = -0.05 }
+				}
 			}	
 		}
 		if = {
@@ -2786,10 +2852,30 @@ on_actions = {
 				}
 				ROOT = { tag = HOL }
 			}
-			FRA = {
-				add_to_variable = { var = FRA_initial_war_euthasium_army_core_attack_factor_modifier value = -0.05 }
-				add_to_variable = { var = FRA_initial_war_euthasium_army_core_defence_factor_modifier value = -0.05 }
-				add_to_variable = { var = FRA_initial_war_euthasium_air_ground_attack_modifier value = -0.05 }
+			if = {
+				limit = {
+					FRA = {
+						check_variable = {
+							var = FRA_initial_war_euthasium_army_core_attack_factor_modifier
+							value = 0
+							compare = greater_than
+						}
+					}
+				}
+				FRA = {
+					add_to_variable = { var = FRA_initial_war_euthasium_army_core_attack_factor_modifier value = -0.05 }
+					add_to_variable = { var = FRA_initial_war_euthasium_army_core_defence_factor_modifier value = -0.05 }
+					add_to_variable = { var = FRA_initial_war_euthasium_air_ground_attack_modifier value = -0.05 }
+				}
+				
+			}
+			
+			else = {
+				FRA = {
+					add_to_variable = { var = FRA_initial_war_euthasium_army_attack_factor_modifier value = -0.05 }
+					add_to_variable = { var = FRA_initial_war_euthasium_army_defence_factor_modifier value = -0.05 }
+					add_to_variable = { var = FRA_initial_war_euthasium_air_ground_attack_modifier value = -0.05 }
+				}
 			}	
 		}
 		if = {
@@ -2807,11 +2893,30 @@ on_actions = {
 					}
 				}
 			}
-			FRA = {
-				 add_to_variable = { var = FRA_initial_war_euthasium_army_core_attack_factor_modifier value = -0.05 }
-				add_to_variable = { var = FRA_initial_war_euthasium_army_core_defence_factor_modifier value = -0.05 }
-				add_to_variable = { var = FRA_initial_war_euthasium_air_ground_attack_modifier value = -0.05 }
-				complete_national_focus = FRA_retraite
+			if = {
+				limit = {
+					FRA = {
+						check_variable = {
+							var = FRA_initial_war_euthasium_army_core_attack_factor_modifier
+							value = 0
+							compare = greater_than
+						}
+					}
+				}
+				FRA = {
+					add_to_variable = { var = FRA_initial_war_euthasium_army_core_attack_factor_modifier value = -0.05 }
+					add_to_variable = { var = FRA_initial_war_euthasium_army_core_defence_factor_modifier value = -0.05 }
+					add_to_variable = { var = FRA_initial_war_euthasium_air_ground_attack_modifier value = -0.05 }
+				}
+				
+			}
+			
+			else = {
+				FRA = {
+					add_to_variable = { var = FRA_initial_war_euthasium_army_attack_factor_modifier value = -0.05 }
+					add_to_variable = { var = FRA_initial_war_euthasium_army_defence_factor_modifier value = -0.05 }
+					add_to_variable = { var = FRA_initial_war_euthasium_air_ground_attack_modifier value = -0.05 }
+				}
 			}	
 		}        
 	   if = {
@@ -3554,9 +3659,9 @@ on_actions = {
 					}
 					remove_ideas = GER_blitzkrieg
 				}
-				GER = {	
-					country_event = germany.703
-				}
+				#GER = {	
+					#country_event = germany.703
+				#}
 				every_state = {
 					limit = {
 						is_core_of = BEL

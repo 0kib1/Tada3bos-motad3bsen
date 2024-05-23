@@ -750,7 +750,10 @@ SOV_socialism_in_one_country = {
 				SOV = {
 				surrender_progress < 0.05
 					} 	
-				GER = { has_war_with = SOV }
+				GER = { 
+					has_war_with = SOV 
+					controls_state = 10
+				}
 				POL = {
 					exists = no
 				}
@@ -850,7 +853,6 @@ SOV_socialism_in_one_country = {
 		  }
 	  }
 	  hidden_effect = {
-		set_capital = {state = 830}
 		GER = {
 			division_template = {
 				name = "Einsatzgruppen Warschau"
@@ -12203,7 +12205,7 @@ SOV_great_patriotic_war = {
 			any_enemy_country = {
 				is_major = yes
 			}
-			surrender_progress > 0.375
+			surrender_progress > 0.4
 		}
 
 		cost = 0
@@ -12544,7 +12546,7 @@ SOV_great_patriotic_war = {
 				}	
 				add_timed_idea = {	
 					idea = SOV_zhukovs_counter_offensive_idea
-					days = 30
+					days = 40
 				}
 				hidden_effect = {
 					every_country = {
@@ -12698,7 +12700,7 @@ SOV_great_patriotic_war = {
 				}	
 				add_timed_idea = {	
 					idea = SOV_zhukovs_counter_offensive_idea
-					days = 30
+					days = 40
 				}
 				hidden_effect = {
 					every_country = {
@@ -12903,7 +12905,7 @@ SOV_great_patriotic_war = {
 		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 10
+			civilian_factory_use = 20
 			army_core_defence_factor = 0.15
 		}
 		complete_effect = {
@@ -15092,21 +15094,123 @@ SOV_great_patriotic_war = {
 		
 		available = {
 			tag = SOV
-			NOT = { has_idea = winter_offensive }
 			has_war_with = GER
-			has_country_flag = SOVwintercounteroffense2
 			
-			or = { AND = { date > 1940.11.29 date < 1941.01.20 } AND = { date > 1941.11.29 date < 1942.01.20} AND = { date > 1942.11.29 date < 1943.01.20} AND = { date > 1943.11.29 date < 1944.01.20 } AND = { date > 1944.11.29 date < 1945.01.20 } }
+			GER = {
+				NOT = { 
+					has_country_flag = summer_offensive_ger_flag
+				}
+			}
 			
-		
+			AND = { 
+				date > 1944.04.1 
+				date < 1944.10.1 
+			} 
+			custom_trigger_tooltip = {
+				tooltip = SOV_special_summer_offensive
+				OR = {
+					OR = {
+						ENG = {
+							controls_state = 16
+						}
+						any_other_country = {
+							is_in_faction_with = ENG
+							controls_state = 16
+						}
+					}
+					OR = {
+						ENG = {
+							controls_state = 6
+						}
+						any_other_country = {
+							is_in_faction_with = ENG
+							controls_state = 6
+						}
+					}
+					OR = {
+						ENG = {
+							controls_state = 36
+						}
+						any_other_country = {
+							is_in_faction_with = ENG
+							controls_state = 36
+						}
+					}
+					OR = {
+						ENG = {
+							controls_state = 58
+						}
+						any_other_country = {
+							is_in_faction_with = ENG
+							controls_state = 58
+						}
+					}
+					OR = {
+						ENG = {
+							controls_state = 59
+						}
+						any_other_country = {
+							is_in_faction_with = ENG
+							controls_state = 59
+						}
+					}
+					OR = {
+						ENG = {
+							controls_state = 56
+						}
+						any_other_country = {
+							is_in_faction_with = ENG
+							controls_state = 56
+						}
+					}
+					OR = {
+						ENG = {
+							controls_state = 20
+						}
+						any_other_country = {
+							is_in_faction_with = ENG
+							controls_state = 20
+						}
+					}
+					OR = {
+						ENG = {
+							controls_state = 2
+						}
+						any_other_country = {
+							is_in_faction_with = ENG
+							controls_state = 2
+						}
+					}
+					OR = {
+						ENG = {
+							controls_state = 159
+						}
+						any_other_country = {
+							is_in_faction_with = ENG
+							controls_state = 159
+						}
+					}
+					OR = {
+						ENG = {
+							controls_state = 48
+						}
+						any_other_country = {
+							is_in_faction_with = ENG
+							controls_state = 48
+						}
+					}
+				}
+			}
+			
 		}
 
 		visible = {
 				tag = SOV
-				NOT = { has_idea = winter_offensive }
-				has_country_flag = SOVwintercounteroffense
 				has_war_with = GER
-				or = { AND = { date > 1940.9.29 date < 1941.01.20 } AND = { date > 1941.9.29 date < 1942.01.20} AND = { date > 1942.9.29 date < 1943.01.20} AND = { date > 1943.9.29 date < 1944.01.20 } AND = { date > 1944.9.29 date < 1945.01.20 } }
+				AND = { 
+					date > 1944.04.1 
+					date < 1944.10.1 
+				}
 		}
 		
 		
@@ -15128,48 +15232,19 @@ SOV_great_patriotic_war = {
 				complete_national_focus = SOV_drive_out_the_fascists
 			}
 		   	add_timed_idea = {	
-		   		idea = winter_offensive
+		   		idea = bagration_offensive
 		   		days = 70
 		   	}
 		   	hidden_effect = {
-				every_country = {
-					limit = { 
-						AND = {
-							check_variable= { 
-								speeches_enabled > 0
-							} 
-							check_variable= { 
-								music_enabled < 2
-							} 
-						}
+				SOV = {
+					set_country_flag = {
+						flag = summer_offensive_sov_flag
+						days = 90
+						value = 1
 					}
-					scoped_sound_effect = "sp_sov_bargration"
 				}
-				every_country = {
-					limit = { 
-						AND = {
-							check_variable= { 
-								music_enabled > 0
-							} 
-							check_variable= { 
-								speeches_enabled < 2
-							} 
-						}
-					}
-					scoped_sound_effect = "sp_sov_bargration"
-				}
-				every_country = {
-					limit = { 
-						AND = {
-							check_variable= {
-								music_enabled > 0
-							} 
-							check_variable= { 
-								speeches_enabled > 0
-							} 
-						}
-					}
-					scoped_sound_effect = "sp_sov_bargration"
+				every_country = {limit = { check_variable= { speeches_enabled > 0}  }
+					scoped_sound_effect = "sp_sov_ura"
 				}
 				if = {
 					limit = {
@@ -15181,7 +15256,7 @@ SOV_great_patriotic_war = {
 				}
 		   	}	
 			set_country_flag = SOVwintercounteroffense
-			news_event = { hours = 20 id = news.460 }
+			news_event = { hours = 20 id = news.527 }
 		}
 	}
 
@@ -15293,7 +15368,6 @@ SOV_great_patriotic_war = {
 					set_variable = { var = super_event value = 16 }			
 				}
 				every_country = {limit = { check_variable= { music_enabled > 0}  }
-				scoped_sound_effect = "se_iraq_10"
 			}
 		}
 		

@@ -1,5 +1,336 @@
 
 PAR_instant_effect_decisions = {
+	PAR_fix_spain_bug = {
+		allowed = { tag = PAR }
+		ai_will_do = {
+			base = 1000			
+		}
+		available = {
+			OR = {
+				AND = {
+					SPR = {
+						has_idea = SPA_awaiting_the_rebellion
+					}
+					has_global_flag = spanish_civil_war
+				}
+				AND = {
+					SPR = {
+						has_idea = SPA_a_methodical_approach
+					}
+					has_global_flag = scw_over
+				}
+			}	
+		}
+		fire_only_once = no
+
+		complete_effect = {
+			if = {
+				limit = {
+					SPR = {
+						has_idea = SPA_awaiting_the_rebellion
+					}
+					has_global_flag = spanish_civil_war
+				}
+				remove_ideas = SPA_awaiting_the_rebellion
+			}
+			if = {
+				limit = {
+					SPR = {
+						has_idea = SPA_a_methodical_approach
+					}
+					has_global_flag = scw_over
+				}
+				remove_ideas = SPA_a_methodical_approach
+			}
+			
+		}	
+	}
+	PAR_fra_reinforcerate = {
+		allowed = { tag = PAR }
+		ai_will_do = {
+			base = 10000			
+		}
+		available = {
+			OR = {
+				AND = {
+					FRA = {
+						check_variable = {
+							var = FRA_initial_war_euthasium_army_core_attack_factor_modifier
+							value = 0.2
+							compare = less_than_or_equals
+						}
+						check_variable = {
+							var = FRA_land_reinforce_rate_modifier
+							value = 0.01
+							compare = less_than
+						}
+					}
+				}
+				AND = {
+					FRA = {
+						check_variable = {
+							var = FRA_initial_war_euthasium_army_core_attack_factor_modifier
+							value = 0.1
+							compare = less_than_or_equals
+						}
+						check_variable = {
+							var = FRA_land_reinforce_rate_modifier
+							value = 0.02
+							compare = less_than
+						}
+					}
+				}
+				AND = {
+					FRA = {
+						check_variable = {
+							var = FRA_initial_war_euthasium_army_core_attack_factor_modifier
+							value = 0
+							compare = less_than_or_equals
+						}
+						check_variable = {
+							var = FRA_land_reinforce_rate_modifier
+							value = 0.03
+							compare = less_than
+						}
+					}
+				}
+				AND = {
+					FRA = {
+						check_variable = {
+							var = FRA_initial_war_euthasium_army_attack_factor_modifier
+							value = -0.1
+							compare = less_than_or_equals
+						}
+						check_variable = {
+							var = FRA_land_reinforce_rate_modifier
+							value = 0.04
+							compare = less_than
+						}
+					}
+				}
+				AND = {
+					FRA = {
+						check_variable = {
+							var = FRA_initial_war_euthasium_army_attack_factor_modifier
+							value = -0.2
+							compare = less_than_or_equals
+						}
+						check_variable = {
+							var = FRA_land_reinforce_rate_modifier
+							value = 0.05
+							compare = less_than
+						}
+					}
+				}
+				
+			}
+		}
+		fire_only_once = no
+
+		complete_effect = {
+			FRA = {
+				add_to_variable = { var = FRA_land_reinforce_rate_modifier value = 0.01 }
+			}
+			
+		}	
+	}
+	PAR_saarbrucken_offensive_too_far = {
+		allowed = { tag = PAR }
+		ai_will_do = {
+			base = 1000			
+		}
+		available = {
+			FRA = {
+				has_capitulated = no
+			}
+			date < 1941.9.1
+			
+			GER = { 
+				NOT = {
+					has_war_with = BEL
+				}
+			}
+			OR = {
+				AND = {
+					GER = {
+						casualties_inflicted_by = {
+							opponent = FRA
+							thousands > 130 	
+						}
+					}
+					OR = {
+						ENG = {
+							controls_province = 11531
+						}
+						any_other_country = {
+							is_in_faction_with = ENG
+							controls_province = 11531
+						}
+					}
+				}
+				AND = {
+					GER = {
+						casualties_inflicted_by = {
+							opponent = FRA
+							thousands > 90 	
+						}
+					}
+					date > 1940.2.1
+					OR = {
+						ENG = {
+							controls_province = 11531
+						}
+						any_other_country = {
+							is_in_faction_with = ENG
+							controls_province = 11531
+						}
+					}
+				}
+				AND = {
+					GER = {
+						casualties_inflicted_by = {
+							opponent = FRA
+							thousands > 80 	
+						}
+					}
+					OR = {
+						ENG = {
+							controls_province = 11531
+						}
+						any_other_country = {
+							is_in_faction_with = ENG
+							controls_province = 11531
+						}
+					}
+					OR = {
+						OR = {
+							ENG = {
+								controls_province = 529
+							}
+							any_other_country = {
+								is_in_faction_with = ENG
+								controls_province = 529
+							}
+						}
+						OR = {
+							ENG = {
+								controls_province = 6444
+							}
+							any_other_country = {
+								is_in_faction_with = ENG
+								controls_province = 6444
+							}
+						}
+						OR = {
+							ENG = {
+								controls_province = 6488
+							}
+							any_other_country = {
+								is_in_faction_with = ENG
+								controls_province = 6488
+							}
+						}
+						OR = {
+							ENG = {
+								controls_province = 589
+							}
+							any_other_country = {
+								is_in_faction_with = ENG
+								controls_province = 589
+							}
+						}
+						OR = {
+							ENG = {
+								controls_province = 6568
+							}
+							any_other_country = {
+								is_in_faction_with = ENG
+								controls_province = 6568
+							}
+						}
+						OR = {
+							ENG = {
+								controls_province = 9517
+							}
+							any_other_country = {
+								is_in_faction_with = ENG
+								controls_province = 9517
+							}
+						}
+						OR = {
+							ENG = {
+								controls_province = 11499
+							}
+							any_other_country = {
+								is_in_faction_with = ENG
+								controls_province = 11499
+							}
+						}
+						OR = {
+							ENG = {
+								controls_province = 708
+							}
+							any_other_country = {
+								is_in_faction_with = ENG
+								controls_province = 708
+							}
+						}
+						OR = {
+							ENG = {
+								controls_province = 9666
+							}
+							any_other_country = {
+								is_in_faction_with = ENG
+								controls_province = 9666
+							}
+						}
+					}
+				}
+
+			}
+			
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = FRA_phoney_war_is_over_flag
+					}
+				}
+				set_global_flag = FRA_phoney_war_is_over_flag
+			}
+			FRA = {
+				set_country_flag = FRA_no_bonus_for_around_maginot_flag
+			}
+			if = {
+				limit = {
+					FRA = {
+						NOT = {
+							has_completed_focus = FRA_phoney_war
+						}
+					}
+				}
+				FRA = {
+					complete_national_focus = FRA_phoney_war
+				}
+			}
+			if = {
+				limit = {
+					FRA = {
+						NOT = {
+							has_completed_focus = FRA_help_the_low_countries
+						}
+					}
+				}
+				FRA = {
+					complete_national_focus = FRA_help_the_low_countries
+				}
+			}
+			
+		}	
+	}
 	PAR_ast_regained_papua_singapore = {
 		allowed = { tag = PAR }
 		ai_will_do = {
@@ -771,7 +1102,7 @@ PAR_instant_effect_decisions = {
 					}
 				}
 				CHI = {
-					set_variable = { CHI_army_defence_factor_var = 0.15 }
+					set_variable = { CHI_army_defence_factor_var = 0 }
 					set_variable = { CHI_org_var = 0 }
 				}
 				
@@ -895,7 +1226,7 @@ PAR_instant_effect_decisions = {
 					controls_state = 142	
 					controls_state = 814
 					controls_state = 143
-					controls_state = 819
+					#controls_state = 819
 
 				}
 			}
@@ -1173,6 +1504,7 @@ PAR_instant_effect_decisions = {
 					}			
 				}
 				hidden_effect = { 
+					add_named_threat = { threat = 5 name = RepublicanVictory }
 					every_country = {
 						set_variable = { var = super_event value = 6 }			
 					}
@@ -5007,7 +5339,9 @@ PAR_instant_effect_decisions = {
 			GER = {
 				OR = {
 					has_idea = GER_atlanticc_wall_5
+					has_idea = GER_atlanticc_wall_5a
 					has_idea = GER_atlanticc_wall_6
+					has_idea = GER_atlanticc_wall_6a
 					has_idea = GER_atlanticc_wall_7
 					has_idea = GER_atlanticc_wall_8
 					has_idea = GER_atlanticc_wall_9

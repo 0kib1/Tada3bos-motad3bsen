@@ -640,6 +640,43 @@ equipment_modules = {
 
 	}
 
+	tank_medium_special_opentop_turret = {
+		abbreviation = "mfs"
+		category = tank_medium_special_opentop_turret_type
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = rocket
+        forbid_equipment_type_exact_match = armor
+		allowed_module_categories = {
+			main_armament_slot = {
+			    tank_heavy_main_armament
+				tank_medium_main_armament
+				tank_artillery_main_armament
+				tank_heavy_artillery_main_armament
+
+			}
+		}
+
+		xp_cost = 0
+		add_stats = {
+			build_cost_ic = 3
+			reliability = 0.15
+			hardness= -0.25
+			soft_attack = 12
+			hard_attack = 7
+
+		}
+
+		multiply_stats = {
+			breakthrough = -0.5
+			#defense = -0.5
+			#soft_attack = 0.25
+			#hard_attack = 0.25
+			air_attack = 0.15
+			armor_value = -1
+		}
+
+	}
+
 	tank_heavy_two_man_tank_turret = {
 		abbreviation = "h2m"
 		category = tank_heavy_turret_type
@@ -725,10 +762,10 @@ equipment_modules = {
 		}
 		xp_cost = 0
 		add_stats = {
-			build_cost_ic = 7.5
-			breakthrough = 28
-			soft_attack = 10
-			hard_attack = 5
+			build_cost_ic = 8
+			breakthrough = 30
+			soft_attack = 12
+			hard_attack = 7
 		}
 		multiply_stats = {
 			#soft_attack = 0.2

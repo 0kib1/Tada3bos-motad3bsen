@@ -518,6 +518,12 @@ GER_operation_barbarossa_category = {
 					}
 				}
 				complete_national_focus = GER_ussr_war_goal
+				GER = {
+					transfer_state = 92
+                    transfer_state = 88
+			        transfer_state = 90
+			        transfer_state = 10
+				} 
 				every_state = {
 					limit = {
 						has_state_flag = SOV_war_zone_flag
@@ -687,7 +693,6 @@ GER_operation_barbarossa_category = {
 						tag = BUL
 						tag = ROM
 						tag = HUN
-						tag = EFR
 						tag = SLO
 						tag = SPR
 					}
@@ -1643,13 +1648,19 @@ GER_operation_barbarossa_category = {
 						tag = BUL
 						tag = ROM
 						tag = HUN
-						tag = EFR
+		
 						tag = SLO
 						tag = SPR
 					}
 				}
 				fall_blau_get_summer_offensive = yes 
 			}
+			every_state = {
+					limit = {
+						has_state_flag = SOV_war_zone_flag
+					}
+					remove_dynamic_modifier = { modifier = SOV_war_zone_modifier }
+ 				}
 			
 			GER = {
 				activate_decision = GER_race_for_baku_oil
@@ -1666,16 +1677,11 @@ GER_operation_barbarossa_category = {
 					}
 					scoped_sound_effect = "sp_ger_georges_song"
 				}
-				every_state = {
-					limit = {
-						has_state_flag = SOV_war_zone_flag
-					}
-					remove_dynamic_modifier = { modifier = SOV_war_zone_modifier }
- 				}
 				
-			SOV = {
-				activate_decision = SOV_race_for_baku_oil
-			}
+				
+				SOV = {
+					activate_decision = SOV_race_for_baku_oil
+				}
 			}
 			news_event = { hours = 20 id = news.458 }
 			set_country_flag = GERsummeroffensive1
@@ -1726,13 +1732,19 @@ GER_operation_barbarossa_category = {
 						tag = BUL
 						tag = ROM
 						tag = HUN
-						tag = EFR
+				
 						tag = SLO
 						tag = SPR
 					}
 				}
 				fall_blau_get_summer_offensive = yes 
 			}
+			 every_state = {
+					limit = {
+						has_state_flag = SOV_war_zone_flag
+					}
+					remove_dynamic_modifier = { modifier = SOV_war_zone_modifier }
+ 				}
 
 			hidden_effect = {
 				every_country = {
@@ -1743,12 +1755,7 @@ GER_operation_barbarossa_category = {
 					}
 					scoped_sound_effect = "sp_ger_zitadelle"
 				}
-				 every_state = {
-					limit = {
-						has_state_flag = SOV_war_zone_flag
-					}
-					remove_dynamic_modifier = { modifier = SOV_war_zone_modifier }
- 				}
+				
 
 			}
 			news_event = { hours = 20 id = news.458 }
@@ -1762,12 +1769,113 @@ GER_operation_barbarossa_category = {
 		}
 
 		available = {
+			SOV = {
+				NOT = { 
+					has_country_flag = summer_offensive_sov_flag
+				}
+			}
+			AND = { date > 1944.04.01 date < 1944.10.01 }
 			has_war_with = SOV
+			custom_trigger_tooltip = {
+				tooltip = GER_special_summer_offensive
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 16
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 16
+						}
+					}
+					OR = {
+						GER = {
+							controls_state = 6
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 6
+						}
+					}
+					OR = {
+						GER = {
+							controls_state = 36
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 36
+						}
+					}
+					OR = {
+						GER = {
+							controls_state = 58
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 58
+						}
+					}
+					OR = {
+						GER = {
+							controls_state = 59
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 59
+						}
+					}
+					OR = {
+						GER = {
+							controls_state = 56
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 56
+						}
+					}
+					OR = {
+						GER = {
+							controls_state = 20
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 20
+						}
+					}
+					OR = {
+						GER = {
+							controls_state = 2
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 2
+						}
+					}
+					OR = {
+						GER = {
+							controls_state = 159
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 159
+						}
+					}
+					OR = {
+						GER = {
+							controls_state = 48
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 48
+						}
+					}
+				}
+			}
 		}
 
 		visible = {
 			has_war_with = SOV
-			AND = { date > 1944.06.01 date < 1944.08.01 }
+			AND = { date > 1944.04.01 date < 1944.10.01 }
 		}
 
 		icon = generic_scorched_earth
@@ -1788,9 +1896,23 @@ GER_operation_barbarossa_category = {
 				}
 				add_dynamic_modifier = { modifier = SOV_war_zone_modifier }
 			}
+			SOV = {
+				add_trait = {
+					character = SOV_joseph_stalin
+					ideology = stalinism
+					trait = nationalist_symbol
+				}
+			}
 		}
 
-		complete_effect = { 	
+		complete_effect = {
+			SOV = {
+				remove_trait = {
+					character = SOV_joseph_stalin
+					ideology = stalinism
+					trait = nationalist_symbol
+				}
+			}	
 			every_country = {
 				limit = {
 					OR = {
@@ -1798,13 +1920,19 @@ GER_operation_barbarossa_category = {
 						tag = BUL
 						tag = ROM
 						tag = HUN
-						tag = EFR
+					
 						tag = SLO
 						tag = SPR
 					}
 				}
 				fall_blau_get_summer_offensive = yes 
 			}
+			 every_state = {
+					limit = {
+						has_state_flag = SOV_war_zone_flag
+					}
+					remove_dynamic_modifier = { modifier = SOV_war_zone_modifier }
+ 				}
 
 			hidden_effect = {
 				every_country = {
@@ -1815,12 +1943,14 @@ GER_operation_barbarossa_category = {
 					}
 					scoped_sound_effect = "sp_ger_georges_song_3"
 				}
-				 every_state = {
-					limit = {
-						has_state_flag = SOV_war_zone_flag
+				GER = {
+					set_country_flag = {
+						flag = summer_offensive_ger_flag
+						days = 90
+						value = 1
 					}
-					remove_dynamic_modifier = { modifier = SOV_war_zone_modifier }
- 				}
+				}
+				
 			}	
 			news_event = { hours = 20 id = news.458 }
 			set_country_flag = GERsummeroffensive3
@@ -1834,13 +1964,113 @@ GER_operation_barbarossa_category = {
 
 		available = {
 			has_war_with = SOV
+			SOV = {
+				NOT = { 
+					has_country_flag = summer_offensive_sov_flag
+				}
+			}
+			AND = { date > 1945.04.01 date < 1945.10.01 }
+			custom_trigger_tooltip = {
+				tooltip = GER_special_summer_offensive
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 16
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 16
+						}
+					}
+					OR = {
+						GER = {
+							controls_state = 6
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 6
+						}
+					}
+					OR = {
+						GER = {
+							controls_state = 36
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 36
+						}
+					}
+					OR = {
+						GER = {
+							controls_state = 58
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 58
+						}
+					}
+					OR = {
+						GER = {
+							controls_state = 59
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 59
+						}
+					}
+					OR = {
+						GER = {
+							controls_state = 56
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 56
+						}
+					}
+					OR = {
+						GER = {
+							controls_state = 20
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 20
+						}
+					}
+					OR = {
+						GER = {
+							controls_state = 2
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 2
+						}
+					}
+					OR = {
+						GER = {
+							controls_state = 159
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 159
+						}
+					}
+					OR = {
+						GER = {
+							controls_state = 48
+						}
+						any_other_country = {
+							is_in_faction_with = GER
+							controls_state = 48
+						}
+					}
+				}
+			}
 		}
 
 		visible = {
 			has_war_with = SOV
-			AND = { date > 1945.06.01 date < 1945.08.01 } 
+			AND = { date > 1945.04.01 date < 1945.10.01 } 
 		}
-
 
 		icon = generic_scorched_earth
 
@@ -1860,9 +2090,23 @@ GER_operation_barbarossa_category = {
 				}
 				add_dynamic_modifier = { modifier = SOV_war_zone_modifier }
 			}
+			SOV = {
+				add_trait = {
+					character = SOV_joseph_stalin
+					ideology = stalinism
+					trait = nationalist_symbol
+				}
+			}
 		}
 
-		complete_effect = { 	
+		complete_effect = {
+			SOV = {
+				remove_trait = {
+					character = SOV_joseph_stalin
+					ideology = stalinism
+					trait = nationalist_symbol
+				}
+			}	
 			every_country = {
 				limit = {
 					OR = {
@@ -1870,22 +2114,30 @@ GER_operation_barbarossa_category = {
 						tag = BUL
 						tag = ROM
 						tag = HUN
-						tag = EFR
+					
 						tag = SLO
 						tag = SPR
 					}
 				}
 				fall_blau_get_summer_offensive = yes 
 			}
-			
-			hidden_effect = {
-				every_state = {
-					limit = {
-						has_state_flag = SOV_war_zone_flag
-					}
-					remove_dynamic_modifier = { modifier = SOV_war_zone_modifier }
+			every_state = {
+				limit = {
+					has_state_flag = SOV_war_zone_flag
 				}
-			}	
+				remove_dynamic_modifier = { modifier = SOV_war_zone_modifier }
+			}
+			hidden_effect = {
+				GER = {
+					set_country_flag = {
+						flag = summer_offensive_ger_flag
+						days = 90
+						value = 1
+					}
+				}
+			}
+
+			
 			news_event = { hours = 20 id = news.458 }
 			set_country_flag = GERsummeroffensive4
 		}
@@ -2331,90 +2583,72 @@ special_projects = {
 
 		complete_effect = {
 			GER = {
-				retire_character = GER_erwin_rommel
-			}	
-			if = {
-				limit = {
-					GER = {
-						has_completed_focus = GER_gott_mit_uns
+				if = {
+					limit = {
+						GER_erwin_rommel = {
+							skill < 7
+						}	
 					}
-				}				
-				ITA = {
-					create_corps_commander = {
-						name = "Erwin Rommel"
-						picture = "Portrait_Germany_Erwin_Rommel.dds"
-						traits = { trickster trait_reckless panzer_leader desert_fox expert_improviser }
-						skill = 4
-						attack_skill = 6
-						defense_skill = 2
-						planning_skill = 2
-						logistics_skill = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					GER = {
-						has_completed_focus = GER_kampfgruppes
-					}
-				}				
-				ITA = {
-					create_corps_commander = {
-						name = "Erwin Rommel"
-						picture = "Portrait_Germany_Erwin_Rommel.dds"
-						traits = { trickster trait_reckless panzer_leader desert_fox expert_improviser }
-						skill = 4
-						attack_skill = 6
-						defense_skill = 3
-						planning_skill = 2
-						logistics_skill = 2
-					}
-				}
-			}
-			if = {
-				limit = {
-					GER = {
-						has_completed_focus = GER_kesselschlacht
-					}
-				}				
-				ITA = {
-					create_corps_commander = {
-						name = "Erwin Rommel"
-						picture = "Portrait_Germany_Erwin_Rommel.dds"
-						traits = { trickster trait_reckless panzer_leader desert_fox expert_improviser }
-						skill = 4
-						attack_skill = 5
-						defense_skill = 2
-						planning_skill = 3
-						logistics_skill = 3
-					}
-				}
-			}
-			else_if = {		
-				limit = {
-					GER = {
-						NOT = {
-							OR = {
-								has_completed_focus = GER_kampfgruppes
-								has_completed_focus = GER_gott_mit_uns
-								has_completed_focus = GER_kampfgruppes
+					set_country_flag = GER_rommel_replacement1_flag
+					if = {
+						limit = {
+							amount_taken_ideas = {
+								amount < 3
+								slots = {
+									high_command
+								}
 							}
-						}		
+
+						}
+						add_ideas = GER_erwin_rommel2
+
 					}
-				}		
-				ITA = { 
-					create_corps_commander = {
-						name = "Erwin Rommel"
-						picture = "Portrait_Germany_Erwin_Rommel.dds"
-						traits = { trickster trait_reckless panzer_leader desert_fox expert_improviser }
-						skill = 4
-						attack_skill = 5
-						defense_skill = 3
-						planning_skill = 2
-						logistics_skill = 3
-					}	
+					else_if ={
+						limit = {
+							amount_taken_ideas = {
+								amount > 2
+								slots = {
+									high_command
+								}
+							}
+						}
+						add_political_power = 150
+					}
 				}
-			}		
+				else = {
+					set_country_flag = GER_rommel_replacement2_flag
+					if = {
+						limit = {
+							amount_taken_ideas = {
+								amount < 3
+								slots = {
+									high_command
+								}
+							}
+
+						}
+						add_ideas = GER_erwin_rommel3
+
+					}
+					else_if ={
+						limit = {
+							amount_taken_ideas = {
+								amount > 2
+								slots = {
+									high_command
+								}
+							}
+						}
+						add_political_power = 150
+					}
+
+				}
+				retire_character = GER_erwin_rommel
+				set_country_flag = GER_sent_rommel_to_italy_flag
+				
+				
+			}					
+			
 		}
 	}
 	GER_dismantle_maginot = {
@@ -4463,7 +4697,9 @@ foreign_politics = {
 			}
 			
 			hidden_effect = {
-				
+				AST = {
+					set_variable = { AST_experience_gain_army_var = 0.07 }
+				}
 				ITA = {
 					set_country_flag = ita_keep_in_fuel_system_flag
 					add_to_array = { GER.faction_members_array = THIS.id }
@@ -5078,6 +5314,14 @@ foreign_politics = {
 				ITA = {
 					remove_ideas = italy_no_africa_first
 				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = FRA_phoney_war_is_over_flag
+						}
+					}
+					set_global_flag = FRA_phoney_war_is_over_flag
+				}
 			}
 			#custom_effect_tooltip = GER_Around_maginot_tt
 			add_ideas = GER_blitzkrieg
@@ -5110,10 +5354,20 @@ foreign_politics = {
 					}
 					
 				}
-				FRA = {
-					complete_national_focus = FRA_help_the_low_countries
-					
+				if = {
+					limit = {
+						FRA = {
+							NOT = {
+								has_completed_focus = FRA_help_the_low_countries
+							}
+						}
+					}
+					FRA = {
+						complete_national_focus = FRA_help_the_low_countries
+						
+					}
 				}
+				
 			}
 
 			BEL = { remove_ideas = neutrality_idea }
@@ -6934,19 +7188,15 @@ GER_military_buildup = {
 			has_completed_focus = GER_four_year_plan
 		}
 
-		timeout_effect = {
-			add_stability = -0.2
-			add_political_power = -150
-		}
-
+		
 		complete_effect = {
 			add_tech_bonus = {
 				category = all_air 
 				uses = 1 
 				bonus = 1 
 			}
-			add_offsite_building = { type = arms_factory level = 10 }
-			add_stability = 0.2
+			add_offsite_building = { type = arms_factory level = 7 }
+			add_stability = 0.1
 			add_political_power = 200
 		}	
 	}
@@ -7003,7 +7253,7 @@ GER_military_buildup = {
 				bonus = 1 
 			}
 			add_offsite_building = { type = industrial_complex level = 10 }
-			add_stability = 0.2
+			add_stability = 0.1
 			add_political_power = 200
 		}	
 	}
