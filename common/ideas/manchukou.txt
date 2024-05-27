@@ -811,7 +811,7 @@ ideas = {
 		equipment_bonus = {
 
 			infantry_equipment = {
-				build_cost_ic = 0.15 instant = yes
+				build_cost_ic = 0.25 instant = yes
 			}
 			support_equipment = {
 				build_cost_ic = 0.1 instant = yes
@@ -885,13 +885,13 @@ ideas = {
 		equipment_bonus = {
 
 			infantry_equipment = {
-				build_cost_ic = 0.15 instant = yes
+				build_cost_ic = 0.25 instant = yes
 			}
 			support_equipment = {
 				build_cost_ic = 0.1 instant = yes
 			}
 			radio_equipment = {
-				build_cost_ic = 0.05 instant = yes
+				build_cost_ic = 0.10 instant = yes
 			}
 			special_equipment = {
 				build_cost_ic = 0.40 instant = yes
@@ -959,13 +959,13 @@ ideas = {
 		equipment_bonus = {
 
 			infantry_equipment = {
-				build_cost_ic = 0.15 instant = yes
+				build_cost_ic = 0.25 instant = yes
 			}
 			support_equipment = {
 				build_cost_ic = 0.1 instant = yes
 			}
 			radio_equipment = {
-				build_cost_ic = -0.1 instant = yes
+				build_cost_ic = 0.10 instant = yes
 			}
 			special_equipment = {
 				build_cost_ic = 0.40 instant = yes
@@ -1034,7 +1034,8 @@ ideas = {
 		equipment_bonus = {
 
 			infantry_equipment = {
-				build_cost_ic = 0.15 instant = yes
+				build_cost_ic = 0.10 instant = yes
+				reliability = -0.1
 			}
 			support_equipment = {
 				build_cost_ic = 0.1 instant = yes
@@ -1572,7 +1573,159 @@ ideas = {
 
 
 	##########################
+	commies_unrest_1={
 
+		removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				conscription_factor = -0.05
+				custom_modifier_tooltip = MANspace
+				custom_modifier_tooltip = You_are_retard
+			}
+
+	}
+	commies_unrest_2={
+
+		removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.20
+				conscription_factor = -0.075
+				custom_modifier_tooltip = MANspace
+				custom_modifier_tooltip = You_are_retard
+			}
+
+	}
+	commies_unrest_3={
+
+		removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				industrial_capacity_factory = -0.30
+				industrial_capacity_dockyard = -0.30
+				conscription_factor = -0.1
+				stability_weekly = -0.001
+				custom_modifier_tooltip = MANspace
+				custom_modifier_tooltip = You_are_retard
+			}
+			
+
+	}
+
+	democrat_unrest_1={
+
+		removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				consumer_goods_factor = 0.02
+				custom_modifier_tooltip = MANspace
+				custom_modifier_tooltip = You_are_retard
+			}
+
+	}
+	democrat_unrest_2={
+
+		removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				consumer_goods_factor = 0.05
+				custom_modifier_tooltip = MANspace
+				custom_modifier_tooltip = You_are_retard
+			}
+
+	}
+	democrat_unrest_3={
+
+		removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+
+			picture = tfv_can_conscription_crisis
+			modifier = {
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.20
+				consumer_goods_factor = 0.08
+				war_support_weekly = -0.001
+				custom_modifier_tooltip = MANspace
+				custom_modifier_tooltip = You_are_retard
+			}
+
+	}
 
 
 	MAN_Japanise_reseach_univs_left ={
@@ -1783,6 +1936,7 @@ ideas = {
 			available = {
 				if = {
 					limit = { has_dlc = "Waking the Tiger" }
+					has_completed_focus = MAN_the_imperial_corporate_state
 					has_completed_focus = MAN_first_five_year_plan
 				}
 			}
@@ -1800,7 +1954,11 @@ ideas = {
 			available = {
 				if = {
 					limit = { has_dlc = "Waking the Tiger" }
+					OR={
 					has_completed_focus = MAN_the_imperial_corporate_state
+					has_completed_focus = MAN_first_five_year_plan
+					has_completed_focus = MAN_total_economic_control
+					}
 				}
 			}
 			
@@ -1823,9 +1981,13 @@ ideas = {
 				available = {
 					if = {
 						limit = { has_dlc = "Waking the Tiger" }
+						OR = {
+						has_completed_focus = MAN_the_imperial_corporate_state
+						has_completed_focus = MAN_first_five_year_plan
 						has_completed_focus = MAN_total_economic_control
+						}
 					}
-				}
+							}
 		}
 
 		MAN_yoshisuke_ayu={
@@ -1835,9 +1997,7 @@ ideas = {
 				allowed = { 
 					original_tag = MAN
 				}
-				available = {
-							
-				}
+				cost = 0
 				traits = { captain_of_industry_manchu }
 	
 				

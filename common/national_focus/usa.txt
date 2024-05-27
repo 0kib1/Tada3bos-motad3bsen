@@ -168,7 +168,7 @@ focus_tree = {
 			}
 			add_days_mission_timeout = {
 				mission = USA_federal_housing_act_mission
-				days = -175
+				days = -125
 			}
 			custom_effect_tooltip = USA_4_tt
 		}
@@ -229,7 +229,7 @@ focus_tree = {
 			}
 			 
 			add_days_mission_timeout = {
-				mission = USA_federal_housing_act_mission
+				mission = USA_social_security_act_mission
 				days = -125
 			}
 			custom_effect_tooltip = USA_45_tt
@@ -496,7 +496,7 @@ focus_tree = {
 			}
 			add_days_mission_timeout = {
 				mission = USA_federal_housing_act_mission
-				days = -225
+				days = -125
 			}
 			add_tech_bonus = {
 				name = USA_8
@@ -6258,6 +6258,17 @@ focus_tree = {
 				target = EFR
 				type = annex_everything
 			}
+			create_field_marshal = {
+				name = "Dwight D. Eisenhower"
+				picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
+				traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected panzer_leader trait_mountaineer infantry_leader skilled_staffer }
+				skill = 6
+				id =567
+				attack_skill = 6
+				defense_skill = 4
+				planning_skill = 7
+				logistics_skill = 7
+			}
 			hidden_effect = {
 				
 				every_state = {
@@ -6497,17 +6508,6 @@ focus_tree = {
 					limit={OR={state = 115 state = 114 state = 1 }}
 					add_dynamic_modifier = { modifier = USA_bombardment days = 180 }
 				}
-			}
-			create_field_marshal = {
-				name = "Dwight D. Eisenhower"
-				picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
-				traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected panzer_leader trait_mountaineer infantry_leader skilled_staffer }
-				skill = 6
-				id =567
-				attack_skill = 6
-				defense_skill = 4
-				planning_skill = 7
-				logistics_skill = 7
 			}
 			custom_effect_tooltip = "We will level the Axis defenses in Sicily, Sardinia, Corsica."
 			custom_effect_tooltip = Allied_bombardment

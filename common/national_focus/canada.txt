@@ -2773,38 +2773,7 @@ focus = {
 				technology = can_nsb_mechanised_infantry2
 				name = CAN_mech
 			}
-			
-		}
-	}
-
-	focus = {
-		id = CAN_sharpen_the_spearhead
-		icon = GFX_USA_improve_teething
-		x = 0
-		y = 1
-
-		prerequisite = {focus = CAN_armoured_carrier_mass_production}
-		relative_position_id = CAN_armoured_carrier_mass_production
-		cost = 5
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-		    add_tech_bonus = {
+			  add_tech_bonus = {
 				name = CAN_tank_upgrades
 				bonus = 0.5
 				uses = 2
@@ -2824,6 +2793,39 @@ focus = {
 					instant_build = yes
 				}
 			}
+			
+		}
+	}
+
+	focus = {
+		id = CAN_sharpen_the_spearhead
+		icon = GFX_USA_improve_teething
+		x = 0
+		y = 1
+
+		prerequisite = {focus = CAN_armoured_carrier_mass_production}
+		relative_position_id = CAN_armoured_carrier_mass_production
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			has_tech = advanced_machine_tools
+			has_tech = can_1942_medium_tank_chassis
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_technology = { can_advanced_turret = 1 } 
 		}
 	}
 
@@ -2863,6 +2865,10 @@ focus = {
 				uses = 1
 				category = land_doctrine
 			}
+			hidden_effect = {
+				remove_ideas = CAN_conscription_question_1
+			}
+			custom_effect_tooltip = CAN_can_do_more_conscript_tt
 		}
 	}
 
@@ -3265,10 +3271,6 @@ focus = {
 				tooltip = CAN_digin_tt1
 			}
 			#add_ideas = CAN_general_staff
-			hidden_effect = {
-				remove_ideas = CAN_conscription_question_1
-			}
-			custom_effect_tooltip = CAN_can_do_more_conscript_tt
 			
 		}
 	}

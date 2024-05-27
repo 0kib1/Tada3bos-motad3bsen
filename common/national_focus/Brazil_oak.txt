@@ -18,8 +18,8 @@
 	focus = {
 		id = BRA_brazils_legacy
 		icon = GFX_focus_bra_estado_novo
-		x = 9
-		y = 9
+		x = 16
+		y = 2
 		
 		
 		
@@ -102,8 +102,8 @@
      focus = {
 		id = BRA_the_international_stage
 		icon = GFX_focus_BRA_ethical_internationalism
-		x = 9
-		y = 10
+		x = 16
+		y = 3
 		#relative_position_id = BRA_brazils_legacy
 		
 		
@@ -132,7 +132,7 @@
 	focus = {
 		id = BRA_might
 		icon = GFX_focus_BRA_anaue
-		x = -5
+		x = -4
 		y = 0
 		relative_position_id = BRA_the_international_stage
 		
@@ -380,7 +380,7 @@
 	 focus = {
 		id = BRA_establish_national_armys_depo
 		icon = GFX_focus_BRA_work_with_the_integralists
-		x = -20
+		x = -18
 		y = 1
 		relative_position_id = BRA_might
 		
@@ -1601,7 +1601,7 @@ focus = {
 		id = BRA_appoint_morais
 		icon = GFX_focus_BRA_pedro_henrique
 		x = -5
-		y = 3.5
+		y = 3
      	relative_position_id =  BRA_adapt_from_the_jungle
 		
 		
@@ -2207,7 +2207,7 @@ focus = {
 		focus = {
 		id = BRA_national_resources_mobilization_act
 		icon = GFX_focus_BRA_national_guard
-		x = -11
+		x = -9
 		y = 1
 
 		prerequisite = {
@@ -2242,10 +2242,10 @@ focus = {
 	focus = {
 		id = BRA_adopt_the_war_of_movement
 		icon = GFX_mobility
-		x = 5
+		x = 7
 		y = 1
 
-		prerequisite = {  focus = BRA_mobile_artillery focus = BRA_send_in_the_zombies }
+		prerequisite = {  focus = BRA_send_in_the_zombies }
 		relative_position_id = BRA_mobile_artillery
 		cost = 5
 
@@ -2358,7 +2358,7 @@ focus = {
 	focus = {
 		id = BRA_mobile_artillery
 		icon = GFX_focus_BRA_army
-		x = -4
+		x = -2
 		y = 1
 
 		prerequisite = { focus = BRA_national_resources_mobilization_act}
@@ -2404,7 +2404,7 @@ focus = {
 		x = -3
 		y = 1
 
-		prerequisite = { focus = BRA_mobile_artillery focus = BRA_send_in_the_zombies}
+		prerequisite = { focus = BRA_mobile_artillery}
 		relative_position_id = BRA_mobile_artillery
 		cost = 5
 
@@ -2750,7 +2750,7 @@ focus = {
 	focus = {
 		id = BRA_send_in_the_zombies
 		icon = GFX_goal_generic_into_fire
-		x = 5
+		x = 2
 		y = 1
 
 		prerequisite = { focus = BRA_national_resources_mobilization_act }
@@ -3000,7 +3000,7 @@ focus = {
 	focus = {
 		id = BRA_set_the_canadian_shipyards_on_war_footing
 		icon = GFX_goal_navy_funding
-		x = 25
+		x = 35
 		y = 0
 
 		cost = 5
@@ -3899,7 +3899,7 @@ focus = {
 		id = BRA_stimulate_the_civilian_economy
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = BRA_desenvolvimentismo  }
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = BRA_desenvolvimentismo
 		cost = 5

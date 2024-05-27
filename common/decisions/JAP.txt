@@ -996,47 +996,25 @@ JAP_pacific_war_explanation_category = {
 		}
 
 		available = {
-			OR = {
-            has_completed_focus = JAP_challenge_the_zaibatsus
-				AND = {
-            has_completed_focus = JAP_zaibatsus_dominance
-
-			
-				}				
-			}
 			if = {
-                limit = {
-                    OR = {
-                        JAP = {    is_ai = yes }
-                        JAP = {
-                            has_completed_focus = JAP_zaibatsus_dominance
-                        }
-                    }
-                }
-                date > 1941.1.1 
-				has_war_with = CHI
+				limit = {
+					JAP = {	is_ai = yes }
+				}
+				date > 1941.11.23
 			}
 			if = {
 				limit = {
 					JAP = {
 						is_ai = no
 					}
-					  JAP = {
-                         has_completed_focus = JAP_challenge_the_zaibatsus
-					  }
-
 				}
+				has_war_with = CHI
 				OR = {
-					AND = {
-						has_war_with = CHI
-						USA = {
-							has_completed_focus = USA_embargo_japan
-						}
+					USA = {
+						has_completed_focus = USA_embargo_japan
 					}
-					
-					date > 1940.10.1
+					date > 1941.1.1
 				}
-			has_war_with = CHI
 			}
 		}
 		
@@ -1183,7 +1161,8 @@ JAP_pacific_war_explanation_category = {
 					idea = JAP_tora_tora_tora_idea
 					days = 60	
 				}
-			}else_if = {	
+			}
+			else_if = {	
 				limit = {
 					date < 1940.8.1
 				}
@@ -1229,7 +1208,8 @@ JAP_pacific_war_explanation_category = {
 					idea = JAP_tora_tora_tora_idea
 					days = 110	
 				}
-			}else_if = {	
+			}
+			else_if = {	
 				limit = {
 					date < 1941.1.1
 				}
@@ -1240,7 +1220,7 @@ JAP_pacific_war_explanation_category = {
 			}
 			else_if = {
 				limit = {
-					date > 1941.2.1
+					date < 1941.2.1
 				}			
 				add_timed_idea = {
 					idea = JAP_tora_tora_tora_idea
@@ -1249,7 +1229,7 @@ JAP_pacific_war_explanation_category = {
 			}	
 			else_if = {
 				limit = {
-					date > 1941.3.1
+					date < 1941.3.1
 				}			
 				add_timed_idea = {
 					idea = JAP_tora_tora_tora_idea
@@ -1258,7 +1238,7 @@ JAP_pacific_war_explanation_category = {
 			}
 			else_if = {
 				limit = {
-					date > 1941.4.1
+					date < 1941.4.1
 				}			
 				add_timed_idea = {
 					idea = JAP_tora_tora_tora_idea
@@ -1267,7 +1247,7 @@ JAP_pacific_war_explanation_category = {
 			}
 			else_if = {
 				limit = {
-					date > 1941.5.1
+					date < 1941.5.1
 				}			
 				add_timed_idea = {
 					idea = JAP_tora_tora_tora_idea
@@ -1276,7 +1256,7 @@ JAP_pacific_war_explanation_category = {
 			}		
 			else_if = {
 				limit = {
-					date > 1941.6.1
+					date < 1941.6.1
 				}			
 				add_timed_idea = {
 					idea = JAP_tora_tora_tora_idea
@@ -1285,7 +1265,7 @@ JAP_pacific_war_explanation_category = {
 			}
 			else_if = {
 				limit = {
-					date > 1941.7.1
+					date < 1941.7.1
 				}			
 				add_timed_idea = {
 					idea = JAP_tora_tora_tora_idea
@@ -1294,7 +1274,7 @@ JAP_pacific_war_explanation_category = {
 			}
 			else_if = {
 				limit = {
-					date > 1941.8.1
+					date < 1941.8.1
 				}			
 				add_timed_idea = {
 					idea = JAP_tora_tora_tora_idea
@@ -1303,7 +1283,7 @@ JAP_pacific_war_explanation_category = {
 			}
 			else_if = {
 				limit = {
-					date > 1941.9.1
+					date < 1941.9.1
 				}			
 				add_timed_idea = {
 					idea = JAP_tora_tora_tora_idea
@@ -1312,7 +1292,7 @@ JAP_pacific_war_explanation_category = {
 			}
 			else_if = {
 				limit = {
-					date > 1941.10.1
+					date < 1941.10.1
 				}			
 				add_timed_idea = {
 					idea = JAP_tora_tora_tora_idea
@@ -1322,7 +1302,7 @@ JAP_pacific_war_explanation_category = {
 
 			else_if = {
 				limit = {
-					date > 1941.11.1
+					date < 1941.11.1
 				}			
 				add_timed_idea = {
 					idea = JAP_tora_tora_tora_idea
@@ -1331,7 +1311,7 @@ JAP_pacific_war_explanation_category = {
 			}
 			else_if = {
 				limit = {
-					date > 1941.12.1
+					date < 1941.12.1
 				}			
 				add_timed_idea = {
 					idea = JAP_tora_tora_tora_idea
@@ -1340,7 +1320,7 @@ JAP_pacific_war_explanation_category = {
 			}
 			else_if = {
 				limit = {
-					date > 1942.1.1
+					date < 1942.1.1
 				}			
 				add_timed_idea = {
 					idea = JAP_tora_tora_tora_idea
@@ -1391,7 +1371,6 @@ JAP_pacific_war_explanation_category = {
 					}
 				}
 				ENG = { add_to_faction = USA }
-				ENG = { add_to_faction = BRA }
 				USA = { 
 					add_to_war = { 
 						targeted_alliance = ENG
@@ -1497,6 +1476,19 @@ JAP_pacific_war_explanation_category = {
 					MEX = { 
 						add_to_war = { 
 							targeted_alliance = ENG
+							enemy = JAP
+						}
+					}
+				}
+				if = {
+					limit = {
+						BRA = {
+							is_in_faction_with = ENG
+						}	
+					}
+					BRA = { 
+						add_to_war = { 
+							targeted_alliance = BRA
 							enemy = JAP
 						}
 					}
@@ -2918,7 +2910,6 @@ JAP_intervene_in_china_decision = {
 
 					set_variable = { CHI_army_defence_factor_var = 0 }
 					set_variable = { CHI_army_strength_factor  = 0.8 }
-					set_variable = { CHI_dig_in_speed_factor_var = 0.1 }
 					set_variable = { CHI_org_var = 0.1 }
 
 
@@ -3266,6 +3257,15 @@ JAP_intervene_in_china_decision = {
 			SOV = {
 				transfer_state = 745
 				transfer_state = 527
+				transfer_state = 611
+				transfer_state = 612
+				transfer_state = 716
+				transfer_state = 610
+				transfer_state = 715
+				transfer_state = 761
+				transfer_state = 714
+				transfer_state = 328
+				transfer_state = 717
 			}
 			USA = {
 				transfer_state = 525
@@ -3276,9 +3276,6 @@ JAP_intervene_in_china_decision = {
 			}
 			FRA = {
 				transfer_state = 728
-			}
-			SOV = {
-				annex_country = { target = MAN transfer_troops = no }
 			}
 			remove_ideas = JAP_no_grinding
 	
@@ -3298,6 +3295,10 @@ JAP_intervene_in_china_decision = {
 				remove_ideas = JAP_no_grinding
 			}
 			JAP = { change_tag_from = MAN }
+			CHI = {
+				add_ideas = neutrality_idea
+				add_ideas = developing_country
+			}
 
 			
 		}
@@ -4338,7 +4339,7 @@ prospect_for_resources = {
 			627 = {
 				add_resource = {
 					type = steel
-					amount = 3
+					amount = 5
 				}
 				set_state_flag = mindanao_steel_developed
 			}
@@ -4388,7 +4389,7 @@ prospect_for_resources = {
 			625 = {
 				add_resource = {
 					type = steel
-					amount = 3
+					amount = 5
 				}
 				set_state_flag = samar_steel_developed
 			}
@@ -4629,7 +4630,7 @@ prospect_for_resources = {
 			621 = {
 				add_resource = {
 					type = steel
-					amount = 3
+					amount = 6
 				}
 				set_state_flag = suiyuan_steel_developed
 			}
@@ -4674,7 +4675,7 @@ prospect_for_resources = {
 			325 = {
 				add_resource = {
 					type = aluminium
-					amount = 6
+					amount = 8
 				}
 				set_state_flag = yunnan_aluminium_developed
 			}
@@ -4719,7 +4720,7 @@ prospect_for_resources = {
 			605 = {
 				add_resource = {
 					type = aluminium
-					amount = 6
+					amount = 8
 				}
 				set_state_flag = sichuan_aluminium_developed
 			}

@@ -63,14 +63,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			#custom_effect_tooltip = JAP_late_war_tt	
 			add_political_power = 50
-			add_ideas = JAP_attecak_1
 			swap_ideas = {
 				remove_idea = JAP_zaibatsus
 				add_idea = JAP_zaibatsus_dominance				
 			}	
-			custom_effect_tooltip = japwar_tt	
 			#JAP_gain_overextension = yes 
 
 		}
@@ -196,12 +194,12 @@ focus_tree = {
 							state = 800
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 
 					add_building_construction = {
 						type = arms_factory
 						instant_build = yes
-						level = 1 
+						level = 2 
 					}
 				}
 			}
@@ -339,7 +337,7 @@ focus_tree = {
 		cost = 0
 		available = {
 			has_completed_focus = JAP_zaibatsus_dominance
-			date > 1937.3.1
+			date > 1938.3.1
 		}
 		ai_will_do = {
 			factor = 10
@@ -431,30 +429,7 @@ focus_tree = {
 					ROOT = { has_full_control_of_state = PREV }
 					is_core_of = ROOT				
 				}
-				
-				529 = {
-				add_resource = {
-					type = aluminium
-					amount = 2
-				}
-				add_resource = {
-					type = oil
-					amount = 2
-				}
-				add_resource = {
-					type = tungsten
-					amount = 2
-				}
-				add_resource = {
-					type = steel
-					amount = 2
-				}
-				add_resource = {
-					type = chromium
-					amount = 2
-				}
-			}
-		
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -485,6 +460,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			
 			#JAP_gain_overextension = yes 
 			add_tech_bonus = {
 				name = JAP_zaibatsus_dominance_corperate_merger
@@ -498,25 +474,7 @@ focus_tree = {
 					is_core_of = ROOT
 									
 				}
-				282 = {
-				add_resource = {
-					type = oil
-					amount = 2
-				}
-				add_resource = {
-					type = tungsten
-					amount = 2
-				}
-				add_resource = {
-					type = steel
-					amount = 3
-				}
-				add_resource = {
-					type = chromium
-					amount = 2
-				}
-			}
-			    add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -526,6 +484,7 @@ focus_tree = {
 			}		
 		}
 	}
+
 	focus = {
 		id = JAP_civilian_industry
 		icon = GFX_JAP_private_industry_subsidies
@@ -1553,13 +1512,12 @@ focus_tree = {
 
 
 		completion_reward = {
-			
+			#custom_effect_tooltip = JAP_early_war_tt	
 			add_political_power = 50
 			swap_ideas = {
 				remove_idea = JAP_zaibatsus
 				add_idea = JAP_zaibatsus_challenged
 			}
-			custom_effect_tooltip = japwar1_tt	
 		}
 	}
 	focus = {
@@ -1762,8 +1720,6 @@ focus_tree = {
 				add_war_support = 0.1
 				add_political_power = 150
 			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = MAN_yoshisuke_ayu
 		}
 	}
 
@@ -1794,6 +1750,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			show_ideas_tooltip = MAN_yoshisuke_ayu
 			328 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1860,58 +1817,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = JAP_develop_aluminum_sources
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus = JAP_expand_the_showa_steel_works }
-		x = 0
-		y = 1
-		relative_position_id = JAP_expand_the_showa_steel_works
-
-		allow_branch = {
-			MAN = { has_focus_tree = generic_focus }
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-			328 = { is_fully_controlled_by = MAN }
-			MAN = { is_subject_of = ROOT }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			328 = {
-				if = {
-					limit = {
-						MAN = { has_focus_tree = generic_focus }
-					}
-					add_resource = {
-						type = aluminium
-						amount = 12
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
 
 	focus = {
 		id = JAP_invite_japanese_settlers
@@ -1997,7 +1902,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2 
+					level = 1
 					instant_build = yes 
 				}
 			}
@@ -2009,10 +1914,11 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 
 		prerequisite = { focus = JAP_the_manchurian_project }
+		prerequisite = { focus = JAP_expand_manchurian_railways	}
 
 		x = -1
-		y = 1
-		relative_position_id = JAP_pacify_the_countryside2
+		y = 3
+		relative_position_id = JAP_the_manchurian_project
 
 		cost = 5
 
@@ -2024,12 +1930,7 @@ focus_tree = {
 			MAN = {
 				is_subject_of = ROOT
 				has_full_control_of_state = 715
-				IF={ 
-					OR={
-					has_completed_focus = MAN_first_five_year_plan
-					has_completed_focus = MAN_total_economic_control
-					}
-				}
+				
 			}
 		}
 
@@ -2158,7 +2059,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_expand_manchurian_railways
 
-		cost = 2.16
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 1
@@ -2191,6 +2092,15 @@ focus_tree = {
 			MAN = {every_owned_state = {
 				add_manpower = 34721
 			}
+
+			716 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		}
 	}
@@ -2198,12 +2108,12 @@ focus_tree = {
 		id = JAP_Steal
 		icon = GFX_focus_hol_the_foundations_of_defense
 		prerequisite = { focus = JAP_the_manchurian_project }
-
+		prerequisite = { focus = JAP_expand_the_showa_steel_works }
 
 
 		x = 1
-		y = 1
-		relative_position_id = JAP_pacify_the_countryside2
+		y = 3
+		relative_position_id = JAP_the_manchurian_project
 
 		cost = 5
 
@@ -2215,12 +2125,7 @@ focus_tree = {
 			MAN = {
 				is_subject_of = ROOT
 				has_full_control_of_state = 715
-				IF={ 
-					OR={
-					has_completed_focus = MAN_first_five_year_plan
-					has_completed_focus = MAN_the_imperial_corporate_state
-					}
-				}
+				
 			}
 		}
 
@@ -2239,10 +2144,10 @@ focus_tree = {
 
 		completion_reward = {
 
-				give_resource_rights = {
+		MAN = {	give_resource_rights = {
 					receiver = JAP
 					state = 761
-				}
+				}}
 			531={
 			add_extra_state_shared_building_slots=1
 			add_building_construction = {
@@ -4489,12 +4394,17 @@ focus_tree = {
 	}
 
 	available = {
-		JAP = {
+		OR={JAP = {
 			controls_state = 615
 			controls_state = 621
 			controls_state = 614
 		}
-	
+		MAN={
+			controls_state = 615
+			controls_state = 621
+			controls_state = 614
+		}
+		}
 	}
 
 	bypass = {
@@ -4572,9 +4482,14 @@ focus_tree = {
 	}
 
 	available = {
-		JAP = {
+		OR={JAP = {
 			controls_state = 613
 			controls_state = 743
+		}
+		MAN ={
+			controls_state = 613
+			controls_state = 743
+		}
 		}
 	}
 
@@ -4623,10 +4538,17 @@ focus_tree = {
 	}
 
 	available = {
-		JAP = {
+		OR={
+			JAP = {
 			controls_state = 620
 			controls_state = 606
 			controls_state = 607
+		}
+		MAN={
+			controls_state = 620
+			controls_state = 606
+			controls_state = 607
+		}
 		}
 	}
 
@@ -4761,10 +4683,16 @@ focus_tree = {
 	}
 
 	available = {
-		JAP = {
+		OR={JAP = {
 			controls_state = 594
 			controls_state = 592
 			controls_state = 591
+		}
+		MAN = {
+			controls_state = 594
+			controls_state = 592
+			controls_state = 591
+		}
 		}
 	}
 
@@ -4876,7 +4804,7 @@ focus_tree = {
 						is_core_of = MAN
 					}
 					is_core_of = CHI
-					is_controlled_by = JAP 
+					is_controlled_by = JAP
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -7380,7 +7308,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = secret_bonus
 				ahead_reduction = 2
-				uses = 1
+				uses = 2
 				category = rocketry
 			}
 		}

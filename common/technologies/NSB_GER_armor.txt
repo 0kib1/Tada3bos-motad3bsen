@@ -1322,7 +1322,7 @@ technologies = {
 
 		folder = {
 			name = nsb_ger_armor_folder
-			position = { x = 8 y = @1942 }
+			position = { x = 8 y = @1939 }
 		}
 
 		ai_will_do = {

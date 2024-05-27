@@ -921,7 +921,7 @@ ideas = {
 		  equipment_bonus = {
 
 		  infantry_equipment = {
-			  build_cost_ic = 0.15 instant = yes
+			  build_cost_ic = 0.1 instant = yes
 		  }
 		  support_equipment = {
 			  build_cost_ic = 0.00 instant = yes
@@ -950,7 +950,7 @@ ideas = {
 		  }
 
 		  anti_tank_equipment = {
-			  build_cost_ic = 0.15 instant = yes
+			  build_cost_ic = 0.1 instant = yes
 		  }
 		  anti_air_equipment = {
 			  build_cost_ic = 0.08 instant = yes
@@ -1299,9 +1299,9 @@ ideas = {
 			
 			removal_cost = -1
 			 modifier = {
-			 amphibious_invasion_defence = 0.1
+			 amphibious_invasion_defence = 0.15
 			 cas_damage_reduction = 0.03
-			 special_forces_out_of_supply_factor = -0.05
+			 special_forces_out_of_supply_factor = -0.08
 			}
 	}
 	BRA_machine = {
@@ -1589,8 +1589,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.2
+				production_speed_buildings_factor = 0.2
 			}
 		}
 		
@@ -1617,7 +1617,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_buildings_factor = 0.1
+				production_speed_buildings_factor = 0.2
 			}
 		}
 		
