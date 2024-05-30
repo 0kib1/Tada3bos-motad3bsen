@@ -19,6 +19,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/SOV_inavde_manchuria.dds"
 	}
 
+
     ### Poland ###
 	
 	SpriteType = {

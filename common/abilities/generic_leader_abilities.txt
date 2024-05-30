@@ -88,7 +88,7 @@ ability = {
 		name = order_227
 		desc = order_227_DESC
 		icon = GFX_order_227_ability
-		sound_effect = order_227_sound
+		sound_effect = command_power_ability_offensive
 		
 		type = army_leader
 		
@@ -100,12 +100,12 @@ ability = {
 			}
 		}
 		
-		cost = 0.25
+		cost = 0.1
 		duration = 240
 		
 		one_time_effect = {
 			add_temporary_buff_to_units = {
-				combat_defense = 0.25
+				combat_defense = 0.15
 				combat_entrenchment = 0.1
 				org_damage_multiplier = -0.75
 				str_damage_multiplier = 0.75

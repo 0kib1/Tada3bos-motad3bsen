@@ -7021,7 +7021,7 @@ focus_tree = {
 			factor = 1
 		}
 		     available = {
-            date > 1943.1.1
+            date > 1943.8.1
             OR = {
                 AND = {
                     controls_state = 10 #Warsaw
