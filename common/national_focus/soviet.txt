@@ -7008,6 +7008,44 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = SOV_attack_manchuria
+		icon = GFX_goal_SOV_inavde_manchuria
+		prerequisite = {
+			focus = SOV_the_great_patriotic_war
+		}
+		relative_position_id = SOV_the_great_patriotic_war
+		x = 2
+		y = 1
+		cost = 4.4
+		ai_will_do = {
+			factor = 1
+		}
+		     available = {
+            date > 1943.1.1
+            OR = {
+                AND = {
+                    controls_state = 10 #Warsaw
+                }
+            }
+        }
+		will_lead_to_war_with = JAP
+		
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			declare_war_on = {
+                target = JAP
+                type = annex_everything
+            }
+			declare_war_on = {
+                target = MAN
+                type = annex_everything
+            }
+		}
+	}
+	
+	focus = {
 		id = SOV_order_270
 		icon = GFX_SOV_capitals_of_socialism
 		prerequisite = { focus = SOV_the_great_patriotic_war }
@@ -8192,7 +8230,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = SOV_military_research
 		icon = goal_soviet_guards

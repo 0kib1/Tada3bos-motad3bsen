@@ -12230,6 +12230,7 @@ SOV_great_patriotic_war = {
 			}
 		}
 		complete_effect = {
+			set_country_flag = SOV_227_order
 			custom_effect_tooltip = SOV_create_unit_tank_corps_reformed_2_tt
 			if = {
 				limit = {
@@ -12252,19 +12253,19 @@ SOV_great_patriotic_war = {
 							random_owned_controlled_state = {
 								prioritize = { 219 }
 								create_unit = {
-									division = "name = \"1. Tankoviy Korpus\" division_template = \"Guard Tank Division\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+									division = "name = \"1-ya gvardeyskaya tankovaya diviziya\" division_template = \"Guard Tank Division\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
 									owner = SOV
 								}	
 								create_unit = {
-									division = "name = \"2. Tankoviy Korpus\" division_template = \"Guard Tank Division\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+									division = "name = \"2-ya gvardeyskaya tankovaya diviziya\" division_template = \"Guard Tank Division\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
 									owner = SOV
 								}	
 								create_unit = {
-									division = "name = \"3. Tankoviy Korpus\" division_template = \"Guard Tank Division\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+									division = "name = \"3-ya gvardeyskaya tankovaya diviziya\" division_template = \"Guard Tank Division\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
 									owner = SOV
 								}	
 								create_unit = {
-									division = "name = \"4. Tankoviy Korpus\" division_template = \"Guard Tank Division\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+									division = "name = \"4-ya gvardeyskaya tankovaya diviziya\" division_template = \"Guard Tank Division\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
 									owner = SOV
 								}
 													

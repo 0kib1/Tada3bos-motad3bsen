@@ -435,7 +435,7 @@ ideas = {
 				max_dig_in_factor = -0.2
 				max_planning_factor = -0.2
 				air_agility_factor = -0.125
-
+				army_speed_factor = 0.125
 				ground_attack_factor = -0.15			
 			}
 			
@@ -462,6 +462,7 @@ ideas = {
 				max_dig_in_factor = -0.15
 				max_planning_factor = -0.15
 				air_agility_factor = -0.115
+				army_speed_factor = 0.075
 				ground_attack_factor = -0.13			
 			}
 			
@@ -489,6 +490,7 @@ ideas = {
 				max_planning_factor = -0.1
 				air_agility_factor = -0.085
 				ground_attack_factor = -0.1
+				army_speed_factor = 0.05
 			}
 			
 			removal_cost = -1
@@ -515,6 +517,7 @@ ideas = {
 				max_planning_factor = -0.075
 				air_agility_factor = -0.045
 				ground_attack_factor = -0.06	
+				army_speed_factor = 0.025
 			}
 			
 			removal_cost = -1
@@ -539,6 +542,7 @@ ideas = {
 				max_planning_factor = -0.05	
 				air_agility_factor = -0.03
 				ground_attack_factor = -0.03
+				army_speed_factor = 0.025
 			}
 			
 			removal_cost = -1
@@ -558,7 +562,6 @@ ideas = {
 			modifier = {
 				air_agility_factor = -0.15
 				ground_attack_factor = -0.15			
-				army_speed_factor = -0.05
 			}
 			
 			removal_cost = -1

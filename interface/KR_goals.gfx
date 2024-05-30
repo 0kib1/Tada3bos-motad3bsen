@@ -9,10 +9,15 @@ spriteTypes = {
 		name = "GFX_focus_cryptozzz"
 		texturefile = "gfx/interface/goals/eng/crypto.dds"
 	}
+	#حساويس
 	SpriteType = {
         name = "goal_soviet_guards"
         texturefile = "gfx/interface/goals/goal_soviet_guards.dds"
     }
+	spriteType = {
+		name = "GFX_goal_SOV_inavde_manchuria"
+		texturefile = "gfx/interface/goals/SOV_inavde_manchuria.dds"
+	}
 
     ### Poland ###
 	

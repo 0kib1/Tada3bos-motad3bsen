@@ -2783,7 +2783,27 @@ focus_tree = {
 			focus = USA_raj
 		}
 		completion_reward = {
-			AST = {
+			if = {	
+				limit = {
+					BRA = {
+						is_ai = no
+					}	
+				}
+				BRA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 500
+				}
+				add_equipment_to_stockpile = {
+					type = special_equipment_1
+					amount = 2000
+					}
+				}
+				AST = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
 					amount = 10000
@@ -2797,6 +2817,28 @@ focus_tree = {
 					amount = 3000
 				}
 			}
+			}	
+			else_if = {	
+				limit = {
+					BRA = {
+						is_ai = yes
+					}	
+				}
+				AST = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 20000
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 1000
+				}
+				add_equipment_to_stockpile = {
+					type = special_equipment_1
+					amount = 4600
+				}
+			}
+			}	
 			add_resource = {
 				type = steel
 				amount = 30
