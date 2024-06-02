@@ -1,35 +1,33 @@
 
-state={
-	id=825
-	name="STATE_826"
-	resources={
-		oil=10.000
+state = {
+	id = 825
+	name = "STATE_826"
+	manpower = 12346
+	resources = {
+		oil = 10 # was: 2
 	}
+	
+	state_category = wasteland
 
-	history={
+	history = {
 		owner = ENG
 		add_core_of = SEN
+		
+		victory_points = { 13241 1 }
 		victory_points = {
-			13237 4 
+			13291 1
 		}
-		victory_points = {
-			13241 1 
-		}
-		victory_points = {
-			13291 1 
-		}
+		
 		buildings = {
 			infrastructure = 4
-
+			
 		}
 
+
 	}
 
-	provinces={
-		1143 10869 12764 13239 13240 13241 13242 13280 13293 13294 
+	provinces = {
+		13241 1143 12764 13240 13239  13242 13293 10869 13294 13280 
 	}
-	manpower=12346
-	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=0.000
+
 }

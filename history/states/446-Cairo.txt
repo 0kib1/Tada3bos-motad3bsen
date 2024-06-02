@@ -1,9 +1,12 @@
+state =
+{
+	id = 446
+	name = "STATE_446"
+	manpower = 6586596
+	
+	state_category = town
 
-state={
-	id=446
-	name="STATE_446"
-
-	history={
+	history = {
 		set_state_flag = ENG_controls
 		set_state_flag = ENG_africa_controls
 		owner = ENG
@@ -18,55 +21,46 @@ state={
 				naval_base = 10
 				coastal_bunker = 4
 				bunker = 3
-
 			}
 			4073 = {
 				naval_base = 1
-
 			}
 			7011 = {
 				bunker = 5
-
 			}
 			3996 = {
 				bunker = 4
-
 			}
 			12004 = {
 				bunker = 4
-
 			}
 			10005 = {
 				bunker = 4
-
 			}
 			4073 = {
 				bunker = 3
-
-			}
-
+			}							
 		}
 		victory_points = {
-			12049 5 
+			12049 5
 		}
 		victory_points = {
-			3996 5 
+			3996 5
 		}
 		victory_points = {
-			7011 20 
+			7011 20
 		}
 		victory_points = {
-			4073 3 
+			4073 3
 		}
+		victory_points = { 13237 4 }
+		
+		
+	
 		add_core_of = SEN
-
 	}
 
-	provinces={
-		992 1068 3996 4055 4073 4143 7011 7117 7188 10005 10031 10127 12004 12049 13236 13237 13238 
+	provinces = {
+		 1068 3996 4055 4073 4143 7011 7188 10005 10031 12004 12049 992 7117  13238 13236 13237 10127
 	}
-	manpower=6586596
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

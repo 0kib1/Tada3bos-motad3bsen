@@ -14,6 +14,10 @@ spriteTypes = {
 		name = "GFX_ability_list_end"
 		texturefile = "gfx/interface/abilitylist/bg_end.dds"
 	}
+	spriteType = {
+		name = "GFX_order_227"
+		texturefile = "gfx/interface/abilitylist/order_227.dds"
+	}
 	
 	
 	progressbartype = {
@@ -32,6 +36,32 @@ spriteTypes = {
 		size = {x=33 y=33}
 		effectFile = "gfx/FX/progress.lua"
 		horizontal = no
+	}
+	spriteType = {
+		name = "GFX_order_227_ability"
+		texturefile = "gfx/interface/abilitylist/order_227.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_order_227_ability_animated"
+		texturefile = "gfx/interface/abilitylist/order_227.dds"
+#		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		effectFile = "gfx/FX/buttonstate.lua"		
+		animation = {
+			animationmaskfile = "gfx/interface/abilitylist/order_227.dds"
+			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26.0				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+#			animationframes = {1 2 3 }
+		}
+	
+		legacy_lazy_load = no
 	}
 	
 	spriteType = {

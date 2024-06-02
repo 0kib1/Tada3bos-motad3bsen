@@ -1,28 +1,24 @@
 
-state={
-	id=552
-	name="STATE_552"
+state = {
+	id = 552
+	name = "STATE_552"
+	manpower = 18539
+	
+	state_category = wasteland
+	impassable = yes
 
-	history={
-		add_dynamic_modifier = {
-			modifier = USA_trader_dont_build
-
-		}
+	history = {
+		add_dynamic_modifier = { modifier = USA_trader_dont_build }
 		owner = ENG
 		add_core_of = SEN
 		buildings = {
 			infrastructure = 0
-
 		}
 
+
 	}
 
-	provinces={
-		2064 4138 4961 7987 8103 10900 10907 12099 12733 12816 12836 13271 13272 13273 13274 13276 13278 13279 13289 13290 13292 13291 7216 13270 
+	provinces = {
+		 2064 10907 12099 12733 12816 13289 13290 7987 8103 10900 13271 13272 13274 13273 13276 13278 13279 4138 12836 4961 13292 13291 7216
 	}
-	manpower=18539
-	buildings_max_level_factor=1.000
-	state_category=wasteland
-	impassable = yes
-	local_supplies=0.000
 }
