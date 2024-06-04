@@ -8989,6 +8989,260 @@ focus_tree = {
 			activate_mission_tooltip = SOV_persia_lend_lease_decision	
 			add_political_power = -25		
 		}
+	}
+	focus = {
+		id = SOV_marshal_of_victory
+		icon = GFX_goal_SOV_georgy_zhukov_hero
+		prerequisite = {
+			
+		}
+		relative_position_id = SOV_the_great_patriotic_war
+		mutually_exclusive = { focus = SOV_marshal_konev }
+		x = 2
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 3.7
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = SOV_georgy_zhukov
+
+			every_unit_leader = {
+				limit = {
+					has_id = 9435
+				}
+				promote_leader = yes
+				add_max_trait = 2
+				add_attack = 1
+				add_planning = 1
+				add_unit_leader_trait = trait_people_marshal 
+				add_unit_leader_trait = skilled_staffer
+			}
+		}
+	}
+	focus = {
+		id = SOV_underwater_bridge
+		icon = GFX_goal_SOV_water_tank
+		prerequisite = {
+			focus = SOV_marshal_of_victory
+		}
+		relative_position_id = SOV_marshal_of_victory
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 3.7
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_technology = {
+				underwater_bridges = 1
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_improve_red_guard_equipment
+		icon = GFX_goal_SOV_better_reguard
+		prerequisite = {
+			focus = SOV_underwater_bridge
+			focus = SOV_katyusha
+		}
+		relative_position_id = SOV_marshal_of_victory
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 3.7
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_technology = {
+				improved_redguard = 1
+			}
+		}
+	}
+	focus = {
+		id = SOV_katyusha
+		icon = GFX_goal_SOV_advanced_katyusha
+		prerequisite = {
+			focus = SOV_marshal_of_victory
+		}
+		relative_position_id = SOV_marshal_of_victory
+		x = 1
+		y = 1
+		cost = 2.2
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_stalin_organ
+				add_idea = SOV_stalin_organ_2
+			}
+		}
+	}
+	focus = {
+		id = SOV_marshal_konev
+		icon = GFX_goal_SOV_konev
+		prerequisite = {
+			
+		}
+		relative_position_id = SOV_the_great_patriotic_war
+		mutually_exclusive = { focus = SOV_marshal_of_victory }
+		x = -2
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 3.7
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = SOV_ivan_konev
+
+			every_unit_leader = {
+				limit = {
+					has_id = 408
+				}
+				promote_leader = yes
+				add_max_trait = 2
+				add_attack = 2
+				add_unit_leader_trait = trait_people_marshal 
+				add_unit_leader_trait = skilled_staffer
+			}
+		}
+	}
+	focus = {
+		id = SOV_maskirovka
+		icon = GFX_goal_SOV_maskirovska
+		prerequisite = {
+			focus = SOV_marshal_konev
+		}
+		relative_position_id = SOV_marshal_konev
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 3.7
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_maskirovska_tt
+			add_ideas = SOV_maskirovka
+		}
+	}
+	focus = {
+		id = SOV_expand_red_guards_regiments
+		icon = GFX_goal_SOV_mobilize_guards
+		prerequisite = {
+			focus = SOV_marshal_konev
+		}
+		relative_position_id = SOV_marshal_konev
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 3.7
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_expand_red_guards_regiments_tt
+			hidden_effect = {
+				load_oob = "SOV_red_guard"
+				load_oob = "SOV_red_guard"
+				load_oob = "SOV_red_guard"
+				SOV = {
+					scoped_sound_effect = sov_red_guards_sound
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = SOV_strenght_in_the_numbers
+		icon = GFX_goal_SOV_numbers
+		prerequisite = {
+			focus = SOV_expand_red_guards_regiments focus = SOV_maskirovka
+		}
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = SOV_marshal_konev
+		cost = 3.7
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_a_gun_for_every_hand_idea
+				add_idea = SOV_a_gun_for_every_hand_idea_2
+			}
+			set_technology = {
+				peoples_army = 1
+				human_infantry_offensive = 1
+				large_front_offensive = 1
+				human_wave_offensive = 1
+				guerilla_warfare = 1
+			}
+			custom_effect_tooltip = SOV_strenght_in_the_numbers_tt
+			hidden_effect = {
+				division_template = {
+    				priority = 0
+    				name = "Conscript"
+
+					regiments = {
+						conscript = { x = 0 y = 0 }
+						conscript = { x = 0 y = 1 }
+						conscript = { x = 0 y = 2 }
+						conscript = { x = 0 y = 3 }
+						conscript = { x = 0 y = 4 }
+
+						conscript = { x = 1 y = 0 }
+						conscript = { x = 1 y = 1 }
+						conscript = { x = 1 y = 2 }
+						conscript = { x = 1 y = 3 }
+						conscript = { x = 1 y = 4 }
+
+						anti_tank_brigade = { x = 2 y = 0 }
+						anti_tank_brigade = { x = 2 y = 1 }
+						anti_air_brigade = { x = 2 y = 2 }
+						artillery_brigade = { x = 2 y = 3 }
+						artillery_brigade = { x = 2 y = 4 }
+					}
+	
+					support = {
+        				engineer = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+						military_police = { x = 1 y = 0 }
+						anti_air = { x = 0 y = 2 }
+						artillery = { x = 0 y = 3 }
+						anti_tank = { x = 0 y = 4 }
+					}
+				}
+				249 = {
+					for_loop_effect = {
+						end = 50
+						create_unit = {
+   		 					division = "name = \"Conscript Division\" division_template = \"Conscript\" start_experience_factor = 0.5 start_equipment_factor = 1"
+    						owner = SOV
+						}
+					}
+				}
+			}
+		}
 	}	
 
 	focus = {
@@ -9007,7 +9261,7 @@ focus_tree = {
 		}
 
 		x = 0
-		y = 4
+		y = 8
 		ai_will_do = {
 			factor = 1.5
 			modifier = {
