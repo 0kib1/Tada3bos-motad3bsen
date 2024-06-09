@@ -437,7 +437,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ ita_kwantung_veto  }
+			traits={ ita_kwantung_veto organizer urban_assault_specialist  }
 			skill=6
 			attack_skill=4
 			defense_skill=3
@@ -705,7 +705,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ inflexible_strategist career_officer infantry_officer ita_kwantung_veto skilled_staffer }
+			traits={ inflexible_strategist career_officer infantry_officer ita_kwantung_veto skilled_staffer  }
 			skill=3
 			attack_skill=2
 			defense_skill=3
@@ -725,7 +725,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious armor_officer ita_kwantung_veto }
+			traits={ trait_cautious armor_officer ita_kwantung_veto trait_engineer trickster }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -745,7 +745,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious harsh_leader infantry_officer ita_kwantung_veto }
+			traits={ trait_cautious harsh_leader infantry_officer ita_kwantung_veto bearer_of_artillery }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -889,7 +889,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_reckless armor_officer ita_kwantung_veto motorized_leader }
+			traits={ trait_reckless armor_officer ita_kwantung_veto motorized_leader panzer_leader }
 			skill=3
 			attack_skill=4
 			defense_skill=2
@@ -989,7 +989,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer trait_cautious armor_officer ita_kwantung_veto }
+			traits={ career_officer trait_cautious armor_officer ita_kwantung_veto infantry_officer }
 			skill=4
 			attack_skill=4
 			defense_skill=3

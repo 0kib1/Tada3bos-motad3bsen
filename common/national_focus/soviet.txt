@@ -8994,7 +8994,8 @@ focus_tree = {
 		id = SOV_marshal_of_victory
 		icon = GFX_goal_SOV_georgy_zhukov_hero
 		prerequisite = {
-			
+			SOV_new_tank_corps
+			SOV_organize_the_defence_of_moscow
 		}
 		relative_position_id = SOV_the_great_patriotic_war
 		mutually_exclusive = { focus = SOV_marshal_konev }
@@ -9039,10 +9040,168 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_technology = {
-				underwater_bridges = 1
-			}
+				custom_effect_tooltip = SOV_create_unit_tank_corps_reformed_tt
+				if = {
+					limit = {
+						has_completed_focus = SOV_morozov_will_show_the_way
+						NOT = {
+							OR = {
+								has_tech = large_front_operations
+								has_tech = peoples_army
+							}
+						}
+					}
+					hidden_effect = {	
+						if = {
+							limit = {
+								has_country_flag = SOV_oopsie_tank
+							}
+						}
+						else_if = {
+							limit = {
+								NOT = {
+									has_country_flag = SOV_oopsie_tank
+								}
+							}	
+						}
+						random_owned_controlled_state = {
+							prioritize = { 219 }
+							create_unit = {
+								division = "name = \"10. Tankoviy Korpus\" division_template = \"Guard Tank Division\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+								owner = SOV
+							}	
+							create_unit = {
+								division = "name = \"11. Tankoviy Korpus\" division_template = \"Guard Tank Division\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+								owner = SOV
+							}	
+							create_unit = {
+								division = "name = \"12. Tankoviy Korpus\" division_template = \"Guard Tank Division\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+								owner = SOV
+							}									
+						}
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_completed_focus = SOV_okmo_will_show_the_way
+						NOT = {
+							OR = {
+								has_tech = large_front_operations
+								has_tech = peoples_army
+							}
+						}
+							
+					}
+					hidden_effect = {	
+						if = {
+							limit = {
+								has_country_flag = SOV_oopsie_tank
+							}
+			
+						}
+						else_if = {
+							limit = {
+								NOT = {
+									has_country_flag = SOV_oopsie_tank
+								}
+							}
+							
+						}
+						random_owned_controlled_state = {
+							prioritize = { 219 }
+							create_unit = {
+								division = "name = \"5. Tankoviy Korpus\" division_template = \"Guard Tank Division\" start_experience_factor = 0.6 start_equipment_factor = 0.85" 
+								owner = SOV
+							}	
+							create_unit = {
+								division = "name = \"6. Tankoviy Korpus\" division_template = \"Guard Tank Division\" start_experience_factor = 0.6 start_equipment_factor = 0.85" 
+								owner = SOV
+							}								
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SOV_morozov_will_show_the_way
+						OR = {
+							has_tech = large_front_operations
+							has_tech = peoples_army
+						}
+					}
+					hidden_effect = {	
+						
+						if = {
+							limit = {
+								has_country_flag = SOV_oopsie_tank
+							}
+						
+						}
+						else_if = {
+							limit = {
+								NOT = {
+									has_country_flag = SOV_oopsie_tank
+								}
+							}
+						
+						}
+						random_owned_controlled_state = {
+							prioritize = { 219 }
+							create_unit = {
+								division = "name = \"10. Tankoviy Korpus\" division_template = \"Guard Tank Division\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+								owner = SOV
+							}	
+							create_unit = {
+								division = "name = \"11. Tankoviy Korpus\" division_template = \"Guard Tank Division\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+								owner = SOV
+							}	
+							create_unit = {
+								division = "name = \"12. Tankoviy Korpus\" division_template = \"Guard Tank Division\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+								owner = SOV
+							}								
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SOV_okmo_will_show_the_way
+						OR = {
+							has_tech = large_front_operations
+							has_tech = peoples_army
+						}	
+					}
+					hidden_effect = {	
+						
+						if = {
+							limit = {
+								has_country_flag = SOV_oopsie_tank
+							}
+						
+						}
+						else_if = {
+							limit = {
+								NOT = {
+									has_country_flag = SOV_oopsie_tank
+								}
+							}
+					
+						}
+						random_owned_controlled_state = {
+							prioritize = { 219 }
+							create_unit = {
+								division = "name = \"8. Tankoviy Korpus\" division_template = \"Guard Tank Division\" start_experience_factor = 0.6 start_equipment_factor = 0.85" 
+								owner = SOV
+							}	
+							create_unit = {
+								division = "name = \"9. Tankoviy Korpus\" division_template = \"Guard Tank Division\" start_experience_factor = 0.6 start_equipment_factor = 0.85" 
+								owner = SOV
+							}	
+														
+						}
+					}
+				}
 		}
+	
 	}
 
 	focus = {
@@ -9062,9 +9221,24 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_technology = {
-				improved_redguard = 1
-			}
+				if = {
+					limit = {
+						 has_idea = SOV_STAVKA3 
+					}
+					swap_ideas = {
+						remove_idea = SOV_STAVKA3
+						add_idea = SOV_STAVKA31
+					}
+				}
+				else_if = {
+					limit = {
+						has_idea = SOV_STAVKA_3 
+					}
+					swap_ideas = {
+						remove_idea = SOV_STAVKA_3
+						add_idea = SOV_STAVKA_3_1
+					}	
+				}
 		}
 	}
 	focus = {
@@ -9084,17 +9258,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = SOV_stalin_organ
-				add_idea = SOV_stalin_organ_2
-			}
+			add_ideas = SOV_stalin_organ
 		}
 	}
 	focus = {
 		id = SOV_marshal_konev
 		icon = GFX_goal_SOV_konev
 		prerequisite = {
-			
+			SOV_new_tank_corps
+			SOV_organize_the_defence_of_moscow
 		}
 		relative_position_id = SOV_the_great_patriotic_war
 		mutually_exclusive = { focus = SOV_marshal_of_victory }
