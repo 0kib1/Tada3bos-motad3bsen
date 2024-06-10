@@ -37,7 +37,7 @@ NDefines_Graphics.NGraphics.AIRBASE_ICON_DISTANCE_CUTOFF = 900
 NDefines_Graphics.NGraphics.NAVALBASE_ICON_DISTANCE_CUTOFF = 900
 NDefines_Graphics.NGraphics.RESISTANCE_COLOR_GOOD = {0.0, 0.65, 0, 1}
 
-NDefines.NCountry.INTERPOLATED_FRONT_STEPS_SHORT = 1				-- Performance optimization - The amount of steps for interpolated fronts. Non-AI countries got full interpolated fronts, the rest has optimized version of it.
+NDefines.NCountry.INTERPOLATED_FRONT_STEPS_SHORT = 2				-- Performance optimization - The amount of steps for interpolated fronts. Non-AI countries got full interpolated fronts, the rest has optimized version of it.
 
 NDefines_Graphics.NGraphics.CAPITAL_ICON_CUTOFF = 1000	-- At what camera distance capital icons disappears
 NDefines_Graphics.NGraphics.NAVAL_MINES_DISTANCE_CUTOFF = 250

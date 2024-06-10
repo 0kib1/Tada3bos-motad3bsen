@@ -316,14 +316,36 @@ PAR_instant_effect_decisions = {
 						}
 					}
 					OR = {
-						ENG = {
-							controls_province = 11531
+						OR = {
+							ENG = {
+								controls_province = 11531
+							}
+							any_other_country = {
+								is_in_faction_with = ENG
+								controls_province = 11531
+							}
 						}
-						any_other_country = {
-							is_in_faction_with = ENG
-							controls_province = 11531
+						OR = {
+							ENG = {
+								controls_province = 11547
+							}
+							any_other_country = {
+								is_in_faction_with = ENG
+								controls_province = 11547
+							}
 						}
+						OR = {
+							ENG = {
+								controls_province = 3423
+							}
+							any_other_country = {
+								is_in_faction_with = ENG
+								controls_province = 3423
+							}
+						}
+
 					}
+					
 				}
 				AND = {
 					GER = {
@@ -334,13 +356,34 @@ PAR_instant_effect_decisions = {
 					}
 					date > 1940.2.1
 					OR = {
-						ENG = {
-							controls_province = 11531
+						OR = {
+							ENG = {
+								controls_province = 11531
+							}
+							any_other_country = {
+								is_in_faction_with = ENG
+								controls_province = 11531
+							}
 						}
-						any_other_country = {
-							is_in_faction_with = ENG
-							controls_province = 11531
+						OR = {
+							ENG = {
+								controls_province = 11547
+							}
+							any_other_country = {
+								is_in_faction_with = ENG
+								controls_province = 11547
+							}
 						}
+						OR = {
+							ENG = {
+								controls_province = 3423
+							}
+							any_other_country = {
+								is_in_faction_with = ENG
+								controls_province = 3423
+							}
+						}
+
 					}
 				}
 				AND = {
@@ -849,7 +892,7 @@ PAR_instant_effect_decisions = {
 	PAR_sealion_lost = {
 		allowed = { tag = PAR }
 		ai_will_do = {
-			base = 1000			
+			base = 5000			
 		}
 		available = {
 			ENG = {
@@ -897,7 +940,7 @@ PAR_instant_effect_decisions = {
 	PAR_sealion_pushed = {
 		allowed = { tag = PAR }
 		ai_will_do = {
-			base = 1000			
+			base = 5000			
 		}
 		available = {
 			ENG = {
@@ -989,7 +1032,7 @@ PAR_instant_effect_decisions = {
 	PAR_sealion_happening = {
 		allowed = { tag = PAR }
 		ai_will_do = {
-			base = 5000			
+			base = 5000		
 		}
 		available = {
 			any_state = {
@@ -1087,6 +1130,24 @@ PAR_instant_effect_decisions = {
 				}
 			}
 			268 = {
+				OR = {
+					NOT = {
+						is_controlled_by = ITA 
+						is_controlled_by = ETH 
+
+					}
+				}
+			}
+			834 = {
+				OR = {
+					NOT = {
+						is_controlled_by = ITA 
+						is_controlled_by = ETH 
+
+					}
+				}
+			}
+			835 = {
 				OR = {
 					NOT = {
 						is_controlled_by = ITA 
@@ -5324,7 +5385,7 @@ PAR_instant_effect_decisions = {
 	PAR_jap_focus_dec = {
 		allowed = { tag = PAR }
 		ai_will_do = {
-			base = 1000			
+			base = 10000			
 		}
 		available = {
 			date > 1941.1.1
@@ -8415,7 +8476,7 @@ PAR_instant_effect_decisions = {
 
 
 		ai_will_do = {
-			base = 1000
+			base = 8000
 			
 		}
 	}
@@ -8451,7 +8512,7 @@ PAR_instant_effect_decisions = {
 
 
 		ai_will_do = {
-			base = 1000
+			base = 8000
 			
 		}
 	}	
@@ -8487,7 +8548,7 @@ PAR_instant_effect_decisions = {
 
 
 		ai_will_do = {
-			base = 1000
+			base = 8000
 			
 		}
 	}	
@@ -8523,7 +8584,7 @@ PAR_instant_effect_decisions = {
 
 
 		ai_will_do = {
-			base = 1000
+			base = 8000
 			
 		}
 	}	
@@ -8560,7 +8621,7 @@ PAR_instant_effect_decisions = {
 
 
 		ai_will_do = {
-			base = 1000
+			base = 8000
 			
 		}
 	}	
@@ -8594,7 +8655,7 @@ PAR_instant_effect_decisions = {
 
 
 		ai_will_do = {
-			base = 1000
+			base = 8000
 			
 		}
 	}	
@@ -8627,7 +8688,7 @@ PAR_instant_effect_decisions = {
 
 
 		ai_will_do = {
-			base = 1000
+			base = 8000
 			
 		}
 	}	
@@ -8654,6 +8715,7 @@ PAR_instant_effect_decisions = {
 				add_to_variable = { var = POL_max_surrender_limit_offset_modifier value = -1 }
 
 			}
+			
 		}
 
 		cost = 0
@@ -8664,6 +8726,34 @@ PAR_instant_effect_decisions = {
 			
 		}
 	}
+	POL_sealionfix = {
+		fire_only_once = yes
+		
+		icon = generic_megaphone
+   
+		allowed = {
+		   tag = PAR
+		}
+		
+		available = {
+			POL = {
+				has_capitulated = yes 
+			}
+		}
+		complete_effect = {
+			clr_global_flag = GER_sealion_fix
+			
+		}
+
+		cost = 0
+
+
+		ai_will_do = {
+			base = 1000
+			
+		}
+	}
+	
 	
 	POL_nine = {
 		fire_only_once = yes
@@ -8850,7 +8940,7 @@ PAR_instant_effect_decisions = {
 		complete_effect = {
            hidden_effect = {
 				every_country = {limit = { check_variable= { speeches_enabled > 0}  }
-					scoped_sound_effect = "sp_eng_fight_them"
+					play_song = "sp_eng_fight_them"
 				}
 
 		    }
@@ -8897,7 +8987,7 @@ PAR_instant_effect_decisions = {
 		complete_effect = {
            hidden_effect = {
 				every_country = {limit = { check_variable= { speeches_enabled > 0}  }
-					scoped_sound_effect = "sp_dday"
+					play_song = "sp_dday"
 				}
 		    }
 		    GER = {
@@ -8946,7 +9036,7 @@ PAR_instant_effect_decisions = {
 		complete_effect = {
            hidden_effect = {
 				every_country = {limit = { check_variable= { speeches_enabled > 0}  }
-					scoped_sound_effect = "sp_dday"
+					play_song = "sp_dday"
 				}
 		    }
 		    GER = {
@@ -8995,7 +9085,7 @@ PAR_instant_effect_decisions = {
 		complete_effect = {
            hidden_effect = {
 				every_country = {limit = { check_variable= { speeches_enabled > 0}  }
-					scoped_sound_effect = "sp_dday"
+					play_song = "sp_dday"
 				}
 		    }
 		    GER = {
@@ -9044,7 +9134,7 @@ PAR_instant_effect_decisions = {
 		complete_effect = {
            hidden_effect = {
 				every_country = {limit = { check_variable= { speeches_enabled > 0}  }
-					scoped_sound_effect = "sp_dday"
+					play_song = "sp_dday"
 				}
 		    }
 		    GER = {
@@ -9093,7 +9183,7 @@ PAR_instant_effect_decisions = {
 		complete_effect = {
            hidden_effect = {
 				every_country = {limit = { check_variable= { speeches_enabled > 0}  }
-					scoped_sound_effect = "sp_dday"
+					play_song = "sp_dday"
 				}
 		    }
 		    GER = {
@@ -9142,7 +9232,7 @@ PAR_instant_effect_decisions = {
 		complete_effect = {
            hidden_effect = {
 				every_country = {limit = { check_variable= { speeches_enabled > 0}  }
-					scoped_sound_effect = "sp_dday"
+					play_song = "sp_dday"
 				}
 		    }
 		    GER = {

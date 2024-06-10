@@ -97,9 +97,70 @@ MAN_spec_tank:0 "§YSpecial Funding Research Program§! for §OArmor technologie
 
 Unworty_ruler:0 "Unworthy Ruler"
 worty_ruler:0 "Worthy Ruler"
-slave_flag:0 "Used logs"
-MAN_slaves_long:0 "§4Gather logs§!"
-MAN_slaves:0 "§4Gather logs§!"
+#######################
+the_loved_one:0 "§Y Improve worker recruitment rate by:§!"
+spacers:0 "---------------------------------"
+B1:0 "§4 Beijing        |§G10k§! £GFX_right_arrow §G20k§!| §!"
+B2:0 "§4 Nanjing      |§G20k§! £GFX_right_arrow §G40k§!| §!"
+B3:0 "§4 Changsha  |§G30k§! £GFX_right_arrow §G60k§!| §!"
+B4:0 "§4 Chongqing |§G60k§! £GFX_right_arrow §G120k§!| §!"
+
+B111:0 "Buildings construction Speed |§G1%§! £GFX_right_arrow §G2%§!| §!"
+B222:0 "Used Volunteer Workers |§R15K§! £GFX_right_arrow §R25K§!| §!"
+
+B112:0 "Cost of building it £GFX_right_arrow §R5K§! volunteers"
+B113:0 "Amount of divisions £GFX_right_arrow §Y3§! "
+##############################################workers
+the_defence_force:0"§YAllows Building of Reserve Defences in Liaotung :§!"
+
+##########################
+workeers_flag:0 "Gathering volunteer"
+workeers_trust_flag:0 "Using volunteer"
+workeers_trust_mines_flag:0 "Mine in Construction"
+
+MAN_slaves_long:0 "§4Gather volunteer§!"
+MAN_slaves:0 "§4Gather volunteer§!"
+
+loggi:0 "Gather §G10k§! new volunteer workers ."
+loggi_2:0 "Gather §G20k§! new volunteer workers ."
+loggi_3:0 "Gather §G30k§! new volunteer workers ."
+loggi_4:0 "Gather §G60k§! new volunteer workers ."
+loggi_r1:0 "Gather §G20k§! new volunteer workers ."
+loggi_r2:0 "Gather §G40k§! new volunteer workers ."
+loggi_r3:0 "Gather §G60k§! new volunteer workers ."
+loggi_r4:0 "Gather §G120k§! new volunteer workers ."
+neddie:0 "Uses §R20k§! volunteer workers ."
+neddie_mines:0 "Uses §R25k§! volunteer workers ."
+neddie_femboy:0 "Uses §R10k§! volunteer workers ."
+neddie_1:0 "Uses §R35k§! volunteer workers ."
+neddie_guards:0 "Uses §R5k§! volunteer workers ."
+neddie_2:0 "Uses §R15k§! volunteer workers ."
+neddie_3:0 "Uses §R30k§! volunteer workers ."
+neddie_4:0 "Uses §R40k§! volunteer workers ."
+
+
+MAN_logos:0 "After§2 3 log gatherings§! ,will be able to §4Use volunteers§!"
+MAN_logos_1:0 "Needs§2 3 log gatherings§! to be able to §4Use volunteers§!"
+MAN_logos_2:0 "Needs§2 2 log gatherings§! to be able to §4Use volunteers§!"
+MAN_slaves_1:0 "§7Gather volunteers in Beijing§!"
+MAN_slaves_2:0 "§7Gather volunteers in Nanjing§!"
+MAN_slaves_3:0 "§7Gather volunteers in Changsha§!"
+MAN_slaves_4:0 "§7Gather volunteers in Chongqing§!"
+
+MAN_workeru_1:0 "§5Gather more volunteers in Beijing§!"
+MAN_workeru_2:0 "§5Gather more volunteers in Nanjing§!"
+MAN_workeru_3:0 "§5Gather more volunteers in Changsha§!"
+MAN_workeru_4:0 "§5Gather more volunteers in Chongqing§!"
+
+MAN_mills:0 "§YBuild Military factory in Liaoning§!"
+MAN_civie:0 "§YBuild Civilian factory in Liaoning§!"
+MAN_civie_for_mini_me:0 "§3Build Civilian factory in East Hebei§!"
+MAN_mills_for_mini_me:0 "§3Build Military factory in East Hebei§!"
+MAN_doky:0 "§YBuild Dockyard in Jehol§!"
+MAN_guards:0 "§gBuild Reserve Defences in Liaotung§!"
+MAN_mines:0 "§8Build Mines in Sungkiang§!"
+MAN_mines_at_cost:0 "§8Build Mines in Chahar§!"
+MAN_THE_WALL:0 "§gBuild Costal Defences on all Coastline§!"
 
 ##############
 MAN_oil_deposits:0 "Develop Hulunbuir Oil Deposits"
@@ -143,10 +204,12 @@ MAN_exports:0 "§YHas delivery of planes§!"
 ##############
 JAP_miners:0"Japanese Miners"
 JAP_workers:0"Japanese Workers"
-MAN_speed_descriptors:0 "§OUnlocks Constuction Decision in Epidemic Prevention and Water Purification Dpt."
+MAN_speed_descriptors:0 "§OImproves Constuction Decision in the Economical Focuses§!"
+
+
 ############
 MAN_research_unit_short_funded:0 "Epidemic Prevention and Water Purification Dpt."
-MAN_speed:0 "§4Use Logs for needs §!"
+
 MAN_research_electric:0 "§OImport Japanese Computer Machines§!"
 MAN_research_guns_short:0 "§YLimited Funding for Infantry Research§!"
 MAN_research_arty_short:0 "§YLimited Funding for Artillery Research§!"
@@ -157,7 +220,8 @@ MANspace:0 "                   "
 MAN_balls:0 "§YUnlocks decisions for Improved Research Bonuses with Increasing Research Speed §!"
 MAN_short:0 "§YUnlocks Imports from Japan and Research!"
 
-MAN_speed_long:0 "§4Use Logs for needs §!"
+MAN_speed_long:0 "§4Use More Volunteers for Construction Sector§!"
+MAN_speed:0 "§4Use Volunteers for for Construction Sector§!"
 MAN_research_guns_long:0 "Large Funding for Infantry Research"
 MAN_research_arty_long:0 "Large Funding for Artillery Research"
 MAN_research_tanks_long:0 "Large Funding for Tank-Armor Research"
@@ -173,19 +237,22 @@ MAN_slot:0"§RExpand the Research Center§!"
 MAN_slot_long:0"§RExpand the Research Center§!"
 
 MAN_yato_trap:0 "We will allow it this §Oonly 3 times§!,§3don't feed the ones who want you dead too much§!"
-nii_shit_from_mumi:0 "§YWe can do it only 5 times§!"
-MAN_logos:0 "Possible after§2 2 log gatherings§! we will be able to do it"
-MAN_retardism_for_retards:0 "After §2 2 Funding allocations§! we will be able to Secure Funding for Research!"
-MAN_retardism:0 "Funding Secured will lead to §YSpecial Funding for Project§!,§ROnly once!§!"
+nii_shit_from_mumi:0 "§YCan be done only 5 times§!"
 
-cute_from_mumi:0 "§RWill take 14 days to be able to do it again§!"
-adorable_from_mumi:0 "§RWill take 30 days to be able to do it again§!"
-cute_from_saruei:0 "§RWill take 30 days to be able to do it again§!"
-i_want_to_fuck_saruei:0 "§4Can be started at any time§!"
-cute_saruei:0 "§4Can only be done once!§!"
+MAN_retardism_for_retards:0 "Will be available after completing §2 2 Funding allocations§!"
+MAN_retardism:0 "Will be available after completing §YSecure Funding Decision§!"
+
+cute_saruei:0 "§4Can only be done once§!"
+saruei_my_love:0 "This can be §Yrepeatedly§! done, with a §Y14-day wait§! in between decisions"
+i_love_her_fully:0 "This can be §Yrepeatedly§!, with a §Y60-day wait§! in between decisions"
+cute_from_saruei:0 "This can only be §Ydone twice§!, with a §Y30-day wait§! in between decisions"
+man_i_wish_i_had_some_chips_now:0 "yes"
+cute_from_mumi:0 "§RWill be able to do it again after 14 days§!"
+
+
 1_slot:0 "After §Y5 Loyalty Increased §!will be able to do it"
 3_slot:0 "After §R3 Suppress decisions §!will be able to do it"
-Only:0 "Can be picked only once !"
+Only:0 "Can be picked only once"
 30days:0 "§YExporting cooldown is 30 days to be able to do it again§!"
 60days:0 "§YExporting cooldown is 60 days to be able to do it again§!"
 
@@ -240,15 +307,15 @@ MAN_educational_torture:0 "§4Re-education of the Unwilling Ones§!"
 MAN_mandated_civilization:0 "Accept §RSocialist§! Students"
 MAN_mass_genocide:0 "Suppress §RSocialist§! Protests"
 
-MAN_bribes:0 "§2Allow bribery in the goverment§!"
-MAN_consumer_goods:0 "§2Fight corruption in government§!"
-choise_of_good_or_political:0 "§4Hasn't chosen to fight corruption or allow bribery§!"
-
 MAN_polical_fix:0 "Increase loyalty of the §YKwantung Army§!"
 pick_more:0 "Needs at least §Y3 Political Focuses§! to be able to pick this"
 pick_more_five:0 "Needs at least §Y5 Political Focuses§! to be able to pick this"
 picked_too_much:0 "Has less than 3 Blessings Of Heaven"
-MAN_political_retadism:0 "§YPolitical & Economical Focuses§!"
+
+MAN_political_retadism:0 "§YPolitical Focuses§!"
+MAN_economic_retadism:0 "§YEconomical Focuses§!"
+MAN_economic_retadism_desc:0 "Any pair of hands will ensure that the economy remains stable, no matter the cost. We have §Y[?logs]§! available volunteers ."
+
 MAN_onlu_1_left:0 "§YFive Races Under One Union§!"
 MAN_death_is_a_reward:0 "Hunt §RSocialist§! Leader"
 MAN_731_infantry:0 "Need Project"
@@ -257,7 +324,7 @@ MAN_elite_tanks:0 "§YFully funded tank secret project§!"
 MAN_advanced_tanks:0 "Secured Funding for infantry projects"
 MAN_rocketa:0 "§YFull funded secret project§!"
 MAN_advanced_arty:0 "Secured Funding for arty projects"
-MAN_elite_manchurians:0 "§YFully funded secret project§!"
+MAN_elite_manchurians:0 "§YFully funded secret project§!"D
 MAN_advance_guns_long:0 "Secured Funding for infantry projects"
 
 figters_japan_export:0 "§1Unlocks decision to export airwings to Japan for Consumer goods§!"
@@ -275,6 +342,7 @@ fascism_drift_man_0_02_red:0 "§YDaily Fascism Support§!: §R-0.02§!"
 
 commie_drift_man_1:0 "§YDaily Communism Support§!: §G+0.01§!"
 commie_drift_man_2:0 "§YDaily Communism Support§!: §G+0.02§!"
+commie_drift_man_3:0 "§YDaily Communism Support§!: §G+0.03§!"
 commie_drift_man_1_red:0 "§YDaily Communism Support§!: §R-0.01§!"
 commie_drift_man_2_red:0 "§YDaily Communism Support§!: §R-0.02§!"
 democra_drift_man_2_red:0 "§YDaily Democatic Support§!: §R-0.02§!"
@@ -320,7 +388,7 @@ democrat_unrest_3:0 "Nation Wide Protest"
 
 wtt_manchukou.40.d: "Zhang Jinghui's leadership failures, evident from the outset, have led to significant loss of human life with little to show in return. In this critical juncture, the legendary Tojo Hideki will step forward to lead the nation and restore it to its former glory."
 
-wtt_manchukou.33.d: "In the morning hours, a dark reality has struck Manchuria: the beloved leader, Puyi, has died after his palace was fully destroyed by what local authorities and Puyi's personal guards believe to be improvised explosives hidden in the walls of the palace. Many speculate that it was the work of northern bandits attempting to dismantle the leadership, but some doubt this narrative. In such dark hours, only one man can take the lead: Zhang Jinghui. However, the people hold differing views on this matter."
+wtt_manchukou.33.d: "In the morning hours, a dark reality has struck Manchuria: the beloved leader, Puyi, has died after his palace was fully destroyed by what local authorities and Puyi's personal guards believe to be improvised explosives hidden in the walls of the palace. Many speculate that it was the work of northern bandits attempting to detroy us by behading the dragon's head, but some doubt this,one of them been Zhao Tiemei. In such dark hours, only one man can take the lead: Zhang Jinghui. However, the people hold differing views on this matter."
 
 wtt_manchukou.34.d: "Under the leadership of General Tojo, Manchuria, backed by Japan, has seized control of vital trade nodes and cities in distant regions of China. This bold move marks a significant expansion of Manchurian influence and raises questions about the future of the occupied territories. With Tojo at the helm, Manchuria faces a crucial decision whether to invest in rebuilding the conquered cities or to exploit their resources by relocating skilled laborers to bolster Manchuria's own development. This strategic choice will shape the course of Manchuria's expansion and its relationship with both China and Japan."
 
@@ -338,7 +406,7 @@ MAN_recruitable_tt0:0 "Modify §YManchukuo Economy§! by:"
 
 MAN_kwantung_veto_center:0 "Limited Kwantung Army Power"
 
-
+puiy_spirit:0 "Emperor Of China"
 
 MAN_Japanise_reseach_univs:0 "Special Research Unit"
 MAN_Japanise_reseach_univs_right:0 "Fully Funded of the Special Research Unit"
@@ -784,7 +852,7 @@ ITA_guns2_tt:0 "§YInfantry Equipment§!:\n        Soft Attack: §R-20%§!\n    
 ITA_guns3_tt:0 "§YInfantry Equipment§!:\n        Soft Attack: §R-20%§!\n        Defense: §R-10%§!\n        Reliability: §R-20%§!\n        $production_cost_tt$ §G-30.00%§!\n\n§YArtillery§!: $production_cost_tt$ §G-5.00%§!\n"
 
 ITA_rearm_the_army_modifier_tt:0 "§YAll Armor§!: $production_cost_tt$ §G-10.00%§!\n§YArmored Cars§!: $production_cost_tt$ §G-10.00%§!\n§YArtillery§!: $production_cost_tt$ §G-10.00%§!\n"
-ITA_break_the_three_army_independence_tt:0 "$ITA_OAK_modify_regio_esercito_dynamic_modifier_ns_intro$ \n$MODIFIER_ARMY_ARMOR_ATTACK_FACTOR$: §G+5%§!\nMotorized/Mechanized Attack: §G+5%§! \nArtillery Attack: §G+5%§!\n$ITA_OAK_modify_regia_aeronautica_dynamic_modifier_ns_intro$ \n$MODIFIER_GROUND_ATTACK_FACTOR$: §G+5%§! \n  \n"
+ITA_break_the_three_army_independence_tt:0 "$ITA_OAK_modify_regio_esercito_dynamic_modifier_ns_intro$ \n$MODIFIER_ARMY_ARMOR_ATTACK_FACTOR$: §G+5%§!\nMotorized/Mechanized Division Attack: §G+5%§! \nArtillery Division Attack: §G+5%§!\n$ITA_OAK_modify_regia_aeronautica_dynamic_modifier_ns_intro$ \n$MODIFIER_GROUND_ATTACK_FACTOR$: §G+5%§! \n  \n"
 ITA_break_the_three_army_independence_tt_air:0 "$ITA_OAK_modify_regia_aeronautica_dynamic_modifier_ns_intro$ \n$MODIFIER_GROUND_ATTACK_FACTOR$: §G+5%§! \n\n"
  
  ITA_compagnie_auto_avio_sahariane_re_tt:0 "$ITA_OAK_modify_regio_esercito_dynamic_modifier_ns_intro$ \n$MODIFIER_ORG_LOSS_WHEN_MOVING$: §G-10.0%§! \n$MODIFIER_OUT_OF_SUPPLY_FACTOR$: §G-10.0%§! \n\n"
@@ -801,8 +869,8 @@ ITA_alpine_tt:0 "$MODIFIER_SPECIAL_FORCES_ATTACK_FACTOR$: §G+5.00%§!"
 ITA_guerra_di_posizioni_e_decisionia_tt:0 "$ITA_OAK_modify_regio_esercito_dynamic_modifier_ns_intro$ \n$MODIFIER_MAX_DIG_IN_FACTOR$: §G+5.00%§!\n$MODIFIER_MAX_PLANNING$: §G+5.00%§!  \n\n"
 ITA_expand_the_comando_supremo_role_tt:0 "$ITA_OAK_modify_regio_esercito_dynamic_modifier_ns_intro$ \n$MODIFIER_MAX_PLANNING$: §G+30.0%§!\n$MODIFIER_PLANNING_SPEED$: §R-10.00%§!  \n\n"
 
-ITA_fight_corruption_tt:0 "$ITA_OAK_modify_regio_esercito_dynamic_modifier_ns_intro$ \nDivision Attack: §G+7.0%§!\nDivision Defense: §G+7.0%§!\n  \n\n"
-ITA_fight_corruption_tt2:0 "$ITA_OAK_modify_regio_esercito_dynamic_modifier_ns_intro$ \n$MODIFIER_MAX_PLANNING$: §G+25.0%§!\n$MODIFIER_PLANNING_SPEED$: §G+25.00%§! \n\n"
+ITA_fight_corruption_tt:0 "$ITA_OAK_modify_regio_esercito_dynamic_modifier_ns_intro$ \nDivision Attack: §G+4.0%§!\nDivision Defense: §G+4.0%§!\n  \n\n"
+ITA_fight_corruption_tt2:0 "$ITA_OAK_modify_regio_esercito_dynamic_modifier_ns_intro$ \n$MODIFIER_MAX_PLANNING$: §G+25.0%§!\n$MODIFIER_PLANNING_SPEED$: §G+25.00%§!\nDivision Attack: §G+4.0%§!\nDivision Defense: §G+4.0%§!\n \n\n"
 ITA_turbo_bersaglieri_tt:0 "Modify §YBersaglieri§!, §YMotorized Bersaglieri§! and §YMechanized Bersaglieri§! by\nUrban and Fort Attack: §G+10.0%§!\nEach battalion will require §R+16§! §YMotorized Equipment§!/§R+7§! §YMechanized Equipment§!"
 ITA_strategic_bomber_tt:0 "Will give 100 latest §YStrategic Bombers§! up to model year 1939 if you have them researched."
 ITA_dive_bomber_tt:0 "Will give 200 latest §YClose Air Support§! aircraft up to model year 1939 if you have them researched."
@@ -952,7 +1020,7 @@ ENG_expand_xp_gain_tt:0 "Modify §YThe Royal Navy§! by\nNaval Experience Gain: 
 
 ENG_naval_games_tt:0 "\n\nTakes §Y90§! days to renable.\n"
 
-ENG_containment_tt:0 "Modify §YProsperity of the Empire§! by\nWar Support: §G+20%§!\nPolitical Power Gain: §G+10%§!\nDaily Political Power Cost:  §G-0.1§!"
+ENG_containment_tt:0 "Modify §YProsperity of the Empire§! by\nWar Support: §G+20%§!\nDaily Political Power Cost:  §G-0.1§!"
 
 ENG_containment_upgrade_tt:0 "Modify §YProsperity of the Empire§! by\nMilitary Factory Construction Speed: §G+5%§!\nCivilian Factory Construction Speed: §R-5%§!"
 ENG_containment_upgrade_2_tt:0 "Modify §YProsperity of the Empire§! by\nMilitary Factory Construction Speed: §G+5%§!\nCivilian Factory Construction Speed: §R-5%§!\nIf you have completed focus §YA Flamboyant Playboy§!:\nModify §YProsperity of the Empire§! by\nStability: §G+5%§!"
@@ -985,7 +1053,7 @@ ENG_georgevi_tt:0 "Modify §YProsperity of the Empire§! by\nStability: §G+10%�
 
 ENG_amend_factory_acts_upgrade_tt:0 "Modify §YProsperity of the Empire§! by\nResource Gain Efficiency: §G+10%§!" 
 
-ENG_appeasement_tt:0 "Modify §YProsperity of the Empire§! by\nPolitical Power Gain: §G+20%§!\nDaily Political Power Cost:  §G-0.1§!"
+ENG_appeasement_tt:0 "Modify §YProsperity of the Empire§! by\nPolitical Power Gain: §G+10%§!\nDaily Political Power Cost:  §G-0.1§!"
 
 ENG_appeasement_upgrade_tt:0 "Modify §YProsperity of the Empire§! by\nProduction Efficiency Base: §G+5%§!"
 
@@ -993,11 +1061,10 @@ ENG_appeasement_upgrade2_tt:0 "Modify §YProsperity of the Empire§! by\nMilitar
 
 ENG_appeasment_change_tt:0 "Modify §YProsperity of the Empire§! by\nStability: §G+10%§!\nPolitical Power Gain: §G+10%§!"
 
-ENG_appeasment_civs_speed:0 "Modify §YProsperity of the Empire§! by\nCivilian Factory Construction Speed: §G+10%§!"
+ENG_appeasment_civs_speed:0 "Modify §YProsperity of the Empire§! by\nCivilian Factory Construction Speed: §G+15%§!"
 
 ENG_appeasment_change_2_tt:0 "Modify §YProsperity of the Empire§! by\nMilitary Factory Construction Speed: §R-10%§!\nCivilian Factory Construction Speed: §G+10%§!"
 
-ENG_appeasment_civs_speed:0 "Modify §YProsperity of the Empire§! by\nCivilian Factory Construction Speed: §G+10%§!"
 ##################################
 
 ITA_force_count_tt:0 "§RThis decision will only work if:§! Its after §Y1st of April 1942§! or Allies have suffered less than §Y500K§! casualties."
@@ -1254,7 +1321,7 @@ FRA_army_tt:0 "Modify §YThe French Armed Forces§! by\nDivision Attack: §G+5%�
 FRA_army2_tt:0 "Modify §YThe French Armed Forces§! by\nMax Entrenchment: §G+1.0§!"
 FRA_army3_tt:0 "Modify §YThe French Armed Forces§! by\nDivisions Speed: §G+7.5%§!\nDivision Recovery Rate: §G+20%§!\nMax Entrenchment: §G+2.0§!"
 FRA_army4_tt:0 "Modify §YThe French Armed Forces§! by\nDivisions Speed: §G+2.5%§!\nDivision Recovery Rate: §G+10%§!"
-FRA_army5_tt:0 "Modify §YThe French Armed Forces§! by\nArmor Division Attack: §G+5%§!"
+FRA_army5_tt:0 "Modify §YThe French Armed Forces§! by\nArmor Division Attack: §G+5%§!\nMotorized/Mechanized Division Attack: §G+5%§!"
 FRA_army6_tt:0 "Modify §YThe French Armed Forces§! by\nAce generation chance: §G+20%§!"
 FRA_army7_tt:0 "If you complete this focus §YUnited Kingdom§! will gain:\n§YAll Air§!: £GFX_production_cost  Production Cost: §R+50%§!\nand §YGermany§! will gain:\n§YAll Air§!: £GFX_production_cost  Production Cost: §G-50%§!\nfor §R40§! days after §YFrance§! §Rcapitulates§! to simulate part of French Airforce falling to German hands." 
 FRA_army8_tt:0 "Modify §YThe French Armed Forces§! by\nResistance Growth Speed in our states occupied by the enemy: §G+10%§!"
@@ -1282,18 +1349,18 @@ FRA_en_avant_tt:0 "§YAt least 3 core states§!:\nOne of the following must be t
 FRA_pol_chaos_tt:0 "Modify §YFrench Politics and Economy§! by\nStability: §G+7.5%§!\nDaily Communism Support: §R-0.02§!\nDaily Fascism Support: §R-0.02§!"
 FRA_pol_chaos1_tt:0 "Modify §YFrench Politics and Economy§! by\nDaily Democracy Support: §G+0.05§!"
 FRA_pol_chaos2_tt:0 "Modify §YFrench Politics and Economy§! by\nStability: §G+15%§!\nWeekly Stability: §G+0.30%§!"
-FRA_pol_chaos3_tt:0 "Modify §YFrench Politics and Economy§! by\nStability: §G+15%§!\nWeekly Stability: §G+0.20%§!\nConsumer Goods: §Y-18%§!\nProduction Efficiency Cap: §G+5%§!\nDaily Political Power Gain: §R-0.25§!\nFactory Output: §R-5%§!\nConstruction Speed: §R-15%§!\n §RThe situation will begin to worsen until complete political collapse.§!"
+FRA_pol_chaos3_tt:0 "Modify §YFrench Politics and Economy§! by\nStability: §G+15%§!\nConsumer Goods: §Y-8.0%§!\nProduction Efficiency Cap: §G+3%§!\nDaily Political Power Gain: §R-0.25§!\nConstruction Speed: §R-15%§!\n §RThe situation will begin to worsen until complete political collapse.§!"
 FRA_pol_chaos4_tt:0 "Modify §YFrench Politics and Economy§! by\nStability: §G+10%§!\nDaily Democracy Support: §G+0.05§!\nDaily Political Power: §R-0.15§!"
-FRA_pol_chaos5_tt:0 "Modify §YFrench Politics and Economy§! by\nStability: §G+20%§!\nWeekly Stability: §G+0.50%§!\nConsumer Goods: §Y-20%§!\nProduction Efficiency Cap: §G+5%§!\nDaily Political Power Gain: §R-0.25§!\nFactory Output: §R-5%§!\nConstruction Speed: §R-15%§!\n §RThe situation will begin to worsen until complete political collapse.§!"
+FRA_pol_chaos5_tt:0 "Modify §YFrench Politics and Economy§! by\nStability: §G+20%§!\nWeekly Stability: §G+0.30%§!\nConsumer Goods: §Y-10.0%§!\nProduction Efficiency Cap: §G+3%§!\nDaily Political Power Gain: §R-0.25§!\nFactory Output: §R-5%§!\nConstruction Speed: §R-15%§!\n §RThe situation will begin to worsen until complete political collapse.§!"
 FRA_pol_chaos6_tt:0 "Modify §YFrench Politics and Economy§! by\nStability: §G+10%§!\nDaily Communism Support: §R-0.03§!"
 FRA_pol_chaos7_tt:0 "Modify §YFrench Politics and Economy§! by\nProduction Efficiency Cap: §R-5%§!\nFactory Output: §R-20%§!"
 FRA_pol_chaos8_tt:0 "Modify §YFrench Politics and Economy§! by\nConstruction Speed: §R-5%§!\nProduction Efficiency growth: §R-10%§!"
 FRA_pol_chaos9_tt:0 "Modify §YFrench Politics and Economy§! by\nConsumer Goods: §Y+2%§!"
 FRA_pol_chaos10_tt:0 "The following modifiers in §YFrench Politics and Economy§! will recover from political collapse:\nStability, Factory Output, Political Power Gain, Construction Speed, Consumer Goods, Production Efficiency Cap." 
 FRA_pol_chaos11_tt:0 "Modify §YCound de Monet's Reforms§! by\nConstruction Speed: §G+20%§!"
-FRA_pol_chaos12_tt:0 "Modify §YCound de Monet's Reforms§! by\nPolitical Power Gain: §G+0.15§!"
-FRA_pol_chaos13_tt:0 "Modify §YCound de Monet's Reforms§! by\nPolitical Power Gain: §G+0.15§!\nProduction Efficiency growth: §G+10%§!\nConstruction Speed: §G+5%§!"
-FRA_pol_chaos14_tt:0 "Modify §YCound de Monet's Reforms§! by\nPolitical Power Gain: §G+0.15§!\nProduction Efficiency growth: §G+10%§!\nConstruction Speed: §G+5%§!\nConsumer Goods: §Y-3%§!"
+FRA_pol_chaos12_tt:0 "Modify §YCound de Monet's Reforms§! by\nPolitical Power Gain: §G+0.25§!\nWeekly Stability: §G+0.10%§!\nResearch Speed: §G+5%§!"
+FRA_pol_chaos13_tt:0 "Modify §YCound de Monet's Reforms§! by\nPolitical Power Gain: §G+0.25§!\nProduction Efficiency growth: §G+10%§!\nConstruction Speed: §G+5%§!\nWeekly Stability: §G+0.10%§!\nResearch Speed: §G+5%§!"
+FRA_pol_chaos14_tt:0 "Modify §YCound de Monet's Reforms§! by\nPolitical Power Gain: §G+0.25§!\nProduction Efficiency growth: §G+10%§!\nConstruction Speed: §G+5%§!\nConsumer Goods: §Y-2%§!\nWeekly Stability: §G+0.10%§!\nResearch Speed: §G+5%§!"
 FRA_pol_chaos15_tt:0 "Modify §YCound de Monet's Reforms§! by\nPolitical Power Gain: §G+0.3§!\nProduction Efficiency growth: §G+10%§!\nConstruction Speed: §G+5%§!\nConsumer Goods: §Y-3%§!\nWeekly Stability: §G+0.10%§!\nResearch Speed: §G+5%§!"
 FRA_pol_chaos16_tt:0 "Modify §YCound de Monet's Reforms§! by\nPolitical Power Gain: §G+0.35§!"
 FRA_pol_chaos17_tt:0 "Modify §YCound de Monet's Reforms§! by\nPolitical Power Gain: §G+0.35§!\nProduction Efficiency growth: §G+10%§!\nConstruction Speed: §G+5%§!"
@@ -1316,13 +1383,13 @@ FRA_phoney_war_tt:0 "Modify §YModifier Initial War Enthusiasm§!:\nDivision Att
 FRA_die_for_danzig_tt:0 "Which grants:\nDivision Attack on Core Territory: §G+55%§!\nDivision Defense on Core Territory: §G+55%§!\nGround Support: §G+50%§!\nWeekly War Support: §R-0.30%§!\nThis modifier will start to decay only if you are §R at war with Germany§! by §R-6%§! every month. After §YAround Maginot§! happens, it will decay by §R-10%§!\n§YGermany§! capitulating §YBelgium§!, §YNetherlands§! and §YDenmark§! each decreases this modifier by §R-5%§!, §YNorway§! by §R-7.5%§!"
 mumiago_mission_timed_out:0 "End of Political Collapse"
 FRA_adapt_tempo_tt:0 "After finishing this focus, our §YCommand Power§! situation and §YPlanning Skill§! issue will slowly improve"
-FRA_heavy_armor_tt:0 "Unlocks decision to boost §YHeavy Tank§! production for one year"
+FRA_heavy_armor_tt:0 "Unlocks decision to boost §YHeavy Tank§! production for one year§Y\n200/350/400§! units of §Y1936 French tanks§! of your choice is added to the national stockpile."
 FRA_armor_tt:0 "Gives 30 width §YMedium Tank Template§!"
 FRA_gun_mission_tt:0 "If you research §Y1942 Infantry Equipment§! within 800 days you will receive §Y5.00K§! of them"
 FRA_reservist_tt:0 "After §Y120§! days economy and experience gain debuffs from conscription law §YLevee en Masse§! will be removed."
 FRA_bonus_hard_attack_tt:0 "§YInfantry Equipment§! will receive §Y+12%§! §YHard Attack§! and §Y+30%§! §YPiercing§!."
 FRA_autonomy_tt:0 "Upgrades occupation law §GLocal Autonomy§! with Local Factories §Y+10%§! "
-FRA_autonomywarning_tt:0 "§RBe sure to switch to the new law after completing this§W"
+FRA_autonomywarning_tt:0 "§RMake sure you switch to the new law after completing this§W"
 FRA_rightspain_tt:0 "Choosing this will allow you to send volunteers to the §YSpanish Republic§! during the §YSpanish Civil War§!"
 FRA_leftspain_tt:0 "Choosing this will minimize your involvement in the §YSpanish Civil War§! allowing you to focus on domestic affairs. (PP, XP and CP)"
 FRA_tunisian_inf_tt:0 "Spawns §YFour 30 Width§! well trained infantry divisions in §YTunisia§!"
@@ -1816,7 +1883,7 @@ USA_spawn_in_china_5:0 "Completing this §YNational Focus§! will give §YChina�
  GER_Around_maginot_tt:0 "§RBEFORE CLICKING THIS DECISION, CHECK THE AROUND MAGINOT FOCUS, THAT WILL BE THE EXTRA INDUSTRY YOU WILL GAIN BY DECLARING THE MOMENT YOU CLICK. THE MAXIMUM INDUSTRY YOU CAN GET IS 80 IN TOTAL, YOU WILL NEED TO WAIT 5 MONTHS TO GET THE MAXIMUM AMOUNT OF EXTRA INDUSTRY ( MAXIMUM AMOUNT GAINED IS ON FEBRUARY 1ST 1940 )§!"
  GER_ANGRIF_STEINER_tt:0 "Der Angriff Steiners war ein Befehl!"
  GER_rosselsprung_tt:0 "All state modifiers in Yugoslovia are removed!"
- GER_arden_counter_offensive_tt:0 "§YAll Generals Gain§! - Forest Attack: §G+15%§!"
+ GER_arden_counter_offensive_tt:0 "§YAll Generals Gain§! - Forest Attack: §G+10%§!"
  GER_afrikakorps_tt:0 "§Y300§! units of long barrel Panzer IIIs and §Y150§! units of long barrel Panzer IVs is added to national stockpile\n§Y18§! of Deutsches Afrikakorps infantry will spawn in Tunis"
  SOV_spg_bonus_tt:0 "All Assault Guns Brigades §G+15%§! Hard Attack gain §R-10%§! Soft Attack"
  GER_spg_bonus_tt:0 "All SPGs and Assault Guns gain §G+10%§! Soft Attack"
@@ -1875,6 +1942,7 @@ USA_spawn_in_china_5:0 "Completing this §YNational Focus§! will give §YChina�
  GER_ss_infantry_corps_spawn_in_tt:0 "16 §OElite Veterancy§! Waffen SS §YGrenadier-Divisions§! will be activated with equipment and full manpower strength."
  GER_bandenbekampfnung_tt:0 "A new occupation law will become available to [ROOT.GetNameDef]: §YBandenbekämpfung§!"
  bandenbekampfnung_occupation_law:0 "Bandenbekämpfung" 
+ GER_luftwaffe_investments_tt:0 "\nThis idea will be automatically §Rremoved§! when the war begins"
 
  EOP_poland:0 "Polen"
  EOP_slovakia:0 "Slovakien"
@@ -2281,7 +2349,7 @@ POL_army6_tt:0 "Maximum Command Power Increase: §G+10§!"
 POL_army7_tt:0 "Armor Division Attack: §G+5%§!"
 FRA_army3_tt:0 "Modify §YThe French Armed Forces§! by\nDivisions Speed: §G+7.5%§!\nDivision Recovery Rate: §G+20%§!\nMax Entrenchment: §G+2.0§!"
 FRA_army4_tt:0 "Modify §YThe French Armed Forces§! by\nDivisions Speed: §G+2.5%§!\nDivision Recovery Rate: §G+10%§!"
-FRA_army5_tt:0 "Modify §YThe French Armed Forces§! by\nArmor Division Attack: §G+5%§!"
+FRA_army5_tt:0 "Modify §YThe French Armed Forces§! by\nArmor Division Attack: §G+5%§!\nMotorized/Mechanized Division Attack: §G+5%§!"
 FRA_army6_tt:0 "Modify §YThe French Armed Forces§! by\nAce generation chance: §G+20%§!"
 FRA_army7_tt:0 "If you complete this focus §YUnited Kingdom§! will gain:\n§YAll Air§!: £GFX_production_cost  Production Cost: §R+50%§!\nand §YGermany§! will gain:\n§YAll Air§!: £GFX_production_cost  Production Cost: §G-50%§!\nfor §R40§! days after §YFrance§! §Rcapitulates§! to simulate part of French Airforce falling to German hands." 
 POL_army8_tt:0 "Resistance Growth Speed in our states occupied by the enemy: §G+10%§!"
