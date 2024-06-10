@@ -98,7 +98,7 @@ technologies = {
 		}
 		
 		dependencies = {
-		#	government_in_exile = 1
+			government_in_exile = 1
 		}	
 
 		research_cost = 1.8
@@ -221,7 +221,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		dependencies = {
-			#government_in_exile = 1
+			government_in_exile = 1
 		}		
 		research_cost = 1.2
 		start_year = 1941
@@ -317,7 +317,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1934
 		folder = {
 			name = nsb_pol_armor_folder
@@ -348,7 +348,7 @@ technologies = {
 			leads_to_tech = pol_1938_medium_tank_chassis
 			research_cost_coeff = 1
 		}
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 
 		folder = {
@@ -376,8 +376,11 @@ technologies = {
 			light_tank_artillery_chassis_1940
 			light_tank_aa_chassis_1940
 		}
+		dependencies = {
+			government_in_exile = 1
+		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1940
 
 		folder = {
@@ -459,9 +462,7 @@ technologies = {
 		enable_subunits = {
 			medium_armor
 		}
-		dependencies = {
-			improved_machine_tools = 1
-		}
+	
 
 		research_cost = 2
 		start_year = 1938
@@ -522,8 +523,7 @@ technologies = {
 			tank_medium_opentop_turret
 		}
 		dependencies = {
-			advanced_machine_tools = 1
-			#government_in_exile = 1
+			government_in_exile = 1
 		}
 		research_cost = 2
 		start_year = 1939
@@ -586,8 +586,7 @@ technologies = {
 			tank_medium_opentop_turret
 		}
 		dependencies = {
-			advanced_machine_tools = 1
-			#government_in_exile = 1
+			government_in_exile = 1
 		}
 		path = {
 			leads_to_tech = pol_1942_medium_tank_chassis
@@ -648,9 +647,7 @@ technologies = {
 			medium_tank_rocket_chassis_1942
 			medium_tank_flame_chassis_1942
 		}
-		dependencies = {
-			advanced_machine_tools = 1
-		}
+
 		path = {
 			leads_to_tech = pol_advanced_turret
 			research_cost_coeff = 1
@@ -841,8 +838,8 @@ technologies = {
 			heavy_armor
 		}
 		dependencies = {
-			advanced_machine_tools = 1
-			#government_in_exile = 1
+
+			government_in_exile = 1
 		}
 
 		path = {
@@ -904,9 +901,7 @@ technologies = {
 			heavy_tank_artillery_chassis_1942
 			heavy_tank_aa_chassis_1942
 		}
-		dependencies = {
-			assembly_line_production = 1
-		}
+	
 		path = {
 			leads_to_tech = pol_1945_heavy_tank_chassis
 			research_cost_coeff = 1
@@ -1024,8 +1019,8 @@ technologies = {
 			super_heavy_tank_flame_chassis_1940
 		}
 		dependencies = {
-			advanced_machine_tools = 1
-			#government_in_exile = 1
+
+			government_in_exile = 1
 		}
 		path = {
 			leads_to_tech = pol_1944_super_heavy_tank_chassis
@@ -1532,7 +1527,7 @@ technologies = {
 			has_dlc = "Man the Guns"
 		}
 		dependencies = {
-			#government_in_exile = 1
+			government_in_exile = 1
 		}			
 		path = {
 			leads_to_tech = amphibious_mechanized_infantry_2_pol

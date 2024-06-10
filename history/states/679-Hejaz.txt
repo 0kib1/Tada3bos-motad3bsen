@@ -6,7 +6,6 @@ state = {
 	state_category = pastoral
 
 	history = {
-		owner = ENG
 		victory_points = {
 			12758 1 
 		}
@@ -14,8 +13,6 @@ state = {
 			12883 1 
 		}
 		buildings = {
-			anti_air_building = 10
-			air_base = 10
 			infrastructure = 5
 			1033 = {
 				naval_base = 3

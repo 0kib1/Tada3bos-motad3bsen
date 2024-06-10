@@ -434,6 +434,22 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					BRA = {
+						is_ai = no
+					}
+				}
+				328 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 5
+						instant_build = yes
+					}
+					add_core_of = AST
+				}
+			}
+			if = {
+				limit = {
 					has_game_rule = {
 						rule = disable_lobby_parasites
 						option = HISTORICAL

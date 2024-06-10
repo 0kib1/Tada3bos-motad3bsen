@@ -103,10 +103,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = AST_modify_dep_tt
 
-			add_to_variable = {
-				AST_consumer_goods_factor_var = 0.05
-				tooltip = AST_con_good_fac_plus_tt2
-			}
+			
 			add_to_variable = {
 				AST_production_factory_efficiency_gain_factor_var = 0.1
 				tooltip = AST_prod_eff_gain_tt1
@@ -152,7 +149,7 @@ focus_tree = {
 		icon = GFX_goal_generic_radio_development_2
 		x = -5
 		y = 1
-		cost = 7.2
+		cost = 5
 		ai_will_do = {
 			factor = 200			
 		}
@@ -873,7 +870,7 @@ focus_tree = {
 		icon = GFX_AST_war_council
 		x = 2
 		y = 1
-		cost = 7.2
+		cost = 5
 		ai_will_do = {
 			factor = 200			
 		}
@@ -897,7 +894,7 @@ focus_tree = {
 		icon = GFX_AST_hang
 		x = -1
 		y = 1
-		cost = 7.2
+		cost = 5
 		ai_will_do = {
 			factor = 200			
 		}
@@ -923,7 +920,7 @@ focus_tree = {
 		icon = GFX_AST_rationing
 		x = 1
 		y = 1
-		cost = 7.2
+		cost = 5
 		ai_will_do = {
 			factor = 200			
 		}
@@ -975,7 +972,7 @@ focus_tree = {
 		icon = GFX_AST_speed_up
 		x = 0
 		y = 2
-		cost = 7.2
+		cost = 5
 		ai_will_do = {
 			factor = 200			
 		}
@@ -1001,7 +998,7 @@ focus_tree = {
 		icon = GFX_AST_civil_construction
 		x = -2
 		y = 1
-		cost = 7.2
+		cost = 5
 		ai_will_do = {
 			factor = 200			
 		}
@@ -1027,7 +1024,7 @@ focus_tree = {
 		icon = GFX_AST_home_guard
 		x = -1
 		y = 1
-		cost = 7.2
+		cost = 5
 		ai_will_do = {
 			factor = 200			
 		}
@@ -1071,7 +1068,7 @@ focus_tree = {
 					}
 
 					support = {
-						DIV_HQ = { x = 0 y = 0 }
+						artillery = { x = 0 y = 0 }
 					   	construction_engineer = { x = 0 y = 1 }
 					   	anti_air_company = { x = 0 y = 2 }
 						military_police = { x = 1 y = 0 }
@@ -1161,7 +1158,7 @@ focus_tree = {
 		icon = GFX_AST_allied_works
 		x = 0
 		y = 2
-		cost = 7.2
+		cost = 5
 		ai_will_do = {
 			factor = 200			
 		}
@@ -1244,7 +1241,7 @@ focus_tree = {
 		icon = GFX_AST_fight
 		x = 0
 		y = 1
-		cost = 7.2
+		cost = 2.9
 		ai_will_do = {
 			factor = 200			
 		}
@@ -1269,7 +1266,7 @@ focus_tree = {
 		icon = GFX_AST_jungle_warfare
 		x = 3
 		y = 1
-		cost = 4.3
+		cost =  2.9
 		ai_will_do = {
 			factor = 200			
 		}
@@ -1300,7 +1297,7 @@ focus_tree = {
 		icon = GFX_AST_secure_papua
 		x = -2
 		y = 1
-		cost = 4.3
+		cost =  2.9
 		ai_will_do = {
 			factor = 200			
 		}
@@ -1355,7 +1352,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 4.3	
-		ai_will_do = {
+		ai_will_do =	 {
 			factor = 200			
 		}
 		available = {
@@ -1498,7 +1495,7 @@ focus_tree = {
 		icon = GFX_focus_hol_continue_the_war_in_batavia
 		x = 1
 		y = 1
-		cost = 4.3
+		cost =  2.9
 		ai_will_do = {
 			factor = 200			
 		}
@@ -1571,7 +1568,7 @@ focus_tree = {
 		icon = GFX_goal_MAL_malaya
 		x = 3
 		y = 1
-		cost = 4.3
+		cost =  2.9
 		ai_will_do = {
 			factor = 200			
 		}
@@ -1840,7 +1837,7 @@ focus_tree = {
 		icon = GFX_goal_ammunitions
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 200			
 		}
@@ -2357,7 +2354,7 @@ focus_tree = {
 		icon = GFX_goal_AST_coa_army
 		x = 0
 		y = 2
-		cost = 7.2
+		cost = 5
 		ai_will_do = {
 			factor = 200			
 		}
@@ -2408,7 +2405,7 @@ focus_tree = {
 		icon = GFX_goal_AST_R56_australia_first
 		x = 0
 		y = 1
-		cost = 7.2
+		cost = 5
 		ai_will_do = {
 			factor = 200			
 		}
@@ -2464,7 +2461,7 @@ focus_tree = {
 		relative_position_id = ast_sons_outback
 		x = 0
 		y = 1
-		cost = 7.2
+		cost = 5
 		ai_will_do = {
 			factor = 200			
 		}
@@ -2502,7 +2499,7 @@ focus_tree = {
 		icon = GFX_focus_AST_rats_tobruk
 		x = -1
 		y = 1
-		cost = 7.2
+		cost = 5
 		ai_will_do = {
 			factor = 200			
 		}
@@ -2546,7 +2543,7 @@ focus_tree = {
 					}
 					
 					support = {
-						DIV_HQ = { x = 0 y = 0 }
+						artillery = { x = 0 y = 0 }
 						engineer = { x = 0 y = 1 }
 						recon = { x = 0 y = 2 }
 						military_police = { x = 0 y = 3 }		
@@ -2669,7 +2666,7 @@ focus_tree = {
 		icon = GFX_AST_homegrown_weapons
 		x = 4
 		y = 1
-		cost = 7.2
+		cost = 5
 		ai_will_do = {
 			factor = 200			
 		}
@@ -2708,7 +2705,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery2
 		x = 0
 		y = 1
-		cost = 7.2
+		cost = 5
 		ai_will_do = {
 			factor = 200			
 		}
@@ -2750,7 +2747,7 @@ focus_tree = {
 		icon = GFX_AST_Owen
 		x = -2
 		y = 1
-		cost = 7.2
+		cost = 5
 		ai_will_do = {
 			factor = 200			
 		}
@@ -2966,7 +2963,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			
-			set_technology = { eng_mechanised_infantry1 = 1 }
+			add_tech_bonus = {				
+				bonus = 1.25
+				uses = 1 
+				technology = eng_mechanised_infantry1
+				technology = eng_nsb_mechanised_infantry2
+				name = mech_bonus
+			}
 			if = {
 				limit = {
 					NOT = {
@@ -3307,7 +3310,7 @@ focus_tree = {
 		x = 32
 		y = 0
 
-		cost = 5
+		cost = 2.9
 
 		ai_will_do = {
 			factor = 1

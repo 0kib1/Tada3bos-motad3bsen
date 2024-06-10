@@ -676,7 +676,7 @@ focus_tree = {
 		available_if_capitulated = no
 	
 		available = {
-			date > 1940.9.1
+			date > 1940.5.1
 			OR = {
 				has_completed_focus = JAP_temporary_export_and_import_commodities_measures_law
 				has_completed_focus = JAP_challenge_the_zaibatsus

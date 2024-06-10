@@ -5,7 +5,6 @@ state = {
 		8073   1923  5037 12883   2033 
 	}
 	history = {
-		owner = ENG
 		
 		buildings = {
 			anti_air_building = 10
