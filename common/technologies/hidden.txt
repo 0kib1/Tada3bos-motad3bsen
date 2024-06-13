@@ -4032,6 +4032,18 @@ technologies = {
 				horse_equipment = -3
 			}
 		}
+		guards_infantry = {
+			combat_width = -0.4
+			max_strength = -1.5
+			soft_attack = -0.15
+			hard_attack = -0.15
+			defense = -0.15
+			breakthrough = -0.1
+			need = {
+				infantry_equipment = -20
+				horse_equipment = -3
+			}
+		}
 		truck_infantry = {
 			combat_width = -0.4
 			max_strength = -1.5

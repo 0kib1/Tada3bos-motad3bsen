@@ -1479,6 +1479,8 @@ JAP_air_bonus_tt3:0 "§YClose Air Support§!: Ground Attack: §G+10%§!\n§YTact
  SOV_industry_relocation_new_tt:0 "§GRelocates all factories to Siberia§!"
  SPR_has_surrendered_flag:0 "Nationalists have surrendered"
  SOV_frontline_mob_tt:0 "Creates §Y4 Infantry Division§! in every frontline state."
+ SOV_frontline_mob1_tt:0 "Creates §Y1 Infantry Division§! in every frontline state."
+ SOV_Army_dabola_tt:0 "§YSTAVKA§! Will get §G-4%§! Attrition and §G5%§! Org"
  SOV_slacken_armor_tt:0 "§YAll Armor Battalions§! will require §G20%§! less tanks. This bonus will however decay every 45 days by 3-4%."
  SOV_slacken_inf_tt:0 "§YInfantry Battalion§! and §YConscript Battalion§! will require §G25%§! less infantry equipment. This bonus will however decay every 45 days by 4%."
  SOV_fund_chinese_offensive_tt:0 "State modifiers in China will lower by 2 levels and China will try to aggressively battelplan for §Y60 days§!"
@@ -1820,8 +1822,10 @@ USA_spawn_in_china_5:0 "Completing this §YNational Focus§! will give §YChina�
  GER_ss_mechanized_corps_spawn_in_tt:0 "9 §OElite Veterancy§! Waffen SS §YPanzergrenadier-Divisions§! will be activated with equipment and full manpower strength."
  GER_ss_heavy_tank_corps_spawn_in_tt:0 "3 §OElite Veterancy§! §YMechanized Schwere Panzer-Divisions§! will be activated with equipment and full manpower strength."
  GER_ss_infantry_corps_spawn_in_tt:0 "16 §OElite Veterancy§! Waffen SS §YGrenadier-Divisions§! will be activated with equipment and full manpower strength."
+ SOV_Guard_infantry_corps_spawn_in_tt:0 "15 §OElite Veterancy§! §GGuard Rifle Divisions§! will be activated with equipment and full manpower strength."
  GER_bandenbekampfnung_tt:0 "A new occupation law will become available to [ROOT.GetNameDef]: §YBandenbekämpfung§!"
  bandenbekampfnung_occupation_law:0 "Bandenbekämpfung" 
+
 
  EOP_poland:0 "Polen"
  EOP_slovakia:0 "Slovakien"

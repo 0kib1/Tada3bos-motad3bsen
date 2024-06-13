@@ -6007,6 +6007,14 @@ NZL_australian_loans:0 "Australian Loans"
  
 
  ##### SOVIET #####
+ SOV_marshal_of_victory:0 "Marshal of Victory"
+ SOV_marshal_konev:0 "Faithful Servant of Stalin"
+ SOV_maskirovka:0 "Maskirovska"
+ SOV_underwater_bridge:0 "Expand Guard Units"
+ SOV_improve_red_guard_equipment:0 "Re-Equipped Red Guards"
+ SOV_strenght_in_the_numbers:0 "Strenght in the Numbers"
+ SOV_expand_red_guards_regiments:0 "Expand the Red Guards Regiments"
+ SOV_katyusha1:0 "Stalin oegans"
  SOV_frontline_mob2:0 "Divert All Far East Reserves"
  SOV_order_270:0 "Improve Industry Coordination"
  SOV_frontline_mob:0 "Conscript Everyone"

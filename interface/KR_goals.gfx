@@ -9567,6 +9567,42 @@ spriteType = {
 		name = "GFX_SOV_for_motherland_and_for_stalin"
 		texturefile = "gfx/interface/goals/soviet/SOV_for_motherland_and_for_stalin.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_SOV_konev"
+		texturefile = "gfx/interface/goals/soviet/SOV_konev.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_SOV_maskirovska"
+		texturefile = "gfx/interface/goals/soviet/SOV_maskirovska.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SOV_mobilize_guards"
+		texturefile = "gfx/interface/goals/soviet/SOV_mobilize_guards.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_SOV_numbers"
+		texturefile = "gfx/interface/goals/soviet/SOV_numbers.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_SOV_goals_renovation_of_siberia"
+		texturefile = "gfx/interface/goals/soviet/goal_SOV_goals_renovation_of_siberia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_SOV_better_reguard"
+		texturefile = "gfx/interface/goals/soviet/SOV_better_reguard.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_SOV_water_tank"
+		texturefile = "gfx/interface/goals/soviet/SOV_water_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_SOV_georgy_zhukov_heros"
+		texturefile = "gfx/interface/goals/soviet/goal_SOV_georgy_zhukov_heros.dds"
+	}
 
 	spriteType = {
 		name = "GFX_SOV_katyusha"

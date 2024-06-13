@@ -15292,8 +15292,6 @@ SOV_great_patriotic_war = {
 			every_country = {
 					set_variable = { var = super_event value = 16 }			
 				}
-				every_country = {limit = { check_variable= { music_enabled > 0}  }
-				scoped_sound_effect = "se_iraq_10"
 			}
 		}
 		

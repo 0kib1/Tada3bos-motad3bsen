@@ -1999,7 +1999,7 @@ focus_tree = {
 
 			add_to_variable = {
 				var = SOV_purge_plot_power
-				value = 25 
+				value = 50 
 			}
 		}
 	}	
@@ -2035,7 +2035,7 @@ focus_tree = {
 
 			add_to_variable = {
 				var = SOV_purge_plot_power
-				value = 25 
+				value = 50
 			}
 		}
 	}	
@@ -8992,41 +8992,45 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_marshal_of_victory
-		icon = GFX_goal_SOV_georgy_zhukov_hero
+		icon = GFX_goal_SOV_georgy_zhukov_heros
 		prerequisite = {
-			SOV_new_tank_corps
-			SOV_organize_the_defence_of_moscow
+			focus = SOV_organize_the_defence_of_moscow
 		}
 		relative_position_id = SOV_the_great_patriotic_war
 		mutually_exclusive = { focus = SOV_marshal_konev }
+
 		x = 2
 		y = 4
+
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = {
+			has_completed_focus = SOV_hero_of_the_union
+		}
+
 		cost = 3.7
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = SOV_georgy_zhukov
 
 			every_unit_leader = {
 				limit = {
-					has_id = 9435
+					has_id = 410
 				}
 				promote_leader = yes
-				add_max_trait = 2
+				add_max_trait = 1
 				add_attack = 1
 				add_planning = 1
-				add_unit_leader_trait = trait_people_marshal 
-				add_unit_leader_trait = skilled_staffer
+				add_unit_leader_trait = winter_expert 
+				add_unit_leader_trait = winter_specialist 
 			}
 		}
 	}
 	focus = {
 		id = SOV_underwater_bridge
-		icon = GFX_goal_SOV_water_tank
+		icon = GFX_SOV_indoctrination_and_militarization
 		prerequisite = {
 			focus = SOV_marshal_of_victory
 		}
@@ -9209,7 +9213,7 @@ focus_tree = {
 		icon = GFX_goal_SOV_better_reguard
 		prerequisite = {
 			focus = SOV_underwater_bridge
-			focus = SOV_katyusha
+			focus = SOV_katyusha1
 		}
 		relative_position_id = SOV_marshal_of_victory
 		x = 0
@@ -9221,6 +9225,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = SOV_Army_dabola_tt
 				if = {
 					limit = {
 						 has_idea = SOV_STAVKA3 
@@ -9242,8 +9247,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SOV_katyusha
-		icon = GFX_goal_SOV_advanced_katyusha
+		id = SOV_katyusha1
+		icon = GFX_SOV_katyusha
 		prerequisite = {
 			focus = SOV_marshal_of_victory
 		}
@@ -9265,8 +9270,7 @@ focus_tree = {
 		id = SOV_marshal_konev
 		icon = GFX_goal_SOV_konev
 		prerequisite = {
-			SOV_new_tank_corps
-			SOV_organize_the_defence_of_moscow
+			focus = SOV_new_tank_corps
 		}
 		relative_position_id = SOV_the_great_patriotic_war
 		mutually_exclusive = { focus = SOV_marshal_of_victory }
@@ -9279,7 +9283,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = SOV_ivan_konev
 
 			every_unit_leader = {
@@ -9289,7 +9292,6 @@ focus_tree = {
 				promote_leader = yes
 				add_max_trait = 2
 				add_attack = 2
-				add_unit_leader_trait = trait_people_marshal 
 				add_unit_leader_trait = skilled_staffer
 			}
 		}
@@ -9310,7 +9312,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = SOV_maskirovska_tt
 			add_ideas = SOV_maskirovka
 		}
 	}
@@ -9320,26 +9321,156 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_marshal_konev
 		}
+
 		relative_position_id = SOV_marshal_konev
 		x = -1
 		y = 1
+
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = {
+			
+			has_political_power > 59 
+			has_army_experience > 59
+
+		}
+
 		cost = 3.7
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = SOV_expand_red_guards_regiments_tt
+
+			add_political_power = -60 
+			army_experience = -60
+
+			custom_effect_tooltip = SOV_Guard_infantry_corps_spawn_in_tt	
+
 			hidden_effect = {
-				load_oob = "SOV_red_guard"
-				load_oob = "SOV_red_guard"
-				load_oob = "SOV_red_guard"
-				SOV = {
-					scoped_sound_effect = sov_red_guards_sound
+				if = {
+					limit = {
+						SOV = {
+							NOT = {
+								OR = {
+									has_tech = large_front_operations
+									has_tech = peoples_army
+								}
+							}
+						}
+					}
+					division_template = {
+						name = "Guard Rifle Division"
+						priority = 2
+						template_counter = 136
+						is_locked = yes
+						force_allow_recruiting = yes
+						division_cap = 16
+						regiments = {
+							guards_infantry = { x = 0 y = 0 }
+							guards_infantry = { x = 0 y = 1 }
+							guards_infantry = { x = 0 y = 2 }
+							
+							guards_infantry = { x = 1 y = 0 }
+							guards_infantry = { x = 1 y = 1 }
+							guards_infantry = { x = 1 y = 2 }
+							guards_infantry = { x = 1 y = 3 }
+
+							guards_infantry = { x = 2 y = 0 }
+							guards_infantry = { x = 2 y = 1 }
+							guards_infantry = { x = 2 y = 2 }
+							anti_air = { x = 2 y = 3 }
+							
+							artillery_brigade = { x = 3 y = 0 }
+							artillery_brigade = { x = 3 y = 1 }
+							anti_tank_brigade = { x = 3 y = 2 }
+							artillery_brigade = { x = 3 y = 3 }
+						}
+						
+						support = {
+							DIV_HQ = { x = 0 y = 0 }
+							military_police = { x = 0 y = 1 }
+							mobile_engineer = { x = 0 y = 2 }	
+							signal_company = { x = 0 y = 3 }
+							maintenance_company = { x = 1 y = 0 }
+							logistics_company = { x = 1 y = 1 }
+							recon_ac = { x = 1 y = 2 }
+							anti_air_company = { x = 1 y = 3}
+						}
+					}
 				}
+				else_if = {
+					limit = {
+						SOV = {
+							OR = {
+								has_tech = large_front_operations
+								has_tech = peoples_army
+							}
+						}
+					}
+					division_template = {
+						name = "Guard Rifle Division"
+						priority = 2
+						template_counter = 136
+						is_locked = yes
+						force_allow_recruiting = yes
+						division_cap = 16
+								
+						regiments = {
+							guards_infantry = { x = 0 y = 0 }
+							guards_infantry = { x = 0 y = 1 }
+							guards_infantry = { x = 0 y = 2 }
+							guards_infantry = { x = 0 y = 3 }
+							
+							guards_infantry = { x = 1 y = 0 }
+							guards_infantry = { x = 1 y = 1 }
+							guards_infantry = { x = 1 y = 2 }
+							guards_infantry = { x = 1 y = 3 }
+
+							guards_infantry = { x = 2 y = 0 }
+							guards_infantry = { x = 2 y = 1 }
+						
+							guards_infantry = { x = 3 y = 0 }
+							guards_infantry = { x = 3 y = 1 }
+							anti_air = { x = 3 y = 2 }
+							artillery_brigade = { x = 3 y = 3 }
+
+							artillery_brigade = { x = 4 y = 0 }
+							artillery_brigade = { x = 4 y = 1 }
+							artillery_brigade = { x = 4 y = 2 }
+							anti_tank_brigade = { x = 4 y = 3 }
+						
+						}
+
+						support = {
+							DIV_HQ = { x = 0 y = 0 }
+							military_police = { x = 0 y = 1 }
+							mobile_engineer = { x = 0 y = 2 }	
+							signal_company = { x = 0 y = 3 }
+							maintenance_company = { x = 1 y = 0 }
+							logistics_company = { x = 1 y = 1 }
+							recon_ac = { x = 1 y = 2 }
+							anti_air_company = { x = 1 y = 3}
+						}
+					}
+				}
+				every_controlled_state = {
+					limit = { 
+						state = 219	
+					}
+
+					set_temp_variable = { SS_num_of_inf_to_create = 15 }
+					
+					for_loop_effect = {
+						end = SS_num_of_inf_to_create
+						
+						create_unit = {
+							division = "division_template = \"Guard Rifle Division\" start_experience_factor = 0.6 start_equipment_factor = 1"
+							owner = SOV
+						}
+					}
+				}	
 			}
-			
 		}
 	}
 	focus = {
@@ -9358,62 +9489,41 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = SOV_a_gun_for_every_hand_idea
-				add_idea = SOV_a_gun_for_every_hand_idea_2
-			}
-			set_technology = {
-				peoples_army = 1
-				human_infantry_offensive = 1
-				large_front_offensive = 1
-				human_wave_offensive = 1
-				guerilla_warfare = 1
-			}
-			custom_effect_tooltip = SOV_strenght_in_the_numbers_tt
 			hidden_effect = {
-				division_template = {
-    				priority = 0
-    				name = "Conscript"
-
-					regiments = {
-						conscript = { x = 0 y = 0 }
-						conscript = { x = 0 y = 1 }
-						conscript = { x = 0 y = 2 }
-						conscript = { x = 0 y = 3 }
-						conscript = { x = 0 y = 4 }
-
-						conscript = { x = 1 y = 0 }
-						conscript = { x = 1 y = 1 }
-						conscript = { x = 1 y = 2 }
-						conscript = { x = 1 y = 3 }
-						conscript = { x = 1 y = 4 }
-
-						anti_tank_brigade = { x = 2 y = 0 }
-						anti_tank_brigade = { x = 2 y = 1 }
-						anti_air_brigade = { x = 2 y = 2 }
-						artillery_brigade = { x = 2 y = 3 }
-						artillery_brigade = { x = 2 y = 4 }
+				if = {
+					limit = {
+						has_war_with = JAP
 					}
-	
-					support = {
-        				engineer = { x = 0 y = 0 }
-						recon = { x = 0 y = 1 }
-						military_police = { x = 1 y = 0 }
-						anti_air = { x = 0 y = 2 }
-						artillery = { x = 0 y = 3 }
-						anti_tank = { x = 0 y = 4 }
-					}
-				}
-				249 = {
-					for_loop_effect = {
-						end = 50
+					every_state = {
+						limit = {	
+							AND = {
+								any_neighbor_state = { OR = { is_controlled_by = GER is_controlled_by = ROM is_controlled_by = HUN is_controlled_by = FIN is_controlled_by = ITA is_controlled_by = BUL  is_controlled_by = SPR is_controlled_by = EFR is_controlled_by = SLO is_controlled_by = JAP is_controlled_by = MAN } }
+								is_controlled_by = SOV
+							}
+						}
 						create_unit = {
-   		 					division = "name = \"Conscript Division\" division_template = \"Conscript\" start_experience_factor = 0.5 start_equipment_factor = 1"
-    						owner = SOV
+							division = "division_template = \"Strelkovaya Diviziya - Reinforcements\" start_experience_factor = 0.4 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_2 = { owner = \"SOV\" } artillery_equipment_2 = { owner = \"SOV\" }} "
+							owner = SOV
 						}
 					}
 				}
+				else = {
+					every_state = {
+						limit = {	
+							AND = {
+								any_neighbor_state = { OR = { is_controlled_by = GER is_controlled_by = ROM is_controlled_by = HUN is_controlled_by = FIN is_controlled_by = ITA is_controlled_by = BUL  is_controlled_by = SPR is_controlled_by = EFR is_controlled_by = SLO} }
+								is_controlled_by = SOV
+							}
+						}
+						create_unit = {
+							division = "division_template = \"Strelkovaya Diviziya - Reinforcements\" start_experience_factor = 0.4 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_2 = { owner = \"SOV\" } artillery_equipment_2 = { owner = \"SOV\" }} "
+							owner = SOV
+						}
+					}
+				}
+
 			}
+			custom_effect_tooltip = SOV_frontline_mob1_tt
 		}
 	}	
 
@@ -9428,12 +9538,16 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_new_tank_corps
 		}
+		prerequisite = { 
+			focus = SOV_strenght_in_the_numbers
+			focus = SOV_improve_red_guard_equipment
+		}
 		available = {
 			date > 1943.7.1
 		}
 
 		x = 0
-		y = 8
+		y = 7
 		ai_will_do = {
 			factor = 1.5
 			modifier = {

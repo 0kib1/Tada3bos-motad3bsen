@@ -29,6 +29,7 @@ HUN_henschel1:0 "Early Henschel"
  infantry_tank_concern:0 "Infantry Tank Designer"
  fowler_trait:0 "Converted Tractor Factory"
  HUN_henschel1:0 "Early Henschel"
+ SOV_stalin_organ:0 "Stalin organs"
 
  SPIRIT_ADD_IDEA:0 "§GClick to add $GROUP|H$§!"
  tactic_elastic_defense_preferred_weight_factor:1 "Additional §YElastic Defense§! Tactic Chance if it is Preferred tactic"
@@ -733,6 +734,8 @@ HUN_henschel1:0 "Early Henschel"
  SOV_idea_license:0 "Allied Licenses"
  SOV_stakhonovite:0 "Stakhonovite"
  SOV_STAVKA11:0 "STAVKA"
+ SOV_STAVKA31:0 "STAVKA"
+ SOV_STAVKA_3_1:0 "STAVKA"
  SOV_STAVKA11_desc:0 "The Soviet High Command, responsible for all offensive and defensive plans taken during the War."
  SOV_STAVKA22:0 "STAVKA"
  SOV_STAVKA22_desc:0 "The Soviet High Command, responsible for all offensive and defensive plans taken during the War."
@@ -5633,5 +5636,4 @@ AST_war_eco_modifier:0 "Australian War Economy"
 
 
 
--------
-SOV_guard:0 "Guard Units"
+SOV_guards:0 "Guard Units"
