@@ -21,7 +21,7 @@ buildings = {
 	arms_factory = {
 		show_on_map = 6
 		base_cost = 8400
-		base_cost_conversion = 6000
+		base_cost_conversion = 5700
 		military_production = 1
 		icon_frame = 2
 		max_level = 60
@@ -140,7 +140,7 @@ buildings = {
 		value = 5
 		infrastructure_construction_effect = yes
 		show_modifier = yes
-		fuel_gain_from_states = 9
+		fuel_gain_from_states = 7.5
 		damage_factor = 0.1		
 	}
 	fuel_silo = {

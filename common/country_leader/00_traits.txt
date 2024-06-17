@@ -4710,7 +4710,7 @@ leader_traits = {
 		random = no
 
 		production_speed_buildings_factor = 0.1
-		state_production_speed_rail_way_factor = 0.1
+		state_production_speed_rail_way_factor = 0.15
 		
 		ai_will_do = {
 			factor = 0
@@ -4855,6 +4855,7 @@ leader_traits = {
 
 	army_schorner_jack_of_all_trades = {
 		sprite = 5
+		experience_gain_army = 0.05
 		training_time_army_factor = -0.2
 		army_infantry_attack_factor = 0.12
 		army_infantry_defence_factor = 0.12
@@ -6269,13 +6270,22 @@ leader_traits = {
 	}
 
 	####malacu caluga####
+	backroom_backstabber_manchu = {
+		sprite = 13
+		local_resources_factor = 0.15
+		min_export = -0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 	Loyalist = {
 		sprite = 13
 		random = no
 		
 		neutrality_drift = 0.05
-		stability_factor = 0.05
+		stability_factor = 0.075
 		stability_weekly = 0.004
 		non_core_manpower = 0.03
 
@@ -6298,8 +6308,8 @@ leader_traits = {
 	captain_of_industry_manchu = {
 		sprite = 10
 		random = yes
-		production_speed_industrial_complex_factor = 0.10
 		production_speed_arms_factory_factor = -0.075
+		production_speed_industrial_complex_factor = 0.075
 		production_speed_infrastructure_factor = 0.15
 		production_speed_synthetic_refinery_factor = 0.1
 		production_speed_synthetic_rubber_refinery_factor = 0.05
@@ -6313,13 +6323,13 @@ leader_traits = {
 		sprite = 13
 		random = no
 
-		production_factory_efficiency_gain_factor = 0.10
+		production_factory_efficiency_gain_factor = 0.1
 		production_factory_max_efficiency_factor = 0.05
 		industrial_capacity_factory = 0.10
 		
 
 		stability_weekly = -0.002
-		weekly_manpower = -200
+		weekly_manpower = -500
 		
 
 		ai_will_do = {
@@ -6342,34 +6352,41 @@ leader_traits = {
 		sprite = 13
 		random = no
 
-		production_factory_efficiency_gain_factor = 0.10
-		local_resources_factor = 0.15
-		consumer_goods_factor = -0.04
+		local_resources_factor = 0.1
+		consumer_goods_expected_value = -0.04
 
-		weekly_manpower = -300
+		weekly_manpower = -250
 
 		ai_will_do = {
 			factor = 1
 		}
 	}
 	Unworty_ruler={
-		stability_factor = -0.1
-		stability_weekly = -0.001
 		political_power_factor = 0.1
+		stability_factor = -0.05
+
+
 	}
 	worty_ruler={
+		political_power_gain = -0.1
 		stability_factor = 0.05
-		war_support_factor = 0.05
-		political_power_gain = 0.05
+
+	}
+	puiy_spirit ={
+		random = no
+		
+		army_core_attack_factor = 0.2
+		army_core_defence_factor = 0.2
+		stability_factor = 0.1
 	}
 	devil_of_showa = {
 		sprite = 13
 		random = no
-		industrial_capacity_factory = 0.2
-		production_factory_efficiency_gain_factor = 0.2
-		production_speed_buildings_factor = 0.075
+		industrial_capacity_factory = 0.125
+		production_factory_efficiency_gain_factor = 0.1
+		production_speed_buildings_factor = 0.05
 
-		weekly_manpower = -200
+		weekly_manpower = -400
 		stability_weekly = -0.002
 
 		ai_will_do = {
@@ -6391,11 +6408,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	
-	
-	
-	
-	
+
 	#Slovakia shit 
 	tuka_trait = { #Tuka
 		random = no
